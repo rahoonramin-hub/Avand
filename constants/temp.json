@@ -1,0 +1,54 @@
+[
+    {
+        "id": "1",
+        "title": "Name Types",
+        "type": "nameTypes",
+        "direction": "ltr",
+        "answer": ["zero", "first", "second", "third", "mixed"],
+        "synonyms": {
+        "0": "zero",
+        "1st": "first",
+        "2nd": "second",
+        "3rd": "third",
+        "mix": "mixed"
+        },
+        "sentence": "name the 5 types of conditional sentences in English"
+    },
+    {
+        "id": "2",
+        "title": "Translate the sentence",
+        "direction": "ltr",
+        "type": "translate",
+        "sentence": "Had the government invested in renewable energy earlier, the country would not be facing such a severe crisis now",
+        "answer": ["اگر دولت زودتر در انرژی های تجدید پذیر سرمایه گذاری میکرد، کشور اکنون با چنین بحران شدیدی مواجه نمیشد"],
+        "wordBank": ["اگر", "دولت", "زودتر", "سرمایه گذاری میکرد", "در", "انرژی های", "تجدیدپذیر", "کشور", "اکنون", "مواجه نمیشد"]
+    },
+    {
+        "id": "3",
+        "title": "Fill the blank",
+        "direction": "ltr",
+        "type": "fillBlank",
+        "sentence": "Never before _ such a comprehensive reform proposed in the history of this institution.",
+        "answer": "had been",
+        "hardness": "Veteran",
+        "translate": "هرگز پیش از این چنین اصلاحات جامعی در تاریخ این نهاد پیشنهاد نشده بود.",
+        "wordBank": ["was", "had been", "has been", "is"]
+    },
+    {
+        "id": "4",
+        "title": "Sellect correct",
+        "direction": "ltr",
+        "type": "sellectCorrect",
+        "answer": "Mixed conditional",
+        "sentence": "Which conditional connects a past cause with a present result?",
+        "options": ["First", "Third", "Mixed conditional", "Zero"]
+    },
+    { 
+        "id": "5",
+        "title": "True or False",
+        "type": "trueFalse",
+        "direction": "ltr",
+        "sentence": "The sun is hot.", 
+        "answer": true 
+    }
+]
