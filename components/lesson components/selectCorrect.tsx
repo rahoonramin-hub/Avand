@@ -19,10 +19,10 @@ const getLabel = (item: string | Record<string, any>): string =>
   typeof item === 'string' ? item : item.text ?? JSON.stringify(item);
 
 export default function SellectCorrectLesson({ data, onExit, onNext, index }: LessonDataTypesSelectCorrect) {
+  if (data.type!=="selectCorrect") onNext(index,true);
   const [picked, setPicked] = useState<string|undefined>();
   const [checked, setChecked] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
-
   const isRtl = data.direction === 'rtl';
   const progress = Math.max(0, Math.min(Number(index) / TOTAL_LESSONS, 1));
 
@@ -32,7 +32,7 @@ export default function SellectCorrectLesson({ data, onExit, onNext, index }: Le
   };
 
   const handleCheck = () => {
-    const correct = picked === data.answer;
+    const correct = picked === normalize(data.answer);
     setIsCorrect(correct);
     setChecked(true);
   };

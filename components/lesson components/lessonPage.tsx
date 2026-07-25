@@ -34,7 +34,7 @@ const LessonPage = ({ onComplete, temp, handleUnlock }: LessonPageProps) => {
   // ۲. تعیین تعداد سوالات (اگر کمتر از ۱۵ تا بود، همان تعداد موجود را قرار می‌دهد)
   const maxLesson = 5;
 
-  const [currentIndex, setCurrentIndex] = useState<number>(1);
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [lessonResults, setLessonResults] = useState<{ lessonId: number; isCorrect: boolean }[]>([]);
 
   const handleNext = (lessonId: number, isCorrect: boolean) => {
@@ -72,7 +72,7 @@ const LessonPage = ({ onComplete, temp, handleUnlock }: LessonPageProps) => {
     case 'selectCorrect':
       return <SelectCorrect data={currentLesson} onNext={handleNext} index={currentIndex} onExit={onComplete} />;
     default:
-      return <View style={{ flex: 1, backgroundColor: colors.dark.bg }} />;
+      return handleNext(currentIndex,true);
   }
 };
 

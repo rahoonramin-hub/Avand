@@ -12,7 +12,8 @@
         "3rd": "third",
         "mix": "mixed"
         },
-        "sentence": "name the 5 types of conditional sentences in English"
+        "sentence": "name the 5 types of conditional sentences in English",
+        "explanition": {"types":"zero\n first"}
     },
     {
         "id": "2",
@@ -38,7 +39,7 @@
         "id": "4",
         "title": "Sellect correct",
         "direction": "ltr",
-        "type": "sellectCorrect",
+        "type": "selectCorrect",
         "answer": "Mixed conditional",
         "sentence": "Which conditional connects a past cause with a present result?",
         "options": ["First", "Third", "Mixed conditional", "Zero"]
@@ -47,8 +48,8 @@
         "id": "5",
         "title": "True or False",
         "type": "trueFalse",
-        "direction": "ltr",
-        "sentence": "The sun is hot.", 
+        "direction": "rtl",
+        "sentence": "کلمه adjective یعنی صفت", 
         "answer": true 
     }
 ]

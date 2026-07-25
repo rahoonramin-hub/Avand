@@ -17,7 +17,6 @@ export default function TrueOrFalse({ data, onExit, onNext, index }: LessonDataT
   const [checked, setChecked] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
 
-  const isRtl = data.direction === 'rtl';
   const progress = Math.max(0, Math.min(Number(index) / TOTAL_LESSONS, 1));
 
   const handlePick = (userChoose: boolean) => {
@@ -56,6 +55,10 @@ export default function TrueOrFalse({ data, onExit, onNext, index }: LessonDataT
           <Text
             style={[
               styles.bubbleText,
+              {
+                writingDirection: data.direction,
+                textAlign: data.direction === 'rtl' ? 'right' : 'left',
+              },
             ]}
           >
             {data.sentence}
