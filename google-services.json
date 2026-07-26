@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "141199828442",
+    "project_id": "avand-7a8a2",
+    "storage_bucket": "avand-7a8a2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:141199828442:android:d57ee0b5972ff14fe54ce3",
+        "android_client_info": {
+          "package_name": "com.avand"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "141199828442-1r9rsj55eh2am72apcf6bsh3244e08pt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.avand",
+            "certificate_hash": "891a4bac079e0f0e1bea8a7ca76aff6678036c37"
+          }
+        },
+        {
+          "client_id": "141199828442-lc7q14te61llkugour5013ehs0hg2n84.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQOnHKW065uE5JT6satkp-0TepNG0zV1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "141199828442-lc7q14te61llkugour5013ehs0hg2n84.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "141199828442-k0remigbcfgsbsfmacm9vj465qnjb2ke.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.avand"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

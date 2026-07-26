@@ -4,7 +4,7 @@ export type levelNames = 'Starter'|'Beginner'|'Intermediate'|'Higher Intermediat
 
 export interface levelInterface {
   id: number;
-  state: " done" | "active" | "locked";
+  state: "done" | "active" | "locked";
   levelName: levelNames;
 }
 
@@ -19,7 +19,9 @@ export interface userDataInterface {
   xp: number;
   gem: number;
   sets: UserSet[];
-  levelName: string;
+  interests?: string[];
+  createdAt: any;
+  age?: number; 
   levelInfo: {level: levelNames, CLonM: number};
 }
 

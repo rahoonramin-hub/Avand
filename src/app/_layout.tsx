@@ -1,3 +1,4 @@
+import firestore from "@react-native-firebase/firestore";
 import { Stack } from "expo-router";
 import * as Updates from "expo-updates";
 import { useEffect } from "react";
@@ -6,6 +7,13 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 
 export default function RootLayout() {
   useEffect(() => {
+    // ۱. تنظیمات فایراستور برای قابلیت آفلاین
+    // این تنظیمات باعث می‌شود داده‌های دریافتی در دیسک ذخیره شوند
+    firestore().settings({
+      persistence: true, 
+    });
+
+    // ۲. مدیریت RTL
     async function checkRTL() {
       if (I18nManager.isRTL) {
         I18nManager.allowRTL(false);

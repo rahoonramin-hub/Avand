@@ -72,7 +72,7 @@ const LessonPage = ({ onComplete, temp, handleUnlock }: LessonPageProps) => {
     case 'selectCorrect':
       return <SelectCorrect data={currentLesson} onNext={handleNext} index={currentIndex} onExit={onComplete} />;
     default:
-      return handleNext(currentIndex,true);
+      return <SelectCorrect data={currentLesson} onNext={handleNext} index={currentIndex} onExit={onComplete} />;
   }
 };
 

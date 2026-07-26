@@ -15,4 +15,8 @@ export const images={
     C_writing:char,
     C_giving_a_like:char,
     C_congragulation: char,
+    C_hello: char,
+    C_starting_journy: char,
+    C_qs: char,
+    
 }
