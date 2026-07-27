@@ -41,7 +41,7 @@ export interface TrueFalseLesson extends BaseLesson {
 export interface NameTypesLesson extends BaseLesson {
   type: 'nameTypes';
   answer: string[];
-  explanition?: {title:string, des:string, types:string};
+  explanition?: {title?:string, des?:string, types?:string};
   synonyms: Record<string, string>;
 }
 
