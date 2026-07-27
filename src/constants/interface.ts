@@ -73,6 +73,15 @@ export type LessonInterface =
   | FillBlankLesson
   | SelectCorrectLesson;
 
+  export interface TextInputModalTypes {
+    title: string;
+    color: any;
+    placeholder: string;
+    image?: any;
+    btnText?: string;
+    onPress: any;
+    IsMultiline?: boolean;
+  }
 
   export interface popUpTypes {
     title: string;

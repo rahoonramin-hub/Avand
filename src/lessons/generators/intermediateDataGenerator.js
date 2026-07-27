@@ -267,74 +267,101 @@ const selectCorrectPool = [
 // --- nameTypes ---
 const nameTypesPool = [
   {
-    answer: ['', '', '', ''],
+    explanition: {title: 'انواع قید', des: "قید در زبان انگلیسی به 5 نوع است:\n", types: "manner: حالت را بیان میکند\nplace: مکان\ntime: زمان\ndegree: شدت\nfrequency: دوره"},
+    answer: ['manner', 'time', 'place', 'degree','frequency'],
     synonyms: {
-      '': '',
+      'maner': 'manner',
+      'حالت': 'manner',
+      'تکرار': 'frequency',
+      'frequncy': 'frequency',
+      'ferequncy': 'frequency',
+      'frequnsy': 'frequency',
+      'مقدار': 'degree',
+      'degri': 'degree',
+      'digree': 'degree',
+      'deegre': 'degree',
     },
-    sentence: '',
+    sentence: 'انواع اصلی قید را نام ببرید',
+  },
+  {
+    title: "Question",
+    answer: ['pronoun'],
+    synonyms: {
+      'pronuon': 'pronoun',
+      'prenuon': 'pronoun',
+    },
+    sentence: 'چه چیزی جایگزین اسم میشود و از تکرار آن جلوگیری میکند؟',
   },
   {
     answer: ['', '', '', ''],
     synonyms: {
+      '': '',//point
+    },
+    sentence: '5 نوع اصلی صفت را بنویسید',
+  },
+  {
+    title: 'Question',
+    answer: ['Adverb'],
+    synonyms: {
+      'averb': 'Adverb',
+      'قید': 'Adverb',
+      'an adverb': 'Adverb',
+    },
+    sentence: 'چه چیزی یک فعل را توصیف میکند؟',
+  },
+  {//point
+    answer: ['present', 'future', 'past'],
+    synonyms: {
       '': '',
     },
-    sentence: '',
+    sentence: '3 زمان اصلی در زبان انگلیسی را بنویسید',
+  },
+  {
+    answer: ['Adjective'],
+    synonyms: {
+      'adj': 'Adjective',
+      'adjec': 'Adjective',
+      'صفت': 'Adjective',
+      'adjectie': 'Adjective',
+    },
+    sentence: 'What does describe a noun?',
   },
   {
     answer: ['', '', '', ''],
     synonyms: {
-      '': '',
+      '': '',//point
     },
-    sentence: '',
+    sentence: 'Name the main types of Adjectives.',
   },
   {
-    answer: ['', '', '', ''],
+    explanition: {title: 'انواع قید', des: "قید در زبان انگلیسی به 5 نوع است:\n", types: "manner: حالت را بیان میکند\nplace: مکان\ntime: زمان\ndegree: شدت\nfrequency: دوره"},
+    answer: ['manner', 'time', 'place', 'degree','frequency'],
     synonyms: {
-      '': '',
+      'maner': 'manner',
+      'حالت': 'manner',
+      'تکرار': 'frequency',
+      'frequncy': 'frequency',
+      'ferequncy': 'frequency',
+      'frequnsy': 'frequency',
+      'مقدار': 'degree',
+      'degri': 'degree',
+      'digree': 'degree',
+      'deegre': 'degree',
     },
-    sentence: '',
+    sentence: 'Name the main types of adverbs.',
   },
   {
-    answer: ['', '', '', ''],
+    answer: ['Her', 'Him', 'Them', 'Us','Me','It','You'],
     synonyms: {
-      '': '',
+      'hir': 'her',
+      'his': 'her',
+      'we': 'us',
     },
-    sentence: '',
+    sentence: 'Name object pronouns (atleast 5 of them).',
   },
   {
-    answer: ['', '', '', ''],
-    synonyms: {
-      '': '',
-    },
-    sentence: '',
-  },
-  {
-    answer: ['', '', '', ''],
-    synonyms: {
-      '': '',
-    },
-    sentence: '',
-  },
-  {
-    answer: ['', '', '', ''],
-    synonyms: {
-      '': '',
-    },
-    sentence: '',
-  },
-  {
-    answer: ['', '', '', ''],
-    synonyms: {
-      '': '',
-    },
-    sentence: '',
-  },
-  {
-    answer: ['', '', '', ''],
-    synonyms: {
-      '': '',
-    },
-    sentence: '',
+    answer: ['I', 'You', 'We', 'They','He','She','It'],
+    sentence: 'Name subject pronouns (atleas 5 of them).',
   },
 ];
 
@@ -343,206 +370,196 @@ const nameTypesPool = [
 // --- translate ---
 const translatePool = [
   {
-    sentence: '',
+    sentence: 'We won the football game.',
+    answer: [''],
+    wordBank: ['ما', 'بازی', 'فوتبال', 'را', 'بردیم'],
+  },
+  {
+    sentence: 'من 5 گل زدم',
+    answer: [''],
+    direction: "rtl",
+    wordBank: ['I', 'made', '5', 'goals'],
+  },
+  {
+    sentence: 'این سطح انگلیسی برایم سخت است.',
+    answer: [''],
+    wordBank: ['for','me' ,'tough', 'is', 'english', 'of', 'level','this'],
+  },
+  {
+    sentence: 'We went to the park, yersterday',
+    answer: [''],
+    wordBank: ['چرا', 'شما', 'رفتیم', 'پارک', 'به', 'دیروز','ما'],
+  },
+  {
+    sentence: 'Did you pass the exam?',
+    answer: [''],
+    wordBank: ['آیا', 'امتحان', 'را', 'رد', 'کردی', 'کامیاب','شدی','در'],
+  },
+  {
+    sentence: 'چرا امروز به مکتب نرفتی؟',
+    answer: [''],
+    wordBank: ['school', 'to', 'go', 'not', 'did', 'you','why'],
+  },
+  {
+    sentence: 'We met each other in Paris',
+    answer: [''],
+    wordBank: ['بلی', 'کردیم', 'ملاقات', 'در پاریس', 'را', 'یکدیگر','ما'],
+  },
+  {
+    sentence: 'معلم انگلیسی ما از کابل است',
+    answer: [''],
+    wordBank: ['our', 'english', 'teacher', 'is', 'from', 'kabul','french'],
+  },
+  {
+    sentence: 'Have you ever been in Kabul',
+    answer: [''],
+    wordBank: ['نمیدانم', 'شاید', '؟', 'بودی', 'کابل', 'در','تا حالا'],
+  },
+  {
+    sentence: 'تا حالا در هرات زندگی کردی؟',
+    answer: [''],
+    wordBank: ['have you', 'ever', 'lived', 'in', 'herat', '?','never'],
+  },
+  {
+    sentence: 'The airplane will land soon.',
+    answer: [''],
+    wordBank: ['آمد', 'خواهد', 'نمیاید', 'فرود', 'بزودی','هواپیما'],
+  },
+  {
+    sentence: 'لطفا بنشینید، هواپیما به زودی فرود خواهد آمد.',
+    answer: [''],
+    wordBank: ['please', 'take', 'a', 'sit', 'the airplane', 'will','land','soon'],
+  },
+  {
+    sentence: 'I have made the dinner, before you came',
+    answer: [''],
+    wordBank: ['بیایی','تو', 'ازینکه', 'قبل', 'کردم', 'آماده', 'غذا را','من'],
+  },
+  {
+    sentence: 'در 5 روز اخیر 3 قتل رخ داده است.',
+    answer: [''],//point
+    wordBank: ['', '', '', '', '5 days', 'last','in the'],
+  },
+  {
+    sentence: 'evetryone was happy, exept me.',
+    answer: [''],
+    wordBank: ['چرا', 'از من', 'غیر', 'بودند', 'خوشحال','همه'],
+  },
+  {
+    sentence: 'تمام افرادی که این سفر را شروع کردند، مرده اند.',
+    answer: [''],
+    wordBank: ['dead','are', 'this journey', 'started', 'who', 'people', 'the','all'],
+  },
+  {
+    sentence: 'you can\'nt tell him the secret.',
+    answer: [''],
+    wordBank: ['وابسته', 'بگویی', 'او', 'به', 'راز را', 'نمیتوانی','تو'],
+  },
+  {
+    sentence: 'پسر آن زن مرده است',
+    answer: [''],//point
+    wordBank: ['', '', '', '', '', '',''],
+  },
+  {
+    sentence: 'They are people who don\'n like to talk very musch',
     answer: [''],
     wordBank: ['', '', '', '', '', '',''],
   },
   {
-    sentence: '',
+    sentence: 'من او را به جشن تولد بردارم دعوت کردم',
     answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
+    wordBank: ['I', 'invited', 'him', 'to', 'my', 'brother`s','birthday party'],
   },
   {
-    sentence: '',
+    sentence: 'Have you finished your home work?',
     answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
+    wordBank: ['آیا', 'کارخانگی', 'خود', 'را', 'تمام', 'کرده ای','؟'],
   },
   {
-    sentence: '',
+    sentence: 'چه مدت طول میکشد تا به تهران برسیم',
     answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
+    wordBank: ['Tehran', 'reach', 'to', 'take', 'it', 'does','how long'],
   },
   {
-    sentence: '',
+    sentence: 'We are watching TV as my uncle came.',
     answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
+    wordBank: ['آمد', 'کاکایم', 'بودیم که', 'تلوزیون', 'تماشای', 'در حال','ما'],
   },
   {
-    sentence: '',
+    sentence: 'کوه اورست بلندترین کوه در روی زمین است.',
     answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
+    wordBank: ['in the earth', 'mountain', 'the tallest', 'is', 'Everest', 'of','the mountain'],
   },
   {
-    sentence: '',
+    sentence: 'How much English you know?',
     answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
+    wordBank: ['هستی؟', 'بلد', 'انگلیسی','چقدر'],
   },
   {
-    sentence: '',
-    answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
+    sentence: 'هزینه ساخت برج خلیفه 2 میلیارد دالر بود',
+    answer: [''],//point
+    wordBank: ['', '', '', '', '', 'of','the cost'],
   },
   {
-    sentence: '',
+    sentence: 'The closest start to earth is Sun',
     answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
+    wordBank: ['آفتاب ','است', 'به زمین', 'ستاره','نزدیکترین'],
   },
   {
-    sentence: '',
+    sentence: 'Why are you so bored?',
     answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
+    wordBank: ['؟', 'هستی', 'خسته', 'اینقدر','چرا'],
   },
   {
-    sentence: '',
+    sentence: 'فیلم مورد علاقه تو چیست؟',
     answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
+    wordBank: ['movie', 'favorite', 'your', 'is','what'],
   },
   {
-    sentence: '',
+    sentence: 'How long does it take, to cook pizza?',
     answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
+    wordBank: ['؟', 'بسازی', 'بپزی', 'پیتزا', 'تا', 'طول میکشد','چقدر'],
   },
   {
-    sentence: '',
+    sentence: 'فروختن قالین درامد خوبی داشت',
     answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
+    wordBank: ['carpets', 'had', 'a', 'good', 'income', 'car','selling'],
   },
   {
-    sentence: '',
+    sentence: 'She is the best teacher in the city.',
     answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
+    wordBank: [ 'چرا', 'است', 'این شهر', 'معلم', 'بهترین','او'],
   },
   {
-    sentence: '',
+    sentence: 'How good can you teach?',
     answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
+    wordBank: ['بگو', '؟', 'بدهی', 'خوب درس', 'میتوانی','چقدر'],
   },
   {
-    sentence: '',
+    sentence: 'دیروز به دانشگاه رفتم.',
     answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
+    wordBank: [ 'univercity', 'yesterday', 'hospital', 'to', 'went','I'],
   },
   {
-    sentence: '',
+    sentence: 'Who is the best doctor in the city?',
     answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
+    wordBank: [ 'است', 'شهر', 'داکتر', 'بهترین', 'کسی','چه'],
   },
   {
-    sentence: '',
+    sentence: 'میوه مورد علاقه من سیب است.',
     answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
+    wordBank: ['you', 'apple', 'is', 'fruit', 'favorite','my'],
   },
   {
-    sentence: '',
+    sentence: 'where is the closest shop?',
     answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
+    wordBank: ['؟', 'دورترین', 'کجاست', 'فروشگاه','نزدیکترین'],
   },
   {
-    sentence: '',
+    sentence: 'اسم آن مرد عبدالله است.',
     answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
-  },
-  {
-    sentence: '',
-    answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
-  },
-  {
-    sentence: '',
-    answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
-  },
-  {
-    sentence: '',
-    answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
-  },
-  {
-    sentence: '',
-    answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
-  },
-  {
-    sentence: '',
-    answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
-  },
-  {
-    sentence: '',
-    answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
-  },
-  {
-    sentence: '',
-    answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
-  },
-  {
-    sentence: '',
-    answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
-  },
-  {
-    sentence: '',
-    answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
-  },
-  {
-    sentence: '',
-    answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
-  },
-  {
-    sentence: '',
-    answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
-  },
-  {
-    sentence: '',
-    answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
-  },
-  {
-    sentence: '',
-    answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
-  },
-  {
-    sentence: '',
-    answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
-  },
-  {
-    sentence: '',
-    answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
-  },
-  {
-    sentence: '',
-    answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
-  },
-  {
-    sentence: '',
-    answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
-  },
-  {
-    sentence: '',
-    answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
-  },
-  {
-    sentence: '',
-    answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
-  },
-  {
-    sentence: '',
-    answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
-  },
-  
+    wordBank: ['man', 'Abdullah', 'is', 'man`s name','that'],
+  }
 ];
 
 

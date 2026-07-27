@@ -12,6 +12,7 @@
       "icon": "./assets/expo.icon"
     },
     "android": {
+      "softwareKeyboardLayoutMode": "resize",
       "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
