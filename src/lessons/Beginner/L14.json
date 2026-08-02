@@ -1,0 +1,193 @@
+[
+  {
+    "sentence": "A car is a vehicle.",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "کلمه He سوم شخص مفرد است",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "sentence": "A phone can make calls.",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 3
+  },
+  {
+    "answer": [
+      "simple",
+      "cont",
+      "perfect",
+      "perfect cont"
+    ],
+    "synonyms": {
+      "continouos": "cont",
+      "continuous": "cont",
+      "progressive": "cont",
+      "perfect continouos": "perfect cont",
+      "perfect progressive": "perfect cont"
+    },
+    "sentence": "۴ زمان گذشته را بنویسید.",
+    "explanition": {
+      "title": "زمان گذشته",
+      "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
+      "types": "simple\n continuous\n perfect\n perfect continuous"
+    },
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 4
+  },
+  {
+    "sentence": "She is a teacher.",
+    "answer": [
+      "او یک معلم است",
+      "او معلم است"
+    ],
+    "wordBank": [
+      "او",
+      "یک",
+      "معلم",
+      "است",
+      "شاگرد",
+      "مرد"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "What is your name?",
+    "answer": [
+      "اسم شما چیست؟",
+      "نام شما چیست؟"
+    ],
+    "wordBank": [
+      "اسم",
+      "چیست؟",
+      "شما",
+      "نام",
+      "کجا"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "My name is Ali.",
+    "answer": [
+      "اسم من علی است"
+    ],
+    "wordBank": [
+      "اسم",
+      "من",
+      "علی",
+      "است",
+      "تو",
+      "شاگرد"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "I wish I _ more time to travel.",
+    "answer": "had",
+    "hardness": "Hard",
+    "translate": "کاش زمان بیشتری برای سفر داشتم.",
+    "wordBank": [
+      "have",
+      "had",
+      "can have"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "If it rains tomorrow, we _ at home.",
+    "answer": "will stay",
+    "hardness": "Hell",
+    "translate": "اگر فردا باران ببارد، خانه می‌مانیم.",
+    "wordBank": [
+      "went",
+      "will stay",
+      "stayed",
+      "never"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "I _ a student.",
+    "answer": "am",
+    "hardness": "Easy",
+    "translate": "من یک شاگرد هستم.",
+    "wordBank": [
+      "am",
+      "is",
+      "are",
+      "be"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "answer": "describes a noun",
+    "sentence": "what does an adjective do ?",
+    "options": [
+      "avoid repetition",
+      "describes a noun",
+      "describes a verb",
+      "the question is wrong"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "answer": "Black",
+    "direction": "rtl",
+    "sentence": "کدام کلمه یک صفت است؟",
+    "options": [
+      "You",
+      "Make",
+      "Black",
+      "make more formal"
+    ],
+    "type": "selectCorrect",
+    "title": "Select correct",
+    "id": 12
+  }
+]

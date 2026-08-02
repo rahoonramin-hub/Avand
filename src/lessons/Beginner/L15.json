@@ -1,0 +1,194 @@
+[
+  {
+    "sentence": "Winter is hot.",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "A cat is a dog.",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "sentence": "Water is wet.",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 3
+  },
+  {
+    "answer": [
+      "simple",
+      "cont",
+      "perfect",
+      "perfect cont"
+    ],
+    "synonyms": {
+      "continouos": "cont",
+      "continuous": "cont",
+      "progressive": "cont",
+      "perfect continouos": "perfect cont",
+      "perfect progressive": "perfect cont"
+    },
+    "sentence": "۴ زمان گذشته را بنویسید.",
+    "explanition": {
+      "title": "زمان گذشته",
+      "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
+      "types": "simple\n continuous\n perfect\n perfect continuous"
+    },
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 4
+  },
+  {
+    "sentence": "Do you like tea?",
+    "answer": [
+      "آیا چای دوست داری؟",
+      "چای دوست داری؟"
+    ],
+    "wordBank": [
+      "آیا",
+      "چای",
+      "دوست",
+      "داری؟",
+      "قهوه",
+      "نوشیدن"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "I can swim.",
+    "answer": [
+      "من می‌توانم شنا کنم"
+    ],
+    "wordBank": [
+      "من",
+      "می‌توانم",
+      "شنا",
+      "کنم",
+      "فوتبال"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "She has two brothers.",
+    "answer": [
+      "او دو برادر دارد"
+    ],
+    "wordBank": [
+      "او",
+      "دو",
+      "برادر",
+      "دارد",
+      "خواهر",
+      "سه"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "I _ a red pen, because reds are beautiful.",
+    "answer": "bought",
+    "hardness": "Hard",
+    "translate": "من یک قلم سرخ خریدم، چون آنها زیبا هستند.",
+    "wordBank": [
+      "bought",
+      "wants",
+      "pretty",
+      "infront"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "They _ to music.",
+    "answer": "listen",
+    "hardness": "Medium",
+    "translate": "آن‌ها به موسیقی گوش می‌دهند.",
+    "wordBank": [
+      "listen",
+      "listens",
+      "wash",
+      "list",
+      "eat"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "We _ happy today, because we won the game",
+    "answer": "are",
+    "hardness": "Medium",
+    "translate": "ما امروز خوشحالیم.",
+    "wordBank": [
+      "am",
+      "is",
+      "are",
+      "be"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "answer": "five",
+    "sentence": "how many fingers does a human have on one hand?",
+    "options": [
+      "four",
+      "five",
+      "six",
+      "three"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "answer": "two",
+    "sentence": "how many eyes does a normal person have?",
+    "options": [
+      "one",
+      "two",
+      "three",
+      "four"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 12
+  }
+]

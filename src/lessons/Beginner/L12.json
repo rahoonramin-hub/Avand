@@ -1,0 +1,203 @@
+[
+  {
+    "sentence": "A doctor helps sick people.",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "A teacher sells food.",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "sentence": "برای سوم شخص مفرد در زمان حال ساده S اضافه میکنیم",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 3
+  },
+  {
+    "answer": [
+      "simple",
+      "cont",
+      "perfect",
+      "perfect cont"
+    ],
+    "synonyms": {
+      "continouos": "cont",
+      "continuous": "cont",
+      "progressive": "cont",
+      "perfect continouos": "perfect cont",
+      "perfect progressive": "perfect cont"
+    },
+    "sentence": "۴ زمان گذشته را بنویسید.",
+    "explanition": {
+      "title": "زمان گذشته",
+      "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
+      "types": "simple\n continuous\n perfect\n perfect continuous"
+    },
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 4
+  },
+  {
+    "sentence": "Where is the key?",
+    "answer": [
+      "کلید کجاست؟",
+      "کلید کجاست"
+    ],
+    "wordBank": [
+      "کلید",
+      "کجاست",
+      "کتاب",
+      "قلم",
+      "کتابچه",
+      "؟"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "The book is new.",
+    "answer": [
+      "کتاب جدید است"
+    ],
+    "wordBank": [
+      "کتاب",
+      "جدید",
+      "است",
+      "کهنه",
+      "زیبا",
+      "بزرگ"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "I am a doctor.",
+    "answer": [
+      "من یک داکتر هستم",
+      "من داکتر هستم"
+    ],
+    "wordBank": [
+      "من",
+      "یک",
+      "داکتر",
+      "هستم",
+      "پرستار",
+      "مهندس"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "Learning English is not _.",
+    "answer": "hard",
+    "hardness": "Medium",
+    "translate": "یادگیری انگلیسی سخت نیست",
+    "wordBank": [
+      "hard",
+      "allready",
+      "how to",
+      "tough",
+      "make",
+      "language"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "You can`t _ a pilot.",
+    "answer": "be",
+    "hardness": "Hell",
+    "translate": "تو نمیتوانی خلبان باشی",
+    "wordBank": [
+      "how",
+      "learn",
+      "be",
+      "make",
+      "airplane"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "How to _ fast in soccer?",
+    "answer": "run",
+    "hardness": "Easy",
+    "translate": "چطور در فوتبال تیز بدویم",
+    "wordBank": [
+      "why",
+      "football",
+      "learn",
+      "run"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "answer": "slowly",
+    "sentence": "کدام کلمه یک قید است؟",
+    "explanition": {
+      "title": "قید",
+      "des": "قید ها چگونگی انجام عمل را بیان میکنند: \n I run slowly \nکلمه slowly یعنی به آهستگی\n",
+      "types": "نکته جالب: اکثر قید ها با حروف ly خطم میشوند \nslow = صفت\nslowly = قید"
+    },
+    "options": [
+      "nose",
+      "slowly",
+      "eye",
+      "slow"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "answer": "a doctor",
+    "sentence": "who do you visit when you are sick?",
+    "options": [
+      "a doctor",
+      "a teacher",
+      "a driver",
+      "a cook"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 12
+  }
+]

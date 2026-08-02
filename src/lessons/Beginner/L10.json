@@ -1,0 +1,195 @@
+[
+  {
+    "sentence": "A circle has corners.",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "قید نشان میدهد که یک عمل چگونه انجام میشود",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "sentence": "کلمه adverb به معنی قید است",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 3
+  },
+  {
+    "answer": [
+      "simple",
+      "cont",
+      "perfect",
+      "perfect cont"
+    ],
+    "synonyms": {
+      "continouos": "cont",
+      "continuous": "cont",
+      "progressive": "cont",
+      "perfect continouos": "perfect cont",
+      "perfect progressive": "perfect cont"
+    },
+    "sentence": "۴ زمان گذشته را بنویسید.",
+    "explanition": {
+      "title": "زمان گذشته",
+      "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
+      "types": "simple\n continuous\n perfect\n perfect continuous"
+    },
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 4
+  },
+  {
+    "sentence": "The weather is nice today.",
+    "answer": [
+      "امروز هوا خوب است"
+    ],
+    "wordBank": [
+      "امروز",
+      "هوا",
+      "خوب",
+      "است",
+      "بد",
+      "بارانی"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "I go to school.",
+    "answer": [
+      "من به مکتب می‌روم",
+      "من مکتب می‌روم"
+    ],
+    "wordBank": [
+      "من",
+      "به",
+      "مکتب",
+      "می‌روم",
+      "خانه",
+      "مسجد"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "She is my sister.",
+    "answer": [
+      "او خواهر من است"
+    ],
+    "wordBank": [
+      "او",
+      "خواهر",
+      "من",
+      "است",
+      "برادر",
+      "مادر"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "They _ arrive on time.",
+    "answer": "will",
+    "hardness": "Hell",
+    "translate": "آنها سر وقت خواهند رسید.",
+    "wordBank": [
+      "will",
+      "would",
+      "can",
+      "must"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "I _ a letter to my friend last night.",
+    "answer": "wrote",
+    "hardness": "Medium",
+    "translate": "دیشب به دوستم نامه نوشتم.",
+    "wordBank": [
+      "write",
+      "wrote",
+      "written",
+      "sending"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "The coffee is _ hot to drink.",
+    "answer": "too",
+    "hardness": "Medium",
+    "translate": "قهوه برای خوردن خیلی داغ است.",
+    "wordBank": [
+      "too",
+      "very cold",
+      "something",
+      "not good",
+      "better"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "answer": "past continuous",
+    "sentence": "which tense is this sentence? \"She was sleeping at 10 pm\"",
+    "options": [
+      "present simple",
+      "past simple",
+      "present continuous",
+      "past continuous"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "answer": "verb",
+    "sentence": "which word shows an action?",
+    "options": [
+      "noun",
+      "verb",
+      "adjective",
+      "adverb"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 12
+  }
+]

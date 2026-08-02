@@ -187,7 +187,7 @@ export default function NameTypesLesson({ data, onExit, onNext, index }: LessonD
           onRequestClose={() => setShowExplanation(false)}
         >
           <MessageModal
-            title={data.explanition.title}
+            title={data.explanition.title||"Message"}
             direction={data.direction}
             des={`${data.explanition.des}\n\n${data.explanition.types}`}
             btnText="متوجه شدم"

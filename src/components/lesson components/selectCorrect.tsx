@@ -1,10 +1,11 @@
 //components/sellectCorrect.tsx
 
 import CheckContinueBar, { CheckStatus } from '@/components/CheckContinueBar';
+import MessageModal from '@/components/messageModal';
 import { colors } from '@/constants/colors';
 import { LessonDataTypesSelectCorrect } from '@/constants/interface';
 import { useState } from 'react';
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Modal, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 const TOTAL_LESSONS = 17;
 
@@ -20,6 +21,7 @@ const getLabel = (item: string | Record<string, any>): string =>
 
 export default function SellectCorrectLesson({ data, onExit, onNext, index }: LessonDataTypesSelectCorrect) {
   if (data.type!=="selectCorrect") onNext(index,true);
+  const [showExplanation,setShowExplanation] = useState<boolean>(false);
   const [picked, setPicked] = useState<string|undefined>();
   const [checked, setChecked] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
@@ -69,6 +71,19 @@ export default function SellectCorrectLesson({ data, onExit, onNext, index }: Le
         </View>
       </View>
 
+      {/* دکمه‌ی توضیح */}
+      {!!data.explanition && (
+          <View style={styles.explanationRow}>
+            <TouchableOpacity
+              style={styles.explanationBtn}
+              onPress={() => setShowExplanation(true)}
+              activeOpacity={0.85}
+            >
+              <Text style={styles.explanationText}>توضیح</Text>
+            </TouchableOpacity>
+          </View>
+      )}
+
       {/* options */}
       <View style={styles.optionArea}>
         <View style={styles.chipsOptions}>
@@ -99,6 +114,24 @@ export default function SellectCorrectLesson({ data, onExit, onNext, index }: Le
         onCheck={handleCheck}
         onContinue={handleContinue}
       />
+
+      {/* مودال توضیح */}
+      {!!data.explanition && (
+        <Modal
+          visible={showExplanation}
+          transparent
+          animationType="fade"
+          onRequestClose={() => setShowExplanation(false)}
+        >
+          <MessageModal
+            title={data.explanition.title||"Message"}
+            direction={data.direction}
+            des={`${data.explanition.des}\n\n${data.explanition.types}`}
+            btnText="متوجه شدم"
+            onPress={() => setShowExplanation(false)}
+          />
+        </Modal>
+      )}
     </View>
   );
 }
@@ -108,6 +141,25 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: colors.dark.bg,
     paddingTop: 12,
+  },
+  explanationRow: {
+    alignItems: 'center',
+    marginTop: 18,
+  },
+  explanationBtn: {
+    borderWidth: 1.5,
+    borderColor: colors.hardness.medium.border,
+    backgroundColor: colors.hardness.medium.fill,
+    borderRadius: 12,
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 8,
+    paddingHorizontal: 22,
+  },
+  explanationText: {
+    color: colors.hardness.medium.border,
+    fontSize: 14,
+    fontWeight: '700',
   },
   header: {
     flexDirection: 'row',

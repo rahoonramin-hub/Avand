@@ -1,0 +1,201 @@
+[
+  {
+    "sentence": "A bicycle has 8 wheels.",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "Eyes are for seeing.",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "sentence": "A bed is for cooking.",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 3
+  },
+  {
+    "answer": [
+      "simple",
+      "cont",
+      "perfect",
+      "perfect cont"
+    ],
+    "synonyms": {
+      "continouos": "cont",
+      "continuous": "cont",
+      "progressive": "cont",
+      "perfect continouos": "perfect cont",
+      "perfect progressive": "perfect cont"
+    },
+    "sentence": "۴ زمان گذشته را بنویسید.",
+    "explanition": {
+      "title": "زمان گذشته",
+      "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
+      "types": "simple\n continuous\n perfect\n perfect continuous"
+    },
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 4
+  },
+  {
+    "sentence": "They are coming.",
+    "answer": [
+      "آنها می‌آیند"
+    ],
+    "wordBank": [
+      "آنها",
+      "می‌آیند",
+      "میروند",
+      "اینجا",
+      "آنجا"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "Is this your bag?",
+    "answer": [
+      "آیا این کیف تو است؟",
+      "این کیف تو است؟"
+    ],
+    "wordBank": [
+      "آیا",
+      "این",
+      "کیف",
+      "تو",
+      "است؟",
+      "من",
+      "او"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "The flower is beautiful.",
+    "answer": [
+      "گل زیبا است",
+      "گل زیباست"
+    ],
+    "wordBank": [
+      "گل",
+      "زیبا",
+      "است",
+      "زشت",
+      "سرخ",
+      "زیباست"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "This is _ book.",
+    "answer": "my",
+    "hardness": "Easy",
+    "translate": "این کتاب من است.",
+    "wordBank": [
+      "my",
+      "I",
+      "me",
+      "mine",
+      "car"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "She _ to become a doctor.",
+    "answer": "wants",
+    "hardness": "Easy",
+    "translate": "او می‌خواهد داکتر شود.",
+    "wordBank": [
+      "wanted",
+      "wants",
+      "can",
+      "very much"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "The children _ playing outside.",
+    "answer": "are",
+    "hardness": "Easy",
+    "translate": "بچه‌ها بیرون مشغول بازی هستند.",
+    "wordBank": [
+      "wish",
+      "is",
+      "are",
+      "was"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "answer": "past simple",
+    "sentence": "which tense do we use for actions finished in the past?",
+    "options": [
+      "present simple",
+      "past simple",
+      "future simple",
+      "present continuous"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "answer": "future simple",
+    "explanition": {
+      "title": "زمان آینده ساده",
+      "des": "با اضافه کردن will قبل از فعل زمان را به آینده تغییر دهید",
+      "types": "I will play a game"
+    },
+    "sentence": "which tense do we use for actions that will happen later?",
+    "options": [
+      "present simple",
+      "past simple",
+      "future simple",
+      "past continuous"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 12
+  }
+]

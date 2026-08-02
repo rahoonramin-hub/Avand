@@ -190,19 +190,12 @@ export default function Index() {
   }, [user]);
 
   const handleUnlock = async (result: { ispassed: boolean; xp: number }) => {
-    if (!userId || !user) return;
-    // فقط تکمیل موفقِ مرحله‌ای که همین الان فعال (active) کاربر است باعث پیشرفت شود؛
-    // نه تکمیل مرحله‌ای قدیمی/تمرینی، و نه یک تلاش ناموفق.
-    const activeLevel = user.levelInfo.CLonM;
-    if (!result.ispassed || currentId !== activeLevel) return;
-
-    const isLastLevelOfCurrentTier = activeLevel + 1 > levels.length;
-
-    if (isLastLevelOfCurrentTier) {
-      // آخرین مرحله‌ی سطح فعلی تمام شد → ارتقا به سطح بعدی (CLonM ریست به ۱)
-      await updateUserProgress(userId, result.xp, user.levelInfo.level);
-    } else {
-      // فقط یک مرحله جلوتر برو (همان سطح)
+    if (!userId) return;
+    const activeLevel = user?.levelInfo.CLonM ?? 0;
+    if (activeLevel+1>levels.length){
+      await updateUserProgress(userId, result.xp, user?.levelInfo.level);
+    }
+    if (result.ispassed && currentId === activeLevel) {
       await updateUserProgress(userId, result.xp, undefined);
     }
   };

@@ -1,0 +1,194 @@
+[
+  {
+    "sentence": "Trees have leaves.",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "Rocks are soft.",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "sentence": "English uses the Latin alphabet.",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 3
+  },
+  {
+    "answer": [
+      "simple",
+      "cont",
+      "perfect",
+      "perfect cont"
+    ],
+    "synonyms": {
+      "continouos": "cont",
+      "continuous": "cont",
+      "progressive": "cont",
+      "perfect continouos": "perfect cont",
+      "perfect progressive": "perfect cont"
+    },
+    "sentence": "۴ زمان گذشته را بنویسید.",
+    "explanition": {
+      "title": "زمان گذشته",
+      "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
+      "types": "simple\n continuous\n perfect\n perfect continuous"
+    },
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 4
+  },
+  {
+    "sentence": "I need help.",
+    "answer": [
+      "من کمک نیاز دارم"
+    ],
+    "wordBank": [
+      "من",
+      "کمک",
+      "نیاز",
+      "دارم",
+      "نیازداشتن",
+      "دوست"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "He is not here.",
+    "answer": [
+      "او اینجا نیست"
+    ],
+    "wordBank": [
+      "او",
+      "اینجا",
+      "نیست",
+      "هست",
+      "آنجا",
+      "منزل"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "We eat rice every day.",
+    "answer": [
+      "ما هر روز برنج می‌خوریم"
+    ],
+    "wordBank": [
+      "ما",
+      "هر",
+      "روز",
+      "برنج",
+      "می‌خوریم",
+      "نان",
+      "سبزی"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "I _ two sisters.",
+    "answer": "have",
+    "hardness": "Easy",
+    "translate": "من دو خواهر دارم.",
+    "wordBank": [
+      "have",
+      "has",
+      "think",
+      "am"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "My name _ Ali.",
+    "answer": "is",
+    "hardness": "Easy",
+    "translate": "اسم من علی است.",
+    "wordBank": [
+      "am",
+      "is",
+      "are",
+      "be"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "He _ football.",
+    "answer": "plays",
+    "hardness": "Easy",
+    "translate": "او فوتبال بازی می‌کند.",
+    "wordBank": [
+      "play",
+      "plays",
+      "playing",
+      "soccer"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "answer": "object",
+    "sentence": "in the sentence \"I love pizza\", what is \"pizza\"?",
+    "options": [
+      "subject",
+      "verb",
+      "object",
+      "adjective"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "answer": "school",
+    "sentence": "where do students go to study?",
+    "options": [
+      "hospital",
+      "school",
+      "park",
+      "restaurant"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 12
+  }
+]

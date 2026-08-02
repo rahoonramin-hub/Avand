@@ -1,0 +1,195 @@
+[
+  {
+    "sentence": "We live on Earth.",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "اسم خاص قابل ترجمه است",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "sentence": "The sky is blue.",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 3
+  },
+  {
+    "answer": [
+      "simple",
+      "cont",
+      "perfect",
+      "perfect cont"
+    ],
+    "synonyms": {
+      "continouos": "cont",
+      "continuous": "cont",
+      "progressive": "cont",
+      "perfect continouos": "perfect cont",
+      "perfect progressive": "perfect cont"
+    },
+    "sentence": "۴ زمان گذشته را بنویسید.",
+    "explanition": {
+      "title": "زمان گذشته",
+      "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
+      "types": "simple\n continuous\n perfect\n perfect continuous"
+    },
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 4
+  },
+  {
+    "sentence": "This is my brother.",
+    "answer": [
+      "این برادر من است"
+    ],
+    "wordBank": [
+      "این",
+      "برادر",
+      "من",
+      "است",
+      "خواهر",
+      "پدر"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "I am not sleepy.",
+    "answer": [
+      "من خواب‌آلود نیستم"
+    ],
+    "wordBank": [
+      "من",
+      "خواب‌آلود",
+      "نیستم",
+      "هستم",
+      "خسته",
+      "بیدار"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "She has long hair.",
+    "answer": [
+      "او موی بلند دارد"
+    ],
+    "wordBank": [
+      "او",
+      "موی",
+      "بلند",
+      "دارد",
+      "کوتاه",
+      "سیاه"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "They _ to music.",
+    "answer": "listen",
+    "hardness": "Medium",
+    "translate": "آن‌ها به موسیقی گوش می‌دهند.",
+    "wordBank": [
+      "listen",
+      "listens",
+      "wash",
+      "list",
+      "eat"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "We _ happy today, because we won the game",
+    "answer": "are",
+    "hardness": "Medium",
+    "translate": "ما امروز خوشحالیم.",
+    "wordBank": [
+      "am",
+      "is",
+      "are",
+      "be"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "He _ his own book, and sold it.",
+    "answer": "wrote",
+    "hardness": "Hard",
+    "translate": "او کتاب خودش را نوشت و آنرا فروخت",
+    "wordBank": [
+      "sells",
+      "wrote",
+      "builds",
+      "made",
+      "write"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "answer": "blue",
+    "sentence": "what color is the sky on a clear day?",
+    "options": [
+      "green",
+      "blue",
+      "gray",
+      "white"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "answer": "five",
+    "sentence": "how many fingers does a human have on one hand?",
+    "options": [
+      "four",
+      "five",
+      "six",
+      "three"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 12
+  }
+]

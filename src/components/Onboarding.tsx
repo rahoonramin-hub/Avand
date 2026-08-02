@@ -1,18 +1,19 @@
 // components/Onboarding.tsx
 import { colors } from "@/constants/colors";
 import { images } from "@/constants/images";
+import { levelNames, OnboardingCompletionData } from "@/constants/interface";
 //import { Feedback } from "@/constants/sounds";
 import Slider from "@react-native-community/slider";
 import { Image } from "expo-image";
 import { useEffect, useRef, useState } from "react";
 import {
-    ActivityIndicator,
-    Animated,
-    Pressable,
-    StyleSheet,
-    Text,
-    TextInput,
-    View,
+  ActivityIndicator,
+  Animated,
+  Pressable,
+  StyleSheet,
+  Text,
+  TextInput,
+  View,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
@@ -65,6 +66,7 @@ const INTEREST_OPTIONS: OptionItem[] = [
   { key: "music", emoji: "🎵", label: "موسیقی" },
   { key: "games", emoji: "🎮", label: "بازی‌های ویدیویی" },
   { key: "travel", emoji: "✈️", label: "سفر" },
+  { key: "sports", emoji: "🏅", label: "ورزش" },
   { key: "books", emoji: "📖", label: "کتاب" },
   { key: "cooking", emoji: "🍳", label: "آشپزی" },
   { key: "tech", emoji: "💻", label: "تکنولوژی" },
@@ -89,7 +91,7 @@ const STEPS: StepConfig[] = [
     options: [
       { key: "fun", emoji: "🎉", label: "فقط برای سرگرمی" },
       { key: "career", emoji: "💼", label: "پیشرفت شغلی" },
-      { key: "connect", emoji: "🤝", label: "ارتباط با آدم‌های جدید" },
+      { key: "connect", emoji: "🤝", label: "ارتباط با مردم" },
       { key: "productive", emoji: "🧠", label: "استفاده مفید از وقت" },
       { key: "education", emoji: "📚", label: "کمک به تحصیل" },
       { key: "travel", emoji: "✈️", label: "آماده شدن برای سفر" },
@@ -112,8 +114,8 @@ const STEPS: StepConfig[] = [
     id: "age",
     type: "age",
     illustration: images.C_taking_note,
-    title: "چند سالته؟",
-    subtitle: "اهرم رو بکش تا سنت رو تنظیم کنی",
+    title: "چند ساله هستی؟",
+    subtitle: "اهرم را بکش تا سنت را تنظیم کنی",
     buttonLabel: "ادامه",
   },
   {
@@ -186,19 +188,15 @@ const STEPS: StepConfig[] = [
 ];
 
 // ─── نگاشت گزینه‌ی سطح انتخابی به سطح‌های واقعی اپ ────────────────────────────
-const LEVEL_KEY_TO_USER_LEVEL: Record<string, "Beginner" | "Intermediate" | "Higher Intermediate" | "Advance"> = {
-  new: "Beginner",
+const LEVEL_KEY_TO_USER_LEVEL: Record<string, levelNames> = {
+  new: "Starter",
   words: "Intermediate",
   simple: "Higher Intermediate",
   advanced: "Advance",
 };
 
 // ─── کامپوننت ─────────────────────────────────────────────────────────────────
-interface OnboardingCompletionData {
-  level: "Beginner" | "Intermediate" | "Higher Intermediate" | "Advance";
-  age: number;
-  interests: string[];
-}
+
 
 interface OnboardingProps {
   onComplete: (data: OnboardingCompletionData) => void | Promise<void>;
@@ -295,7 +293,7 @@ export default function Onboarding({ onComplete }: OnboardingProps) {
       [interestLabels, selections.interestsOther?.trim()].filter(Boolean).join("، ") || "-";
 
     const text =
-      `🆕 کاربر جدید آنبوردینگ را تموم کرد:\n\n` +
+      `🆕کاربر جدید:\n\n` +
       `🎯 هدف از یادگیری:\n ${reasonLabel}\n` +
       `📊 سطح فعلی:\n ${levelLabel}\n` +
       `🎂 سن:\n ${selections.age}\n` +
@@ -386,11 +384,6 @@ export default function Onboarding({ onComplete }: OnboardingProps) {
 
         {/* ── محتوای مرحله ── */}
         <View style={styles.content}>
-          {step.type === "message" && (
-            <View style={styles.messageIllustrationWrap}>
-              <Image source={step.illustration} style={styles.messageIllustration} contentFit="contain" />
-            </View>
-          )}
 
           {step.type === "age" && (
             <View style={styles.ageWrap}>
@@ -789,11 +782,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.sky,
     alignItems: "center",
     justifyContent: "center",
-    shadowColor: colors.sky,
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.35,
-    shadowRadius: 10,
-    elevation: 6,
+    
   },
   continueBtnDisabled: {
     opacity: 0.4,

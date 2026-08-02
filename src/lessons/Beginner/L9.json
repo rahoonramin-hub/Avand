@@ -1,0 +1,194 @@
+[
+  {
+    "sentence": "Dogs can speak English.",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "با اضافه کردن حرف s اسم جمع میشود",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "sentence": "Snow is black.",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 3
+  },
+  {
+    "answer": [
+      "simple",
+      "cont",
+      "perfect",
+      "perfect cont"
+    ],
+    "synonyms": {
+      "continouos": "cont",
+      "continuous": "cont",
+      "progressive": "cont",
+      "perfect continouos": "perfect cont",
+      "perfect progressive": "perfect cont"
+    },
+    "sentence": "۴ زمان گذشته را بنویسید.",
+    "explanition": {
+      "title": "زمان گذشته",
+      "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
+      "types": "simple\n continuous\n perfect\n perfect continuous"
+    },
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 4
+  },
+  {
+    "sentence": "The cup is small.",
+    "answer": [
+      "پیاله کوچک است"
+    ],
+    "wordBank": [
+      "پیاله",
+      "کوچک",
+      "است",
+      "بزرگ",
+      "نوزاد",
+      "پسر"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "We are ready.",
+    "answer": [
+      "ما آماده هستیم"
+    ],
+    "wordBank": [
+      "ما",
+      "آماده",
+      "هستیم",
+      "خسته",
+      "بیمار",
+      "دیر"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "He opens the window.",
+    "answer": [
+      "او پنجره را باز میکند"
+    ],
+    "wordBank": [
+      "او",
+      "پنجره",
+      "را",
+      "باز",
+      "میکند",
+      "در",
+      "میز"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "He _ to bed at 10 PM.",
+    "answer": "goes",
+    "hardness": "Easy",
+    "translate": "او ساعت ۱۰ شب به رختخواب می‌رود.",
+    "wordBank": [
+      "go",
+      "goes",
+      "going",
+      "sleep"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "They _ playing football in the yard.",
+    "answer": "are",
+    "hardness": "Easy",
+    "translate": "آنها در حیاط فوتبال بازی می‌کنند.",
+    "wordBank": [
+      "can",
+      "is",
+      "are",
+      "was"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "I _ a new bag yesterday.",
+    "answer": "bought",
+    "hardness": "Medium",
+    "translate": "من دیروز یک کیف جدید خریدم.",
+    "wordBank": [
+      "buy",
+      "bought",
+      "buying",
+      "take"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "answer": "kabul",
+    "sentence": "what is the capital of afghanistan?",
+    "options": [
+      "herat",
+      "kandahar",
+      "mazar",
+      "kabul"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "answer": "pencil",
+    "sentence": "what do you use to write and erase with an eraser?",
+    "options": [
+      "pen",
+      "pencil",
+      "marker",
+      "chalk"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 12
+  }
+]

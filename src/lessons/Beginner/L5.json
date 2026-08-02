@@ -1,0 +1,198 @@
+[
+  {
+    "sentence": "Red is a color.",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "A triangle has 4 sides.",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "sentence": "A book has pages.",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 3
+  },
+  {
+    "answer": [
+      "simple",
+      "cont",
+      "perfect",
+      "perfect cont"
+    ],
+    "synonyms": {
+      "continouos": "cont",
+      "continuous": "cont",
+      "progressive": "cont",
+      "perfect continouos": "perfect cont",
+      "perfect progressive": "perfect cont"
+    },
+    "sentence": "۴ زمان گذشته را بنویسید.",
+    "explanition": {
+      "title": "زمان گذشته",
+      "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
+      "types": "simple\n continuous\n perfect\n perfect continuous"
+    },
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 4
+  },
+  {
+    "sentence": "I like apples.",
+    "answer": [
+      "من سیب دوست دارم",
+      "من سیب را دوست دارم"
+    ],
+    "wordBank": [
+      "من",
+      "سیب",
+      "دوست",
+      "دارم",
+      "دوست نداشتن"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "He is happy.",
+    "answer": [
+      "او خوشحال است"
+    ],
+    "wordBank": [
+      "او",
+      "خوشحال",
+      "است",
+      "ناراحت",
+      "پسر"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "We are friends.",
+    "answer": [
+      "ما دوست هستیم"
+    ],
+    "wordBank": [
+      "ما",
+      "دوست",
+      "هستیم",
+      "دشمن",
+      "خواهر"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "You can`t _ a pilot.",
+    "answer": "be",
+    "hardness": "Hell",
+    "translate": "تو نمیتوانی خلبان باشی",
+    "wordBank": [
+      "how",
+      "learn",
+      "be",
+      "make",
+      "airplane"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "How to _ fast in soccer?",
+    "answer": "run",
+    "hardness": "Easy",
+    "translate": "چطور در فوتبال تیز بدویم",
+    "wordBank": [
+      "why",
+      "football",
+      "learn",
+      "run"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "Be your _",
+    "answer": "self",
+    "hardness": "Veteran",
+    "translate": "خودت باش",
+    "wordBank": [
+      "kind",
+      "dog",
+      "father",
+      "self",
+      "goal"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "answer": "summer",
+    "sentence": "which season is the hottest?",
+    "options": [
+      "summer",
+      "winter",
+      "fall",
+      "spring"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "answer": "slowly",
+    "sentence": "کدام کلمه یک قید است؟",
+    "explanition": {
+      "title": "قید",
+      "des": "قید ها چگونگی انجام عمل را بیان میکنند: \n I run slowly \nکلمه slowly یعنی به آهستگی\n",
+      "types": "نکته جالب: اکثر قید ها با حروف ly خطم میشوند \nslow = صفت\nslowly = قید"
+    },
+    "options": [
+      "nose",
+      "slowly",
+      "eye",
+      "slow"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 12
+  }
+]

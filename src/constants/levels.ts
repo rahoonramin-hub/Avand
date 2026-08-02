@@ -2,13 +2,17 @@ import { LessonInterface, levelInterface, levelNames } from "./interface";
 
 // تعداد درس‌های موجود در هر سطح
 const LEVEL_COUNTS: Record<levelNames, number> = {
+  Starter: 1,
   Beginner: 20,
-  Intermediate: 20,
-  "Higher Intermediate": 15,
-  Advance: 15,
+  Intermediate: 1,
+  "Higher Intermediate": 1,
+  Advance: 1,
 };
 
 const lessonModules: Record<levelNames, Record<number, () => Promise<any>>> = {
+  Starter: {
+    1: () => import('@/lessons/Beginner/L1.json'),
+  },
   Beginner: {
     1: () => import('@/lessons/Beginner/L1.json'),
     2: () => import('@/lessons/Beginner/L2.json'),
@@ -32,7 +36,8 @@ const lessonModules: Record<levelNames, Record<number, () => Promise<any>>> = {
     20: () => import('@/lessons/Beginner/L20.json'),
   },
   Intermediate: {
-    1: () => import('@/lessons/Intermediate/L1.json'),
+    1: () => import('@/lessons/Beginner/L1.json'),
+   /* 1: () => import('@/lessons/Intermediate/L1.json'),
     2: () => import('@/lessons/Intermediate/L2.json'),
     3: () => import('@/lessons/Intermediate/L3.json'),
     4: () => import('@/lessons/Intermediate/L4.json'),
@@ -51,10 +56,11 @@ const lessonModules: Record<levelNames, Record<number, () => Promise<any>>> = {
     17: () => import('@/lessons/Intermediate/L17.json'),
     18: () => import('@/lessons/Intermediate/L18.json'),
     19: () => import('@/lessons/Intermediate/L19.json'),
-    20: () => import('@/lessons/Intermediate/L20.json'),
+    20: () => import('@/lessons/Intermediate/L20.json'),*/
   },
   "Higher Intermediate": {
-    1: () => import('@/lessons/Higher-Intermediate/L1.json'),
+    1: () => import('@/lessons/Beginner/L1.json'),
+   /* 1: () => import('@/lessons/Higher-Intermediate/L1.json'),
     2: () => import('@/lessons/Higher-Intermediate/L2.json'),
     3: () => import('@/lessons/Higher-Intermediate/L3.json'),
     4: () => import('@/lessons/Higher-Intermediate/L4.json'),
@@ -68,10 +74,11 @@ const lessonModules: Record<levelNames, Record<number, () => Promise<any>>> = {
     12: () => import('@/lessons/Higher-Intermediate/L12.json'),
     13: () => import('@/lessons/Higher-Intermediate/L13.json'),
     14: () => import('@/lessons/Higher-Intermediate/L14.json'),
-    15: () => import('@/lessons/Higher-Intermediate/L15.json'),
+    15: () => import('@/lessons/Higher-Intermediate/L15.json'),*/
   },
   Advance: {
-    1: () => import('@/lessons/Advance/L1.json'),
+    1: () => import('@/lessons/Beginner/L1.json'),
+    /*1: () => import('@/lessons/Advance/L1.json'),
     2: () => import('@/lessons/Advance/L2.json'),
     3: () => import('@/lessons/Advance/L3.json'),
     4: () => import('@/lessons/Advance/L4.json'),
@@ -85,12 +92,12 @@ const lessonModules: Record<levelNames, Record<number, () => Promise<any>>> = {
     12: () => import('@/lessons/Advance/L12.json'),
     13: () => import('@/lessons/Advance/L13.json'),
     14: () => import('@/lessons/Advance/L14.json'),
-    15: () => import('@/lessons/Advance/L15.json'),
+    15: () => import('@/lessons/Advance/L15.json'),*/
   },
 };
 
 /** دریافت لیست سوالات یک درس */
-export async function getLessons(level: string, id: number): Promise<LessonInterface[]> {
+export async function getLessons(level: levelNames, id: number): Promise<LessonInterface[]> {
   try {
     const loader = lessonModules[level]?.[id] || lessonModules.Beginner[1];
     const module = await loader();

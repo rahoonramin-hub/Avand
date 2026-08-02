@@ -1,0 +1,197 @@
+[
+  {
+    "sentence": "Cats can read books.",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "There are 7 days in a week.",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "sentence": "A square has 5 sides.",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 3
+  },
+  {
+    "answer": [
+      "simple",
+      "cont",
+      "perfect",
+      "perfect cont"
+    ],
+    "synonyms": {
+      "continouos": "cont",
+      "continuous": "cont",
+      "progressive": "cont",
+      "perfect continouos": "perfect cont",
+      "perfect progressive": "perfect cont"
+    },
+    "sentence": "۴ زمان گذشته را بنویسید.",
+    "explanition": {
+      "title": "زمان گذشته",
+      "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
+      "types": "simple\n continuous\n perfect\n perfect continuous"
+    },
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 4
+  },
+  {
+    "sentence": "This is my house.",
+    "answer": [
+      "این خانه من است"
+    ],
+    "wordBank": [
+      "این",
+      "خانه",
+      "من",
+      "است",
+      "تو",
+      "او"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "I love my mother.",
+    "answer": [
+      "من مادرم را دوست دارم",
+      "من مادر خود را دوست دارم"
+    ],
+    "wordBank": [
+      "من",
+      "مادرم",
+      "دوست",
+      "دارم",
+      "پدر",
+      "را",
+      "خود",
+      "فردا"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "The sun is hot.",
+    "answer": [
+      "خورشید گرم است"
+    ],
+    "wordBank": [
+      "خورشید",
+      "گرم",
+      "است",
+      "سرد",
+      "ماه",
+      "آسمان",
+      "پسر"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "They _ playing football in the yard.",
+    "answer": "are",
+    "hardness": "Easy",
+    "translate": "آنها در حیاط فوتبال بازی می‌کنند.",
+    "wordBank": [
+      "can",
+      "is",
+      "are",
+      "was"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "I _ a new bag yesterday.",
+    "answer": "bought",
+    "hardness": "Medium",
+    "translate": "من دیروز یک کیف جدید خریدم.",
+    "wordBank": [
+      "buy",
+      "bought",
+      "buying",
+      "take"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "She _ her grandmother every week.",
+    "answer": "visits",
+    "hardness": "Easy",
+    "translate": "او هر هفته مادربزرگ خود را ملاقات می‌کند.",
+    "wordBank": [
+      "visit",
+      "visits",
+      "goes",
+      "watch"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "answer": "iran",
+    "sentence": "which country is between Afghanistan and Turkey?",
+    "options": [
+      "pakistan",
+      "china",
+      "iran",
+      "india"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "answer": "kabul",
+    "sentence": "what is the capital of afghanistan?",
+    "options": [
+      "herat",
+      "kandahar",
+      "mazar",
+      "kabul"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 12
+  }
+]

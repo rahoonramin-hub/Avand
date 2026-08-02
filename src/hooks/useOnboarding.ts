@@ -1,14 +1,11 @@
 // hooks/useOnboarding.ts
+import { OnboardingCompletionData } from '@/constants/interface';
 import { useUserStore } from "@/stores/useUserStore";
 import { useEffect, useRef, useState } from "react";
 
 type UserLevel = "Beginner" | "Intermediate" | "Higher Intermediate" | "Advance";
 
-interface OnboardingCompletionData {
-  level: UserLevel;
-  age: number;
-  interests: string[];
-}
+
 
 /**
  * تصمیم می‌گیرد کاربر باید چه چیزی ببیند:

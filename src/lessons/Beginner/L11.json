@@ -1,0 +1,195 @@
+[
+  {
+    "sentence": "کلمه adjective یک اسم را توصیف میکند",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "Monday is a day of the week.",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "sentence": "There are 10 months in a year.",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 3
+  },
+  {
+    "answer": [
+      "simple",
+      "cont",
+      "perfect",
+      "perfect cont"
+    ],
+    "synonyms": {
+      "continouos": "cont",
+      "continuous": "cont",
+      "progressive": "cont",
+      "perfect continouos": "perfect cont",
+      "perfect progressive": "perfect cont"
+    },
+    "sentence": "۴ زمان گذشته را بنویسید.",
+    "explanition": {
+      "title": "زمان گذشته",
+      "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
+      "types": "simple\n continuous\n perfect\n perfect continuous"
+    },
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 4
+  },
+  {
+    "sentence": "I am tired.",
+    "answer": [
+      "من خسته هستم"
+    ],
+    "wordBank": [
+      "من",
+      "خسته",
+      "هستم",
+      "خوشحال",
+      "ناراحت",
+      "بیمار"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "We have a car.",
+    "answer": [
+      "ما یک موتر داریم",
+      "ما موتر داریم"
+    ],
+    "wordBank": [
+      "ما",
+      "یک",
+      "موتر",
+      "داریم",
+      "موتور",
+      "دوچرخه"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "They are students.",
+    "answer": [
+      "آنها شاگرد هستند",
+      "آنها شاگردند"
+    ],
+    "wordBank": [
+      "آنها",
+      "شاگرد",
+      "هستند",
+      "شاگردند",
+      "معلم",
+      "مهندس"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "The cat is _ the table.",
+    "answer": "on",
+    "hardness": "Easy",
+    "translate": "گربه روی میز است.",
+    "wordBank": [
+      "on",
+      "hunting",
+      "a dog",
+      "future"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "I _ two sisters.",
+    "answer": "have",
+    "hardness": "Easy",
+    "translate": "من دو خواهر دارم.",
+    "wordBank": [
+      "have",
+      "has",
+      "think",
+      "am"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "My name _ Ali.",
+    "answer": "is",
+    "hardness": "Easy",
+    "translate": "اسم من علی است.",
+    "wordBank": [
+      "am",
+      "is",
+      "are",
+      "be"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "answer": "school",
+    "sentence": "where do students go to study?",
+    "options": [
+      "hospital",
+      "school",
+      "park",
+      "restaurant"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "answer": "december",
+    "sentence": "which month is the last?",
+    "options": [
+      "november",
+      "december",
+      "january",
+      "october"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 12
+  }
+]

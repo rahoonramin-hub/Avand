@@ -1,0 +1,199 @@
+[
+  {
+    "sentence": "کلمه adjective یک اسم را توصیف میکند",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "Trees have leaves.",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "sentence": "Rocks are soft.",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 3
+  },
+  {
+    "answer": [
+      "simple",
+      "cont",
+      "perfect",
+      "perfect cont"
+    ],
+    "synonyms": {
+      "continouos": "cont",
+      "continuous": "cont",
+      "progressive": "cont",
+      "perfect continouos": "perfect cont",
+      "perfect progressive": "perfect cont"
+    },
+    "sentence": "۴ زمان گذشته را بنویسید.",
+    "explanition": {
+      "title": "زمان گذشته",
+      "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
+      "types": "simple\n continuous\n perfect\n perfect continuous"
+    },
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 4
+  },
+  {
+    "sentence": "We are friends.",
+    "answer": [
+      "ما دوست هستیم"
+    ],
+    "wordBank": [
+      "ما",
+      "دوست",
+      "هستیم",
+      "دشمن",
+      "خواهر"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "This is a book.",
+    "answer": [
+      "این یک کتاب است",
+      "این کتاب است"
+    ],
+    "wordBank": [
+      "این",
+      "یک",
+      "کتاب",
+      "است",
+      "کتابچه",
+      "قلم"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "I have a cat.",
+    "answer": [
+      "من یک گربه دارم",
+      "من گربه دارم"
+    ],
+    "wordBank": [
+      "من",
+      "یک",
+      "گربه",
+      "دارم",
+      "سگ",
+      "پرنده"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "we _ going to school(past)",
+    "answer": "were",
+    "hardness": "Hard",
+    "translate": "ما در حال رفتن به مکتب بودیم",
+    "wordBank": [
+      "I",
+      "was",
+      "learn",
+      "is",
+      "went",
+      "were"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "Learning English is not _.",
+    "answer": "hard",
+    "hardness": "Medium",
+    "translate": "یادگیری انگلیسی سخت نیست",
+    "wordBank": [
+      "hard",
+      "allready",
+      "how to",
+      "tough",
+      "make",
+      "language"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "You can`t _ a pilot.",
+    "answer": "be",
+    "hardness": "Hell",
+    "translate": "تو نمیتوانی خلبان باشی",
+    "wordBank": [
+      "how",
+      "learn",
+      "be",
+      "make",
+      "airplane"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "answer": "a doctor",
+    "sentence": "who do you visit when you are sick?",
+    "options": [
+      "a doctor",
+      "a teacher",
+      "a driver",
+      "a cook"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "answer": "past simple",
+    "sentence": "which tense is this sentence? \"I ate an apple\"",
+    "options": [
+      "present simple",
+      "past simple",
+      "future simple",
+      "present continuous"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 12
+  }
+]

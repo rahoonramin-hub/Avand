@@ -1,0 +1,194 @@
+[
+  {
+    "sentence": "Birds have hands.",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "اولین حرف اسم خاص با حروف بزرگ نوشته میشود",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "sentence": "The moon is bigger than the sun.",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 3
+  },
+  {
+    "answer": [
+      "simple",
+      "cont",
+      "perfect",
+      "perfect cont"
+    ],
+    "synonyms": {
+      "continouos": "cont",
+      "continuous": "cont",
+      "progressive": "cont",
+      "perfect continouos": "perfect cont",
+      "perfect progressive": "perfect cont"
+    },
+    "sentence": "۴ زمان گذشته را بنویسید.",
+    "explanition": {
+      "title": "زمان گذشته",
+      "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
+      "types": "simple\n continuous\n perfect\n perfect continuous"
+    },
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 4
+  },
+  {
+    "sentence": "The sun is hot.",
+    "answer": [
+      "خورشید گرم است"
+    ],
+    "wordBank": [
+      "خورشید",
+      "گرم",
+      "است",
+      "سرد",
+      "ماه",
+      "آسمان",
+      "پسر"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "I eat bread.",
+    "answer": [
+      "من نان میخورم"
+    ],
+    "wordBank": [
+      "من",
+      "نان",
+      "میخورم",
+      "پنیر",
+      "آب",
+      "چای"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "She drinks milk.",
+    "answer": [
+      "او شیر مینوشد"
+    ],
+    "wordBank": [
+      "او",
+      "شیر",
+      "مینوشد",
+      "آب",
+      "چای",
+      "خوراک"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "We _ watching TV now.",
+    "answer": "are",
+    "hardness": "Easy",
+    "translate": "ما حالا تلویزیون تماشا می‌کنیم.",
+    "wordBank": [
+      "am",
+      "why",
+      "are",
+      "be"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "He _ to bed at 10 PM.",
+    "answer": "goes",
+    "hardness": "Easy",
+    "translate": "او ساعت ۱۰ شب به رختخواب می‌رود.",
+    "wordBank": [
+      "go",
+      "goes",
+      "going",
+      "sleep"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "They _ playing football in the yard.",
+    "answer": "are",
+    "hardness": "Easy",
+    "translate": "آنها در حیاط فوتبال بازی می‌کنند.",
+    "wordBank": [
+      "can",
+      "is",
+      "are",
+      "was"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "answer": "pencil",
+    "sentence": "what do you use to write and erase with an eraser?",
+    "options": [
+      "pen",
+      "pencil",
+      "marker",
+      "chalk"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "answer": "door",
+    "sentence": "what do you open to enter a room?",
+    "options": [
+      "window",
+      "door",
+      "wall",
+      "ceiling"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 12
+  }
+]

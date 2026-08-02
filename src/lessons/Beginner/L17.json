@@ -1,0 +1,194 @@
+[
+  {
+    "sentence": "Cars have legs.",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "Cats can read books.",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "sentence": "There are 7 days in a week.",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 3
+  },
+  {
+    "answer": [
+      "simple",
+      "cont",
+      "perfect",
+      "perfect cont"
+    ],
+    "synonyms": {
+      "continouos": "cont",
+      "continuous": "cont",
+      "progressive": "cont",
+      "perfect continouos": "perfect cont",
+      "perfect progressive": "perfect cont"
+    },
+    "sentence": "۴ زمان گذشته را بنویسید.",
+    "explanition": {
+      "title": "زمان گذشته",
+      "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
+      "types": "simple\n continuous\n perfect\n perfect continuous"
+    },
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 4
+  },
+  {
+    "sentence": "I have a red pen.",
+    "answer": [
+      "من یک قلم سرخ دارم",
+      "من قلم سرخ دارم"
+    ],
+    "wordBank": [
+      "من",
+      "یک",
+      "قلم",
+      "سرخ",
+      "دارم",
+      "داشتم"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "The water is cold.",
+    "answer": [
+      "آب سرد است"
+    ],
+    "wordBank": [
+      "آب",
+      "سرد",
+      "است",
+      "گرم",
+      "شیر",
+      "جالب"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "He works hard.",
+    "answer": [
+      "او سخت کار میکند"
+    ],
+    "wordBank": [
+      "او",
+      "سخت",
+      "کار",
+      "میکند",
+      "آسان",
+      "کم"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "She _ the answer to the question.",
+    "answer": "knows",
+    "hardness": "Medium",
+    "translate": "او جواب سؤال را می‌داند.",
+    "wordBank": [
+      "know",
+      "knows",
+      "think",
+      "telling"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "They _ arrive on time.",
+    "answer": "will",
+    "hardness": "Hell",
+    "translate": "آنها سر وقت خواهند رسید.",
+    "wordBank": [
+      "will",
+      "would",
+      "can",
+      "must"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "I _ a letter to my friend last night.",
+    "answer": "wrote",
+    "hardness": "Medium",
+    "translate": "دیشب به دوستم نامه نوشتم.",
+    "wordBank": [
+      "write",
+      "wrote",
+      "written",
+      "sending"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "answer": "verb",
+    "sentence": "which word shows an action?",
+    "options": [
+      "noun",
+      "verb",
+      "adjective",
+      "adverb"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "answer": "adjective",
+    "sentence": "which word describes a noun?",
+    "options": [
+      "verb",
+      "adverb",
+      "adjective",
+      "preposition"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 12
+  }
+]

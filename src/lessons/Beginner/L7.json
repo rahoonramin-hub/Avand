@@ -1,0 +1,194 @@
+[
+  {
+    "sentence": "A cow gives milk.",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "A chair is for sitting.",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "sentence": "زمان حال ساده عادات روزمره را بیان میکند",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 3
+  },
+  {
+    "answer": [
+      "simple",
+      "cont",
+      "perfect",
+      "perfect cont"
+    ],
+    "synonyms": {
+      "continouos": "cont",
+      "continuous": "cont",
+      "progressive": "cont",
+      "perfect continouos": "perfect cont",
+      "perfect progressive": "perfect cont"
+    },
+    "sentence": "۴ زمان گذشته را بنویسید.",
+    "explanition": {
+      "title": "زمان گذشته",
+      "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
+      "types": "simple\n continuous\n perfect\n perfect continuous"
+    },
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 4
+  },
+  {
+    "sentence": "The dog runs fast.",
+    "answer": [
+      "سگ سریع میدود"
+    ],
+    "wordBank": [
+      "سگ",
+      "سریع",
+      "میدود",
+      "آهسته",
+      "گربه",
+      "پرنده"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "We are happy.",
+    "answer": [
+      "ما خوشحال هستیم"
+    ],
+    "wordBank": [
+      "ما",
+      "خوشحال",
+      "هستیم",
+      "غمگین",
+      "بیمار",
+      "خسته"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "This is a chair.",
+    "answer": [
+      "این یک چوکی است",
+      "این چوکی است"
+    ],
+    "wordBank": [
+      "این",
+      "یک",
+      "چوکی",
+      "است",
+      "میز",
+      "قفسه"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "If it rains tomorrow, we _ at home.",
+    "answer": "will stay",
+    "hardness": "Hell",
+    "translate": "اگر فردا باران ببارد، خانه می‌مانیم.",
+    "wordBank": [
+      "went",
+      "will stay",
+      "stayed",
+      "never"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "I _ a student.",
+    "answer": "am",
+    "hardness": "Easy",
+    "translate": "من یک شاگرد هستم.",
+    "wordBank": [
+      "am",
+      "is",
+      "are",
+      "be"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "She _ a teacher.",
+    "answer": "is",
+    "hardness": "Easy",
+    "translate": "او یک معلم است.",
+    "wordBank": [
+      "am",
+      "is",
+      "are",
+      "be"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "answer": "on friday",
+    "sentence": "when are you off ?",
+    "options": [
+      "on friday",
+      "im not",
+      "at 5pm",
+      "last year"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "answer": "describes a noun",
+    "sentence": "what does an adjective do ?",
+    "options": [
+      "avoid repetition",
+      "describes a noun",
+      "describes a verb",
+      "the question is wrong"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 12
+  }
+]

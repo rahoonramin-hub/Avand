@@ -1,0 +1,201 @@
+[
+  {
+    "sentence": "A kitchen is for sleeping.",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "Red is a color.",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "sentence": "A triangle has 4 sides.",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 3
+  },
+  {
+    "answer": [
+      "simple",
+      "cont",
+      "perfect",
+      "perfect cont"
+    ],
+    "synonyms": {
+      "continouos": "cont",
+      "continuous": "cont",
+      "progressive": "cont",
+      "perfect continouos": "perfect cont",
+      "perfect progressive": "perfect cont"
+    },
+    "sentence": "۴ زمان گذشته را بنویسید.",
+    "explanition": {
+      "title": "زمان گذشته",
+      "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
+      "types": "simple\n continuous\n perfect\n perfect continuous"
+    },
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 4
+  },
+  {
+    "sentence": "I am a boy.",
+    "answer": [
+      "من یک پسر هستم",
+      "من پسر هستم"
+    ],
+    "wordBank": [
+      "من",
+      "یک",
+      "پسر",
+      "هستم",
+      "دختر",
+      "مرد"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "She is a girl.",
+    "answer": [
+      "او یک دختر است",
+      "او دختر است"
+    ],
+    "wordBank": [
+      "او",
+      "یک",
+      "دختر",
+      "است",
+      "پسر",
+      "زن"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "The pen is blue.",
+    "answer": [
+      "قلم آبی است"
+    ],
+    "wordBank": [
+      "قلم",
+      "آبی",
+      "است",
+      "سرخ",
+      "سبز",
+      "کتابچه"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "He _ breakfast at 8 am.",
+    "answer": "has",
+    "hardness": "Easy",
+    "translate": "او ساعت ۸ صبح صبحانه می‌خورد.",
+    "wordBank": [
+      "have",
+      "has",
+      "drink",
+      "week"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "This is _ book.",
+    "answer": "my",
+    "hardness": "Easy",
+    "translate": "این کتاب من است.",
+    "wordBank": [
+      "my",
+      "I",
+      "me",
+      "mine",
+      "car"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "She _ to become a doctor.",
+    "answer": "wants",
+    "hardness": "Easy",
+    "translate": "او می‌خواهد داکتر شود.",
+    "wordBank": [
+      "wanted",
+      "wants",
+      "can",
+      "very much"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "answer": "future simple",
+    "explanition": {
+      "title": "زمان آینده ساده",
+      "des": "با اضافه کردن will قبل از فعل زمان را به آینده تغییر دهید",
+      "types": "I will play a game"
+    },
+    "sentence": "which tense do we use for actions that will happen later?",
+    "options": [
+      "present simple",
+      "past simple",
+      "future simple",
+      "past continuous"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "answer": "present continuous",
+    "sentence": "which tense do we use for actions happening right now?",
+    "options": [
+      "present simple",
+      "past simple",
+      "future simple",
+      "present continuous"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 12
+  }
+]

@@ -10,18 +10,18 @@ import { colors } from "@/constants/colors";
 import { signInWithEmail, signInWithGoogle, signUpWithEmail } from "@/services/firebaseAuth";
 import { useState } from "react";
 import {
-    ActivityIndicator,
-    KeyboardAvoidingView,
-    Platform,
-    Pressable,
-    StyleSheet,
-    Text,
-    TextInput,
-    View,
+  ActivityIndicator,
+  KeyboardAvoidingView,
+  Platform,
+  Pressable,
+  StyleSheet,
+  Text,
+  TextInput,
+  View,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-type Mode = "login" | "signup";
+type Mode = "login" | "signup"
 
 interface AuthScreenProps {
   /** بعد از موفقیت‌آمیز بودن لاگین/ساخت حساب صدا زده می‌شود (uid از onAuthStateChanged خودش می‌آید) */
@@ -204,7 +204,7 @@ function mapAuthError(code?: string): string {
     case "auth/too-many-requests":
       return "درخواست‌های زیادی ارسال شده. کمی صبر کن و دوباره تلاش کن.";
     default:
-      return "مشکلی پیش آمد. دوباره تلاش کن.";
+      return `مشکلی پیش آمد دوباره تلاش کنید. ${code}`;
   }
 }
 

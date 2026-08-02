@@ -11,9 +11,9 @@
 // - عکس کاراکتر از assets/char.png ایمپورت میشه
 
 
-import CharImage from '@/assets/images/char.png';
 import CheckContinueBar, { CheckStatus } from '@/components/CheckContinueBar';
 import { colors } from '@/constants/colors';
+import { images } from '@/constants/images';
 import { LessonDataTypesTranlate } from '@/constants/interface';
 import { useState } from 'react';
 import { Image, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
@@ -91,7 +91,7 @@ export default function TranslateLesson({ data, onExit, onNext, index }: LessonD
       <ScrollView contentContainerStyle={{flex: 1}} showsVerticalScrollIndicator={false}>
       {/* کاراکتر + حباب متن جمله‌ی اصلی */}
       <View style={styles.promptRow}>
-        <Image source={CharImage} style={styles.charImage} resizeMode="contain" />
+        <Image source={images.char} style={styles.image} resizeMode="contain" />
         <View style={styles.bubble}>
           <Text
             style={[
@@ -199,7 +199,7 @@ const styles = StyleSheet.create({
     gap: 14,
     paddingHorizontal: 20,
   },
-  charImage: {
+  image: {
     width: 84,
     height: 84,
   },

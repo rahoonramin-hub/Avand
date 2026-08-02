@@ -1,6 +1,7 @@
 // stores/useUserStore.ts
-import { levelNames, userDataInterface } from "@/constants/interface";
+import { levelNames, userDataInterface, UserSet } from "@/constants/interface";
 import defaultLevel, { getLevels } from "@/constants/levels";
+import { importVoca } from "@/lessons/words/D-words";
 import { getDocumentById, updateDocument } from "@/services/firestoreServices";
 import firestore from "@react-native-firebase/firestore";
 import { create } from "zustand";
@@ -67,6 +68,26 @@ function computeLevels(user: userDataInterface): LevelWithState[] {
   });
 }
 
+/**
+ * مطمئن می‌شود ستِ پیش‌فرضِ سطحِ داده‌شده در sets وجود دارد.
+ * چک تکراری‌نبودن بر اساس نام ست (n) انجام می‌شود — نه فقط پرچم hasDefaultSet —
+ * چون با تغییر سطح، هر سطح یک ست پیش‌فرضِ خودش را دارد (n متفاوت)
+ * و این تابع باید بتواند برای هر سطحی مجدداً صدا زده شود بدون ایجاد تکرار.
+ */
+function ensureDefaultSetForLevel(
+  level: levelNames,
+  currentSets: UserSet[] | undefined
+): { sets: UserSet[]; added: boolean } {
+  const defaultSet = importVoca(level);
+  const sets = currentSets ?? [];
+  const alreadyExists = sets.some(s => s.n === defaultSet.n);
+
+  if (alreadyExists) {
+    return { sets, added: false };
+  }
+  return { sets: [...sets, defaultSet], added: true };
+}
+
 // ─── Store ───────────────────────────────────────────────────────────────────
 
 export const useUserStore = create<UserStoreState>((set, get) => ({
@@ -91,9 +112,25 @@ export const useUserStore = create<UserStoreState>((set, get) => ({
       if (userData) {
         // کاربر بازگشتی: دقیقاً همان چیزی که در فایراستور بوده لود می‌شود،
         // بدون هیچ تغییر یا ریست‌شدنی روی xp / gem / سطح / مرحله‌ی فعلی.
+        //
+        // تنها استثنا: اگر پرچم hasDefaultSet فعال نباشد (کاربر قدیمی یا سندی
+        // که هنوز ست پیش‌فرض نگرفته)، دقیقاً همین‌جا و فقط یک‌بار آن ست اضافه
+        // و پرچم فعال می‌شود. بعد از این، تا وقتی سطح کاربر عوض نشود، این بلوک
+        // هیچ تغییری اعمال نمی‌کند.
+        let finalUser = userData;
+
+        if (!userData.hasDefaultSet) {
+          const { sets } = ensureDefaultSetForLevel(userData.levelInfo.level, userData.sets);
+          finalUser = { ...userData, sets, hasDefaultSet: true };
+
+          updateDocument("users", userId, { sets, hasDefaultSet: true }).catch((error) => {
+            console.error("خطا در ذخیره‌ی ست پیش‌فرض کاربر:", error);
+          });
+        }
+
         set({
-          user: userData,
-          levels: computeLevels(userData),
+          user: finalUser,
+          levels: computeLevels(finalUser),
           initialized: true,
           isNewUser: false,
         });
@@ -114,7 +151,8 @@ export const useUserStore = create<UserStoreState>((set, get) => ({
     const newUser: userDataInterface = {
       xp: 0,
       gem: 0,
-      sets: [],
+      sets: [importVoca(data.level)],
+      hasDefaultSet: true,
       age: data.age,
       interests: data.interests,
       levelInfo: { level: data.level, CLonM: 1 },
@@ -155,10 +193,19 @@ export const useUserStore = create<UserStoreState>((set, get) => ({
     const previousUser = user;
     const previousLevels = get().levels;
 
+    // اگر با این آپدیت، سطح کاربر واقعاً عوض شد (ارتقا به سطح بعدی)،
+    // ست پیش‌فرضِ همان سطح جدید را - در صورت نبودن - همین‌جا اضافه می‌کنیم.
+    const leveledUp = newLevel !== user.levelInfo.level;
+    const { sets: nextSets } = leveledUp
+      ? ensureDefaultSetForLevel(newLevel, user.sets)
+      : { sets: user.sets };
+
     const updatedUser: userDataInterface = {
       ...user,
       xp: user.xp + xpToAdd,
       gem: user.gem + 8,
+      sets: nextSets,
+      hasDefaultSet: true,
       levelInfo: {
         level: newLevel,
         CLonM: level === undefined || !level ? user.levelInfo.CLonM + 1 : 1,

@@ -1,0 +1,196 @@
+[
+  {
+    "sentence": "کلمه Verb یک عمل را نشان میدهد",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "We wear shoes on our feet.",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "sentence": "کلمه I یک اول شخص مفرد است",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 3
+  },
+  {
+    "answer": [
+      "simple",
+      "cont",
+      "perfect",
+      "perfect cont"
+    ],
+    "synonyms": {
+      "continouos": "cont",
+      "continuous": "cont",
+      "progressive": "cont",
+      "perfect continouos": "perfect cont",
+      "perfect progressive": "perfect cont"
+    },
+    "sentence": "۴ زمان گذشته را بنویسید.",
+    "explanition": {
+      "title": "زمان گذشته",
+      "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
+      "types": "simple\n continuous\n perfect\n perfect continuous"
+    },
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 4
+  },
+  {
+    "sentence": "I want water.",
+    "answer": [
+      "من آب می‌خواهم",
+      "آب می‌خواهم"
+    ],
+    "wordBank": [
+      "من",
+      "آب",
+      "می‌خواهم",
+      "شیر",
+      "غذا"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "The cat is on the table.",
+    "answer": [
+      "گربه روی میز است"
+    ],
+    "wordBank": [
+      "گربه",
+      "روی",
+      "میز",
+      "است",
+      "زیر",
+      "چوکی"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "I am a boy.",
+    "answer": [
+      "من یک پسر هستم",
+      "من پسر هستم"
+    ],
+    "wordBank": [
+      "من",
+      "یک",
+      "پسر",
+      "هستم",
+      "دختر",
+      "مرد"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "She _ to become a doctor.",
+    "answer": "wants",
+    "hardness": "Easy",
+    "translate": "او می‌خواهد داکتر شود.",
+    "wordBank": [
+      "wanted",
+      "wants",
+      "can",
+      "very much"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "The children _ playing outside.",
+    "answer": "are",
+    "hardness": "Easy",
+    "translate": "بچه‌ها بیرون مشغول بازی هستند.",
+    "wordBank": [
+      "wish",
+      "is",
+      "are",
+      "was"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "I _ you yesterday but you were not home.",
+    "answer": "called",
+    "hardness": "Hell",
+    "translate": "دیروز با شما تماس گرفتم اما خانه نبودید.",
+    "wordBank": [
+      "call",
+      "called",
+      "was",
+      "phone",
+      "have to",
+      "very"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "answer": "present simple",
+    "sentence": "which tense do we use for habits and routines?",
+    "options": [
+      "present simple",
+      "past simple",
+      "future simple",
+      "present continuous"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "answer": "past simple",
+    "sentence": "which tense do we use for actions finished in the past?",
+    "options": [
+      "present simple",
+      "past simple",
+      "future simple",
+      "present continuous"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 12
+  }
+]

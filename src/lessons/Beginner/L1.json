@@ -1,0 +1,194 @@
+[
+  {
+    "sentence": "اولین حرف اسم خاص با حروف بزرگ نوشته میشود",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "The moon is bigger than the sun.",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "sentence": "کلمه adjective یعنی صفت",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 3
+  },
+  {
+    "answer": [
+      "simple",
+      "cont",
+      "perfect",
+      "perfect cont"
+    ],
+    "synonyms": {
+      "continouos": "cont",
+      "continuous": "cont",
+      "progressive": "cont",
+      "perfect continouos": "perfect cont",
+      "perfect progressive": "perfect cont"
+    },
+    "sentence": "۴ زمان گذشته را بنویسید.",
+    "explanition": {
+      "title": "زمان گذشته",
+      "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
+      "types": "simple\n continuous\n perfect\n perfect continuous"
+    },
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 4
+  },
+  {
+    "sentence": "Where are you from?",
+    "answer": [
+      "از کجا هستی؟",
+      "شما از کجا هستی؟"
+    ],
+    "wordBank": [
+      "از",
+      "کجا",
+      "هستی؟",
+      "شما",
+      "چیست"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "I am from Afghanistan.",
+    "answer": [
+      "من از افغانستان هستم"
+    ],
+    "wordBank": [
+      "من",
+      "از",
+      "افغانستان",
+      "هستم",
+      "آمریکا",
+      "نیستم"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "Do you like tea?",
+    "answer": [
+      "آیا چای دوست داری؟",
+      "چای دوست داری؟"
+    ],
+    "wordBank": [
+      "آیا",
+      "چای",
+      "دوست",
+      "داری؟",
+      "قهوه",
+      "نوشیدن"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "We _ happy today, because we won the game",
+    "answer": "are",
+    "hardness": "Medium",
+    "translate": "ما امروز خوشحالیم.",
+    "wordBank": [
+      "am",
+      "is",
+      "are",
+      "be"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "He _ his own book, and sold it.",
+    "answer": "wrote",
+    "hardness": "Hard",
+    "translate": "او کتاب خودش را نوشت و آنرا فروخت",
+    "wordBank": [
+      "sells",
+      "wrote",
+      "builds",
+      "made",
+      "write"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "may _ ask something.",
+    "answer": "I",
+    "hardness": "Medium",
+    "translate": "میتوانم چیزی بپرسم؟",
+    "wordBank": [
+      "I",
+      "can",
+      "is",
+      "they"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "answer": "yellow",
+    "sentence": "what color is the sun?",
+    "options": [
+      "green",
+      "purple",
+      "yellow"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "answer": "blue",
+    "sentence": "what color is the sky on a clear day?",
+    "options": [
+      "green",
+      "blue",
+      "gray",
+      "white"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 12
+  }
+]

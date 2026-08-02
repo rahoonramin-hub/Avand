@@ -1,7 +1,7 @@
+import { colors } from "@/constants/colors";
 import { images } from "@/constants/images";
-import { Image } from "expo-image";
 import { Tabs } from "expo-router";
-import { View } from "react-native";
+import { Image, StyleSheet } from "react-native";
 
 export default function TabsLayout() {
   return (
@@ -9,39 +9,17 @@ export default function TabsLayout() {
       screenOptions={{
         headerShown: false,
         tabBarShowLabel: false,
-
-        tabBarStyle: {
-          height: 70,
-        },
-
-        tabBarActiveTintColor: "#3B82F6",
-        tabBarInactiveTintColor: "#888",
+        tabBarStyle: styles.tabRow,
       }}
     >
       <Tabs.Screen
         name="index"
         options={{
-          title: "Home",
           tabBarIcon: ({ focused }) => (
-            <View
-              style={{
-                width: 44,
-                height: 44,
-                borderRadius: 22,
-                justifyContent: "center",
-                alignItems: "center",
-                borderWidth: focused ? 2 : 0,
-                borderColor: "#3B82F6",
-              }}
-            >
-              <Image
-                source={images.home}
-                style={{
-                  width: 24,
-                  height: 24,
-                }}
-              />
-            </View>
+            <Image
+              source={focused? images.homeH : images.home}
+              style={styles.icon}
+            />
           ),
         }}
       />
@@ -49,30 +27,34 @@ export default function TabsLayout() {
       <Tabs.Screen
         name="voca"
         options={{
-          title: "Voca",
           tabBarIcon: ({ focused }) => (
-            <View
-              style={{
-                width: 44,
-                height: 44,
-                borderRadius: 22,
-                justifyContent: "center",
-                alignItems: "center",
-                borderWidth: focused ? 2 : 0,
-                borderColor: "#3B82F6",
-              }}
-            >
-              <Image
-                source={images.voca}
-                style={{
-                  width: 24,
-                  height: 24,
-                }}
-              />
-            </View>
+            <Image
+              source={focused? images.vocaH : images.voca}
+              style={styles.icon}
+            />
           ),
         }}
       />
     </Tabs>
   );
 }
+
+
+const styles = StyleSheet.create({
+  tabRow:{
+    backgroundColor: colors.dark.bg, 
+    position: 'absolute', 
+    bottom: 12,           
+    marginHorizontal: 20, 
+    borderRadius: 20,     
+    borderColor: colors.dark.border,
+    borderWidth: 1,
+    borderTopWidth: 1,
+    paddingTop:12,
+    elevation: 0,      
+  },
+  icon:{
+    width: 48,
+    height: 48,
+  },
+})

@@ -19,10 +19,17 @@ export interface userDataInterface {
   xp: number;
   gem: number;
   sets: UserSet[];
+  id: string;
   interests?: string[];
   createdAt: any;
   age?: number; 
   levelInfo: {level: levelNames, CLonM: number};
+  /**
+   * مشخص می‌کند که آیا ستِ پیش‌فرضِ سطحِ فعلیِ کاربر قبلاً به sets اضافه شده یا نه.
+   * منطق اضافه‌کردن این ست کاملاً در لایه‌ی Data (useUserStore) مدیریت می‌شود،
+   * نه در UI — تا با هر بار رندر یا هر بار باز شدن اپ، تکراری اضافه نشود.
+   */
+  hasDefaultSet?: boolean;
 }
 
 // ── Lessons Interface ────────────────────────────────────────────────────────
@@ -85,11 +92,15 @@ export type LessonInterface =
 
   export interface popUpTypes {
     title: string;
-    direction: "ltr"|"rtl";
+    direction?: "ltr"|"rtl";
     des: string;
     image?: any;
     btnText?: string;
+    /** رنگ اصلی مودال (بوردر کارت + دکمه) — پیش‌فرض آبی خنثی */
+    color?: string;
     onPress: ()=>void;
+    /** بستن مودال (تپ روی پس‌زمینه یا دکمه‌ی ضربدر). اگر ندهی، همان onPress استفاده می‌شود */
+    onClose?: ()=>void;
   }
 
   export interface LessonDataTypesBase {
@@ -112,6 +123,14 @@ export type LessonInterface =
   }
   export interface LessonDataTypesNameTypes extends LessonDataTypesBase {
     data: NameTypesLesson
+  }
+
+
+
+  export interface OnboardingCompletionData {
+    level: levelNames;
+    age: number;
+    interests: string[];
   }
 
 

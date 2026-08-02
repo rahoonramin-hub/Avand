@@ -1,0 +1,195 @@
+[
+  {
+    "sentence": "Sugar is sweet.",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "Salt is sweet.",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "sentence": "A baby is young.",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 3
+  },
+  {
+    "answer": [
+      "simple",
+      "cont",
+      "perfect",
+      "perfect cont"
+    ],
+    "synonyms": {
+      "continouos": "cont",
+      "continuous": "cont",
+      "progressive": "cont",
+      "perfect continouos": "perfect cont",
+      "perfect progressive": "perfect cont"
+    },
+    "sentence": "۴ زمان گذشته را بنویسید.",
+    "explanition": {
+      "title": "زمان گذشته",
+      "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
+      "types": "simple\n continuous\n perfect\n perfect continuous"
+    },
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 4
+  },
+  {
+    "sentence": "We eat rice every day.",
+    "answer": [
+      "ما هر روز برنج می‌خوریم"
+    ],
+    "wordBank": [
+      "ما",
+      "هر",
+      "روز",
+      "برنج",
+      "می‌خوریم",
+      "نان",
+      "سبزی"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "She closes the door.",
+    "answer": [
+      "او در را می‌بندد"
+    ],
+    "wordBank": [
+      "او",
+      "در",
+      "را",
+      "می‌بندد",
+      "باز",
+      "پنجره"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "I write a letter.",
+    "answer": [
+      "من یک نامه می‌نویسم",
+      "من نامه می‌نویسم"
+    ],
+    "wordBank": [
+      "من",
+      "یک",
+      "نامه",
+      "می‌نویسم",
+      "کتاب",
+      "قلم"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "She _ breakfast at 7 am.",
+    "answer": "eats",
+    "hardness": "Easy",
+    "translate": "او ساعت ۷ صبح صبحانه می‌خورد.",
+    "wordBank": [
+      "eat",
+      "eats",
+      "eating",
+      "swim"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "The cat is _ the table.",
+    "answer": "on",
+    "hardness": "Easy",
+    "translate": "گربه روی میز است.",
+    "wordBank": [
+      "on",
+      "hunting",
+      "a dog",
+      "future"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "I _ two sisters.",
+    "answer": "have",
+    "hardness": "Easy",
+    "translate": "من دو خواهر دارم.",
+    "wordBank": [
+      "have",
+      "has",
+      "think",
+      "am"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "answer": "december",
+    "sentence": "which month is the last?",
+    "options": [
+      "november",
+      "december",
+      "january",
+      "october"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "answer": "friday",
+    "sentence": "which day is the weekend?",
+    "options": [
+      "monday",
+      "tuesday",
+      "friday",
+      "wednesday"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 12
+  }
+]
