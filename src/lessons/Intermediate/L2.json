@@ -1,0 +1,182 @@
+[
+  {
+    "sentence": "An airplane is for driving in the road",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "Eath is a planet",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "title": "Question",
+    "answer": [
+      "pronoun"
+    ],
+    "synonyms": {
+      "pronuon": "pronoun",
+      "prenuon": "pronoun"
+    },
+    "sentence": "چه چیزی جایگزین اسم میشود و از تکرار آن جلوگیری میکند؟",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "id": 3
+  },
+  {
+    "title": "Question",
+    "answer": [
+      "Adverb"
+    ],
+    "synonyms": {
+      "averb": "Adverb",
+      "قید": "Adverb",
+      "an adverb": "Adverb"
+    },
+    "sentence": "چه چیزی یک فعل را توصیف میکند؟",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "id": 4
+  },
+  {
+    "sentence": "We went to the park, yesterday",
+    "answer": [
+      "ما دیروز به پارک رفتیم"
+    ],
+    "wordBank": [
+      "چرا",
+      "شما",
+      "رفتیم",
+      "پارک",
+      "به",
+      "دیروز",
+      "ما"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "Did you pass the exam?",
+    "answer": [
+      "آیا امتحان را رد کردی"
+    ],
+    "wordBank": [
+      "آیا",
+      "امتحان",
+      "را",
+      "رد",
+      "کردی"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "چرا امروز به مکتب نرفتی؟",
+    "answer": [
+      "why didn't you go to school today"
+    ],
+    "direction": "rtl",
+    "wordBank": [
+      "school",
+      "to",
+      "go",
+      "today",
+      "didn't",
+      "you",
+      "why"
+    ],
+    "type": "translate",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "I am busy _ Monday",
+    "answer": "on",
+    "hardness": "Medium",
+    "translate": "دوشنبه مشغول هستم.",
+    "wordBank": [
+      "in",
+      "on",
+      "under"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "Your pen dropped _ the table",
+    "answer": "under",
+    "hardness": "Easy",
+    "translate": "قلم شما زیر میز افتاد.",
+    "wordBank": [
+      "under",
+      "be",
+      "is"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "She gave me _ apple",
+    "answer": "an",
+    "hardness": "Easy",
+    "translate": "او به من یک سیب داد.",
+    "wordBank": [
+      "a",
+      "five",
+      "an",
+      "will"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "answer": "Fish",
+    "sentence": "Which animal lives in water?",
+    "options": [
+      "Fish",
+      "Cat",
+      "Chicken"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "answer": "Moon",
+    "sentence": "What can you usually see at night?",
+    "options": [
+      "Moon",
+      "Sun",
+      "Rainbow"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 12
+  }
+]

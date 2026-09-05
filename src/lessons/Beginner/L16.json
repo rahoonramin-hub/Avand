@@ -1,7 +1,7 @@
 [
   {
-    "sentence": "Birds have hands.",
-    "answer": false,
+    "sentence": "A car is a vehicle.",
+    "answer": true,
     "type": "trueFalse",
     "direction": "ltr",
     "title": "True or False",
@@ -12,7 +12,7 @@
     "id": 1
   },
   {
-    "sentence": "اولین حرف اسم خاص با حروف بزرگ نوشته میشود",
+    "sentence": "کلمه He سوم شخص مفرد است",
     "answer": true,
     "type": "trueFalse",
     "direction": "ltr",
@@ -24,8 +24,8 @@
     "id": 2
   },
   {
-    "sentence": "The moon is bigger than the sun.",
-    "answer": false,
+    "sentence": "A phone can make calls.",
+    "answer": true,
     "type": "trueFalse",
     "direction": "ltr",
     "title": "True or False",
@@ -36,43 +36,40 @@
     "id": 3
   },
   {
+    "title": "Question",
     "answer": [
-      "simple",
-      "cont",
-      "perfect",
-      "perfect cont"
+      "adjective"
     ],
+    "sentence": "چه چیزی یک اسم را توصیف میکند؟",
     "synonyms": {
-      "continouos": "cont",
-      "continuous": "cont",
-      "progressive": "cont",
-      "perfect continouos": "perfect cont",
-      "perfect progressive": "perfect cont"
+      "صفت": "adjective",
+      "ajective": "adjective",
+      "سفت": "adjective",
+      "adjektiv": "adjective",
+      "ajektive": "adjective",
+      "adj": "adjective"
     },
-    "sentence": "۴ زمان گذشته را بنویسید.",
     "explanition": {
-      "title": "زمان گذشته",
-      "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
-      "types": "simple\n continuous\n perfect\n perfect continuous"
+      "des": "صفت یا adjective چگونگی یک اسم را توصیف میکند، مثال:",
+      "title": "Adjective",
+      "types": "black book\n در اینجا black صفت و book اسم است"
     },
     "type": "nameTypes",
     "direction": "ltr",
-    "title": "Name types",
     "id": 4
   },
   {
-    "sentence": "The sun is hot.",
+    "sentence": "I am not sleepy.",
     "answer": [
-      "خورشید گرم است"
+      "من خواب‌آلود نیستم"
     ],
     "wordBank": [
-      "خورشید",
-      "گرم",
-      "است",
-      "سرد",
-      "ماه",
-      "آسمان",
-      "پسر"
+      "من",
+      "خواب‌آلود",
+      "نیستم",
+      "هستم",
+      "خسته",
+      "بیدار"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -80,17 +77,17 @@
     "id": 5
   },
   {
-    "sentence": "I eat bread.",
+    "sentence": "She has long hair.",
     "answer": [
-      "من نان میخورم"
+      "او موی بلند دارد"
     ],
     "wordBank": [
-      "من",
-      "نان",
-      "میخورم",
-      "پنیر",
-      "آب",
-      "چای"
+      "او",
+      "موی",
+      "بلند",
+      "دارد",
+      "کوتاه",
+      "سیاه"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -98,17 +95,17 @@
     "id": 6
   },
   {
-    "sentence": "She drinks milk.",
+    "sentence": "The room is clean.",
     "answer": [
-      "او شیر مینوشد"
+      "اتاق تمیز است"
     ],
     "wordBank": [
-      "او",
-      "شیر",
-      "مینوشد",
-      "آب",
-      "چای",
-      "خوراک"
+      "اتاق",
+      "تمیز",
+      "است",
+      "کثیف",
+      "بزرگ",
+      "کوچک"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -116,15 +113,16 @@
     "id": 7
   },
   {
-    "sentence": "We _ watching TV now.",
-    "answer": "are",
-    "hardness": "Easy",
-    "translate": "ما حالا تلویزیون تماشا می‌کنیم.",
+    "sentence": "He _ to music every morning.",
+    "answer": "listens",
+    "hardness": "Medium",
+    "translate": "او هر صبح به موسیقی گوش می‌دهد.",
     "wordBank": [
-      "am",
-      "why",
-      "are",
-      "be"
+      "listen",
+      "listens",
+      "hear",
+      "play",
+      "wash"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -132,15 +130,16 @@
     "id": 8
   },
   {
-    "sentence": "He _ to bed at 10 PM.",
-    "answer": "goes",
-    "hardness": "Easy",
-    "translate": "او ساعت ۱۰ شب به رختخواب می‌رود.",
+    "sentence": "We _ our homework already.",
+    "answer": "did",
+    "hardness": "Veteran",
+    "translate": "ما کارخانه گی را قبلاً انجام دادیم.",
     "wordBank": [
-      "go",
-      "goes",
-      "going",
-      "sleep"
+      "do",
+      "did",
+      "make",
+      "have",
+      "write"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -148,15 +147,15 @@
     "id": 9
   },
   {
-    "sentence": "They _ playing football in the yard.",
-    "answer": "are",
+    "sentence": "The man _ a white shirt.",
+    "answer": "wears",
     "hardness": "Easy",
-    "translate": "آنها در حیاط فوتبال بازی می‌کنند.",
+    "translate": "مرد پیراهن سفید پوشیده است.",
     "wordBank": [
-      "can",
-      "is",
-      "are",
-      "was"
+      "wear",
+      "wears",
+      "put",
+      "have"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -164,13 +163,13 @@
     "id": 10
   },
   {
-    "answer": "pencil",
-    "sentence": "what do you use to write and erase with an eraser?",
+    "answer": "school",
+    "sentence": "where do students go to study?",
     "options": [
-      "pen",
-      "pencil",
-      "marker",
-      "chalk"
+      "hospital",
+      "school",
+      "park",
+      "restaurant"
     ],
     "type": "selectCorrect",
     "direction": "ltr",
@@ -178,13 +177,13 @@
     "id": 11
   },
   {
-    "answer": "door",
-    "sentence": "what do you open to enter a room?",
+    "answer": "december",
+    "sentence": "which month is the last?",
     "options": [
-      "window",
-      "door",
-      "wall",
-      "ceiling"
+      "november",
+      "december",
+      "january",
+      "october"
     ],
     "type": "selectCorrect",
     "direction": "ltr",

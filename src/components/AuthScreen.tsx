@@ -1,13 +1,11 @@
 // components/AuthScreen.tsx
 //
-// صفحه‌ی ساخت حساب / ورود — با ایمیل+رمز عبور یا با یک لمس از طریق گوگل.
-//
-// نصب مورد نیاز:
-//   npm install @react-native-firebase/auth @react-native-google-signin/google-signin
+// صفحه‌ی ورود — فقط با ایمیل+رمز عبور. تب «ثبت‌نام» صرفاً راهنماست
+// (خرید و ساخت حساب حضوری از طریق ادمین انجام می‌شود).
+// ⚠️ ورود با گوگل عمداً حذف شده چون بدون دخالت ادمین حساب جدید می‌ساخت.
 
 import { colors } from "@/constants/colors";
-//import { Feedback } from "@/constants/sounds";
-import { signInWithEmail, signInWithGoogle, signUpWithEmail } from "@/services/firebaseAuth";
+import { signInWithEmail } from "@/services/firebaseAuth";
 import { useState } from "react";
 import {
   ActivityIndicator,
@@ -21,20 +19,22 @@ import {
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-type Mode = "login" | "signup"
+type Mode = "login" | "guide";
 
 interface AuthScreenProps {
-  /** بعد از موفقیت‌آمیز بودن لاگین/ساخت حساب صدا زده می‌شود (uid از onAuthStateChanged خودش می‌آید) */
+  /** بعد از موفقیت‌آمیز بودن لاگین صدا زده می‌شود (uid از onAuthStateChanged خودش می‌آید) */
   onAuthenticated?: () => void;
+  /** پیام بلاک‌شدن یا انقضای اشتراک (از accessStatus استور) */
+  accessMessage?: string;
 }
 
-export default function AuthScreen({ onAuthenticated }: AuthScreenProps) {
+export default function AuthScreen({ onAuthenticated, accessMessage }: AuthScreenProps) {
   const [mode, setMode] = useState<Mode>("login");
-  const [email, setEmail] = useState("");
+  const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
-  const [googleLoading, setGoogleLoading] = useState(false);
   const [error, setError] = useState("");
+  const [email,setEmail] = useState("")
 
   const switchMode = (next: Mode) => {
     setMode(next);
@@ -42,44 +42,26 @@ export default function AuthScreen({ onAuthenticated }: AuthScreenProps) {
   };
 
   const handleEmailSubmit = async () => {
-    if (!email.includes("@")) {
-      setError("یک ایمیل معتبر وارد کن.");
-      return;
+    if (!userName.includes("@gmail.com")) {
+        setEmail(`${userName+'@gmail.com'}`)      
     }
     if (password.length < 6) {
       setError("رمز عبور باید حداقل ۶ کاراکتر باشد.");
       return;
     }
+    if (!userName||!email){
+      setError("لطفا یک اسم معتبر بنویسید")
+      return;
+    }
     setError("");
     setLoading(true);
     try {
-      if (mode === "login") {
-        await signInWithEmail(email, password);
-      } else {
-        await signUpWithEmail(email, password);
-      }
-      //feedback.success();
+      await signInWithEmail(email, password);
       onAuthenticated?.();
     } catch (e: any) {
       setError(mapAuthError(e?.code));
     } finally {
       setLoading(false);
-    }
-  };
-
-  const handleGoogle = async () => {
-    setError("");
-    setGoogleLoading(true);
-    try {
-      await signInWithGoogle();
-      //feedback.success();
-      onAuthenticated?.();
-    } catch (e: any) {
-      if (e?.message !== "auth/google-cancelled") {
-        setError(mapAuthError(e?.code));
-      }
-    } finally {
-      setGoogleLoading(false);
     }
   };
 
@@ -93,10 +75,16 @@ export default function AuthScreen({ onAuthenticated }: AuthScreenProps) {
           <View style={styles.content}>
             <Text style={styles.title}>خوش آمدی 👋</Text>
             <Text style={styles.subtitle}>
-              {mode === "login" ? "وارد حسابت شو" : "یک حساب جدید بساز"}
+              {mode === "login" ? "وارد حسابت شو" : "راهنمای ثبت‌نام"}
             </Text>
 
-            {/* ── تب ورود / ساخت حساب ── */}
+            {!!accessMessage && (
+              <View style={styles.accessBanner}>
+                <Text style={styles.accessBannerTxt}>{accessMessage}</Text>
+              </View>
+            )}
+
+            {/* ── تب ورود / راهنمای ثبت‌نام ── */}
             <View style={styles.tabs}>
               <Pressable
                 style={[styles.tab, mode === "login" && styles.tabActive]}
@@ -105,63 +93,47 @@ export default function AuthScreen({ onAuthenticated }: AuthScreenProps) {
                 <Text style={[styles.tabTxt, mode === "login" && styles.tabTxtActive]}>ورود</Text>
               </Pressable>
               <Pressable
-                style={[styles.tab, mode === "signup" && styles.tabActive]}
-                onPress={() => switchMode("signup")}
+                style={[styles.tab, mode === "guide" && styles.tabActive]}
+                onPress={() => switchMode("guide")}
               >
-                <Text style={[styles.tabTxt, mode === "signup" && styles.tabTxtActive]}>
-                  ساخت حساب
+                <Text style={[styles.tabTxt, mode === "guide" && styles.tabTxtActive]}>
+                  ثبت‌نام
                 </Text>
               </Pressable>
             </View>
 
-            <View style={{ gap: 14, marginTop: 20 }}>
-              <TextInput
-                style={styles.input}
-                value={email}
-                onChangeText={setEmail}
-                placeholder="example@email.com"
-                placeholderTextColor={colors.dark.txt2}
-                keyboardType="email-address"
-                autoCapitalize="none"
-                textContentType="emailAddress"
-              />
-              <TextInput
-                style={styles.input}
-                value={password}
-                onChangeText={setPassword}
-                placeholder="رمز عبور"
-                placeholderTextColor={colors.dark.txt2}
-                secureTextEntry
-                textContentType={mode === "signup" ? "newPassword" : "password"}
-              />
-              {!!error && <Text style={styles.errorTxt}>{error}</Text>}
-              <PrimaryButton
-                label={mode === "login" ? "ورود" : "ساخت حساب"}
-                loading={loading}
-                onPress={handleEmailSubmit}
-              />
-            </View>
-
-            <View style={styles.dividerRow}>
-              <View style={styles.dividerLine} />
-              <Text style={styles.dividerTxt}>یا</Text>
-              <View style={styles.dividerLine} />
-            </View>
-
-            <Pressable
-              style={[styles.googleBtn, googleLoading && { opacity: 0.6 }]}
-              onPress={handleGoogle}
-              disabled={googleLoading}
-            >
-              {googleLoading ? (
-                <ActivityIndicator color={colors.dark.txt} />
-              ) : (
-                <>
-                  <Text style={styles.googleG}>G</Text>
-                  <Text style={styles.googleTxt}>ادامه با گوگل</Text>
-                </>
-              )}
-            </Pressable>
+            {mode === "login" ? (
+              <View style={{ gap: 14, marginTop: 20 }}>
+                <TextInput
+                  style={styles.input}
+                  value={userName}
+                  onChangeText={setUserName}
+                  placeholder="User Name"
+                  placeholderTextColor={colors.dark.txt2}
+                  keyboardType='name-phone-pad'
+                  autoCapitalize="none"
+                  textContentType='username'
+                />
+                <TextInput
+                  style={styles.input}
+                  value={password}
+                  onChangeText={setPassword}
+                  placeholder="رمز عبور"
+                  placeholderTextColor={colors.dark.txt2}
+                  secureTextEntry
+                  textContentType="password"
+                />
+                {!!error && <Text style={styles.errorTxt}>{error}</Text>}
+                <PrimaryButton label="ورود" loading={loading} onPress={handleEmailSubmit} />
+              </View>
+            ) : (
+              <View style={styles.guideBox}>
+                <Text style={styles.guideTxt}>
+                  برای خرید و دریافت حساب کاربری، لازم است به‌صورت حضوری مراجعه کنید.{"\n\n"}
+                  پس از ثبت‌نام حضوری، از طریق تب ورود با اسم و رمز خود وارد شوید.
+                </Text>
+              </View>
+            )}
           </View>
         </KeyboardAvoidingView>
       </SafeAreaView>
@@ -191,18 +163,15 @@ function PrimaryButton({
 
 function mapAuthError(code?: string): string {
   switch (code) {
-    case "auth/email-already-in-use":
-      return "این ایمیل قبلاً ثبت‌نام کرده. از تب «ورود» استفاده کن.";
-    case "auth/invalid-email":
-      return "فرمت ایمیل درست نیست.";
-    case "auth/weak-password":
-      return "رمز عبور خیلی ساده است، یه رمز قوی‌تر انتخاب کن.";
     case "auth/invalid-credential":
     case "auth/wrong-password":
+      return 'اسم یا رمز اشتباه است.'
     case "auth/user-not-found":
-      return "ایمیل یا رمز عبور اشتباه است.";
+      return 'حساب پیدا نشد. (لطفا اول ثبت نام کنید)'
+    case "auth/user-disabled":
+      return "حساب شما مسدود شده. با پشتیبانی تماس بگیرید.";
     case "auth/too-many-requests":
-      return "درخواست‌های زیادی ارسال شده. کمی صبر کن و دوباره تلاش کن.";
+      return "درخواست‌های زیادی ارسال شده. کمی صبر کنید و دوباره تلاش کن.";
     default:
       return `مشکلی پیش آمد دوباره تلاش کنید. ${code}`;
   }
@@ -222,6 +191,21 @@ const styles = StyleSheet.create({
     color: colors.dark.txt2,
     fontSize: 14,
     marginTop: 8,
+    textAlign: "right",
+    writingDirection: "rtl",
+    lineHeight: 20,
+  },
+  accessBanner: {
+    backgroundColor: "rgba(255,77,109,0.12)",
+    borderWidth: 1,
+    borderColor: colors.pink ?? "#ff4d6d",
+    borderRadius: 14,
+    padding: 14,
+    marginTop: 20,
+  },
+  accessBannerTxt: {
+    color: colors.pink ?? "#ff4d6d",
+    fontSize: 13,
     textAlign: "right",
     writingDirection: "rtl",
     lineHeight: 20,
@@ -280,40 +264,19 @@ const styles = StyleSheet.create({
     elevation: 6,
   },
   continueBtnTxt: { color: "#fff", fontSize: 16, fontWeight: "800" },
-  dividerRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 10,
-    marginVertical: 22,
-  },
-  dividerLine: {
-    flex: 1,
-    height: 1,
-    backgroundColor: colors.dark.border,
-  },
-  dividerTxt: {
-    color: colors.dark.txt2,
-    fontSize: 13,
-  },
-  googleBtn: {
-    height: 56,
-    borderRadius: 16,
+  guideBox: {
+    marginTop: 24,
     backgroundColor: colors.dark.surface2,
+    borderRadius: 16,
     borderWidth: 1,
     borderColor: colors.dark.border,
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "center",
-    gap: 10,
+    padding: 18,
   },
-  googleG: {
-    fontSize: 18,
-    fontWeight: "900",
-    color: "#4285F4",
-  },
-  googleTxt: {
+  guideTxt: {
     color: colors.dark.txt,
     fontSize: 15,
-    fontWeight: "700",
+    lineHeight: 26,
+    textAlign: "right",
+    writingDirection: "rtl",
   },
 });

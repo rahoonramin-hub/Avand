@@ -1,21 +1,12 @@
 // components/TranslateLesson.tsx
-//
-// کامپوننت درس نوع "Translate" (ترجمه‌ی جمله با چیدن کلمات از word bank)
-//
-// پراپ‌ها:
-//  - data    : اطلاعات درس با تایپ TranslateLesson (از constants/interface)
-//  - onExit  : فانکشن دکمه‌ی خروج (آیکون X بالای صفحه)
-//  - onNext  : فانکشن دکمه‌ی درس بعدی (وقتی روی Continue زده میشه)
-//
-// - progress بار پیشرفت بر اساس آیدی درس محاسبه میشه (17 درس داریم، آیدی از 1 شروع میشه)
-// - عکس کاراکتر از assets/char.png ایمپورت میشه
 
 
 import CheckContinueBar, { CheckStatus } from '@/components/CheckContinueBar';
 import { colors } from '@/constants/colors';
 import { images } from '@/constants/images';
 import { LessonDataTypesTranlate } from '@/constants/interface';
-import { useState } from 'react';
+import { Feedback } from '@/constants/sounds';
+import { useMemo, useState } from 'react';
 import { Image, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 const TOTAL_LESSONS = 17;
@@ -26,8 +17,19 @@ const normalize = (text: string) =>
     .replace(/\s+/g, ' ')
     .trim();
 
-const getLabel = (item: string | Record<string, any>): string =>
-  typeof item === 'string' ? item : item.text ?? JSON.stringify(item);
+/**
+ * وقتی wordBank از سمت دیتا ارسال نشده باشد، این تابع یک wordBank
+ * پیش‌فرض فقط از روی کلمات اولین حالتِ answer (answer[0]) می‌سازد.
+ */
+const buildWordBankFromAnswers = (answers: string[]): string[] => {
+  const first = answers?.[0] ?? '';
+  const words = new Set<string>();
+  normalize(first)
+    .split(' ')
+    .filter(Boolean)
+    .forEach((w) => words.add(w));
+  return Array.from(words);
+};
 
 const shuffleIndices = (length: number): number[] => {
   const arr = Array.from({ length }, (_, i) => i);
@@ -38,17 +40,68 @@ const shuffleIndices = (length: number): number[] => {
   return arr;
 };
 
+// حداکثر تفاوتِ قابل قبول بین جواب کاربر و جواب صحیح، بر حسب «تعداد کلمه».
+// جابجایی یک کلمه با همسایه‌اش diffScore=2 می‌دهد، کم‌بودن ۱ کلمه diffScore=1.
+const MAX_WORD_DIFF = 2;
+
+const tokenize = (text: string) => normalize(text).split(' ').filter(Boolean);
+
+type DiffWord = { word: string; matched: boolean };
+
+/**
+ * با یک LCS در سطح کلمه، مشخص می‌کند چند کلمه از `target` در همان توالیِ
+ * `source` هم وجود دارند (matched)، و کدام کلمات جا افتاده/جابجا شده‌اند.
+ */
+function diffAgainst(source: string[], target: string[]) {
+  const n = source.length;
+  const m = target.length;
+  const dp: number[][] = Array.from({ length: n + 1 }, () => new Array(m + 1).fill(0));
+  for (let i = 1; i <= n; i++) {
+    for (let j = 1; j <= m; j++) {
+      dp[i][j] =
+        source[i - 1] === target[j - 1]
+          ? dp[i - 1][j - 1] + 1
+          : Math.max(dp[i - 1][j], dp[i][j - 1]);
+    }
+  }
+  const matchedTargetIndices = new Set<number>();
+  let i = n;
+  let j = m;
+  while (i > 0 && j > 0) {
+    if (source[i - 1] === target[j - 1]) {
+      matchedTargetIndices.add(j - 1);
+      i--;
+      j--;
+    } else if (dp[i - 1][j] >= dp[i][j - 1]) {
+      i--;
+    } else {
+      j--;
+    }
+  }
+  return { lcsLength: dp[n][m], matchedTargetIndices };
+}
+
 export default function TranslateLesson({ data, onExit, onNext, index }: LessonDataTypesTranlate) {
+  let char = Math.random()>0.5? images.C_qs:images.C_idea;
   const [pickedOrder, setPickedOrder] = useState<number[]>([]);
   const [checked, setChecked] = useState(false);
-  const [isCorrect, setIsCorrect] = useState(false);
+  const [isCorrect, setIsCorrect] = useState<boolean|undefined>(undefined);
+  const [diffWords, setDiffWords] = useState<DiffWord[]>([]);
 
-  const [bankOrder] = useState<number[]>(() => shuffleIndices(data.wordBank.length));
+  const wordBank = useMemo(
+    () =>
+      data.wordBank && data.wordBank.length > 0
+        ? data.wordBank
+        : buildWordBankFromAnswers(data.answer),
+    [data.wordBank, data.answer]
+  );
+
+  const [bankOrder] = useState<number[]>(() => shuffleIndices(wordBank.length));
 
   const isRtl = data.direction === 'rtl';
   const progress = Math.max(0, Math.min(Number(index) / TOTAL_LESSONS, 1));
 
-  const pickedWords = pickedOrder.map((idx) => getLabel(data.wordBank[idx]));
+  const pickedWords = pickedOrder.map((idx) => wordBank[idx]);
 
   const handlePick = (idx: number) => {
     if (checked || pickedOrder.includes(idx)) return;
@@ -62,17 +115,52 @@ export default function TranslateLesson({ data, onExit, onNext, index }: LessonD
 
   const handleCheck = () => {
     if (pickedOrder.length === 0) return;
-    const built = normalize(pickedWords.join(' '));
-    const correct = data.answer.some((a) => normalize(a) === built);
+    const userTokens = tokenize(pickedWords.join(' '));
+
+    type BestMatch = { diffScore: number; matchedTargetIndices: Set<number>; answerTokens: string[] };
+    let best: BestMatch | null = null;
+
+    for (const ans of data.answer) {
+      const answerTokens = tokenize(ans);
+      const { lcsLength, matchedTargetIndices } = diffAgainst(userTokens, answerTokens);
+      const diffScore = (userTokens.length - lcsLength) + (answerTokens.length - lcsLength);
+      if (best === null || diffScore < best.diffScore) {
+        best = { diffScore, matchedTargetIndices, answerTokens };
+      }
+    }
+
+    const correct = best !== null && best.diffScore <= MAX_WORD_DIFF;
     setIsCorrect(correct);
+    setDiffWords(
+      best
+        ? best.answerTokens.map((word, idx) => ({ word, matched: best!.matchedTargetIndices.has(idx) }))
+        : []
+    );
+    if (correct) {Feedback.success();}else {Feedback.failure()}
     setChecked(true);
   };
 
   const handleContinue = () => {
-    onNext(index,isCorrect);
+    onNext(index,isCorrect||true);
+    setPickedOrder([]);
+    setChecked(false);
+    setIsCorrect(false);
+    setDiffWords([]);
   };
 
   const status: CheckStatus = !checked ? 'idle' : isCorrect ? 'correct' : 'wrong';
+
+  const answerNode =
+    status === 'wrong' && diffWords.length > 0 ? (
+      <Text style={{ textAlign: isRtl ? 'right' : 'left' }}>
+        {diffWords.map((dw, idx) => (
+          <Text key={idx} style={dw.matched ? undefined : styles.diffWordMissing}>
+            {dw.word}
+            {idx < diffWords.length - 1 ? ' ' : ''}
+          </Text>
+        ))}
+      </Text>
+    ) : undefined;
 
   return (
     <View style={styles.container}>
@@ -91,7 +179,7 @@ export default function TranslateLesson({ data, onExit, onNext, index }: LessonD
       <ScrollView contentContainerStyle={{flex: 1}} showsVerticalScrollIndicator={false}>
       {/* کاراکتر + حباب متن جمله‌ی اصلی */}
       <View style={styles.promptRow}>
-        <Image source={images.char} style={styles.image} resizeMode="contain" />
+        <Image source={char} style={styles.image} resizeMode="contain" />
         <View style={styles.bubble}>
           <Text
             style={[
@@ -105,6 +193,7 @@ export default function TranslateLesson({ data, onExit, onNext, index }: LessonD
 
       {/*answer area*/}
       <View style={styles.answerArea}>
+      <View style={styles.answerLine} />
         <View style={[styles.chipsRow, { flexDirection: isRtl ? 'row' :'row-reverse' }]}>
           {pickedWords.map((word, idx) => (
             <TouchableOpacity
@@ -125,7 +214,7 @@ export default function TranslateLesson({ data, onExit, onNext, index }: LessonD
       <View style={styles.optionArea}>
         <View style={styles.chipsOptions}>
           {bankOrder.map((idx) => {
-            const item = data.wordBank[idx];
+            const item = wordBank[idx];
             const picked = pickedOrder.includes(idx);
             return (
               <TouchableOpacity
@@ -135,7 +224,7 @@ export default function TranslateLesson({ data, onExit, onNext, index }: LessonD
                 disabled={checked}
                 activeOpacity={1}
               >
-                <Text style={[styles.chipText, picked && {color: colors.dark.surface2}]}>{getLabel(item)}</Text>
+                <Text style={[styles.chipText, picked && {color: colors.dark.surface2}]}>{item}</Text>
               </TouchableOpacity>
             );
           })}
@@ -143,12 +232,12 @@ export default function TranslateLesson({ data, onExit, onNext, index }: LessonD
       </View>
       </ScrollView>
 
-
       {/*check BTN*/}
       <CheckContinueBar
         status={status}
         title={status === 'correct' ? 'Great job!' : status === 'wrong' ? 'Correct answer:' : undefined}
-        answerText={data.answer[0]}
+        answerText={diffWords.length > 0 ? diffWords.map((d) => d.word).join(' ') : data.answer[0]}
+        answerNode={answerNode}
         disabled={pickedOrder.length === 0}
         onCheck={handleCheck}
         onContinue={handleContinue}
@@ -200,8 +289,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
   image: {
-    width: 84,
-    height: 84,
+    width: 95,
+    height: 95,
   },
   bubble: {
     flex: 1,
@@ -226,7 +315,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    maxHeight: 320,
+    maxHeight: 400,
     paddingBottom: 45,
   },
   chipsOptions: {
@@ -263,5 +352,10 @@ const styles = StyleSheet.create({
     color: colors.dark.txt,
     fontSize: 15,
     fontWeight: '600',
+  },
+  diffWordMissing: {
+    fontWeight: '800',
+    textDecorationLine: 'underline',
+    color: colors.dark.txt,
   },
 });

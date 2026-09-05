@@ -20,16 +20,17 @@ export interface userDataInterface {
   gem: number;
   sets: UserSet[];
   id: string;
+  email?: string; // چون پنل ادمین به Auth دسترسی نداره، ایمیل رو تو Firestore هم نگه می‌داریم
   interests?: string[];
   createdAt: any;
-  age?: number; 
-  levelInfo: {level: levelNames, CLonM: number};
-  /**
-   * مشخص می‌کند که آیا ستِ پیش‌فرضِ سطحِ فعلیِ کاربر قبلاً به sets اضافه شده یا نه.
-   * منطق اضافه‌کردن این ست کاملاً در لایه‌ی Data (useUserStore) مدیریت می‌شود،
-   * نه در UI — تا با هر بار رندر یا هر بار باز شدن اپ، تکراری اضافه نشود.
-   */
+  age?: number;
+  levelInfo: { level: levelNames; CLonM: number };
   hasDefaultSet?: boolean;
+  blocked?: boolean;
+  subscription?: {
+    active: boolean;
+    expiresAt: any; // Firestore Timestamp
+  };
 }
 
 // ── Lessons Interface ────────────────────────────────────────────────────────
@@ -55,7 +56,10 @@ export interface NameTypesLesson extends BaseLesson {
 export interface TranslateLesson extends BaseLesson {
   type: 'translate';
   answer: string[];
-  wordBank: string[] | object[];
+  /**
+   * اختیاری — اگر داده نشود، در کامپوننت به‌صورت خودکار از روی answer ساخته می‌شود.
+   */
+  wordBank?: string[];
 }
 
 export interface FillBlankLesson extends BaseLesson {

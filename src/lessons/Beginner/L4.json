@@ -1,6 +1,6 @@
 [
   {
-    "sentence": "Trees have leaves.",
+    "sentence": "کلمه adjective یعنی صفت",
     "answer": true,
     "type": "trueFalse",
     "direction": "ltr",
@@ -12,7 +12,7 @@
     "id": 1
   },
   {
-    "sentence": "Rocks are soft.",
+    "sentence": "Dogs can speak English.",
     "answer": false,
     "type": "trueFalse",
     "direction": "ltr",
@@ -24,7 +24,7 @@
     "id": 2
   },
   {
-    "sentence": "English uses the Latin alphabet.",
+    "sentence": "با اضافه کردن حرف s اسم جمع میشود",
     "answer": true,
     "type": "trueFalse",
     "direction": "ltr",
@@ -37,23 +37,17 @@
   },
   {
     "answer": [
-      "simple",
-      "cont",
-      "perfect",
-      "perfect cont"
+      "a",
+      "e",
+      "i",
+      "o",
+      "u"
     ],
-    "synonyms": {
-      "continouos": "cont",
-      "continuous": "cont",
-      "progressive": "cont",
-      "perfect continouos": "perfect cont",
-      "perfect progressive": "perfect cont"
-    },
-    "sentence": "۴ زمان گذشته را بنویسید.",
+    "sentence": "۵ حرف صدادار در زبان انگلیسی را بنویسید.",
     "explanition": {
-      "title": "زمان گذشته",
-      "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
-      "types": "simple\n continuous\n perfect\n perfect continuous"
+      "title": "Vowels",
+      "des": "در زبان انگلیسی 5 حرف صدا دار وجود دارد:\n",
+      "types": "a, e, i, o, u"
     },
     "type": "nameTypes",
     "direction": "ltr",
@@ -61,17 +55,18 @@
     "id": 4
   },
   {
-    "sentence": "I need help.",
+    "sentence": "I have a cat.",
     "answer": [
-      "من کمک نیاز دارم"
+      "من یک گربه دارم",
+      "من گربه دارم"
     ],
     "wordBank": [
       "من",
-      "کمک",
-      "نیاز",
+      "یک",
+      "گربه",
       "دارم",
-      "نیازداشتن",
-      "دوست"
+      "سگ",
+      "پرنده"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -79,17 +74,17 @@
     "id": 5
   },
   {
-    "sentence": "He is not here.",
+    "sentence": "The weather is nice today.",
     "answer": [
-      "او اینجا نیست"
+      "امروز هوا خوب است"
     ],
     "wordBank": [
-      "او",
-      "اینجا",
-      "نیست",
-      "هست",
-      "آنجا",
-      "منزل"
+      "امروز",
+      "هوا",
+      "خوب",
+      "است",
+      "بد",
+      "بارانی"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -97,39 +92,23 @@
     "id": 6
   },
   {
-    "sentence": "We eat rice every day.",
+    "sentence": "I go to school.",
     "answer": [
-      "ما هر روز برنج می‌خوریم"
+      "من به مکتب می‌روم",
+      "من مکتب می‌روم"
     ],
     "wordBank": [
-      "ما",
-      "هر",
-      "روز",
-      "برنج",
-      "می‌خوریم",
-      "نان",
-      "سبزی"
+      "من",
+      "به",
+      "مکتب",
+      "می‌روم",
+      "خانه",
+      "مسجد"
     ],
     "type": "translate",
     "direction": "ltr",
     "title": "Translate this sentence",
     "id": 7
-  },
-  {
-    "sentence": "I _ two sisters.",
-    "answer": "have",
-    "hardness": "Easy",
-    "translate": "من دو خواهر دارم.",
-    "wordBank": [
-      "have",
-      "has",
-      "think",
-      "am"
-    ],
-    "type": "fillBlank",
-    "direction": "ltr",
-    "title": "Fill the blank",
-    "id": 8
   },
   {
     "sentence": "My name _ Ali.",
@@ -145,7 +124,7 @@
     "type": "fillBlank",
     "direction": "ltr",
     "title": "Fill the blank",
-    "id": 9
+    "id": 8
   },
   {
     "sentence": "He _ football.",
@@ -161,16 +140,33 @@
     "type": "fillBlank",
     "direction": "ltr",
     "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "We _ English with our teacher in the class.",
+    "answer": "speak",
+    "hardness": "Medium",
+    "translate": "ما انگلیسی صحبت می‌کنیم.",
+    "wordBank": [
+      "speak",
+      "speaks",
+      "say",
+      "can",
+      "front"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
     "id": 10
   },
   {
-    "answer": "object",
-    "sentence": "in the sentence \"I love pizza\", what is \"pizza\"?",
+    "answer": "monday",
+    "sentence": "which day comes after sunday?",
     "options": [
-      "subject",
-      "verb",
-      "object",
-      "adjective"
+      "monday",
+      "tuesday",
+      "wednesday",
+      "friday"
     ],
     "type": "selectCorrect",
     "direction": "ltr",
@@ -178,13 +174,13 @@
     "id": 11
   },
   {
-    "answer": "school",
-    "sentence": "where do students go to study?",
+    "answer": "summer",
+    "sentence": "which season is the hottest?",
     "options": [
-      "hospital",
-      "school",
-      "park",
-      "restaurant"
+      "summer",
+      "winter",
+      "fall",
+      "spring"
     ],
     "type": "selectCorrect",
     "direction": "ltr",

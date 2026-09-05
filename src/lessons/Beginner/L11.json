@@ -1,6 +1,6 @@
 [
   {
-    "sentence": "کلمه adjective یک اسم را توصیف میکند",
+    "sentence": "English uses the Latin alphabet.",
     "answer": true,
     "type": "trueFalse",
     "direction": "ltr",
@@ -12,7 +12,7 @@
     "id": 1
   },
   {
-    "sentence": "Monday is a day of the week.",
+    "sentence": "A doctor helps sick people.",
     "answer": true,
     "type": "trueFalse",
     "direction": "ltr",
@@ -24,7 +24,7 @@
     "id": 2
   },
   {
-    "sentence": "There are 10 months in a year.",
+    "sentence": "A teacher sells food.",
     "answer": false,
     "type": "trueFalse",
     "direction": "ltr",
@@ -37,23 +37,22 @@
   },
   {
     "answer": [
-      "simple",
-      "cont",
-      "perfect",
-      "perfect cont"
+      "subject",
+      "verb",
+      "object"
     ],
     "synonyms": {
-      "continouos": "cont",
-      "continuous": "cont",
-      "progressive": "cont",
-      "perfect continouos": "perfect cont",
-      "perfect progressive": "perfect cont"
+      "subj": "subject",
+      "v": "verb",
+      "sub": "subject",
+      "objec": "object",
+      "vb": "verb",
+      "obj": "object"
     },
-    "sentence": "۴ زمان گذشته را بنویسید.",
+    "sentence": "۳ بخش اصلی یک جمله ساده را بنویسید.",
     "explanition": {
-      "title": "زمان گذشته",
-      "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
-      "types": "simple\n continuous\n perfect\n perfect continuous"
+      "des": "یک جمله ساده از 3 بخش تشکیل شده: \n subject + verb + object",
+      "types": "مثال: \n I play football\nSubject: I\nVerb: Play\nObject: Football "
     },
     "type": "nameTypes",
     "direction": "ltr",
@@ -61,17 +60,17 @@
     "id": 4
   },
   {
-    "sentence": "I am tired.",
+    "sentence": "She drinks milk.",
     "answer": [
-      "من خسته هستم"
+      "او شیر مینوشد"
     ],
     "wordBank": [
-      "من",
-      "خسته",
-      "هستم",
-      "خوشحال",
-      "ناراحت",
-      "بیمار"
+      "او",
+      "شیر",
+      "مینوشد",
+      "آب",
+      "چای",
+      "خوراک"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -79,18 +78,17 @@
     "id": 5
   },
   {
-    "sentence": "We have a car.",
+    "sentence": "The dog runs fast.",
     "answer": [
-      "ما یک موتر داریم",
-      "ما موتر داریم"
+      "سگ سریع میدود"
     ],
     "wordBank": [
-      "ما",
-      "یک",
-      "موتر",
-      "داریم",
-      "موتور",
-      "دوچرخه"
+      "سگ",
+      "سریع",
+      "میدود",
+      "آهسته",
+      "گربه",
+      "پرنده"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -98,18 +96,17 @@
     "id": 6
   },
   {
-    "sentence": "They are students.",
+    "sentence": "We are happy.",
     "answer": [
-      "آنها شاگرد هستند",
-      "آنها شاگردند"
+      "ما خوشحال هستیم"
     ],
     "wordBank": [
-      "آنها",
-      "شاگرد",
-      "هستند",
-      "شاگردند",
-      "معلم",
-      "مهندس"
+      "ما",
+      "خوشحال",
+      "هستیم",
+      "غمگین",
+      "بیمار",
+      "خسته"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -117,15 +114,15 @@
     "id": 7
   },
   {
-    "sentence": "The cat is _ the table.",
-    "answer": "on",
+    "sentence": "I _ to the park every Friday.",
+    "answer": "go",
     "hardness": "Easy",
-    "translate": "گربه روی میز است.",
+    "translate": "من هر جمعه به پارک می‌روم.",
     "wordBank": [
-      "on",
-      "hunting",
-      "a dog",
-      "future"
+      "go",
+      "goes",
+      "going",
+      "went"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -133,15 +130,15 @@
     "id": 8
   },
   {
-    "sentence": "I _ two sisters.",
-    "answer": "have",
+    "sentence": "She _ very fast.",
+    "answer": "runs",
     "hardness": "Easy",
-    "translate": "من دو خواهر دارم.",
+    "translate": "او خیلی سریع می‌دود.",
     "wordBank": [
-      "have",
-      "has",
-      "think",
-      "am"
+      "run",
+      "runs",
+      "running",
+      "ran"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -149,13 +146,13 @@
     "id": 9
   },
   {
-    "sentence": "My name _ Ali.",
-    "answer": "is",
+    "sentence": "We _ watching TV now.",
+    "answer": "are",
     "hardness": "Easy",
-    "translate": "اسم من علی است.",
+    "translate": "ما حالا تلویزیون تماشا می‌کنیم.",
     "wordBank": [
       "am",
-      "is",
+      "why",
       "are",
       "be"
     ],
@@ -165,13 +162,13 @@
     "id": 10
   },
   {
-    "answer": "school",
-    "sentence": "where do students go to study?",
+    "answer": "five",
+    "sentence": "how many fingers does a human have on one hand?",
     "options": [
-      "hospital",
-      "school",
-      "park",
-      "restaurant"
+      "four",
+      "five",
+      "six",
+      "three"
     ],
     "type": "selectCorrect",
     "direction": "ltr",
@@ -179,13 +176,13 @@
     "id": 11
   },
   {
-    "answer": "december",
-    "sentence": "which month is the last?",
+    "answer": "two",
+    "sentence": "how many eyes does a normal person have?",
     "options": [
-      "november",
-      "december",
-      "january",
-      "october"
+      "one",
+      "two",
+      "three",
+      "four"
     ],
     "type": "selectCorrect",
     "direction": "ltr",

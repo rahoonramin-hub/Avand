@@ -1,0 +1,192 @@
+[
+  {
+    "sentence": "برای تغییر دادن فعل به حالت جاری، به آخر آن ing اضافه میکنیم",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "The sky is dark in the night",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "answer": [
+      "present",
+      "future",
+      "past"
+    ],
+    "synonyms": {
+      "precent": "present",
+      "futare": "future",
+      "fuchure": "future",
+      "futur": "future",
+      "presend": "present"
+    },
+    "sentence": "3 زمان اصلی در زبان انگلیسی را بنویسید",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 3
+  },
+  {
+    "title": "Question",
+    "answer": [
+      "Adjective"
+    ],
+    "synonyms": {
+      "adj": "Adjective",
+      "adjec": "Adjective",
+      "صفت": "Adjective",
+      "adjectie": "Adjective"
+    },
+    "sentence": "What does describe a noun?",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "id": 4
+  },
+  {
+    "sentence": "We met each other in Paris",
+    "answer": [
+      "ما یک دیگر را در پاریس ملاقات کردیم"
+    ],
+    "wordBank": [
+      "بلی",
+      "کردیم",
+      "ملاقات",
+      "در پاریس",
+      "را",
+      "یکدیگر",
+      "ما"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "معلم انگلیسی ما از کابل است",
+    "answer": [
+      "Our English teacher is from Kabul"
+    ],
+    "direction": "rtl",
+    "wordBank": [
+      "Our",
+      "English",
+      "teacher",
+      "is",
+      "from",
+      "Kabul",
+      "french"
+    ],
+    "type": "translate",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "Have you ever been in Kabul",
+    "answer": [
+      "تا حالا در کابل بودی"
+    ],
+    "wordBank": [
+      "نمیدانم",
+      "شاید",
+      "؟",
+      "بودی",
+      "کابل",
+      "در",
+      "تا حالا"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "We were walk_ ",
+    "answer": "ing",
+    "hardness": "Easy",
+    "translate": "ما داشتیم راه میرفتیم.",
+    "wordBank": [
+      "ed",
+      "fast",
+      "slowly",
+      "ing"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "_ you like Indian movies?",
+    "answer": "do",
+    "hardness": "Easy",
+    "translate": "آیا فیلم هندی دوست داری؟",
+    "wordBank": [
+      "does",
+      "why",
+      "are",
+      "do"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "How long _ it take to cook eggs?",
+    "answer": "does",
+    "hardness": "Medium",
+    "translate": "چقدر طول میکشد تا تخمرغ بپزی؟",
+    "wordBank": [
+      "is",
+      "like",
+      "does",
+      "do"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "answer": "Ice cream",
+    "sentence": "Which food is cold?",
+    "options": [
+      "Soup",
+      "Ice cream",
+      "Rice"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "answer": "Spider",
+    "sentence": "Which animal has eight legs?",
+    "options": [
+      "Spider",
+      "Duck",
+      "Horse"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 12
+  }
+]

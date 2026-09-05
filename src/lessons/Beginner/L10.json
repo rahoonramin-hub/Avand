@@ -1,7 +1,7 @@
 [
   {
-    "sentence": "A circle has corners.",
-    "answer": false,
+    "sentence": "کلمه adjective یک اسم را توصیف میکند",
+    "answer": true,
     "type": "trueFalse",
     "direction": "ltr",
     "title": "True or False",
@@ -12,7 +12,7 @@
     "id": 1
   },
   {
-    "sentence": "قید نشان میدهد که یک عمل چگونه انجام میشود",
+    "sentence": "Trees have leaves.",
     "answer": true,
     "type": "trueFalse",
     "direction": "ltr",
@@ -24,8 +24,8 @@
     "id": 2
   },
   {
-    "sentence": "کلمه adverb به معنی قید است",
-    "answer": true,
+    "sentence": "Rocks are soft.",
+    "answer": false,
     "type": "trueFalse",
     "direction": "ltr",
     "title": "True or False",
@@ -37,23 +37,22 @@
   },
   {
     "answer": [
-      "simple",
-      "cont",
-      "perfect",
-      "perfect cont"
+      "this",
+      "that",
+      "these",
+      "those"
     ],
     "synonyms": {
-      "continouos": "cont",
-      "continuous": "cont",
-      "progressive": "cont",
-      "perfect continouos": "perfect cont",
-      "perfect progressive": "perfect cont"
+      "this": "this",
+      "that": "that",
+      "these": "these",
+      "those": "those"
     },
-    "sentence": "۴ زمان گذشته را بنویسید.",
+    "sentence": "ضمایر اشاره ای را نام ببرید",
     "explanition": {
-      "title": "زمان گذشته",
-      "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
-      "types": "simple\n continuous\n perfect\n perfect continuous"
+      "title": "Demonstratives",
+      "des": "This is a car\nThat is a car\nThese are cars\nThose are cars",
+      "types": "چهار تا ضمیر اشاره ای وجود دارد: \nThat, This, Those, These"
     },
     "type": "nameTypes",
     "direction": "ltr",
@@ -61,17 +60,20 @@
     "id": 4
   },
   {
-    "sentence": "The weather is nice today.",
+    "sentence": "I love my mother.",
     "answer": [
-      "امروز هوا خوب است"
+      "من مادرم را دوست دارم",
+      "من مادر خود را دوست دارم"
     ],
     "wordBank": [
-      "امروز",
-      "هوا",
-      "خوب",
-      "است",
-      "بد",
-      "بارانی"
+      "من",
+      "مادرم",
+      "دوست",
+      "دارم",
+      "پدر",
+      "را",
+      "خود",
+      "فردا"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -79,18 +81,18 @@
     "id": 5
   },
   {
-    "sentence": "I go to school.",
+    "sentence": "The sun is hot.",
     "answer": [
-      "من به مکتب می‌روم",
-      "من مکتب می‌روم"
+      "خورشید گرم است"
     ],
     "wordBank": [
-      "من",
-      "به",
-      "مکتب",
-      "می‌روم",
-      "خانه",
-      "مسجد"
+      "خورشید",
+      "گرم",
+      "است",
+      "سرد",
+      "ماه",
+      "آسمان",
+      "پسر"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -98,17 +100,17 @@
     "id": 6
   },
   {
-    "sentence": "She is my sister.",
+    "sentence": "I eat bread.",
     "answer": [
-      "او خواهر من است"
+      "من نان میخورم"
     ],
     "wordBank": [
-      "او",
-      "خواهر",
       "من",
-      "است",
-      "برادر",
-      "مادر"
+      "نان",
+      "میخورم",
+      "پنیر",
+      "آب",
+      "چای"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -116,15 +118,16 @@
     "id": 7
   },
   {
-    "sentence": "They _ arrive on time.",
-    "answer": "will",
-    "hardness": "Hell",
-    "translate": "آنها سر وقت خواهند رسید.",
+    "sentence": "Be your _",
+    "answer": "self",
+    "hardness": "Veteran",
+    "translate": "خودت باش",
     "wordBank": [
-      "will",
-      "would",
-      "can",
-      "must"
+      "kind",
+      "dog",
+      "father",
+      "self",
+      "goal"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -132,15 +135,16 @@
     "id": 8
   },
   {
-    "sentence": "I _ a letter to my friend last night.",
-    "answer": "wrote",
-    "hardness": "Medium",
-    "translate": "دیشب به دوستم نامه نوشتم.",
+    "sentence": "Having _ can make you happy",
+    "answer": "a dog",
+    "hardness": "Hell",
+    "translate": "داشتن سگ میتواند خوشحالت کند",
     "wordBank": [
-      "write",
-      "wrote",
-      "written",
-      "sending"
+      "me",
+      "can",
+      "learn",
+      "a dog",
+      "dead"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -148,16 +152,16 @@
     "id": 9
   },
   {
-    "sentence": "The coffee is _ hot to drink.",
-    "answer": "too",
-    "hardness": "Medium",
-    "translate": "قهوه برای خوردن خیلی داغ است.",
+    "sentence": "When you _ you dream.",
+    "answer": "sleep",
+    "hardness": "Hell",
+    "translate": "وقتی می‌خوابی، خواب می‌بینی.",
     "wordBank": [
-      "too",
-      "very cold",
-      "something",
-      "not good",
-      "better"
+      "me",
+      "sleep",
+      "watch",
+      "run",
+      "die"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -165,13 +169,12 @@
     "id": 10
   },
   {
-    "answer": "past continuous",
-    "sentence": "which tense is this sentence? \"She was sleeping at 10 pm\"",
+    "answer": "yellow",
+    "sentence": "what color is the sun?",
     "options": [
-      "present simple",
-      "past simple",
-      "present continuous",
-      "past continuous"
+      "green",
+      "purple",
+      "yellow"
     ],
     "type": "selectCorrect",
     "direction": "ltr",
@@ -179,13 +182,13 @@
     "id": 11
   },
   {
-    "answer": "verb",
-    "sentence": "which word shows an action?",
+    "answer": "blue",
+    "sentence": "what color is the sky on a clear day?",
     "options": [
-      "noun",
-      "verb",
-      "adjective",
-      "adverb"
+      "green",
+      "blue",
+      "gray",
+      "white"
     ],
     "type": "selectCorrect",
     "direction": "ltr",

@@ -1,0 +1,195 @@
+[
+  {
+    "sentence": "The word \"slow\" is an adverb",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "با اضافه کردن حرف s اسم جمع میشود",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "answer": [
+      "an",
+      "a",
+      "the"
+    ],
+    "explanition": {
+      "title": "حروف تعریف",
+      "des": "حروف تعریف حروفی اند که قبل از اسم آمده، معین و نا معین بودن اسم را نشان می دهند\nحرف The به چیزی خاص و معین اشاره میکند.\nحروف A و An به چیزی عام و نامعین اشاره میکنند.",
+      "types": "The: The cat\nA: A cat\nAn: An apple"
+    },
+    "sentence": "انواع حرف تعریف را نام ببرید",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 3
+  },
+  {
+    "title": "Question",
+    "answer": [
+      "pronoun"
+    ],
+    "synonyms": {
+      "pronuon": "pronoun",
+      "prenuon": "pronoun"
+    },
+    "sentence": "چه چیزی جایگزین اسم میشود و از تکرار آن جلوگیری میکند؟",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "id": 4
+  },
+  {
+    "sentence": "you can't tell him the secret.",
+    "answer": [
+      "تو نمیتوانی راز را به او بگویی"
+    ],
+    "wordBank": [
+      "وابسته",
+      "بگویی",
+      "او",
+      "به",
+      "راز را",
+      "نمیتوانی",
+      "تو"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "پسر آن زن مرده است",
+    "answer": [
+      "her son is dead"
+    ],
+    "direction": "rtl",
+    "wordBank": [
+      "her",
+      "son",
+      "is",
+      "dead"
+    ],
+    "type": "translate",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "من او را به جشن تولد بردارم دعوت کردم",
+    "answer": [
+      "I invited him to my brother's birthday party"
+    ],
+    "direction": "rtl",
+    "wordBank": [
+      "I",
+      "invited",
+      "him",
+      "to",
+      "my",
+      "brother's",
+      "birthday party"
+    ],
+    "type": "translate",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "She was running _",
+    "answer": "slowly",
+    "hardness": "Medium",
+    "translate": "او داشت آهسته میدوید",
+    "wordBank": [
+      "slowly",
+      "can't",
+      "ed",
+      "ing"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "I can't talk _",
+    "answer": "fluently",
+    "hardness": "Medium",
+    "translate": "من نمیتوانم روان صحبت کنم",
+    "wordBank": [
+      "fluent",
+      "learn",
+      "fluently"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "_ your son home",
+    "answer": "is",
+    "hardness": "Medium",
+    "translate": "آیا پسر شما خانه است؟",
+    "wordBank": [
+      "can",
+      "are",
+      "is"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "answer": "slowly",
+    "sentence": "Which word is an adverb?",
+    "explanition": {
+      "title": "قید",
+      "des": "قید معمولاً فعل را توصیف می‌کند.",
+      "types": "slowly, quickly, happily"
+    },
+    "options": [
+      "slow",
+      "slowly",
+      "table",
+      "boy"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "answer": "will",
+    "sentence": "Which word is used to make the future simple tense?",
+    "explanition": {
+      "title": "Future Simple",
+      "des": "برای ساخت زمان آینده ساده از will استفاده می‌کنیم.",
+      "types": "I will study.\nShe will come."
+    },
+    "options": [
+      "did",
+      "will",
+      "was",
+      "has"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 12
+  }
+]

@@ -18,6 +18,7 @@ import {
   ActivityIndicator,
   Image,
   Modal,
+  Pressable,
   ScrollView,
   StyleSheet,
   Text,
@@ -31,10 +32,10 @@ import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context'
 // ─── Practice Features ────────────────────────────────────────────────────────
 
 const FEATURES = [
-  { id: 1, name: 'AI',         tag: 'AI',        des: 'یادگیری لغات به کمک هوش مصنوعی.', img: images.ai,        color: '#a78bfa', bg: 'rgba(167,139,250,0.10)', soon: true  },
-  { id: 2, name: 'Flashcards', tag: 'Study',      des: 'حفظ بهتر با فلش کارت ها.',         img: images.flashcard, color: '#1cb0f6', bg: 'rgba(28,176,246,0.10)',  soon: false },
-  { id: 3, name: 'Matching',   tag: 'Game',       des: 'آموزش با بازی!',                   img: images.matching,  color: '#58cc02', bg: 'rgba(88,204,2,0.10)',    soon: false },
-  { id: 4, name: 'Quiz',       tag: 'Challenge',  des: 'خودت را امتحان کن!',               img: images.queiz,     color: '#ff9600', bg: 'rgba(255,150,0,0.10)',   soon: true  },
+  { id: 1, name: 'AI',         tag: 'AI',        des: 'یادگیری لغات به کمک هوش مصنوعی.', img: images.ai, soon: true  },
+  { id: 2, name: 'Flashcards', tag: 'Study',      des: 'حفظ بهتر با فلش کارت ها.',         img: images.flashcard,  soon: false },
+  { id: 3, name: 'Matching',   tag: 'Game',       des: 'آموزش با بازی!',                   img: images.matching,   soon: false },
+  { id: 4, name: 'Quiz',       tag: 'Challenge',  des: 'خودت را امتحان کن!',               img: images.queiz,      soon: true  },
 ]
 
 // ─── Component ────────────────────────────────────────────────────────────────
@@ -53,7 +54,7 @@ interface MessageModalState {
 const Voca = () => {
   const { user, loading } = useUserStore()
   let sets: UserSet[] = (user as any)?.sets ?? []
-
+  const wordCount = sets.reduce((acc, s) => acc + Object.keys(s.words ?? {}).length, 0);
   // تب‌بار پایین با position: absolute روی محتوا قرار می‌گیرد؛
   // ارتفاعش را می‌گیریم تا لیست‌ها و دکمه‌ی شناور زیرش گم نشوند.
 
@@ -203,13 +204,15 @@ const Voca = () => {
     return (
       <>
         <Modal visible={view === 'flashcard'} animationType='fade' onRequestClose={goToMain}>
-          <FlashcardPractice
-            words={flashWords}
-            setName={set.n}
-            accentColor={palette.accent}
-            onClose={goToMain}
-            onSwitchSet={() => { setPracticeType('flashcard'); setShowSetPicker(true) }}
-          />
+          <SafeAreaView edges={['bottom','top']} style={{flex: 1,backgroundColor: colors.dark.bg }}>
+            <FlashcardPractice
+              words={flashWords}
+              setName={set.n}
+              accentColor={palette.accent}
+              onClose={goToMain}
+              onSwitchSet={() => { setPracticeType('flashcard'); setShowSetPicker(true) }}
+            />
+          </SafeAreaView>
         </Modal>  
         {showSetPicker && (
           <SetPickerModal
@@ -240,13 +243,15 @@ const Voca = () => {
     return (
       <>
         <Modal visible={view === 'matching'} animationType='fade' onRequestClose={goToMain}>
-          <MatchingPractice
-            words={matchWords}
-            setName={set.n}
-            accentColor={palette.accent}
-            onClose={goToMain}
-            onSwitchSet={() => { setPracticeType('matching'); setShowSetPicker(true) }}
-          />
+          <SafeAreaView edges={['bottom','top']} style={{flex: 1,backgroundColor: colors.dark.bg }}>
+            <MatchingPractice
+              words={matchWords}
+              setName={set.n}
+              accentColor={palette.accent}
+              onClose={goToMain}
+              onSwitchSet={() => { setPracticeType('matching'); setShowSetPicker(true) }}
+            />
+          </SafeAreaView>
         </Modal>
         {showSetPicker && (
           <SetPickerModal
@@ -297,47 +302,24 @@ const Voca = () => {
             <TouchableOpacity style={styles.backBtn} onPress={goToMain}>
               <Ionicons name="arrow-back" size={20} color="#fff" />
             </TouchableOpacity>
+            <View style={styles.headerRow}>
+              <View style={[styles.countBadge, { backgroundColor: palette.glow, borderColor: palette.border }]}>
+                <Text style={[styles.countBadgeTxt, { color: palette.accent }]}>{wordEntries.length}</Text>
+              </View>
 
-            <View style={{ flex: 1, marginLeft: 12 }}>
-              <Text style={styles.detailTitle} numberOfLines={1}>{set.n}</Text>
-              <Text style={styles.detailSub}>{wordEntries.length} words</Text>
-            </View>
-
-            <View style={[styles.countBadge, { backgroundColor: palette.glow, borderColor: palette.border }]}>
-              <Text style={[styles.countBadgeTxt, { color: palette.accent }]}>{wordEntries.length}</Text>
+              {wordEntries.length>0 && FEATURES.map((f)=> !f.soon&&(
+                <Pressable 
+                  onPress={()=>handlePracticeTilePress(f)}
+                  key={f.id}
+                  style={[styles.countBadge, { backgroundColor: palette.glow, borderColor: palette.border }]}
+                >
+                  <Image source={f.img} style={styles.practiceTileImg} />
+                </Pressable>          
+              ))
+              }
             </View>
           </SafeAreaView>
 
-          {/* ── Practice Modes ── */}
-          {wordEntries.length > 0 && (
-            <ScrollView
-              horizontal
-              showsHorizontalScrollIndicator={false}
-              style={styles.practiceTilesRow}
-              contentContainerStyle={styles.practiceTilesRowContent}
-            >
-              {FEATURES.map(f =>{if (!f.soon) return (
-                <TouchableOpacity
-                  key={f.id}
-                  style={[styles.practiceTile, { backgroundColor: f.bg, borderColor: f.color + '35' }]}
-                  onPress={() => handlePracticeTilePress(f)}
-                  activeOpacity={0.82}
-                >
-                  {f.soon && (
-                    <View style={styles.practiceTileSoonBadge}>
-                      <Text style={styles.practiceTileSoonTxt}>Soon</Text>
-                    </View>
-                  )}
-                  <View style={[styles.practiceTileIcon, { backgroundColor: f.color + '22' }]}>
-                    <Image source={f.img} style={styles.practiceTileImg} resizeMode="contain" />
-                  </View>
-                  <Text style={[styles.practiceTileTitle, { color: f.color }]} numberOfLines={1}>
-                    {f.name}
-                  </Text>
-                </TouchableOpacity>
-              )})}
-            </ScrollView>
-          )}
 
           {/* ── Word List ── */}
           <ScrollView
@@ -402,22 +384,39 @@ const Voca = () => {
     <View style={styles.container}>
 
       {/* ── Top Bar ── */}
-      <SafeAreaView style={styles.topBar} edges={['top', 'left', 'right']}>
-        <View>
-          <Text style={styles.pageTitle}>My Vocabulary</Text>
-          <Text style={styles.pageSub}>
-            {sets.length} sets · {sets.reduce((acc, s) => acc + Object.keys(s.words ?? {}).length, 0)} words
-          </Text>
+      <SafeAreaView  style={{ backgroundColor: colors.dark.bg, height: 130 }}>
+       {/* ── سه کارت آمار بالای صفحه: XP / Gem / تعداد لغات ── */}
+       <View style={styles.statsRow}>
+
+          <View style={styles.statCard}>
+            <View style={styles.statCardInner}>
+                <Image source={images.xp} style={styles.statIconImg}/>
+                <Text style={styles.statValue}>{user?.xp}</Text>
+            </View>
+          </View>
+
+          <View style={styles.statCard}>
+            <View style={styles.statCardInner}>
+                <Image source={images.gem} style={styles.statIconImg}/>
+                <Text style={styles.statValue}>{user?.gem}</Text>
+            </View>
+          </View>
+
+          <View style={styles.statCard}>
+            <View style={styles.statCardInner}>
+                <Image source={images.voca} style={styles.statIconImg}/>
+                <Text style={styles.statValue}>{wordCount}</Text>
+            </View>
+          </View>
+
         </View>
-        <TouchableOpacity style={styles.addSetBtn} onPress={() => setShowAddSet(true)} activeOpacity={0.85}>
-          <Ionicons name="add" size={22} color="#111" />
-        </TouchableOpacity>
       </SafeAreaView>
 
-      {/* ── Search ── */}
-      <View style={styles.searchWrap}>
-        <Ionicons name="search" size={15} color="#555" style={{ marginRight: 8 }} />
-        <TextInput
+      {/* ── Search + Add Set ── */}
+      <View style={styles.searchRow}>
+        <View style={[styles.searchWrap, { flex: 1, marginHorizontal: 0, marginBottom: 0 }]}>
+          <Ionicons name="search" size={15} color="#555" style={{ marginRight: 8 }} />
+      <TextInput
           style={styles.searchInput}
           placeholder="Search sets…"
           placeholderTextColor="#555"
@@ -429,6 +428,15 @@ const Voca = () => {
             <Ionicons name="close-circle" size={16} color="#555" />
           </TouchableOpacity>
         )}
+        </View>
+
+        <TouchableOpacity
+          style={styles.addSetBtn}
+          onPress={() => setShowAddSet(true)}
+          activeOpacity={0.85}
+        >
+          <Ionicons name="add" size={22} color="#111" />
+        </TouchableOpacity>
       </View>
 
       <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingBottom: tabBarHeight + 40 }}>
@@ -437,9 +445,9 @@ const Voca = () => {
         {filteredSets.length === 0 ? (
           <View style={styles.emptyState}>
             <Text style={styles.emptyEmoji}>{search ? '🔍' : '🗂️'}</Text>
-            <Text style={styles.emptyTitle}>{search ? 'No results' : 'No sets yet'}</Text>
+            <Text style={styles.emptyTitle}>{search ? 'چیزی پیدا نشد' : 'هنوز سیت لغات ندارید'}</Text>
             <Text style={styles.emptySub}>
-              {search ? 'Try a different search' : 'Tap + to create your first set'}
+              {search ? 'چیزی دیگری جستجو کنید' : 'روی + کلیک کنید تا سیت لغات بسازید'}
             </Text>
           </View>
         ) : (
@@ -452,14 +460,14 @@ const Voca = () => {
               return (
                 <TouchableOpacity
                   key={idx}
-                  style={[styles.setCard, { backgroundColor: p.bg, borderColor: p.border }]}
+                  style={[styles.setCard, {  borderColor: p.border }]}
                   onPress={() => openSetDetail(realIdx)}
                   activeOpacity={0.82}
                 >
                   <View style={[styles.setStripe, { backgroundColor: p.accent }]} />
                   <View style={styles.setCardBody}>
                     <View style={[styles.setIconCircle, { backgroundColor: p.accent + '1a', borderColor: p.border }]}>
-                      <Text style={{ fontSize: 22 }}>{p.icon}</Text>
+                      <Image style={{ height: 22, width: 22 }} source={p.icon}/>
                     </View>
                     <Text style={styles.setName} numberOfLines={2}>{item.n}</Text>
                     <View style={styles.setFooter}>
@@ -478,7 +486,7 @@ const Voca = () => {
         {/* ── Practice Section ── */}
         <View style={styles.sectionHeader}>
           <View style={styles.sectionLine} />
-          <Text style={styles.sectionTitle}>Practice</Text>
+          <Text style={styles.sectionTitle}>practice</Text>
           <View style={styles.sectionLine} />
         </View>
 
@@ -486,17 +494,17 @@ const Voca = () => {
           {FEATURES.map(f => ( 
             <TouchableOpacity
               key={f.id}
-              style={[styles.featureCard, { borderColor: f.color + '28' }]}
+              style={styles.featureCard}
               onPress={() => handleFeaturePress(f)}
               activeOpacity={0.82}
             >
 
-              <View style={[styles.featureIconBox, { backgroundColor: f.bg }]}>
+              <View style={[styles.featureIconBox, { backgroundColor: colors.hardness.medium.fill }]}>
                 <Image source={f.img} style={styles.featureIconImg} resizeMode="contain" />
               </View>
 
-              <View style={[styles.featureTag, { backgroundColor: f.bg }]}>
-                <Text style={[styles.featureTagTxt, { color: f.color }]}>{f.tag}</Text>
+              <View style={[styles.featureTag, { backgroundColor: colors.hardness.medium.fill }]}>
+                <Text style={styles.featureTagTxt}>{f.tag}</Text>
               </View>
 
               <Text style={styles.featureName}>{f.name}</Text>
@@ -582,9 +590,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingTop: 6,
     paddingBottom: 14,
-    backgroundColor: colors.dark.surface,
-    borderBottomWidth: 1,
-    borderBottomColor: colors.dark.border,
+    backgroundColor: colors.dark.bg,
   },
   pageTitle: {
     fontSize: 18,
@@ -599,17 +605,22 @@ const styles = StyleSheet.create({
     marginTop: 2,
   },
   addSetBtn: {
-    width: 40,
-    height: 40,
-    borderRadius: 20,
-    backgroundColor: '#58cc02',
+    width: 44,
+    height: 44,
+    borderRadius: 14,
+    backgroundColor: colors.hardness.medium.border,
     alignItems: 'center',
     justifyContent: 'center',
-    shadowColor: '#58cc02',
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.4,
-    shadowRadius: 8,
-    elevation: 6,
+    shadowOpacity: 0,
+    shadowRadius: 0,
+    elevation: 0,
+  },
+  searchRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+    marginHorizontal: 16,
+    marginBottom: 15,
   },
 
   // ─── Search ─────────────────────────────────────────────────────────────────
@@ -618,7 +629,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: colors.dark.surface2,
     marginHorizontal: 16,
-    marginVertical: 12,
+    marginBottom: 15,
     borderRadius: 14,
     paddingHorizontal: 14,
     height: 44,
@@ -684,7 +695,16 @@ const styles = StyleSheet.create({
     fontSize: 11,
     fontWeight: '700',
   },
-
+  statCard: {
+    flex: 1,
+    backgroundColor: colors.dark.surface,
+    borderRadius: 16,
+    borderWidth: 1,
+    borderColor: colors.dark.border,
+    paddingVertical: 12,
+    alignItems: "center",
+    position: "relative",
+  },
   // ─── Section Header ──────────────────────────────────────────────────────────
   sectionHeader: {
     flexDirection: 'row',
@@ -696,7 +716,7 @@ const styles = StyleSheet.create({
   },
   sectionLine: {
     flex: 1,
-    height: 1,
+    height: 1.5,
     backgroundColor: colors.dark.border,
   },
   sectionTitle: {
@@ -716,6 +736,7 @@ const styles = StyleSheet.create({
     marginBottom: 60,
   },
   featureCard: {
+    borderColor: colors.dark.border,
     width: '47%',
     backgroundColor: colors.dark.surface,
     borderRadius: 18,
@@ -759,6 +780,7 @@ const styles = StyleSheet.create({
     marginBottom: 6,
   },
   featureTagTxt: {
+    color: colors.dark.txt2,
     fontSize: 9,
     fontWeight: '700',
     letterSpacing: 0.5,
@@ -808,6 +830,12 @@ const styles = StyleSheet.create({
     backgroundColor: colors.dark.surface,
     borderBottomWidth: 1,
   },
+  headerRow:{
+    flex: 1,
+    justifyContent: "flex-end",
+    flexDirection: "row",
+    gap: 16,
+  },
   backBtn: {
     width: 38,
     height: 38,
@@ -840,7 +868,33 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fontWeight: '800',
   },
-
+  statsRow: {
+    flexDirection: "row",
+    paddingHorizontal: 16,
+    paddingTop: 10,
+    gap: 10,
+  },
+  statCardInner: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 8,
+  },
+  statIconBox: {
+    width: 32,
+    height: 32,
+    borderRadius: 10,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  statIconImg: {
+    width: 45,
+    height: 45,
+  },
+  statValue: {
+    color: colors.dark.txt,
+    fontSize: 17,
+    fontWeight: "900",
+  },
   // ─── Practice Tiles (compact, extensible row) ─────────────────────────────────
   practiceTilesRow: {
     flexGrow: 0,

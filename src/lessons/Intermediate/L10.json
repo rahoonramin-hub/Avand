@@ -1,0 +1,212 @@
+[
+  {
+    "sentence": "قید نشان میدهد که یک عمل چگونه انجام میشود",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "کلمه adverb به معنی قید است",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "explanition": {
+      "title": "انواع قید",
+      "des": "قید در زبان انگلیسی به 5 نوع است:\n",
+      "types": "manner: حالت را بیان میکند\nplace: مکان\ntime: زمان\ndegree: شدت\nfrequency: دوره"
+    },
+    "answer": [
+      "manner",
+      "time",
+      "place",
+      "degree",
+      "frequency"
+    ],
+    "synonyms": {
+      "maner": "manner",
+      "حالت": "manner",
+      "تکرار": "frequency",
+      "frequncy": "frequency",
+      "ferequncy": "frequency",
+      "frequnsy": "frequency",
+      "مقدار": "degree",
+      "degri": "degree",
+      "digree": "degree",
+      "deegre": "degree"
+    },
+    "sentence": "انواع اصلی قید را نام ببرید",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 3
+  },
+  {
+    "answer": [
+      "an",
+      "a",
+      "the"
+    ],
+    "explanition": {
+      "title": "حروف تعریف",
+      "des": "حروف تعریف حروفی اند که قبل از اسم آمده، معین و نا معین بودن اسم را نشان می دهند\nحرف The به چیزی خاص و معین اشاره میکند.\nحروف A و An به چیزی عام و نامعین اشاره میکنند.",
+      "types": "The: The cat\nA: A cat\nAn: An apple"
+    },
+    "sentence": "انواع حرف تعریف را نام ببرید",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 4
+  },
+  {
+    "sentence": "فروختن قالین درامد خوبی داشت",
+    "direction": "rtl",
+    "answer": [
+      "selling carpets had a good income"
+    ],
+    "wordBank": [
+      "carpets",
+      "had",
+      "a",
+      "good",
+      "income",
+      "car",
+      "selling"
+    ],
+    "type": "translate",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "She is the best teacher in the city.",
+    "answer": [
+      "او بهترین معلم این شهر است"
+    ],
+    "wordBank": [
+      "چرا",
+      "است",
+      "این شهر",
+      "معلم",
+      "بهترین",
+      "او"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "How well can you teach?",
+    "answer": [
+      "چقدر میتوانی خوب درس بدهی"
+    ],
+    "wordBank": [
+      "بگو",
+      "؟",
+      "بدهی",
+      "خوب درس",
+      "میتوانی",
+      "چقدر"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "If you had _ more carefully, you would have noticed the mistake.",
+    "answer": "looked",
+    "hardness": "Hard",
+    "translate": "اگر با نگاه میکردی، متوجه مشکل میشدی.",
+    "wordBank": [
+      "have",
+      "looked",
+      "see",
+      "call"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "why is she talking _?",
+    "answer": "slowly",
+    "hardness": "Hard",
+    "translate": "چرا او آهسته صحبت میکند؟",
+    "wordBank": [
+      "slow",
+      "slowly"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "I have _ this movie before.",
+    "answer": "seen",
+    "hardness": "Medium",
+    "translate": "من این فیلم را قبلا دیده ام.",
+    "wordBank": [
+      "been",
+      "seen",
+      "like"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "answer": "all",
+    "explanition": {
+      "title": "قید",
+      "des": "قید ها چگونگی انجام عمل را بیان میکنند: \n I run slowly \nکلمه slowly یعنی به آهستگی\n",
+      "types": "نکته جالب: اکثر قید ها با حروف ly خطم میشوند \nslow = صفت\nslowly = قید"
+    },
+    "sentence": "Which word is an adverb?",
+    "options": [
+      "all",
+      "badly",
+      "fast",
+      "slowly"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "answer": "She",
+    "explanition": {
+      "title": "Subject pronouns",
+      "des": "ضمایر فاعلی نشان می‌دهند چه کسی کار را انجام داده است: \n",
+      "types": "I, You, We, They, He, She, It \n من، شما، ما، آنها، او مرد،زن، حیوان"
+    },
+    "sentence": "Which word is a Subject pronoun?",
+    "options": [
+      "Him",
+      "She",
+      "Me",
+      "My"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 12
+  }
+]

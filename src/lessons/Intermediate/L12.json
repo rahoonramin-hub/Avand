@@ -1,0 +1,185 @@
+[
+  {
+    "sentence": "A car has 3 wheels",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "کلمه adjective به معنی قید است",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "answer": [
+      "present",
+      "future",
+      "past"
+    ],
+    "synonyms": {
+      "precent": "present",
+      "futare": "future",
+      "fuchure": "future",
+      "futur": "future",
+      "presend": "present"
+    },
+    "sentence": "3 زمان اصلی در زبان انگلیسی را بنویسید",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 3
+  },
+  {
+    "title": "Question",
+    "answer": [
+      "Adjective"
+    ],
+    "synonyms": {
+      "adj": "Adjective",
+      "adjec": "Adjective",
+      "صفت": "Adjective",
+      "adjectie": "Adjective"
+    },
+    "sentence": "What does describe a noun?",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "id": 4
+  },
+  {
+    "sentence": "where is the closest shop?",
+    "answer": [
+      "نزدیکترین فروشگاه کجاست"
+    ],
+    "wordBank": [
+      "؟",
+      "دورترین",
+      "کجاست",
+      "فروشگاه",
+      "نزدیکترین"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "اسم آن مرد عبدالله است.",
+    "direction": "rtl",
+    "answer": [
+      "that man's name is Abdullah"
+    ],
+    "wordBank": [
+      "man",
+      "Abdullah",
+      "is",
+      "man's name",
+      "that"
+    ],
+    "type": "translate",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "We won the football game.",
+    "answer": [
+      "ما بازی فوتبال را بردیم"
+    ],
+    "wordBank": [
+      "ما",
+      "بازی",
+      "فوتبال",
+      "را",
+      "بردیم"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "If you _ more carefully, you would have noticed the mistake.",
+    "answer": "looked",
+    "hardness": "Hard",
+    "translate": "اگر با نگاه میکردی، متوجه مشکل میشدی.",
+    "wordBank": [
+      "have",
+      "looked",
+      "see",
+      "call"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "She has been working _ the project since Monday.",
+    "answer": "on",
+    "hardness": "Medium",
+    "translate": "او از دوشنبه روی پروژه کار میکند.",
+    "wordBank": [
+      "in",
+      "on"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "I didn't realize that he _ already left.",
+    "answer": "had",
+    "hardness": "Hell",
+    "translate": "من متوجه نشدم که او رفته است.",
+    "wordBank": [
+      "learn",
+      "have",
+      "has",
+      "had"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "direction": "rtl",
+    "answer": "is this yours",
+    "sentence": "کدام جمله سوالیه است؟",
+    "options": [
+      "im coming home",
+      "is this yours",
+      "pen is lost"
+    ],
+    "type": "selectCorrect",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "direction": "rtl",
+    "answer": "Adverb",
+    "sentence": "کدام کلمه به معنی قید است؟",
+    "options": [
+      "Adverb",
+      "Adjective",
+      "Pronoun",
+      "Verb"
+    ],
+    "type": "selectCorrect",
+    "title": "Select correct",
+    "id": 12
+  }
+]

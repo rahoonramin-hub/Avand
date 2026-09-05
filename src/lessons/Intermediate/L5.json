@@ -1,0 +1,219 @@
+[
+  {
+    "sentence": "قید اسم را توصیف میکند.",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "An adjective describes a noun",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "answer": [
+      "I",
+      "You",
+      "We",
+      "They",
+      "He",
+      "She",
+      "It"
+    ],
+    "sentence": "Name subject pronouns (atleas 5 of them).",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 3
+  },
+  {
+    "explanition": {
+      "title": "انواع قید",
+      "des": "قید در زبان انگلیسی به 5 نوع است:\n",
+      "types": "manner: حالت را بیان میکند\nplace: مکان\ntime: زمان\ndegree: شدت\nfrequency: دوره"
+    },
+    "answer": [
+      "manner",
+      "time",
+      "place",
+      "degree",
+      "frequency"
+    ],
+    "synonyms": {
+      "maner": "manner",
+      "حالت": "manner",
+      "تکرار": "frequency",
+      "frequncy": "frequency",
+      "ferequncy": "frequency",
+      "frequnsy": "frequency",
+      "مقدار": "degree",
+      "degri": "degree",
+      "digree": "degree",
+      "deegre": "degree"
+    },
+    "sentence": "انواع اصلی قید را نام ببرید",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 4
+  },
+  {
+    "sentence": "I had made dinner before you came",
+    "answer": [
+      "قبل ازینکه تو بیایی من غذا را آماده کردم",
+      "من غذا را قبل ازینکه تو بیایی آماده کردم",
+      "من غذا را آماده کردم قبل ازینکه تو بیایی"
+    ],
+    "wordBank": [
+      "بیایی",
+      "تو",
+      "ازینکه",
+      "قبل",
+      "کردم",
+      "آماده",
+      "غذا را",
+      "من"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "everyone was happy, except me.",
+    "answer": [
+      "همه خوشحال بودند غیر از من"
+    ],
+    "wordBank": [
+      "چرا",
+      "از من",
+      "غیر",
+      "بودند",
+      "خوشحال",
+      "همه"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "تمام افرادی که این سفر را شروع کردند، مرده اند.",
+    "answer": [
+      "all the people who started this journey are dead"
+    ],
+    "direction": "rtl",
+    "wordBank": [
+      "dead",
+      "are",
+      "this journey",
+      "started",
+      "who",
+      "people",
+      "the",
+      "all"
+    ],
+    "type": "translate",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "You can't break _ pen",
+    "answer": "my",
+    "hardness": "Easy",
+    "translate": "تو نمیتوانی قلم من را بشکنی",
+    "wordBank": [
+      "I",
+      "my",
+      "me",
+      "I'm"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "Why are _ so nervous?",
+    "answer": "you",
+    "hardness": "Hard",
+    "translate": "چرا اینقدر نگران هستی؟",
+    "wordBank": [
+      "yours",
+      "her",
+      "you",
+      "us"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "By the time we arrived, the movie _ already started.",
+    "answer": "had",
+    "hardness": "Hell",
+    "translate": "تا زمانی که رسیدیم، فیلم شروع شده بود.",
+    "wordBank": [
+      "were",
+      "had",
+      "been",
+      "have"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "answer": "beautiful",
+    "sentence": "Which word is an adjective?",
+    "explanition": {
+      "title": "صفت",
+      "des": "صفت، اسم را توصیف می‌کند.",
+      "types": "beautiful girl\nbig house\nred car"
+    },
+    "options": [
+      "beautiful",
+      "run",
+      "slowly",
+      "they"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "answer": "They",
+    "sentence": "Which word is a subject pronoun?",
+    "explanition": {
+      "title": "Subject Pronouns",
+      "des": "ضمیرهای فاعلی جای اسم فاعل می‌آیند.",
+      "types": "I, You, He, She, It, We, They"
+    },
+    "options": [
+      "Them",
+      "Their",
+      "They",
+      "Theirs"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 12
+  }
+]

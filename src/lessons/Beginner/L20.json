@@ -1,6 +1,6 @@
 [
   {
-    "sentence": "A kitchen is for sleeping.",
+    "sentence": "اسم خاص قابل ترجمه است",
     "answer": false,
     "type": "trueFalse",
     "direction": "ltr",
@@ -12,7 +12,7 @@
     "id": 1
   },
   {
-    "sentence": "Red is a color.",
+    "sentence": "The sky is blue.",
     "answer": true,
     "type": "trueFalse",
     "direction": "ltr",
@@ -24,7 +24,7 @@
     "id": 2
   },
   {
-    "sentence": "A triangle has 4 sides.",
+    "sentence": "Birds have hands.",
     "answer": false,
     "type": "trueFalse",
     "direction": "ltr",
@@ -37,23 +37,13 @@
   },
   {
     "answer": [
-      "simple",
-      "cont",
-      "perfect",
-      "perfect cont"
+      "was",
+      "were"
     ],
-    "synonyms": {
-      "continouos": "cont",
-      "continuous": "cont",
-      "progressive": "cont",
-      "perfect continouos": "perfect cont",
-      "perfect progressive": "perfect cont"
-    },
-    "sentence": "۴ زمان گذشته را بنویسید.",
+    "sentence": "شکل‌های زمان گذشته فعل \"To be\" را بنویسید.",
     "explanition": {
-      "title": "زمان گذشته",
-      "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
-      "types": "simple\n continuous\n perfect\n perfect continuous"
+      "title": "Was/Were",
+      "des": "I was young - من جوان بودم\n You were young - تو جوان بودی\n He was young - او جوان بود\n"
     },
     "type": "nameTypes",
     "direction": "ltr",
@@ -61,18 +51,17 @@
     "id": 4
   },
   {
-    "sentence": "I am a boy.",
+    "sentence": "The cup is small.",
     "answer": [
-      "من یک پسر هستم",
-      "من پسر هستم"
+      "پیاله کوچک است"
     ],
     "wordBank": [
-      "من",
-      "یک",
-      "پسر",
-      "هستم",
-      "دختر",
-      "مرد"
+      "پیاله",
+      "کوچک",
+      "است",
+      "بزرگ",
+      "نوزاد",
+      "پسر"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -80,18 +69,17 @@
     "id": 5
   },
   {
-    "sentence": "She is a girl.",
+    "sentence": "We are ready.",
     "answer": [
-      "او یک دختر است",
-      "او دختر است"
+      "ما آماده هستیم"
     ],
     "wordBank": [
-      "او",
-      "یک",
-      "دختر",
-      "است",
-      "پسر",
-      "زن"
+      "ما",
+      "آماده",
+      "هستیم",
+      "خسته",
+      "بیمار",
+      "دیر"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -99,17 +87,18 @@
     "id": 6
   },
   {
-    "sentence": "The pen is blue.",
+    "sentence": "He opens the window.",
     "answer": [
-      "قلم آبی است"
+      "او پنجره را باز میکند"
     ],
     "wordBank": [
-      "قلم",
-      "آبی",
-      "است",
-      "سرخ",
-      "سبز",
-      "کتابچه"
+      "او",
+      "پنجره",
+      "را",
+      "باز",
+      "میکند",
+      "در",
+      "میز"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -117,15 +106,15 @@
     "id": 7
   },
   {
-    "sentence": "He _ breakfast at 8 am.",
-    "answer": "has",
-    "hardness": "Easy",
-    "translate": "او ساعت ۸ صبح صبحانه می‌خورد.",
+    "sentence": "She _ a shower when the phone rang.",
+    "answer": "was taking",
+    "hardness": "Hell",
+    "translate": "وقتی تلفن زنگ زد او داشت دوش می‌گرفت.",
     "wordBank": [
-      "have",
-      "has",
-      "drink",
-      "week"
+      "took",
+      "was taking",
+      "is taking",
+      "take"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -133,16 +122,14 @@
     "id": 8
   },
   {
-    "sentence": "This is _ book.",
-    "answer": "my",
-    "hardness": "Easy",
-    "translate": "این کتاب من است.",
+    "sentence": "I wish I _ more time to travel.",
+    "answer": "had",
+    "hardness": "Hard",
+    "translate": "کاش زمان بیشتری برای سفر داشتم.",
     "wordBank": [
-      "my",
-      "I",
-      "me",
-      "mine",
-      "car"
+      "have",
+      "had",
+      "can have"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -150,15 +137,15 @@
     "id": 9
   },
   {
-    "sentence": "She _ to become a doctor.",
-    "answer": "wants",
-    "hardness": "Easy",
-    "translate": "او می‌خواهد داکتر شود.",
+    "sentence": "If it rains tomorrow, we _ at home.",
+    "answer": "will stay",
+    "hardness": "Hell",
+    "translate": "اگر فردا باران ببارد، خانه می‌مانیم.",
     "wordBank": [
-      "wanted",
-      "wants",
-      "can",
-      "very much"
+      "went",
+      "will stay",
+      "stayed",
+      "never"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -166,18 +153,13 @@
     "id": 10
   },
   {
-    "answer": "future simple",
-    "explanition": {
-      "title": "زمان آینده ساده",
-      "des": "با اضافه کردن will قبل از فعل زمان را به آینده تغییر دهید",
-      "types": "I will play a game"
-    },
-    "sentence": "which tense do we use for actions that will happen later?",
+    "answer": "door",
+    "sentence": "what do you open to enter a room?",
     "options": [
-      "present simple",
-      "past simple",
-      "future simple",
-      "past continuous"
+      "window",
+      "door",
+      "wall",
+      "ceiling"
     ],
     "type": "selectCorrect",
     "direction": "ltr",
@@ -185,13 +167,13 @@
     "id": 11
   },
   {
-    "answer": "present continuous",
-    "sentence": "which tense do we use for actions happening right now?",
+    "answer": "window",
+    "sentence": "what do you open to let fresh air into a room?",
     "options": [
-      "present simple",
-      "past simple",
-      "future simple",
-      "present continuous"
+      "door",
+      "window",
+      "drawer",
+      "cabinet"
     ],
     "type": "selectCorrect",
     "direction": "ltr",

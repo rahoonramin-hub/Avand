@@ -1,8 +1,8 @@
 {
   "L1": [
     {
-      "sentence": "اولین حرف اسم خاص با حروف بزرگ نوشته میشود",
-      "answer": true,
+      "sentence": "A cat is a dog.",
+      "answer": false,
       "type": "trueFalse",
       "direction": "ltr",
       "title": "True or False",
@@ -13,8 +13,8 @@
       "id": 1
     },
     {
-      "sentence": "The moon is bigger than the sun.",
-      "answer": false,
+      "sentence": "Water is wet.",
+      "answer": true,
       "type": "trueFalse",
       "direction": "ltr",
       "title": "True or False",
@@ -25,8 +25,8 @@
       "id": 2
     },
     {
-      "sentence": "کلمه adjective یعنی صفت",
-      "answer": true,
+      "sentence": "A car can fly.",
+      "answer": false,
       "type": "trueFalse",
       "direction": "ltr",
       "title": "True or False",
@@ -62,17 +62,18 @@
       "id": 4
     },
     {
-      "sentence": "Where are you from?",
+      "sentence": "Hello, how are you?",
       "answer": [
-        "از کجا هستی؟",
-        "شما از کجا هستی؟"
+        "سلام خوبی؟",
+        "سلام حال شما"
       ],
       "wordBank": [
-        "از",
-        "کجا",
-        "هستی؟",
+        "سلام",
+        "خوبی",
+        "حال",
         "شما",
-        "چیست"
+        "؟",
+        "هستم"
       ],
       "type": "translate",
       "direction": "ltr",
@@ -80,1232 +81,42 @@
       "id": 5
     },
     {
-      "sentence": "I am from Afghanistan.",
+      "sentence": "I am a student.",
       "answer": [
-        "من از افغانستان هستم"
-      ],
-      "wordBank": [
-        "من",
-        "از",
-        "افغانستان",
-        "هستم",
-        "آمریکا",
-        "نیستم"
-      ],
-      "type": "translate",
-      "direction": "ltr",
-      "title": "Translate this sentence",
-      "id": 6
-    },
-    {
-      "sentence": "Do you like tea?",
-      "answer": [
-        "آیا چای دوست داری؟",
-        "چای دوست داری؟"
-      ],
-      "wordBank": [
-        "آیا",
-        "چای",
-        "دوست",
-        "داری؟",
-        "قهوه",
-        "نوشیدن"
-      ],
-      "type": "translate",
-      "direction": "ltr",
-      "title": "Translate this sentence",
-      "id": 7
-    },
-    {
-      "sentence": "We _ happy today, because we won the game",
-      "answer": "are",
-      "hardness": "Medium",
-      "translate": "ما امروز خوشحالیم.",
-      "wordBank": [
-        "am",
-        "is",
-        "are",
-        "be"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 8
-    },
-    {
-      "sentence": "He _ his own book, and sold it.",
-      "answer": "wrote",
-      "hardness": "Hard",
-      "translate": "او کتاب خودش را نوشت و آنرا فروخت",
-      "wordBank": [
-        "sells",
-        "wrote",
-        "builds",
-        "made",
-        "write"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 9
-    },
-    {
-      "sentence": "may _ ask something.",
-      "answer": "I",
-      "hardness": "Medium",
-      "translate": "میتوانم چیزی بپرسم؟",
-      "wordBank": [
-        "I",
-        "can",
-        "is",
-        "they"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 10
-    },
-    {
-      "answer": "yellow",
-      "sentence": "what color is the sun?",
-      "options": [
-        "green",
-        "purple",
-        "yellow"
-      ],
-      "type": "selectCorrect",
-      "direction": "ltr",
-      "title": "Select correct",
-      "id": 11
-    },
-    {
-      "answer": "blue",
-      "sentence": "what color is the sky on a clear day?",
-      "options": [
-        "green",
-        "blue",
-        "gray",
-        "white"
-      ],
-      "type": "selectCorrect",
-      "direction": "ltr",
-      "title": "Select correct",
-      "id": 12
-    }
-  ],
-  "L2": [
-    {
-      "sentence": "Cats can read books.",
-      "answer": false,
-      "type": "trueFalse",
-      "direction": "ltr",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 1
-    },
-    {
-      "sentence": "There are 7 days in a week.",
-      "answer": true,
-      "type": "trueFalse",
-      "direction": "ltr",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 2
-    },
-    {
-      "sentence": "A square has 5 sides.",
-      "answer": false,
-      "type": "trueFalse",
-      "direction": "ltr",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 3
-    },
-    {
-      "answer": [
-        "simple",
-        "cont",
-        "perfect",
-        "perfect cont"
-      ],
-      "synonyms": {
-        "continouos": "cont",
-        "continuous": "cont",
-        "progressive": "cont",
-        "perfect continouos": "perfect cont",
-        "perfect progressive": "perfect cont"
-      },
-      "sentence": "۴ زمان گذشته را بنویسید.",
-      "explanition": {
-        "title": "زمان گذشته",
-        "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
-        "types": "simple\n continuous\n perfect\n perfect continuous"
-      },
-      "type": "nameTypes",
-      "direction": "ltr",
-      "title": "Name types",
-      "id": 4
-    },
-    {
-      "sentence": "This is my house.",
-      "answer": [
-        "این خانه من است"
-      ],
-      "wordBank": [
-        "این",
-        "خانه",
-        "من",
-        "است",
-        "تو",
-        "او"
-      ],
-      "type": "translate",
-      "direction": "ltr",
-      "title": "Translate this sentence",
-      "id": 5
-    },
-    {
-      "sentence": "I love my mother.",
-      "answer": [
-        "من مادرم را دوست دارم",
-        "من مادر خود را دوست دارم"
-      ],
-      "wordBank": [
-        "من",
-        "مادرم",
-        "دوست",
-        "دارم",
-        "پدر",
-        "را",
-        "خود",
-        "فردا"
-      ],
-      "type": "translate",
-      "direction": "ltr",
-      "title": "Translate this sentence",
-      "id": 6
-    },
-    {
-      "sentence": "The sun is hot.",
-      "answer": [
-        "خورشید گرم است"
-      ],
-      "wordBank": [
-        "خورشید",
-        "گرم",
-        "است",
-        "سرد",
-        "ماه",
-        "آسمان",
-        "پسر"
-      ],
-      "type": "translate",
-      "direction": "ltr",
-      "title": "Translate this sentence",
-      "id": 7
-    },
-    {
-      "sentence": "They _ playing football in the yard.",
-      "answer": "are",
-      "hardness": "Easy",
-      "translate": "آنها در حیاط فوتبال بازی می‌کنند.",
-      "wordBank": [
-        "can",
-        "is",
-        "are",
-        "was"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 8
-    },
-    {
-      "sentence": "I _ a new bag yesterday.",
-      "answer": "bought",
-      "hardness": "Medium",
-      "translate": "من دیروز یک کیف جدید خریدم.",
-      "wordBank": [
-        "buy",
-        "bought",
-        "buying",
-        "take"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 9
-    },
-    {
-      "sentence": "She _ her grandmother every week.",
-      "answer": "visits",
-      "hardness": "Easy",
-      "translate": "او هر هفته مادربزرگ خود را ملاقات می‌کند.",
-      "wordBank": [
-        "visit",
-        "visits",
-        "goes",
-        "watch"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 10
-    },
-    {
-      "answer": "iran",
-      "sentence": "which country is between Afghanistan and Turkey?",
-      "options": [
-        "pakistan",
-        "china",
-        "iran",
-        "india"
-      ],
-      "type": "selectCorrect",
-      "direction": "ltr",
-      "title": "Select correct",
-      "id": 11
-    },
-    {
-      "answer": "kabul",
-      "sentence": "what is the capital of afghanistan?",
-      "options": [
-        "herat",
-        "kandahar",
-        "mazar",
-        "kabul"
-      ],
-      "type": "selectCorrect",
-      "direction": "ltr",
-      "title": "Select correct",
-      "id": 12
-    }
-  ],
-  "L3": [
-    {
-      "sentence": "Salt is sweet.",
-      "answer": false,
-      "type": "trueFalse",
-      "direction": "ltr",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 1
-    },
-    {
-      "sentence": "A baby is young.",
-      "answer": true,
-      "type": "trueFalse",
-      "direction": "ltr",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 2
-    },
-    {
-      "sentence": "کلمه adjective به معنی قید است",
-      "answer": false,
-      "type": "trueFalse",
-      "direction": "ltr",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 3
-    },
-    {
-      "answer": [
-        "simple",
-        "cont",
-        "perfect",
-        "perfect cont"
-      ],
-      "synonyms": {
-        "continouos": "cont",
-        "continuous": "cont",
-        "progressive": "cont",
-        "perfect continouos": "perfect cont",
-        "perfect progressive": "perfect cont"
-      },
-      "sentence": "۴ زمان گذشته را بنویسید.",
-      "explanition": {
-        "title": "زمان گذشته",
-        "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
-        "types": "simple\n continuous\n perfect\n perfect continuous"
-      },
-      "type": "nameTypes",
-      "direction": "ltr",
-      "title": "Name types",
-      "id": 4
-    },
-    {
-      "sentence": "She sings well.",
-      "answer": [
-        "او خوب میخواند"
-      ],
-      "wordBank": [
-        "او",
-        "خوب",
-        "میخواند",
-        "بد",
-        "بلند",
-        "آرام"
-      ],
-      "type": "translate",
-      "direction": "ltr",
-      "title": "Translate this sentence",
-      "id": 5
-    },
-    {
-      "sentence": "We live in Kabul.",
-      "answer": [
-        "ما در کابل زندگی میکنیم"
-      ],
-      "wordBank": [
-        "ما",
-        "در",
-        "کابل",
-        "زندگی",
-        "میکنیم",
-        "سفر میکنیم",
-        "زیبا است"
-      ],
-      "type": "translate",
-      "direction": "ltr",
-      "title": "Translate this sentence",
-      "id": 6
-    },
-    {
-      "sentence": "I have a red pen.",
-      "answer": [
-        "من یک قلم سرخ دارم",
-        "من قلم سرخ دارم"
+        "من یک شاگرد هستم",
+        "من شاگرد هستم"
       ],
       "wordBank": [
         "من",
         "یک",
-        "قلم",
-        "سرخ",
-        "دارم",
-        "داشتم"
-      ],
-      "type": "translate",
-      "direction": "ltr",
-      "title": "Translate this sentence",
-      "id": 7
-    },
-    {
-      "sentence": "I _ a letter to my friend last night.",
-      "answer": "wrote",
-      "hardness": "Medium",
-      "translate": "دیشب به دوستم نامه نوشتم.",
-      "wordBank": [
-        "write",
-        "wrote",
-        "written",
-        "sending"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 8
-    },
-    {
-      "sentence": "The coffee is _ hot to drink.",
-      "answer": "too",
-      "hardness": "Medium",
-      "translate": "قهوه برای خوردن خیلی داغ است.",
-      "wordBank": [
-        "too",
-        "very cold",
-        "something",
-        "not good",
-        "better"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 9
-    },
-    {
-      "sentence": "She is _ than her brother.",
-      "answer": "taller",
-      "hardness": "Hell",
-      "translate": "او از برادرش بلندتر است.",
-      "wordBank": [
-        "tall",
-        "taller",
-        "tallest",
-        "more tall"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 10
-    },
-    {
-      "answer": "present continuous",
-      "sentence": "which tense is this sentence? \"I am reading a book now\"",
-      "options": [
-        "present simple",
-        "past simple",
-        "future simple",
-        "present continuous"
-      ],
-      "type": "selectCorrect",
-      "direction": "ltr",
-      "title": "Select correct",
-      "id": 11
-    },
-    {
-      "answer": "past continuous",
-      "sentence": "which tense is this sentence? \"She was sleeping at 10 pm\"",
-      "options": [
-        "present simple",
-        "past simple",
-        "present continuous",
-        "past continuous"
-      ],
-      "type": "selectCorrect",
-      "direction": "ltr",
-      "title": "Select correct",
-      "id": 12
-    }
-  ],
-  "L4": [
-    {
-      "sentence": "Trees have leaves.",
-      "answer": true,
-      "type": "trueFalse",
-      "direction": "ltr",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 1
-    },
-    {
-      "sentence": "Rocks are soft.",
-      "answer": false,
-      "type": "trueFalse",
-      "direction": "ltr",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 2
-    },
-    {
-      "sentence": "English uses the Latin alphabet.",
-      "answer": true,
-      "type": "trueFalse",
-      "direction": "ltr",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 3
-    },
-    {
-      "answer": [
-        "simple",
-        "cont",
-        "perfect",
-        "perfect cont"
-      ],
-      "synonyms": {
-        "continouos": "cont",
-        "continuous": "cont",
-        "progressive": "cont",
-        "perfect continouos": "perfect cont",
-        "perfect progressive": "perfect cont"
-      },
-      "sentence": "۴ زمان گذشته را بنویسید.",
-      "explanition": {
-        "title": "زمان گذشته",
-        "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
-        "types": "simple\n continuous\n perfect\n perfect continuous"
-      },
-      "type": "nameTypes",
-      "direction": "ltr",
-      "title": "Name types",
-      "id": 4
-    },
-    {
-      "sentence": "I need help.",
-      "answer": [
-        "من کمک نیاز دارم"
-      ],
-      "wordBank": [
-        "من",
-        "کمک",
-        "نیاز",
-        "دارم",
-        "نیازداشتن",
-        "دوست"
-      ],
-      "type": "translate",
-      "direction": "ltr",
-      "title": "Translate this sentence",
-      "id": 5
-    },
-    {
-      "sentence": "He is not here.",
-      "answer": [
-        "او اینجا نیست"
-      ],
-      "wordBank": [
-        "او",
-        "اینجا",
-        "نیست",
-        "هست",
-        "آنجا",
-        "منزل"
-      ],
-      "type": "translate",
-      "direction": "ltr",
-      "title": "Translate this sentence",
-      "id": 6
-    },
-    {
-      "sentence": "We eat rice every day.",
-      "answer": [
-        "ما هر روز برنج می‌خوریم"
-      ],
-      "wordBank": [
-        "ما",
-        "هر",
-        "روز",
-        "برنج",
-        "می‌خوریم",
-        "نان",
-        "سبزی"
-      ],
-      "type": "translate",
-      "direction": "ltr",
-      "title": "Translate this sentence",
-      "id": 7
-    },
-    {
-      "sentence": "I _ two sisters.",
-      "answer": "have",
-      "hardness": "Easy",
-      "translate": "من دو خواهر دارم.",
-      "wordBank": [
-        "have",
-        "has",
-        "think",
-        "am"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 8
-    },
-    {
-      "sentence": "My name _ Ali.",
-      "answer": "is",
-      "hardness": "Easy",
-      "translate": "اسم من علی است.",
-      "wordBank": [
-        "am",
-        "is",
-        "are",
-        "be"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 9
-    },
-    {
-      "sentence": "He _ football.",
-      "answer": "plays",
-      "hardness": "Easy",
-      "translate": "او فوتبال بازی می‌کند.",
-      "wordBank": [
-        "play",
-        "plays",
-        "playing",
-        "soccer"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 10
-    },
-    {
-      "answer": "object",
-      "sentence": "in the sentence \"I love pizza\", what is \"pizza\"?",
-      "options": [
-        "subject",
-        "verb",
-        "object",
-        "adjective"
-      ],
-      "type": "selectCorrect",
-      "direction": "ltr",
-      "title": "Select correct",
-      "id": 11
-    },
-    {
-      "answer": "school",
-      "sentence": "where do students go to study?",
-      "options": [
-        "hospital",
-        "school",
-        "park",
-        "restaurant"
-      ],
-      "type": "selectCorrect",
-      "direction": "ltr",
-      "title": "Select correct",
-      "id": 12
-    }
-  ],
-  "L5": [
-    {
-      "sentence": "Red is a color.",
-      "answer": true,
-      "type": "trueFalse",
-      "direction": "ltr",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 1
-    },
-    {
-      "sentence": "A triangle has 4 sides.",
-      "answer": false,
-      "type": "trueFalse",
-      "direction": "ltr",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 2
-    },
-    {
-      "sentence": "A book has pages.",
-      "answer": true,
-      "type": "trueFalse",
-      "direction": "ltr",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 3
-    },
-    {
-      "answer": [
-        "simple",
-        "cont",
-        "perfect",
-        "perfect cont"
-      ],
-      "synonyms": {
-        "continouos": "cont",
-        "continuous": "cont",
-        "progressive": "cont",
-        "perfect continouos": "perfect cont",
-        "perfect progressive": "perfect cont"
-      },
-      "sentence": "۴ زمان گذشته را بنویسید.",
-      "explanition": {
-        "title": "زمان گذشته",
-        "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
-        "types": "simple\n continuous\n perfect\n perfect continuous"
-      },
-      "type": "nameTypes",
-      "direction": "ltr",
-      "title": "Name types",
-      "id": 4
-    },
-    {
-      "sentence": "I like apples.",
-      "answer": [
-        "من سیب دوست دارم",
-        "من سیب را دوست دارم"
-      ],
-      "wordBank": [
-        "من",
-        "سیب",
-        "دوست",
-        "دارم",
-        "دوست نداشتن"
-      ],
-      "type": "translate",
-      "direction": "ltr",
-      "title": "Translate this sentence",
-      "id": 5
-    },
-    {
-      "sentence": "He is happy.",
-      "answer": [
-        "او خوشحال است"
-      ],
-      "wordBank": [
-        "او",
-        "خوشحال",
-        "است",
-        "ناراحت",
-        "پسر"
-      ],
-      "type": "translate",
-      "direction": "ltr",
-      "title": "Translate this sentence",
-      "id": 6
-    },
-    {
-      "sentence": "We are friends.",
-      "answer": [
-        "ما دوست هستیم"
-      ],
-      "wordBank": [
-        "ما",
-        "دوست",
-        "هستیم",
-        "دشمن",
-        "خواهر"
-      ],
-      "type": "translate",
-      "direction": "ltr",
-      "title": "Translate this sentence",
-      "id": 7
-    },
-    {
-      "sentence": "You can`t _ a pilot.",
-      "answer": "be",
-      "hardness": "Hell",
-      "translate": "تو نمیتوانی خلبان باشی",
-      "wordBank": [
-        "how",
-        "learn",
-        "be",
-        "make",
-        "airplane"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 8
-    },
-    {
-      "sentence": "How to _ fast in soccer?",
-      "answer": "run",
-      "hardness": "Easy",
-      "translate": "چطور در فوتبال تیز بدویم",
-      "wordBank": [
-        "why",
-        "football",
-        "learn",
-        "run"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 9
-    },
-    {
-      "sentence": "Be your _",
-      "answer": "self",
-      "hardness": "Veteran",
-      "translate": "خودت باش",
-      "wordBank": [
-        "kind",
-        "dog",
-        "father",
-        "self",
-        "goal"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 10
-    },
-    {
-      "answer": "summer",
-      "sentence": "which season is the hottest?",
-      "options": [
-        "summer",
-        "winter",
-        "fall",
-        "spring"
-      ],
-      "type": "selectCorrect",
-      "direction": "ltr",
-      "title": "Select correct",
-      "id": 11
-    },
-    {
-      "answer": "slowly",
-      "sentence": "کدام کلمه یک قید است؟",
-      "explanition": {
-        "title": "قید",
-        "des": "قید ها چگونگی انجام عمل را بیان میکنند: \n I run slowly \nکلمه slowly یعنی به آهستگی\n",
-        "types": "نکته جالب: اکثر قید ها با حروف ly خطم میشوند \nslow = صفت\nslowly = قید"
-      },
-      "options": [
-        "nose",
-        "slowly",
-        "eye",
-        "slow"
-      ],
-      "type": "selectCorrect",
-      "direction": "ltr",
-      "title": "Select correct",
-      "id": 12
-    }
-  ],
-  "L6": [
-    {
-      "sentence": "کلمه Verb یک عمل را نشان میدهد",
-      "answer": true,
-      "type": "trueFalse",
-      "direction": "ltr",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 1
-    },
-    {
-      "sentence": "We wear shoes on our feet.",
-      "answer": true,
-      "type": "trueFalse",
-      "direction": "ltr",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 2
-    },
-    {
-      "sentence": "کلمه I یک اول شخص مفرد است",
-      "answer": true,
-      "type": "trueFalse",
-      "direction": "ltr",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 3
-    },
-    {
-      "answer": [
-        "simple",
-        "cont",
-        "perfect",
-        "perfect cont"
-      ],
-      "synonyms": {
-        "continouos": "cont",
-        "continuous": "cont",
-        "progressive": "cont",
-        "perfect continouos": "perfect cont",
-        "perfect progressive": "perfect cont"
-      },
-      "sentence": "۴ زمان گذشته را بنویسید.",
-      "explanition": {
-        "title": "زمان گذشته",
-        "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
-        "types": "simple\n continuous\n perfect\n perfect continuous"
-      },
-      "type": "nameTypes",
-      "direction": "ltr",
-      "title": "Name types",
-      "id": 4
-    },
-    {
-      "sentence": "I want water.",
-      "answer": [
-        "من آب می‌خواهم",
-        "آب می‌خواهم"
-      ],
-      "wordBank": [
-        "من",
-        "آب",
-        "می‌خواهم",
-        "شیر",
-        "غذا"
-      ],
-      "type": "translate",
-      "direction": "ltr",
-      "title": "Translate this sentence",
-      "id": 5
-    },
-    {
-      "sentence": "The cat is on the table.",
-      "answer": [
-        "گربه روی میز است"
-      ],
-      "wordBank": [
-        "گربه",
-        "روی",
-        "میز",
-        "است",
-        "زیر",
-        "چوکی"
-      ],
-      "type": "translate",
-      "direction": "ltr",
-      "title": "Translate this sentence",
-      "id": 6
-    },
-    {
-      "sentence": "I am a boy.",
-      "answer": [
-        "من یک پسر هستم",
-        "من پسر هستم"
-      ],
-      "wordBank": [
-        "من",
-        "یک",
-        "پسر",
+        "شاگرد",
         "هستم",
-        "دختر",
+        "معلم",
+        "داکتر"
+      ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
+      "id": 6
+    },
+    {
+      "sentence": "She is a teacher.",
+      "answer": [
+        "او یک معلم است",
+        "او معلم است"
+      ],
+      "wordBank": [
+        "او",
+        "یک",
+        "معلم",
+        "است",
+        "شاگرد",
         "مرد"
       ],
       "type": "translate",
       "direction": "ltr",
       "title": "Translate this sentence",
       "id": 7
-    },
-    {
-      "sentence": "She _ to become a doctor.",
-      "answer": "wants",
-      "hardness": "Easy",
-      "translate": "او می‌خواهد داکتر شود.",
-      "wordBank": [
-        "wanted",
-        "wants",
-        "can",
-        "very much"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 8
-    },
-    {
-      "sentence": "The children _ playing outside.",
-      "answer": "are",
-      "hardness": "Easy",
-      "translate": "بچه‌ها بیرون مشغول بازی هستند.",
-      "wordBank": [
-        "wish",
-        "is",
-        "are",
-        "was"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 9
-    },
-    {
-      "sentence": "I _ you yesterday but you were not home.",
-      "answer": "called",
-      "hardness": "Hell",
-      "translate": "دیروز با شما تماس گرفتم اما خانه نبودید.",
-      "wordBank": [
-        "call",
-        "called",
-        "was",
-        "phone",
-        "have to",
-        "very"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 10
-    },
-    {
-      "answer": "present simple",
-      "sentence": "which tense do we use for habits and routines?",
-      "options": [
-        "present simple",
-        "past simple",
-        "future simple",
-        "present continuous"
-      ],
-      "type": "selectCorrect",
-      "direction": "ltr",
-      "title": "Select correct",
-      "id": 11
-    },
-    {
-      "answer": "past simple",
-      "sentence": "which tense do we use for actions finished in the past?",
-      "options": [
-        "present simple",
-        "past simple",
-        "future simple",
-        "present continuous"
-      ],
-      "type": "selectCorrect",
-      "direction": "ltr",
-      "title": "Select correct",
-      "id": 12
-    }
-  ],
-  "L7": [
-    {
-      "sentence": "A cow gives milk.",
-      "answer": true,
-      "type": "trueFalse",
-      "direction": "ltr",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 1
-    },
-    {
-      "sentence": "A chair is for sitting.",
-      "answer": true,
-      "type": "trueFalse",
-      "direction": "ltr",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 2
-    },
-    {
-      "sentence": "زمان حال ساده عادات روزمره را بیان میکند",
-      "answer": true,
-      "type": "trueFalse",
-      "direction": "ltr",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 3
-    },
-    {
-      "answer": [
-        "simple",
-        "cont",
-        "perfect",
-        "perfect cont"
-      ],
-      "synonyms": {
-        "continouos": "cont",
-        "continuous": "cont",
-        "progressive": "cont",
-        "perfect continouos": "perfect cont",
-        "perfect progressive": "perfect cont"
-      },
-      "sentence": "۴ زمان گذشته را بنویسید.",
-      "explanition": {
-        "title": "زمان گذشته",
-        "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
-        "types": "simple\n continuous\n perfect\n perfect continuous"
-      },
-      "type": "nameTypes",
-      "direction": "ltr",
-      "title": "Name types",
-      "id": 4
-    },
-    {
-      "sentence": "The dog runs fast.",
-      "answer": [
-        "سگ سریع میدود"
-      ],
-      "wordBank": [
-        "سگ",
-        "سریع",
-        "میدود",
-        "آهسته",
-        "گربه",
-        "پرنده"
-      ],
-      "type": "translate",
-      "direction": "ltr",
-      "title": "Translate this sentence",
-      "id": 5
-    },
-    {
-      "sentence": "We are happy.",
-      "answer": [
-        "ما خوشحال هستیم"
-      ],
-      "wordBank": [
-        "ما",
-        "خوشحال",
-        "هستیم",
-        "غمگین",
-        "بیمار",
-        "خسته"
-      ],
-      "type": "translate",
-      "direction": "ltr",
-      "title": "Translate this sentence",
-      "id": 6
-    },
-    {
-      "sentence": "This is a chair.",
-      "answer": [
-        "این یک چوکی است",
-        "این چوکی است"
-      ],
-      "wordBank": [
-        "این",
-        "یک",
-        "چوکی",
-        "است",
-        "میز",
-        "قفسه"
-      ],
-      "type": "translate",
-      "direction": "ltr",
-      "title": "Translate this sentence",
-      "id": 7
-    },
-    {
-      "sentence": "If it rains tomorrow, we _ at home.",
-      "answer": "will stay",
-      "hardness": "Hell",
-      "translate": "اگر فردا باران ببارد، خانه می‌مانیم.",
-      "wordBank": [
-        "went",
-        "will stay",
-        "stayed",
-        "never"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 8
     },
     {
       "sentence": "I _ a student.",
@@ -1321,7 +132,7 @@
       "type": "fillBlank",
       "direction": "ltr",
       "title": "Fill the blank",
-      "id": 9
+      "id": 8
     },
     {
       "sentence": "She _ a teacher.",
@@ -1337,7 +148,41 @@
       "type": "fillBlank",
       "direction": "ltr",
       "title": "Fill the blank",
+      "id": 9
+    },
+    {
+      "sentence": "They _ happy.",
+      "answer": "are",
+      "hardness": "Easy",
+      "translate": "آن‌ها خوشحال هستند.",
+      "wordBank": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
       "id": 10
+    },
+    {
+      "answer": "past simple",
+      "explanition": {
+        "title": "زمان گذشته ساده",
+        "des": "زمانیست که در گذشته اتفاق افتاده باشد و ختم شده باشد.\nتبدیل فعل به گذشته:بیشتر افعال با اضافه کردن ed در آخر فعل به حالت گذشته تبدیل میشوند.\nولی بعضی از افعال شکل خاص خود را دارند.",
+        "types": "watch - watch ed\nlearn - learn ed\nbuy - bought"
+      },
+      "sentence": "which tense is this sentence? \"I learned English\"",
+      "options": [
+        "future simple",
+        "past continuous",
+        "past simple"
+      ],
+      "type": "selectCorrect",
+      "direction": "ltr",
+      "title": "Select correct",
+      "id": 11
     },
     {
       "answer": "on friday",
@@ -1351,24 +196,10 @@
       "type": "selectCorrect",
       "direction": "ltr",
       "title": "Select correct",
-      "id": 11
-    },
-    {
-      "answer": "describes a noun",
-      "sentence": "what does an adjective do ?",
-      "options": [
-        "avoid repetition",
-        "describes a noun",
-        "describes a verb",
-        "the question is wrong"
-      ],
-      "type": "selectCorrect",
-      "direction": "ltr",
-      "title": "Select correct",
       "id": 12
     }
   ],
-  "L8": [
+  "L2": [
     {
       "sentence": "We live on Earth.",
       "answer": true,
@@ -1407,41 +238,34 @@
     },
     {
       "answer": [
-        "simple",
-        "cont",
-        "perfect",
-        "perfect cont"
+        "spring",
+        "summer",
+        "fall",
+        "winter"
       ],
       "synonyms": {
-        "continouos": "cont",
-        "continuous": "cont",
-        "progressive": "cont",
-        "perfect continouos": "perfect cont",
-        "perfect progressive": "perfect cont"
+        "autumn": "fall",
+        "autum": "fall",
+        "sumer": "summer"
       },
-      "sentence": "۴ زمان گذشته را بنویسید.",
-      "explanition": {
-        "title": "زمان گذشته",
-        "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
-        "types": "simple\n continuous\n perfect\n perfect continuous"
-      },
+      "sentence": "۴ فصل سال را بنویسید.",
       "type": "nameTypes",
       "direction": "ltr",
       "title": "Name types",
       "id": 4
     },
     {
-      "sentence": "This is my brother.",
+      "sentence": "What is your name?",
       "answer": [
-        "این برادر من است"
+        "اسم شما چیست؟",
+        "نام شما چیست؟"
       ],
       "wordBank": [
-        "این",
-        "برادر",
-        "من",
-        "است",
-        "خواهر",
-        "پدر"
+        "اسم",
+        "چیست؟",
+        "شما",
+        "نام",
+        "کجا"
       ],
       "type": "translate",
       "direction": "ltr",
@@ -1449,17 +273,17 @@
       "id": 5
     },
     {
-      "sentence": "I am not sleepy.",
+      "sentence": "My name is Ali.",
       "answer": [
-        "من خواب‌آلود نیستم"
+        "اسم من علی است"
       ],
       "wordBank": [
+        "اسم",
         "من",
-        "خواب‌آلود",
-        "نیستم",
-        "هستم",
-        "خسته",
-        "بیدار"
+        "علی",
+        "است",
+        "تو",
+        "شاگرد"
       ],
       "type": "translate",
       "direction": "ltr",
@@ -1467,17 +291,17 @@
       "id": 6
     },
     {
-      "sentence": "She has long hair.",
+      "sentence": "I like apples.",
       "answer": [
-        "او موی بلند دارد"
+        "من سیب دوست دارم",
+        "من سیب را دوست دارم"
       ],
       "wordBank": [
-        "او",
-        "موی",
-        "بلند",
-        "دارد",
-        "کوتاه",
-        "سیاه"
+        "من",
+        "سیب",
+        "دوست",
+        "دارم",
+        "دوست نداشتن"
       ],
       "type": "translate",
       "direction": "ltr",
@@ -1485,16 +309,15 @@
       "id": 7
     },
     {
-      "sentence": "They _ to music.",
-      "answer": "listen",
-      "hardness": "Medium",
-      "translate": "آن‌ها به موسیقی گوش می‌دهند.",
+      "sentence": "I _ apples.",
+      "answer": "like",
+      "hardness": "Easy",
+      "translate": "من سیب دوست دارم.",
       "wordBank": [
-        "listen",
-        "listens",
-        "wash",
-        "list",
-        "eat"
+        "like",
+        "come",
+        "kill",
+        "run"
       ],
       "type": "fillBlank",
       "direction": "ltr",
@@ -1502,15 +325,15 @@
       "id": 8
     },
     {
-      "sentence": "We _ happy today, because we won the game",
-      "answer": "are",
-      "hardness": "Medium",
-      "translate": "ما امروز خوشحالیم.",
+      "sentence": "He _ a dog.",
+      "answer": "has",
+      "hardness": "Easy",
+      "translate": "او یک سگ دارد.",
       "wordBank": [
-        "am",
-        "is",
-        "are",
-        "be"
+        "have",
+        "has",
+        "try",
+        "is"
       ],
       "type": "fillBlank",
       "direction": "ltr",
@@ -1518,16 +341,15 @@
       "id": 9
     },
     {
-      "sentence": "He _ his own book, and sold it.",
-      "answer": "wrote",
-      "hardness": "Hard",
-      "translate": "او کتاب خودش را نوشت و آنرا فروخت",
+      "sentence": "We _ to school every day.",
+      "answer": "go",
+      "hardness": "Easy",
+      "translate": "ما هر روز به مکتب می‌رویم.",
       "wordBank": [
-        "sells",
-        "wrote",
-        "builds",
-        "made",
-        "write"
+        "go",
+        "goes",
+        "going",
+        "went"
       ],
       "type": "fillBlank",
       "direction": "ltr",
@@ -1535,13 +357,13 @@
       "id": 10
     },
     {
-      "answer": "blue",
-      "sentence": "what color is the sky on a clear day?",
+      "answer": "describes a noun",
+      "sentence": "what does an adjective do ?",
       "options": [
-        "green",
-        "blue",
-        "gray",
-        "white"
+        "avoid repetition",
+        "describes a noun",
+        "describes a verb",
+        "the question is wrong"
       ],
       "type": "selectCorrect",
       "direction": "ltr",
@@ -1549,13 +371,213 @@
       "id": 11
     },
     {
-      "answer": "five",
-      "sentence": "how many fingers does a human have on one hand?",
+      "answer": "Black",
+      "explanition": {
+        "des": "صفت یا adjective چگونگی یک اسم را توصیف میکند، مثال:",
+        "title": "Adjective",
+        "types": "black book\n در اینجا black صفت و book اسم است"
+      },
+      "direction": "rtl",
+      "sentence": "کدام کلمه یک صفت است؟",
       "options": [
-        "four",
-        "five",
-        "six",
-        "three"
+        "You",
+        "Make",
+        "Black",
+        "make more formal"
+      ],
+      "type": "selectCorrect",
+      "title": "Select correct",
+      "id": 12
+    }
+  ],
+  "L3": [
+    {
+      "sentence": "Birds have hands.",
+      "answer": false,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 1
+    },
+    {
+      "sentence": "اولین حرف اسم خاص با حروف بزرگ نوشته میشود",
+      "answer": true,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 2
+    },
+    {
+      "sentence": "The moon is bigger than the sun.",
+      "answer": false,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 3
+    },
+    {
+      "answer": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday",
+        "sunday"
+      ],
+      "synonyms": {
+        "mon": "monday",
+        "tue": "tuesday",
+        "wed": "wednesday",
+        "thu": "thursday",
+        "fri": "friday",
+        "sat": "saturday",
+        "sun": "sunday"
+      },
+      "sentence": "روزهای هفته را بنویسید. (حداقل ۵ روز)",
+      "type": "nameTypes",
+      "direction": "ltr",
+      "title": "Name types",
+      "id": 4
+    },
+    {
+      "sentence": "He is happy.",
+      "answer": [
+        "او خوشحال است"
+      ],
+      "wordBank": [
+        "او",
+        "خوشحال",
+        "است",
+        "ناراحت",
+        "پسر"
+      ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
+      "id": 5
+    },
+    {
+      "sentence": "We are friends.",
+      "answer": [
+        "ما دوست هستیم"
+      ],
+      "wordBank": [
+        "ما",
+        "دوست",
+        "هستیم",
+        "دشمن",
+        "خواهر"
+      ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
+      "id": 6
+    },
+    {
+      "sentence": "This is a book.",
+      "answer": [
+        "این یک کتاب است",
+        "این کتاب است"
+      ],
+      "wordBank": [
+        "این",
+        "یک",
+        "کتاب",
+        "است",
+        "کتابچه",
+        "قلم"
+      ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
+      "id": 7
+    },
+    {
+      "sentence": "She _ breakfast at 7 am.",
+      "answer": "eats",
+      "hardness": "Easy",
+      "translate": "او ساعت ۷ صبح صبحانه می‌خورد.",
+      "wordBank": [
+        "eat",
+        "eats",
+        "eating",
+        "swim"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 8
+    },
+    {
+      "sentence": "The cat is _ the table.",
+      "answer": "on",
+      "hardness": "Easy",
+      "translate": "گربه روی میز است.",
+      "wordBank": [
+        "on",
+        "hunting",
+        "a dog",
+        "future"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 9
+    },
+    {
+      "sentence": "I _ two sisters.",
+      "answer": "have",
+      "hardness": "Easy",
+      "translate": "من دو خواهر دارم.",
+      "wordBank": [
+        "have",
+        "has",
+        "think",
+        "am"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 10
+    },
+    {
+      "answer": "past progressive",
+      "direction": "rtl",
+      "explanition": {
+        "title": "گذشته جاری",
+        "des": "subject + was/were + verb + ing\nShe was cooking\nاو در حال آشپزی بود"
+      },
+      "sentence": "این جمله در کدام زمان است؟ \"I was running\"",
+      "options": [
+        "future simple",
+        "past simple",
+        "past progressive"
+      ],
+      "type": "selectCorrect",
+      "title": "Select correct",
+      "id": 11
+    },
+    {
+      "answer": "TV",
+      "sentence": "where do we watch a movie?",
+      "options": [
+        "TV",
+        "fridge",
+        "bed",
+        "school"
       ],
       "type": "selectCorrect",
       "direction": "ltr",
@@ -1563,7 +585,19 @@
       "id": 12
     }
   ],
-  "L9": [
+  "L4": [
+    {
+      "sentence": "کلمه adjective یعنی صفت",
+      "answer": true,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 1
+    },
     {
       "sentence": "Dogs can speak English.",
       "answer": false,
@@ -1574,7 +608,7 @@
         "true",
         "false"
       ],
-      "id": 1
+      "id": 2
     },
     {
       "sentence": "با اضافه کردن حرف s اسم جمع میشود",
@@ -1586,39 +620,21 @@
         "true",
         "false"
       ],
-      "id": 2
-    },
-    {
-      "sentence": "Snow is black.",
-      "answer": false,
-      "type": "trueFalse",
-      "direction": "ltr",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
       "id": 3
     },
     {
       "answer": [
-        "simple",
-        "cont",
-        "perfect",
-        "perfect cont"
+        "a",
+        "e",
+        "i",
+        "o",
+        "u"
       ],
-      "synonyms": {
-        "continouos": "cont",
-        "continuous": "cont",
-        "progressive": "cont",
-        "perfect continouos": "perfect cont",
-        "perfect progressive": "perfect cont"
-      },
-      "sentence": "۴ زمان گذشته را بنویسید.",
+      "sentence": "۵ حرف صدادار در زبان انگلیسی را بنویسید.",
       "explanition": {
-        "title": "زمان گذشته",
-        "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
-        "types": "simple\n continuous\n perfect\n perfect continuous"
+        "title": "Vowels",
+        "des": "در زبان انگلیسی 5 حرف صدا دار وجود دارد:\n",
+        "types": "a, e, i, o, u"
       },
       "type": "nameTypes",
       "direction": "ltr",
@@ -1626,198 +642,23 @@
       "id": 4
     },
     {
-      "sentence": "The cup is small.",
+      "sentence": "I have a cat.",
       "answer": [
-        "پیاله کوچک است"
+        "من یک گربه دارم",
+        "من گربه دارم"
       ],
       "wordBank": [
-        "پیاله",
-        "کوچک",
-        "است",
-        "بزرگ",
-        "نوزاد",
-        "پسر"
+        "من",
+        "یک",
+        "گربه",
+        "دارم",
+        "سگ",
+        "پرنده"
       ],
       "type": "translate",
       "direction": "ltr",
       "title": "Translate this sentence",
       "id": 5
-    },
-    {
-      "sentence": "We are ready.",
-      "answer": [
-        "ما آماده هستیم"
-      ],
-      "wordBank": [
-        "ما",
-        "آماده",
-        "هستیم",
-        "خسته",
-        "بیمار",
-        "دیر"
-      ],
-      "type": "translate",
-      "direction": "ltr",
-      "title": "Translate this sentence",
-      "id": 6
-    },
-    {
-      "sentence": "He opens the window.",
-      "answer": [
-        "او پنجره را باز میکند"
-      ],
-      "wordBank": [
-        "او",
-        "پنجره",
-        "را",
-        "باز",
-        "میکند",
-        "در",
-        "میز"
-      ],
-      "type": "translate",
-      "direction": "ltr",
-      "title": "Translate this sentence",
-      "id": 7
-    },
-    {
-      "sentence": "He _ to bed at 10 PM.",
-      "answer": "goes",
-      "hardness": "Easy",
-      "translate": "او ساعت ۱۰ شب به رختخواب می‌رود.",
-      "wordBank": [
-        "go",
-        "goes",
-        "going",
-        "sleep"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 8
-    },
-    {
-      "sentence": "They _ playing football in the yard.",
-      "answer": "are",
-      "hardness": "Easy",
-      "translate": "آنها در حیاط فوتبال بازی می‌کنند.",
-      "wordBank": [
-        "can",
-        "is",
-        "are",
-        "was"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 9
-    },
-    {
-      "sentence": "I _ a new bag yesterday.",
-      "answer": "bought",
-      "hardness": "Medium",
-      "translate": "من دیروز یک کیف جدید خریدم.",
-      "wordBank": [
-        "buy",
-        "bought",
-        "buying",
-        "take"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 10
-    },
-    {
-      "answer": "kabul",
-      "sentence": "what is the capital of afghanistan?",
-      "options": [
-        "herat",
-        "kandahar",
-        "mazar",
-        "kabul"
-      ],
-      "type": "selectCorrect",
-      "direction": "ltr",
-      "title": "Select correct",
-      "id": 11
-    },
-    {
-      "answer": "pencil",
-      "sentence": "what do you use to write and erase with an eraser?",
-      "options": [
-        "pen",
-        "pencil",
-        "marker",
-        "chalk"
-      ],
-      "type": "selectCorrect",
-      "direction": "ltr",
-      "title": "Select correct",
-      "id": 12
-    }
-  ],
-  "L10": [
-    {
-      "sentence": "A circle has corners.",
-      "answer": false,
-      "type": "trueFalse",
-      "direction": "ltr",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 1
-    },
-    {
-      "sentence": "قید نشان میدهد که یک عمل چگونه انجام میشود",
-      "answer": true,
-      "type": "trueFalse",
-      "direction": "ltr",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 2
-    },
-    {
-      "sentence": "کلمه adverb به معنی قید است",
-      "answer": true,
-      "type": "trueFalse",
-      "direction": "ltr",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 3
-    },
-    {
-      "answer": [
-        "simple",
-        "cont",
-        "perfect",
-        "perfect cont"
-      ],
-      "synonyms": {
-        "continouos": "cont",
-        "continuous": "cont",
-        "progressive": "cont",
-        "perfect continouos": "perfect cont",
-        "perfect progressive": "perfect cont"
-      },
-      "sentence": "۴ زمان گذشته را بنویسید.",
-      "explanition": {
-        "title": "زمان گذشته",
-        "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
-        "types": "simple\n continuous\n perfect\n perfect continuous"
-      },
-      "type": "nameTypes",
-      "direction": "ltr",
-      "title": "Name types",
-      "id": 4
     },
     {
       "sentence": "The weather is nice today.",
@@ -1835,7 +676,7 @@
       "type": "translate",
       "direction": "ltr",
       "title": "Translate this sentence",
-      "id": 5
+      "id": 6
     },
     {
       "sentence": "I go to school.",
@@ -1854,7 +695,145 @@
       "type": "translate",
       "direction": "ltr",
       "title": "Translate this sentence",
-      "id": 6
+      "id": 7
+    },
+    {
+      "sentence": "My name _ Ali.",
+      "answer": "is",
+      "hardness": "Easy",
+      "translate": "اسم من علی است.",
+      "wordBank": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 8
+    },
+    {
+      "sentence": "He _ football.",
+      "answer": "plays",
+      "hardness": "Easy",
+      "translate": "او فوتبال بازی می‌کند.",
+      "wordBank": [
+        "play",
+        "plays",
+        "playing",
+        "soccer"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 9
+    },
+    {
+      "sentence": "We _ English with our teacher in the class.",
+      "answer": "speak",
+      "hardness": "Medium",
+      "translate": "ما انگلیسی صحبت می‌کنیم.",
+      "wordBank": [
+        "speak",
+        "speaks",
+        "say",
+        "can",
+        "front"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 10
+    },
+    {
+      "answer": "monday",
+      "sentence": "which day comes after sunday?",
+      "options": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "friday"
+      ],
+      "type": "selectCorrect",
+      "direction": "ltr",
+      "title": "Select correct",
+      "id": 11
+    },
+    {
+      "answer": "summer",
+      "sentence": "which season is the hottest?",
+      "options": [
+        "summer",
+        "winter",
+        "fall",
+        "spring"
+      ],
+      "type": "selectCorrect",
+      "direction": "ltr",
+      "title": "Select correct",
+      "id": 12
+    }
+  ],
+  "L5": [
+    {
+      "sentence": "Snow is black.",
+      "answer": false,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 1
+    },
+    {
+      "sentence": "Cars have legs.",
+      "answer": false,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 2
+    },
+    {
+      "sentence": "Cats can read books.",
+      "answer": false,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 3
+    },
+    {
+      "title": "Question",
+      "answer": [
+        "adjective"
+      ],
+      "sentence": "چه چیزی یک اسم را توصیف میکند؟",
+      "synonyms": {
+        "صفت": "adjective",
+        "ajective": "adjective",
+        "سفت": "adjective",
+        "adjektiv": "adjective",
+        "ajektive": "adjective",
+        "adj": "adjective"
+      },
+      "explanition": {
+        "des": "صفت یا adjective چگونگی یک اسم را توصیف میکند، مثال:",
+        "title": "Adjective",
+        "types": "black book\n در اینجا black صفت و book اسم است"
+      },
+      "type": "nameTypes",
+      "direction": "ltr",
+      "id": 4
     },
     {
       "sentence": "She is my sister.",
@@ -1872,179 +851,20 @@
       "type": "translate",
       "direction": "ltr",
       "title": "Translate this sentence",
-      "id": 7
-    },
-    {
-      "sentence": "They _ arrive on time.",
-      "answer": "will",
-      "hardness": "Hell",
-      "translate": "آنها سر وقت خواهند رسید.",
-      "wordBank": [
-        "will",
-        "would",
-        "can",
-        "must"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 8
-    },
-    {
-      "sentence": "I _ a letter to my friend last night.",
-      "answer": "wrote",
-      "hardness": "Medium",
-      "translate": "دیشب به دوستم نامه نوشتم.",
-      "wordBank": [
-        "write",
-        "wrote",
-        "written",
-        "sending"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 9
-    },
-    {
-      "sentence": "The coffee is _ hot to drink.",
-      "answer": "too",
-      "hardness": "Medium",
-      "translate": "قهوه برای خوردن خیلی داغ است.",
-      "wordBank": [
-        "too",
-        "very cold",
-        "something",
-        "not good",
-        "better"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 10
-    },
-    {
-      "answer": "past continuous",
-      "sentence": "which tense is this sentence? \"She was sleeping at 10 pm\"",
-      "options": [
-        "present simple",
-        "past simple",
-        "present continuous",
-        "past continuous"
-      ],
-      "type": "selectCorrect",
-      "direction": "ltr",
-      "title": "Select correct",
-      "id": 11
-    },
-    {
-      "answer": "verb",
-      "sentence": "which word shows an action?",
-      "options": [
-        "noun",
-        "verb",
-        "adjective",
-        "adverb"
-      ],
-      "type": "selectCorrect",
-      "direction": "ltr",
-      "title": "Select correct",
-      "id": 12
-    }
-  ],
-  "L11": [
-    {
-      "sentence": "کلمه adjective یک اسم را توصیف میکند",
-      "answer": true,
-      "type": "trueFalse",
-      "direction": "ltr",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 1
-    },
-    {
-      "sentence": "Monday is a day of the week.",
-      "answer": true,
-      "type": "trueFalse",
-      "direction": "ltr",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 2
-    },
-    {
-      "sentence": "There are 10 months in a year.",
-      "answer": false,
-      "type": "trueFalse",
-      "direction": "ltr",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 3
-    },
-    {
-      "answer": [
-        "simple",
-        "cont",
-        "perfect",
-        "perfect cont"
-      ],
-      "synonyms": {
-        "continouos": "cont",
-        "continuous": "cont",
-        "progressive": "cont",
-        "perfect continouos": "perfect cont",
-        "perfect progressive": "perfect cont"
-      },
-      "sentence": "۴ زمان گذشته را بنویسید.",
-      "explanition": {
-        "title": "زمان گذشته",
-        "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
-        "types": "simple\n continuous\n perfect\n perfect continuous"
-      },
-      "type": "nameTypes",
-      "direction": "ltr",
-      "title": "Name types",
-      "id": 4
-    },
-    {
-      "sentence": "I am tired.",
-      "answer": [
-        "من خسته هستم"
-      ],
-      "wordBank": [
-        "من",
-        "خسته",
-        "هستم",
-        "خوشحال",
-        "ناراحت",
-        "بیمار"
-      ],
-      "type": "translate",
-      "direction": "ltr",
-      "title": "Translate this sentence",
       "id": 5
     },
     {
-      "sentence": "We have a car.",
+      "sentence": "Where are you from?",
       "answer": [
-        "ما یک موتر داریم",
-        "ما موتر داریم"
+        "از کجا هستی؟",
+        "شما از کجا هستی؟"
       ],
       "wordBank": [
-        "ما",
-        "یک",
-        "موتر",
-        "داریم",
-        "موتور",
-        "دوچرخه"
+        "از",
+        "کجا",
+        "هستی؟",
+        "شما",
+        "چیست"
       ],
       "type": "translate",
       "direction": "ltr",
@@ -2052,18 +872,17 @@
       "id": 6
     },
     {
-      "sentence": "They are students.",
+      "sentence": "I am from Afghanistan.",
       "answer": [
-        "آنها شاگرد هستند",
-        "آنها شاگردند"
+        "من از افغانستان هستم"
       ],
       "wordBank": [
-        "آنها",
-        "شاگرد",
-        "هستند",
-        "شاگردند",
-        "معلم",
-        "مهندس"
+        "من",
+        "از",
+        "افغانستان",
+        "هستم",
+        "آمریکا",
+        "نیستم"
       ],
       "type": "translate",
       "direction": "ltr",
@@ -2071,212 +890,17 @@
       "id": 7
     },
     {
-      "sentence": "The cat is _ the table.",
-      "answer": "on",
+      "sentence": "I _ from Afghanistan.",
+      "answer": "am",
       "hardness": "Easy",
-      "translate": "گربه روی میز است.",
-      "wordBank": [
-        "on",
-        "hunting",
-        "a dog",
-        "future"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 8
-    },
-    {
-      "sentence": "I _ two sisters.",
-      "answer": "have",
-      "hardness": "Easy",
-      "translate": "من دو خواهر دارم.",
-      "wordBank": [
-        "have",
-        "has",
-        "think",
-        "am"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 9
-    },
-    {
-      "sentence": "My name _ Ali.",
-      "answer": "is",
-      "hardness": "Easy",
-      "translate": "اسم من علی است.",
+      "translate": "من از افغانستان هستم.",
       "wordBank": [
         "am",
         "is",
         "are",
-        "be"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 10
-    },
-    {
-      "answer": "school",
-      "sentence": "where do students go to study?",
-      "options": [
-        "hospital",
-        "school",
-        "park",
-        "restaurant"
-      ],
-      "type": "selectCorrect",
-      "direction": "ltr",
-      "title": "Select correct",
-      "id": 11
-    },
-    {
-      "answer": "december",
-      "sentence": "which month is the last?",
-      "options": [
-        "november",
-        "december",
-        "january",
-        "october"
-      ],
-      "type": "selectCorrect",
-      "direction": "ltr",
-      "title": "Select correct",
-      "id": 12
-    }
-  ],
-  "L12": [
-    {
-      "sentence": "A doctor helps sick people.",
-      "answer": true,
-      "type": "trueFalse",
-      "direction": "ltr",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 1
-    },
-    {
-      "sentence": "A teacher sells food.",
-      "answer": false,
-      "type": "trueFalse",
-      "direction": "ltr",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 2
-    },
-    {
-      "sentence": "برای سوم شخص مفرد در زمان حال ساده S اضافه میکنیم",
-      "answer": true,
-      "type": "trueFalse",
-      "direction": "ltr",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 3
-    },
-    {
-      "answer": [
-        "simple",
-        "cont",
-        "perfect",
-        "perfect cont"
-      ],
-      "synonyms": {
-        "continouos": "cont",
-        "continuous": "cont",
-        "progressive": "cont",
-        "perfect continouos": "perfect cont",
-        "perfect progressive": "perfect cont"
-      },
-      "sentence": "۴ زمان گذشته را بنویسید.",
-      "explanition": {
-        "title": "زمان گذشته",
-        "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
-        "types": "simple\n continuous\n perfect\n perfect continuous"
-      },
-      "type": "nameTypes",
-      "direction": "ltr",
-      "title": "Name types",
-      "id": 4
-    },
-    {
-      "sentence": "Where is the key?",
-      "answer": [
-        "کلید کجاست؟",
-        "کلید کجاست"
-      ],
-      "wordBank": [
-        "کلید",
-        "کجاست",
-        "کتاب",
-        "قلم",
-        "کتابچه",
-        "؟"
-      ],
-      "type": "translate",
-      "direction": "ltr",
-      "title": "Translate this sentence",
-      "id": 5
-    },
-    {
-      "sentence": "The book is new.",
-      "answer": [
-        "کتاب جدید است"
-      ],
-      "wordBank": [
-        "کتاب",
-        "جدید",
-        "است",
-        "کهنه",
-        "زیبا",
-        "بزرگ"
-      ],
-      "type": "translate",
-      "direction": "ltr",
-      "title": "Translate this sentence",
-      "id": 6
-    },
-    {
-      "sentence": "I am a doctor.",
-      "answer": [
-        "من یک داکتر هستم",
-        "من داکتر هستم"
-      ],
-      "wordBank": [
-        "من",
-        "یک",
-        "داکتر",
-        "هستم",
-        "پرستار",
-        "مهندس"
-      ],
-      "type": "translate",
-      "direction": "ltr",
-      "title": "Translate this sentence",
-      "id": 7
-    },
-    {
-      "sentence": "Learning English is not _.",
-      "answer": "hard",
-      "hardness": "Medium",
-      "translate": "یادگیری انگلیسی سخت نیست",
-      "wordBank": [
-        "hard",
-        "allready",
-        "how to",
-        "tough",
-        "make",
-        "language"
+        "be",
+        "iran",
+        "make"
       ],
       "type": "fillBlank",
       "direction": "ltr",
@@ -2284,16 +908,15 @@
       "id": 8
     },
     {
-      "sentence": "You can`t _ a pilot.",
-      "answer": "be",
-      "hardness": "Hell",
-      "translate": "تو نمیتوانی خلبان باشی",
+      "sentence": "She _ the job, but it is tough.",
+      "answer": "got",
+      "hardness": "Hard",
+      "translate": "او کار را گرفت ولی کار سختی است.",
       "wordBank": [
-        "how",
-        "learn",
-        "be",
-        "make",
-        "airplane"
+        "likes",
+        "give",
+        "got",
+        "build"
       ],
       "type": "fillBlank",
       "direction": "ltr",
@@ -2301,15 +924,15 @@
       "id": 9
     },
     {
-      "sentence": "How to _ fast in soccer?",
-      "answer": "run",
-      "hardness": "Easy",
-      "translate": "چطور در فوتبال تیز بدویم",
+      "sentence": "The book is _ .",
+      "answer": "mine",
+      "hardness": "Medium",
+      "translate": "کتاب از من است",
       "wordBank": [
-        "why",
-        "football",
-        "learn",
-        "run"
+        "on",
+        "mine",
+        "under",
+        "basket ball"
       ],
       "type": "fillBlank",
       "direction": "ltr",
@@ -2350,10 +973,10 @@
       "id": 12
     }
   ],
-  "L13": [
+  "L6": [
     {
-      "sentence": "A bicycle has 8 wheels.",
-      "answer": false,
+      "sentence": "There are 7 days in a week.",
+      "answer": true,
       "type": "trueFalse",
       "direction": "ltr",
       "title": "True or False",
@@ -2364,8 +987,8 @@
       "id": 1
     },
     {
-      "sentence": "Eyes are for seeing.",
-      "answer": true,
+      "sentence": "A square has 5 sides.",
+      "answer": false,
       "type": "trueFalse",
       "direction": "ltr",
       "title": "True or False",
@@ -2376,7 +999,7 @@
       "id": 2
     },
     {
-      "sentence": "A bed is for cooking.",
+      "sentence": "A circle has corners.",
       "answer": false,
       "type": "trueFalse",
       "direction": "ltr",
@@ -2389,417 +1012,19 @@
     },
     {
       "answer": [
-        "simple",
-        "cont",
-        "perfect",
-        "perfect cont"
+        "i",
+        "you",
+        "he",
+        "she",
+        "it",
+        "we",
+        "they"
       ],
-      "synonyms": {
-        "continouos": "cont",
-        "continuous": "cont",
-        "progressive": "cont",
-        "perfect continouos": "perfect cont",
-        "perfect progressive": "perfect cont"
-      },
-      "sentence": "۴ زمان گذشته را بنویسید.",
+      "sentence": "ضمایر فاعلی در زبان انگلیسی را بنویسید. (حداقل ۵ ضمیر)",
       "explanition": {
-        "title": "زمان گذشته",
-        "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
-        "types": "simple\n continuous\n perfect\n perfect continuous"
-      },
-      "type": "nameTypes",
-      "direction": "ltr",
-      "title": "Name types",
-      "id": 4
-    },
-    {
-      "sentence": "They are coming.",
-      "answer": [
-        "آنها می‌آیند"
-      ],
-      "wordBank": [
-        "آنها",
-        "می‌آیند",
-        "میروند",
-        "اینجا",
-        "آنجا"
-      ],
-      "type": "translate",
-      "direction": "ltr",
-      "title": "Translate this sentence",
-      "id": 5
-    },
-    {
-      "sentence": "Is this your bag?",
-      "answer": [
-        "آیا این کیف تو است؟",
-        "این کیف تو است؟"
-      ],
-      "wordBank": [
-        "آیا",
-        "این",
-        "کیف",
-        "تو",
-        "است؟",
-        "من",
-        "او"
-      ],
-      "type": "translate",
-      "direction": "ltr",
-      "title": "Translate this sentence",
-      "id": 6
-    },
-    {
-      "sentence": "The flower is beautiful.",
-      "answer": [
-        "گل زیبا است",
-        "گل زیباست"
-      ],
-      "wordBank": [
-        "گل",
-        "زیبا",
-        "است",
-        "زشت",
-        "سرخ",
-        "زیباست"
-      ],
-      "type": "translate",
-      "direction": "ltr",
-      "title": "Translate this sentence",
-      "id": 7
-    },
-    {
-      "sentence": "This is _ book.",
-      "answer": "my",
-      "hardness": "Easy",
-      "translate": "این کتاب من است.",
-      "wordBank": [
-        "my",
-        "I",
-        "me",
-        "mine",
-        "car"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 8
-    },
-    {
-      "sentence": "She _ to become a doctor.",
-      "answer": "wants",
-      "hardness": "Easy",
-      "translate": "او می‌خواهد داکتر شود.",
-      "wordBank": [
-        "wanted",
-        "wants",
-        "can",
-        "very much"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 9
-    },
-    {
-      "sentence": "The children _ playing outside.",
-      "answer": "are",
-      "hardness": "Easy",
-      "translate": "بچه‌ها بیرون مشغول بازی هستند.",
-      "wordBank": [
-        "wish",
-        "is",
-        "are",
-        "was"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 10
-    },
-    {
-      "answer": "past simple",
-      "sentence": "which tense do we use for actions finished in the past?",
-      "options": [
-        "present simple",
-        "past simple",
-        "future simple",
-        "present continuous"
-      ],
-      "type": "selectCorrect",
-      "direction": "ltr",
-      "title": "Select correct",
-      "id": 11
-    },
-    {
-      "answer": "future simple",
-      "explanition": {
-        "title": "زمان آینده ساده",
-        "des": "با اضافه کردن will قبل از فعل زمان را به آینده تغییر دهید",
-        "types": "I will play a game"
-      },
-      "sentence": "which tense do we use for actions that will happen later?",
-      "options": [
-        "present simple",
-        "past simple",
-        "future simple",
-        "past continuous"
-      ],
-      "type": "selectCorrect",
-      "direction": "ltr",
-      "title": "Select correct",
-      "id": 12
-    }
-  ],
-  "L14": [
-    {
-      "sentence": "A car is a vehicle.",
-      "answer": true,
-      "type": "trueFalse",
-      "direction": "ltr",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 1
-    },
-    {
-      "sentence": "کلمه He سوم شخص مفرد است",
-      "answer": true,
-      "type": "trueFalse",
-      "direction": "ltr",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 2
-    },
-    {
-      "sentence": "A phone can make calls.",
-      "answer": true,
-      "type": "trueFalse",
-      "direction": "ltr",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 3
-    },
-    {
-      "answer": [
-        "simple",
-        "cont",
-        "perfect",
-        "perfect cont"
-      ],
-      "synonyms": {
-        "continouos": "cont",
-        "continuous": "cont",
-        "progressive": "cont",
-        "perfect continouos": "perfect cont",
-        "perfect progressive": "perfect cont"
-      },
-      "sentence": "۴ زمان گذشته را بنویسید.",
-      "explanition": {
-        "title": "زمان گذشته",
-        "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
-        "types": "simple\n continuous\n perfect\n perfect continuous"
-      },
-      "type": "nameTypes",
-      "direction": "ltr",
-      "title": "Name types",
-      "id": 4
-    },
-    {
-      "sentence": "She is a teacher.",
-      "answer": [
-        "او یک معلم است",
-        "او معلم است"
-      ],
-      "wordBank": [
-        "او",
-        "یک",
-        "معلم",
-        "است",
-        "شاگرد",
-        "مرد"
-      ],
-      "type": "translate",
-      "direction": "ltr",
-      "title": "Translate this sentence",
-      "id": 5
-    },
-    {
-      "sentence": "What is your name?",
-      "answer": [
-        "اسم شما چیست؟",
-        "نام شما چیست؟"
-      ],
-      "wordBank": [
-        "اسم",
-        "چیست؟",
-        "شما",
-        "نام",
-        "کجا"
-      ],
-      "type": "translate",
-      "direction": "ltr",
-      "title": "Translate this sentence",
-      "id": 6
-    },
-    {
-      "sentence": "My name is Ali.",
-      "answer": [
-        "اسم من علی است"
-      ],
-      "wordBank": [
-        "اسم",
-        "من",
-        "علی",
-        "است",
-        "تو",
-        "شاگرد"
-      ],
-      "type": "translate",
-      "direction": "ltr",
-      "title": "Translate this sentence",
-      "id": 7
-    },
-    {
-      "sentence": "I wish I _ more time to travel.",
-      "answer": "had",
-      "hardness": "Hard",
-      "translate": "کاش زمان بیشتری برای سفر داشتم.",
-      "wordBank": [
-        "have",
-        "had",
-        "can have"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 8
-    },
-    {
-      "sentence": "If it rains tomorrow, we _ at home.",
-      "answer": "will stay",
-      "hardness": "Hell",
-      "translate": "اگر فردا باران ببارد، خانه می‌مانیم.",
-      "wordBank": [
-        "went",
-        "will stay",
-        "stayed",
-        "never"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 9
-    },
-    {
-      "sentence": "I _ a student.",
-      "answer": "am",
-      "hardness": "Easy",
-      "translate": "من یک شاگرد هستم.",
-      "wordBank": [
-        "am",
-        "is",
-        "are",
-        "be"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 10
-    },
-    {
-      "answer": "describes a noun",
-      "sentence": "what does an adjective do ?",
-      "options": [
-        "avoid repetition",
-        "describes a noun",
-        "describes a verb",
-        "the question is wrong"
-      ],
-      "type": "selectCorrect",
-      "direction": "ltr",
-      "title": "Select correct",
-      "id": 11
-    },
-    {
-      "answer": "Black",
-      "direction": "rtl",
-      "sentence": "کدام کلمه یک صفت است؟",
-      "options": [
-        "You",
-        "Make",
-        "Black",
-        "make more formal"
-      ],
-      "type": "selectCorrect",
-      "title": "Select correct",
-      "id": 12
-    }
-  ],
-  "L15": [
-    {
-      "sentence": "Winter is hot.",
-      "answer": false,
-      "type": "trueFalse",
-      "direction": "ltr",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 1
-    },
-    {
-      "sentence": "A cat is a dog.",
-      "answer": false,
-      "type": "trueFalse",
-      "direction": "ltr",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 2
-    },
-    {
-      "sentence": "Water is wet.",
-      "answer": true,
-      "type": "trueFalse",
-      "direction": "ltr",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 3
-    },
-    {
-      "answer": [
-        "simple",
-        "cont",
-        "perfect",
-        "perfect cont"
-      ],
-      "synonyms": {
-        "continouos": "cont",
-        "continuous": "cont",
-        "progressive": "cont",
-        "perfect continouos": "perfect cont",
-        "perfect progressive": "perfect cont"
-      },
-      "sentence": "۴ زمان گذشته را بنویسید.",
-      "explanition": {
-        "title": "زمان گذشته",
-        "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
-        "types": "simple\n continuous\n perfect\n perfect continuous"
+        "title": "Subject pronouns",
+        "des": "ضمایر فاعلی نشان می‌دهند چه کسی کار را انجام داده است: \n",
+        "types": "I, You, We, They, He, She, It \n من، شما، ما، آنها، او مرد،زن، حیوان"
       },
       "type": "nameTypes",
       "direction": "ltr",
@@ -2910,6 +1135,1010 @@
       "id": 10
     },
     {
+      "answer": "past simple",
+      "sentence": "which tense is this sentence? \"I ate an apple\"",
+      "explanition": {
+        "title": "زمان گذشته ساده",
+        "des": "زمانیست که در گذشته اتفاق افتاده باشد و ختم شده باشد.\nتبدیل فعل به گذشته:بیشتر افعال با اضافه کردن ed در آخر فعل به حالت گذشته تبدیل میشوند.\nولی بعضی از افعال شکل خاص خود را دارند.",
+        "types": "watch - watch ed\nlearn - learn ed\nbuy - bought"
+      },
+      "options": [
+        "present simple",
+        "past simple",
+        "future simple",
+        "present continuous"
+      ],
+      "type": "selectCorrect",
+      "direction": "ltr",
+      "title": "Select correct",
+      "id": 11
+    },
+    {
+      "answer": "future simple",
+      "explanition": {
+        "title": "زمان آینده ساده",
+        "des": "با اضافه کردن will قبل از فعل زمان را به آینده تغییر دهید",
+        "types": "I will play a game"
+      },
+      "sentence": "which tense is this sentence? \"They will come tomorrow\"",
+      "options": [
+        "present simple",
+        "past simple",
+        "future simple",
+        "present continuous"
+      ],
+      "type": "selectCorrect",
+      "direction": "ltr",
+      "title": "Select correct",
+      "id": 12
+    }
+  ],
+  "L7": [
+    {
+      "sentence": "قید نشان میدهد که یک عمل چگونه انجام میشود",
+      "answer": true,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 1
+    },
+    {
+      "sentence": "کلمه adverb به معنی قید است",
+      "answer": true,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 2
+    },
+    {
+      "sentence": "Sugar is sweet.",
+      "answer": true,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 3
+    },
+    {
+      "answer": [
+        "me",
+        "you",
+        "him",
+        "her",
+        "it",
+        "us",
+        "them"
+      ],
+      "sentence": "ضمایر مفعولی در زبان انگلیسی را بنویسید. (حداقل ۵ ضمیر)",
+      "explanition": {
+        "title": "Object pronouns",
+        "des": "ضمایر مفعولی گیرنده عمل هستند، مثلا: \n I teach him\n در این جمله him مفعول است",
+        "types": "Me, you, Us, Them, Her, Him, It"
+      },
+      "type": "nameTypes",
+      "direction": "ltr",
+      "title": "Name types",
+      "id": 4
+    },
+    {
+      "sentence": "I want water.",
+      "answer": [
+        "من آب می‌خواهم",
+        "آب می‌خواهم"
+      ],
+      "wordBank": [
+        "من",
+        "آب",
+        "می‌خواهم",
+        "شیر",
+        "غذا"
+      ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
+      "id": 5
+    },
+    {
+      "sentence": "The cat is on the table.",
+      "answer": [
+        "گربه روی میز است"
+      ],
+      "wordBank": [
+        "گربه",
+        "روی",
+        "میز",
+        "است",
+        "زیر",
+        "چوکی"
+      ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
+      "id": 6
+    },
+    {
+      "sentence": "I am a boy.",
+      "answer": [
+        "من یک پسر هستم",
+        "من پسر هستم"
+      ],
+      "wordBank": [
+        "من",
+        "یک",
+        "پسر",
+        "هستم",
+        "دختر",
+        "مرد"
+      ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
+      "id": 7
+    },
+    {
+      "sentence": "He _ his own book, and sold it.",
+      "answer": "wrote",
+      "hardness": "Hard",
+      "translate": "او کتاب خودش را نوشت و آنرا فروخت",
+      "wordBank": [
+        "sells",
+        "wrote",
+        "builds",
+        "made",
+        "write"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 8
+    },
+    {
+      "sentence": "may _ ask something.",
+      "answer": "I",
+      "hardness": "Medium",
+      "translate": "میتوانم چیزی بپرسم؟",
+      "wordBank": [
+        "I",
+        "can",
+        "is",
+        "they"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 9
+    },
+    {
+      "sentence": "How to _ English very fast",
+      "answer": "learn",
+      "hardness": "Hard",
+      "translate": "چطور سریع انگلیسی بیاموزیم؟",
+      "wordBank": [
+        "I",
+        "can",
+        "learn",
+        "teach",
+        "make",
+        "language"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 10
+    },
+    {
+      "answer": "present continuous",
+      "sentence": "which tense is this sentence? \"I am reading a book now\"",
+      "explanition": {
+        "title": "حال جاری",
+        "des": "زمان حال جاری زمانیست که عمل در لحظه اکنون در حال جریان باشد.\nساختار:\nSub + Tobe + V-ing\nتمام زمان های جاری در آخر فعل حروف Ing را دارند",
+        "types": "مثال:\nI am reading\nمن در حال خواندن هستم. \nعمل در لحظه درحال جریان است."
+      },
+      "options": [
+        "present simple",
+        "past simple",
+        "future simple",
+        "present continuous"
+      ],
+      "type": "selectCorrect",
+      "direction": "ltr",
+      "title": "Select correct",
+      "id": 11
+    },
+    {
+      "answer": "past continuous",
+      "sentence": "which tense is this sentence? \"She was sleeping at 10 pm\"",
+      "options": [
+        "present simple",
+        "past simple",
+        "present continuous",
+        "past continuous"
+      ],
+      "explanition": {
+        "title": "گذشته جاری",
+        "des": "subject + was/were + verb + ing\nShe was cooking\nاو در حال آشپزی بود"
+      },
+      "type": "selectCorrect",
+      "direction": "ltr",
+      "title": "Select correct",
+      "id": 12
+    }
+  ],
+  "L8": [
+    {
+      "sentence": "Salt is sweet.",
+      "answer": false,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 1
+    },
+    {
+      "sentence": "A baby is young.",
+      "answer": true,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 2
+    },
+    {
+      "sentence": "کلمه adjective به معنی قید است",
+      "answer": false,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 3
+    },
+    {
+      "answer": [
+        "am",
+        "is",
+        "are"
+      ],
+      "synonyms": {
+        "im": "am",
+        "ar": "are"
+      },
+      "sentence": "افعال To be را بنویسید",
+      "explanition": {
+        "title": "To be verbs",
+        "des": "I am a student - من شاگرد هستم\n You are a student - تو شاگرد هستی\n We are students - ما شاگرد هستیم\n",
+        "types": "سه نوع اند: \n am, is, are"
+      },
+      "type": "nameTypes",
+      "direction": "ltr",
+      "title": "Name types",
+      "id": 4
+    },
+    {
+      "sentence": "She is a girl.",
+      "answer": [
+        "او یک دختر است",
+        "او دختر است"
+      ],
+      "wordBank": [
+        "او",
+        "یک",
+        "دختر",
+        "است",
+        "پسر",
+        "زن"
+      ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
+      "id": 5
+    },
+    {
+      "sentence": "The pen is blue.",
+      "answer": [
+        "قلم آبی است"
+      ],
+      "wordBank": [
+        "قلم",
+        "آبی",
+        "است",
+        "سرخ",
+        "سبز",
+        "کتابچه"
+      ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
+      "id": 6
+    },
+    {
+      "sentence": "I am tired.",
+      "answer": [
+        "من خسته هستم"
+      ],
+      "wordBank": [
+        "من",
+        "خسته",
+        "هستم",
+        "خوشحال",
+        "ناراحت",
+        "بیمار"
+      ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
+      "id": 7
+    },
+    {
+      "sentence": "If _ learn English very fast, you are smart",
+      "answer": "you",
+      "hardness": "Hard",
+      "translate": "اگر انگلیسی را سریع بیاموزی، باهوش هستی.",
+      "wordBank": [
+        "teach",
+        "how",
+        "learn",
+        "you",
+        "is",
+        "language"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 8
+    },
+    {
+      "sentence": "Never _",
+      "answer": "mind",
+      "hardness": "Hard",
+      "translate": "هیچی (منصرف شدن از گفتن چیزی)",
+      "wordBank": [
+        "I",
+        "can",
+        "mine",
+        "went",
+        "mind"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 9
+    },
+    {
+      "sentence": "we _ going to school(past)",
+      "answer": "were",
+      "hardness": "Hard",
+      "translate": "ما در حال رفتن به مکتب بودیم",
+      "wordBank": [
+        "I",
+        "was",
+        "learn",
+        "is",
+        "went",
+        "were"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 10
+    },
+    {
+      "answer": "verb",
+      "sentence": "which word shows an action?",
+      "explanition": {
+        "title": "فعل",
+        "des": "فعل کلمه ایست که عمل را نشان میدهد و در زبان انگلیسی به آن Verb میگویند.",
+        "types": "مثال:\nrun-دویدن\nwalk-قدم زدن"
+      },
+      "options": [
+        "noun",
+        "verb",
+        "adjective",
+        "adverb"
+      ],
+      "type": "selectCorrect",
+      "direction": "ltr",
+      "title": "Select correct",
+      "id": 11
+    },
+    {
+      "answer": "adjective",
+      "explanition": {
+        "des": "صفت یا adjective چگونگی یک اسم را توصیف میکند، مثال:",
+        "title": "Adjective",
+        "types": "black book\n در اینجا black صفت و book اسم است"
+      },
+      "sentence": "which word describes a noun?",
+      "options": [
+        "verb",
+        "adverb",
+        "adjective",
+        "preposition"
+      ],
+      "type": "selectCorrect",
+      "direction": "ltr",
+      "title": "Select correct",
+      "id": 12
+    }
+  ],
+  "L9": [
+    {
+      "sentence": "کلمه adjective یک اسم را توصیف میکند",
+      "answer": true,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 1
+    },
+    {
+      "sentence": "Monday is a day of the week.",
+      "answer": true,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 2
+    },
+    {
+      "sentence": "There are 10 months in a year.",
+      "answer": false,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 3
+    },
+    {
+      "answer": [
+        "was",
+        "were"
+      ],
+      "sentence": "شکل‌های زمان گذشته فعل \"To be\" را بنویسید.",
+      "explanition": {
+        "title": "Was/Were",
+        "des": "I was young - من جوان بودم\n You were young - تو جوان بودی\n He was young - او جوان بود\n"
+      },
+      "type": "nameTypes",
+      "direction": "ltr",
+      "title": "Name types",
+      "id": 4
+    },
+    {
+      "sentence": "We have a car.",
+      "answer": [
+        "ما یک موتر داریم",
+        "ما موتر داریم"
+      ],
+      "wordBank": [
+        "ما",
+        "یک",
+        "موتر",
+        "داریم",
+        "موتور",
+        "دوچرخه"
+      ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
+      "id": 5
+    },
+    {
+      "sentence": "They are students.",
+      "answer": [
+        "آنها شاگرد هستند",
+        "آنها شاگردند"
+      ],
+      "wordBank": [
+        "آنها",
+        "شاگرد",
+        "هستند",
+        "شاگردند",
+        "معلم",
+        "مهندس"
+      ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
+      "id": 6
+    },
+    {
+      "sentence": "This is my house.",
+      "answer": [
+        "این خانه من است"
+      ],
+      "wordBank": [
+        "این",
+        "خانه",
+        "من",
+        "است",
+        "تو",
+        "او"
+      ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
+      "id": 7
+    },
+    {
+      "sentence": "Learning English is not _.",
+      "answer": "hard",
+      "hardness": "Medium",
+      "translate": "یادگیری انگلیسی سخت نیست",
+      "wordBank": [
+        "hard",
+        "allready",
+        "how to",
+        "tough",
+        "make",
+        "language"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 8
+    },
+    {
+      "sentence": "You can`t _ a pilot.",
+      "answer": "be",
+      "hardness": "Hell",
+      "translate": "تو نمیتوانی خلبان باشی",
+      "wordBank": [
+        "how",
+        "learn",
+        "be",
+        "make",
+        "airplane"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 9
+    },
+    {
+      "sentence": "How to _ fast in soccer?",
+      "answer": "run",
+      "hardness": "Easy",
+      "translate": "چطور در فوتبال تیز بدویم",
+      "wordBank": [
+        "why",
+        "football",
+        "learn",
+        "run"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 10
+    },
+    {
+      "answer": "adverb",
+      "explanition": {
+        "title": "قید",
+        "des": "قید ها چگونگی انجام عمل را بیان میکنند: \n I run slowly \nکلمه slowly یعنی به آهستگی\n",
+        "types": "نکته جالب: اکثر قید ها با حروف ly خطم میشوند \nslow = صفت\nslowly = قید"
+      },
+      "sentence": "which word describes a verb?",
+      "options": [
+        "noun",
+        "adjective",
+        "adverb",
+        "conjunction"
+      ],
+      "type": "selectCorrect",
+      "direction": "ltr",
+      "title": "Select correct",
+      "id": 11
+    },
+    {
+      "answer": "pronoun",
+      "explanition": {
+        "title": "ضمیر",
+        "des": "ضمیر ها جایگزین اسم میشوند\nThe bird was black\nIt was black"
+      },
+      "sentence": "which word replaces a noun (like he, she, it)?",
+      "options": [
+        "verb",
+        "adjective",
+        "pronoun",
+        "preposition"
+      ],
+      "type": "selectCorrect",
+      "direction": "ltr",
+      "title": "Select correct",
+      "id": 12
+    }
+  ],
+  "L10": [
+    {
+      "sentence": "کلمه adjective یک اسم را توصیف میکند",
+      "answer": true,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 1
+    },
+    {
+      "sentence": "Trees have leaves.",
+      "answer": true,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 2
+    },
+    {
+      "sentence": "Rocks are soft.",
+      "answer": false,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 3
+    },
+    {
+      "answer": [
+        "this",
+        "that",
+        "these",
+        "those"
+      ],
+      "synonyms": {
+        "this": "this",
+        "that": "that",
+        "these": "these",
+        "those": "those"
+      },
+      "sentence": "ضمایر اشاره ای را نام ببرید",
+      "explanition": {
+        "title": "Demonstratives",
+        "des": "This is a car\nThat is a car\nThese are cars\nThose are cars",
+        "types": "چهار تا ضمیر اشاره ای وجود دارد: \nThat, This, Those, These"
+      },
+      "type": "nameTypes",
+      "direction": "ltr",
+      "title": "Name types",
+      "id": 4
+    },
+    {
+      "sentence": "I love my mother.",
+      "answer": [
+        "من مادرم را دوست دارم",
+        "من مادر خود را دوست دارم"
+      ],
+      "wordBank": [
+        "من",
+        "مادرم",
+        "دوست",
+        "دارم",
+        "پدر",
+        "را",
+        "خود",
+        "فردا"
+      ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
+      "id": 5
+    },
+    {
+      "sentence": "The sun is hot.",
+      "answer": [
+        "خورشید گرم است"
+      ],
+      "wordBank": [
+        "خورشید",
+        "گرم",
+        "است",
+        "سرد",
+        "ماه",
+        "آسمان",
+        "پسر"
+      ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
+      "id": 6
+    },
+    {
+      "sentence": "I eat bread.",
+      "answer": [
+        "من نان میخورم"
+      ],
+      "wordBank": [
+        "من",
+        "نان",
+        "میخورم",
+        "پنیر",
+        "آب",
+        "چای"
+      ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
+      "id": 7
+    },
+    {
+      "sentence": "Be your _",
+      "answer": "self",
+      "hardness": "Veteran",
+      "translate": "خودت باش",
+      "wordBank": [
+        "kind",
+        "dog",
+        "father",
+        "self",
+        "goal"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 8
+    },
+    {
+      "sentence": "Having _ can make you happy",
+      "answer": "a dog",
+      "hardness": "Hell",
+      "translate": "داشتن سگ میتواند خوشحالت کند",
+      "wordBank": [
+        "me",
+        "can",
+        "learn",
+        "a dog",
+        "dead"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 9
+    },
+    {
+      "sentence": "When you _ you dream.",
+      "answer": "sleep",
+      "hardness": "Hell",
+      "translate": "وقتی می‌خوابی، خواب می‌بینی.",
+      "wordBank": [
+        "me",
+        "sleep",
+        "watch",
+        "run",
+        "die"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 10
+    },
+    {
+      "answer": "yellow",
+      "sentence": "what color is the sun?",
+      "options": [
+        "green",
+        "purple",
+        "yellow"
+      ],
+      "type": "selectCorrect",
+      "direction": "ltr",
+      "title": "Select correct",
+      "id": 11
+    },
+    {
+      "answer": "blue",
+      "sentence": "what color is the sky on a clear day?",
+      "options": [
+        "green",
+        "blue",
+        "gray",
+        "white"
+      ],
+      "type": "selectCorrect",
+      "direction": "ltr",
+      "title": "Select correct",
+      "id": 12
+    }
+  ],
+  "L11": [
+    {
+      "sentence": "English uses the Latin alphabet.",
+      "answer": true,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 1
+    },
+    {
+      "sentence": "A doctor helps sick people.",
+      "answer": true,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 2
+    },
+    {
+      "sentence": "A teacher sells food.",
+      "answer": false,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 3
+    },
+    {
+      "answer": [
+        "subject",
+        "verb",
+        "object"
+      ],
+      "synonyms": {
+        "subj": "subject",
+        "v": "verb",
+        "sub": "subject",
+        "objec": "object",
+        "vb": "verb",
+        "obj": "object"
+      },
+      "sentence": "۳ بخش اصلی یک جمله ساده را بنویسید.",
+      "explanition": {
+        "des": "یک جمله ساده از 3 بخش تشکیل شده: \n subject + verb + object",
+        "types": "مثال: \n I play football\nSubject: I\nVerb: Play\nObject: Football "
+      },
+      "type": "nameTypes",
+      "direction": "ltr",
+      "title": "Name types",
+      "id": 4
+    },
+    {
+      "sentence": "She drinks milk.",
+      "answer": [
+        "او شیر مینوشد"
+      ],
+      "wordBank": [
+        "او",
+        "شیر",
+        "مینوشد",
+        "آب",
+        "چای",
+        "خوراک"
+      ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
+      "id": 5
+    },
+    {
+      "sentence": "The dog runs fast.",
+      "answer": [
+        "سگ سریع میدود"
+      ],
+      "wordBank": [
+        "سگ",
+        "سریع",
+        "میدود",
+        "آهسته",
+        "گربه",
+        "پرنده"
+      ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
+      "id": 6
+    },
+    {
+      "sentence": "We are happy.",
+      "answer": [
+        "ما خوشحال هستیم"
+      ],
+      "wordBank": [
+        "ما",
+        "خوشحال",
+        "هستیم",
+        "غمگین",
+        "بیمار",
+        "خسته"
+      ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
+      "id": 7
+    },
+    {
+      "sentence": "I _ to the park every Friday.",
+      "answer": "go",
+      "hardness": "Easy",
+      "translate": "من هر جمعه به پارک می‌روم.",
+      "wordBank": [
+        "go",
+        "goes",
+        "going",
+        "went"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 8
+    },
+    {
+      "sentence": "She _ very fast.",
+      "answer": "runs",
+      "hardness": "Easy",
+      "translate": "او خیلی سریع می‌دود.",
+      "wordBank": [
+        "run",
+        "runs",
+        "running",
+        "ran"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 9
+    },
+    {
+      "sentence": "We _ watching TV now.",
+      "answer": "are",
+      "hardness": "Easy",
+      "translate": "ما حالا تلویزیون تماشا می‌کنیم.",
+      "wordBank": [
+        "am",
+        "why",
+        "are",
+        "be"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 10
+    },
+    {
       "answer": "five",
       "sentence": "how many fingers does a human have on one hand?",
       "options": [
@@ -2938,10 +2167,10 @@
       "id": 12
     }
   ],
-  "L16": [
+  "L12": [
     {
-      "sentence": "Birds have hands.",
-      "answer": false,
+      "sentence": "برای سوم شخص مفرد در زمان حال ساده S اضافه میکنیم",
+      "answer": true,
       "type": "trueFalse",
       "direction": "ltr",
       "title": "True or False",
@@ -2952,8 +2181,8 @@
       "id": 1
     },
     {
-      "sentence": "اولین حرف اسم خاص با حروف بزرگ نوشته میشود",
-      "answer": true,
+      "sentence": "A kitchen is for sleeping.",
+      "answer": false,
       "type": "trueFalse",
       "direction": "ltr",
       "title": "True or False",
@@ -2964,8 +2193,8 @@
       "id": 2
     },
     {
-      "sentence": "The moon is bigger than the sun.",
-      "answer": false,
+      "sentence": "Red is a color.",
+      "answer": true,
       "type": "trueFalse",
       "direction": "ltr",
       "title": "True or False",
@@ -3001,18 +2230,18 @@
       "id": 4
     },
     {
-      "sentence": "The sun is hot.",
+      "sentence": "This is a chair.",
       "answer": [
-        "خورشید گرم است"
+        "این یک چوکی است",
+        "این چوکی است"
       ],
       "wordBank": [
-        "خورشید",
-        "گرم",
+        "این",
+        "یک",
+        "چوکی",
         "است",
-        "سرد",
-        "ماه",
-        "آسمان",
-        "پسر"
+        "میز",
+        "قفسه"
       ],
       "type": "translate",
       "direction": "ltr",
@@ -3020,17 +2249,18 @@
       "id": 5
     },
     {
-      "sentence": "I eat bread.",
+      "sentence": "I see a bird.",
       "answer": [
-        "من نان میخورم"
+        "من یک پرنده میبینم",
+        "من پرنده میبینم"
       ],
       "wordBank": [
         "من",
-        "نان",
-        "میخورم",
-        "پنیر",
-        "آب",
-        "چای"
+        "یک",
+        "پرنده",
+        "میبینم",
+        "گربه",
+        "سگ"
       ],
       "type": "translate",
       "direction": "ltr",
@@ -3038,38 +2268,22 @@
       "id": 6
     },
     {
-      "sentence": "She drinks milk.",
+      "sentence": "He is my father.",
       "answer": [
-        "او شیر مینوشد"
+        "او پدر من است"
       ],
       "wordBank": [
         "او",
-        "شیر",
-        "مینوشد",
-        "آب",
-        "چای",
-        "خوراک"
+        "پدر",
+        "من",
+        "است",
+        "مادر",
+        "برادر"
       ],
       "type": "translate",
       "direction": "ltr",
       "title": "Translate this sentence",
       "id": 7
-    },
-    {
-      "sentence": "We _ watching TV now.",
-      "answer": "are",
-      "hardness": "Easy",
-      "translate": "ما حالا تلویزیون تماشا می‌کنیم.",
-      "wordBank": [
-        "am",
-        "why",
-        "are",
-        "be"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 8
     },
     {
       "sentence": "He _ to bed at 10 PM.",
@@ -3085,7 +2299,7 @@
       "type": "fillBlank",
       "direction": "ltr",
       "title": "Fill the blank",
-      "id": 9
+      "id": 8
     },
     {
       "sentence": "They _ playing football in the yard.",
@@ -3101,16 +2315,32 @@
       "type": "fillBlank",
       "direction": "ltr",
       "title": "Fill the blank",
+      "id": 9
+    },
+    {
+      "sentence": "I _ a new bag yesterday.",
+      "answer": "bought",
+      "hardness": "Medium",
+      "translate": "من دیروز یک کیف جدید خریدم.",
+      "wordBank": [
+        "buy",
+        "bought",
+        "buying",
+        "take"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
       "id": 10
     },
     {
-      "answer": "pencil",
-      "sentence": "what do you use to write and erase with an eraser?",
+      "answer": "car",
+      "sentence": "which vehicle has four wheels?",
       "options": [
-        "pen",
-        "pencil",
-        "marker",
-        "chalk"
+        "bicycle",
+        "car",
+        "motorcycle",
+        "boat"
       ],
       "type": "selectCorrect",
       "direction": "ltr",
@@ -3118,13 +2348,13 @@
       "id": 11
     },
     {
-      "answer": "door",
-      "sentence": "what do you open to enter a room?",
+      "answer": "book",
+      "sentence": "what do you read to learn new things?",
       "options": [
-        "window",
-        "door",
-        "wall",
-        "ceiling"
+        "pen",
+        "book",
+        "table",
+        "chair"
       ],
       "type": "selectCorrect",
       "direction": "ltr",
@@ -3132,9 +2362,9 @@
       "id": 12
     }
   ],
-  "L17": [
+  "L13": [
     {
-      "sentence": "Cars have legs.",
+      "sentence": "A triangle has 4 sides.",
       "answer": false,
       "type": "trueFalse",
       "direction": "ltr",
@@ -3146,7 +2376,199 @@
       "id": 1
     },
     {
-      "sentence": "Cats can read books.",
+      "sentence": "A book has pages.",
+      "answer": true,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 2
+    },
+    {
+      "sentence": "A bicycle has 8 wheels.",
+      "answer": false,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 3
+    },
+    {
+      "answer": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "synonyms": {
+        "autumn": "fall",
+        "autum": "fall",
+        "sumer": "summer"
+      },
+      "sentence": "۴ فصل سال را بنویسید.",
+      "type": "nameTypes",
+      "direction": "ltr",
+      "title": "Name types",
+      "id": 4
+    },
+    {
+      "sentence": "Where is the key?",
+      "answer": [
+        "کلید کجاست؟",
+        "کلید کجاست"
+      ],
+      "wordBank": [
+        "کلید",
+        "کجاست",
+        "کتاب",
+        "قلم",
+        "کتابچه",
+        "؟"
+      ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
+      "id": 5
+    },
+    {
+      "sentence": "The book is new.",
+      "answer": [
+        "کتاب جدید است"
+      ],
+      "wordBank": [
+        "کتاب",
+        "جدید",
+        "است",
+        "کهنه",
+        "زیبا",
+        "بزرگ"
+      ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
+      "id": 6
+    },
+    {
+      "sentence": "I am a doctor.",
+      "answer": [
+        "من یک داکتر هستم",
+        "من داکتر هستم"
+      ],
+      "wordBank": [
+        "من",
+        "یک",
+        "داکتر",
+        "هستم",
+        "پرستار",
+        "مهندس"
+      ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
+      "id": 7
+    },
+    {
+      "sentence": "She _ her grandmother every week.",
+      "answer": "visits",
+      "hardness": "Easy",
+      "translate": "او هر هفته مادربزرگ خود را ملاقات می‌کند.",
+      "wordBank": [
+        "visit",
+        "visits",
+        "goes",
+        "watch"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 8
+    },
+    {
+      "sentence": "The cat is _ the chair.",
+      "answer": "under",
+      "hardness": "Easy",
+      "translate": "گربه زیر صندلی است.",
+      "wordBank": [
+        "a bear",
+        "under",
+        "was",
+        "can"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 9
+    },
+    {
+      "sentence": "I _ speak three languages.",
+      "answer": "can",
+      "hardness": "Easy",
+      "translate": "من می‌توانم سه زبان صحبت کنم.",
+      "wordBank": [
+        "can",
+        "was",
+        "does"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 10
+    },
+    {
+      "answer": "teacher",
+      "sentence": "who helps students learn at school?",
+      "options": [
+        "doctor",
+        "engineer",
+        "teacher",
+        "police"
+      ],
+      "type": "selectCorrect",
+      "direction": "ltr",
+      "title": "Select correct",
+      "id": 11
+    },
+    {
+      "answer": "future simple",
+      "explanition": {
+        "title": "زمان آینده ساده",
+        "des": "با اضافه کردن will قبل از فعل زمان را به آینده تغییر دهید",
+        "types": "I will play a game"
+      },
+      "sentence": "which tense do we use for actions that will happen later?",
+      "options": [
+        "present simple",
+        "past simple",
+        "future simple",
+        "past continuous"
+      ],
+      "type": "selectCorrect",
+      "direction": "ltr",
+      "title": "Select correct",
+      "id": 12
+    }
+  ],
+  "L14": [
+    {
+      "sentence": "Eyes are for seeing.",
+      "answer": true,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 1
+    },
+    {
+      "sentence": "A bed is for cooking.",
       "answer": false,
       "type": "trueFalse",
       "direction": "ltr",
@@ -3158,7 +2580,7 @@
       "id": 2
     },
     {
-      "sentence": "There are 7 days in a week.",
+      "sentence": "An orange is a fruit.",
       "answer": true,
       "type": "trueFalse",
       "direction": "ltr",
@@ -3171,28 +2593,65 @@
     },
     {
       "answer": [
-        "simple",
-        "cont",
-        "perfect",
-        "perfect cont"
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday",
+        "sunday"
       ],
       "synonyms": {
-        "continouos": "cont",
-        "continuous": "cont",
-        "progressive": "cont",
-        "perfect continouos": "perfect cont",
-        "perfect progressive": "perfect cont"
+        "mon": "monday",
+        "tue": "tuesday",
+        "wed": "wednesday",
+        "thu": "thursday",
+        "fri": "friday",
+        "sat": "saturday",
+        "sun": "sunday"
       },
-      "sentence": "۴ زمان گذشته را بنویسید.",
-      "explanition": {
-        "title": "زمان گذشته",
-        "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
-        "types": "simple\n continuous\n perfect\n perfect continuous"
-      },
+      "sentence": "روزهای هفته را بنویسید. (حداقل ۵ روز)",
       "type": "nameTypes",
       "direction": "ltr",
       "title": "Name types",
       "id": 4
+    },
+    {
+      "sentence": "She sings well.",
+      "answer": [
+        "او خوب میخواند"
+      ],
+      "wordBank": [
+        "او",
+        "خوب",
+        "میخواند",
+        "بد",
+        "بلند",
+        "آرام"
+      ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
+      "id": 5
+    },
+    {
+      "sentence": "We live in Kabul.",
+      "answer": [
+        "ما در کابل زندگی میکنیم"
+      ],
+      "wordBank": [
+        "ما",
+        "در",
+        "کابل",
+        "زندگی",
+        "میکنیم",
+        "سفر میکنیم",
+        "زیبا است"
+      ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
+      "id": 6
     },
     {
       "sentence": "I have a red pen.",
@@ -3211,7 +2670,145 @@
       "type": "translate",
       "direction": "ltr",
       "title": "Translate this sentence",
-      "id": 5
+      "id": 7
+    },
+    {
+      "sentence": "We _ to the museum last week.",
+      "answer": "went",
+      "hardness": "Hard",
+      "translate": "ما هفته پیش به موزه رفتیم.",
+      "wordBank": [
+        "go",
+        "went",
+        "gone",
+        "travel"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 8
+    },
+    {
+      "sentence": "He _ breakfast at 8 am.",
+      "answer": "has",
+      "hardness": "Easy",
+      "translate": "او ساعت ۸ صبح صبحانه می‌خورد.",
+      "wordBank": [
+        "have",
+        "has",
+        "drink",
+        "week"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 9
+    },
+    {
+      "sentence": "This is _ book.",
+      "answer": "my",
+      "hardness": "Easy",
+      "translate": "این کتاب من است.",
+      "wordBank": [
+        "my",
+        "I",
+        "me",
+        "mine",
+        "car"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 10
+    },
+    {
+      "answer": "present continuous",
+      "sentence": "which tense do we use for actions happening right now?",
+      "options": [
+        "present simple",
+        "past simple",
+        "future simple",
+        "present continuous"
+      ],
+      "type": "selectCorrect",
+      "direction": "ltr",
+      "title": "Select correct",
+      "id": 11
+    },
+    {
+      "answer": "subject",
+      "explanition": {
+        "title": "کننده کار یا فاعل",
+        "des": "فاعل کننده کار را گویند. و گاهی اوقات فاعل چیزیست که در مورد آن بحث میشود، مثلا:\nThe cat is black\nدر این جمله گربه کاری را انجام نمیدهد ولی باز هم فاعل جمله است."
+      },
+      "sentence": "in the sentence \"Ali eats an apple\", what is \"Ali\"?",
+      "options": [
+        "verb",
+        "object",
+        "subject",
+        "adjective"
+      ],
+      "type": "selectCorrect",
+      "direction": "ltr",
+      "title": "Select correct",
+      "id": 12
+    }
+  ],
+  "L15": [
+    {
+      "sentence": "کلمه Verb یک عمل را نشان میدهد",
+      "answer": true,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 1
+    },
+    {
+      "sentence": "We wear shoes on our feet.",
+      "answer": true,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 2
+    },
+    {
+      "sentence": "کلمه I یک اول شخص مفرد است",
+      "answer": true,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 3
+    },
+    {
+      "answer": [
+        "a",
+        "e",
+        "i",
+        "o",
+        "u"
+      ],
+      "sentence": "۵ حرف صدادار در زبان انگلیسی را بنویسید.",
+      "explanition": {
+        "title": "Vowels",
+        "des": "در زبان انگلیسی 5 حرف صدا دار وجود دارد:\n",
+        "types": "a, e, i, o, u"
+      },
+      "type": "nameTypes",
+      "direction": "ltr",
+      "title": "Name types",
+      "id": 4
     },
     {
       "sentence": "The water is cold.",
@@ -3229,7 +2826,7 @@
       "type": "translate",
       "direction": "ltr",
       "title": "Translate this sentence",
-      "id": 6
+      "id": 5
     },
     {
       "sentence": "He works hard.",
@@ -3247,7 +2844,430 @@
       "type": "translate",
       "direction": "ltr",
       "title": "Translate this sentence",
+      "id": 6
+    },
+    {
+      "sentence": "This is my brother.",
+      "answer": [
+        "این برادر من است"
+      ],
+      "wordBank": [
+        "این",
+        "برادر",
+        "من",
+        "است",
+        "خواهر",
+        "پدر"
+      ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
       "id": 7
+    },
+    {
+      "sentence": "She _ to become a doctor.",
+      "answer": "wants",
+      "hardness": "Easy",
+      "translate": "او می‌خواهد داکتر شود.",
+      "wordBank": [
+        "wanted",
+        "wants",
+        "can",
+        "very much"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 8
+    },
+    {
+      "sentence": "The children _ playing outside.",
+      "answer": "are",
+      "hardness": "Easy",
+      "translate": "بچه‌ها بیرون مشغول بازی هستند.",
+      "wordBank": [
+        "wish",
+        "is",
+        "are",
+        "was"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 9
+    },
+    {
+      "sentence": "I _ you yesterday but you were not home.",
+      "answer": "called",
+      "hardness": "Hell",
+      "translate": "دیروز با شما تماس گرفتم اما خانه نبودید.",
+      "wordBank": [
+        "call",
+        "called",
+        "was",
+        "phone",
+        "have to",
+        "very"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 10
+    },
+    {
+      "answer": "verb",
+      "sentence": "in the sentence \"She runs fast\", what is \"runs\"?",
+      "options": [
+        "noun",
+        "subject",
+        "verb",
+        "object"
+      ],
+      "type": "selectCorrect",
+      "direction": "ltr",
+      "title": "Select correct",
+      "id": 11
+    },
+    {
+      "answer": "object",
+      "sentence": "in the sentence \"I love pizza\", what is \"pizza\"?",
+      "explanition": {
+        "title": "گیرنده عمل یا مفعول",
+        "des": "چیزی که یک عمل بر روی آن انجام میشود را مفعول میگویند که در زبان انگلیسی Object مفعول است."
+      },
+      "options": [
+        "subject",
+        "verb",
+        "object",
+        "adjective"
+      ],
+      "type": "selectCorrect",
+      "direction": "ltr",
+      "title": "Select correct",
+      "id": 12
+    }
+  ],
+  "L16": [
+    {
+      "sentence": "A car is a vehicle.",
+      "answer": true,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 1
+    },
+    {
+      "sentence": "کلمه He سوم شخص مفرد است",
+      "answer": true,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 2
+    },
+    {
+      "sentence": "A phone can make calls.",
+      "answer": true,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 3
+    },
+    {
+      "title": "Question",
+      "answer": [
+        "adjective"
+      ],
+      "sentence": "چه چیزی یک اسم را توصیف میکند؟",
+      "synonyms": {
+        "صفت": "adjective",
+        "ajective": "adjective",
+        "سفت": "adjective",
+        "adjektiv": "adjective",
+        "ajektive": "adjective",
+        "adj": "adjective"
+      },
+      "explanition": {
+        "des": "صفت یا adjective چگونگی یک اسم را توصیف میکند، مثال:",
+        "title": "Adjective",
+        "types": "black book\n در اینجا black صفت و book اسم است"
+      },
+      "type": "nameTypes",
+      "direction": "ltr",
+      "id": 4
+    },
+    {
+      "sentence": "I am not sleepy.",
+      "answer": [
+        "من خواب‌آلود نیستم"
+      ],
+      "wordBank": [
+        "من",
+        "خواب‌آلود",
+        "نیستم",
+        "هستم",
+        "خسته",
+        "بیدار"
+      ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
+      "id": 5
+    },
+    {
+      "sentence": "She has long hair.",
+      "answer": [
+        "او موی بلند دارد"
+      ],
+      "wordBank": [
+        "او",
+        "موی",
+        "بلند",
+        "دارد",
+        "کوتاه",
+        "سیاه"
+      ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
+      "id": 6
+    },
+    {
+      "sentence": "The room is clean.",
+      "answer": [
+        "اتاق تمیز است"
+      ],
+      "wordBank": [
+        "اتاق",
+        "تمیز",
+        "است",
+        "کثیف",
+        "بزرگ",
+        "کوچک"
+      ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
+      "id": 7
+    },
+    {
+      "sentence": "He _ to music every morning.",
+      "answer": "listens",
+      "hardness": "Medium",
+      "translate": "او هر صبح به موسیقی گوش می‌دهد.",
+      "wordBank": [
+        "listen",
+        "listens",
+        "hear",
+        "play",
+        "wash"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 8
+    },
+    {
+      "sentence": "We _ our homework already.",
+      "answer": "did",
+      "hardness": "Veteran",
+      "translate": "ما کارخانه گی را قبلاً انجام دادیم.",
+      "wordBank": [
+        "do",
+        "did",
+        "make",
+        "have",
+        "write"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 9
+    },
+    {
+      "sentence": "The man _ a white shirt.",
+      "answer": "wears",
+      "hardness": "Easy",
+      "translate": "مرد پیراهن سفید پوشیده است.",
+      "wordBank": [
+        "wear",
+        "wears",
+        "put",
+        "have"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 10
+    },
+    {
+      "answer": "school",
+      "sentence": "where do students go to study?",
+      "options": [
+        "hospital",
+        "school",
+        "park",
+        "restaurant"
+      ],
+      "type": "selectCorrect",
+      "direction": "ltr",
+      "title": "Select correct",
+      "id": 11
+    },
+    {
+      "answer": "december",
+      "sentence": "which month is the last?",
+      "options": [
+        "november",
+        "december",
+        "january",
+        "october"
+      ],
+      "type": "selectCorrect",
+      "direction": "ltr",
+      "title": "Select correct",
+      "id": 12
+    }
+  ],
+  "L17": [
+    {
+      "sentence": "An egg comes from a cow.",
+      "answer": false,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 1
+    },
+    {
+      "sentence": "A cow gives milk.",
+      "answer": true,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 2
+    },
+    {
+      "sentence": "A chair is for sitting.",
+      "answer": true,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 3
+    },
+    {
+      "answer": [
+        "i",
+        "you",
+        "he",
+        "she",
+        "it",
+        "we",
+        "they"
+      ],
+      "sentence": "ضمایر فاعلی در زبان انگلیسی را بنویسید. (حداقل ۵ ضمیر)",
+      "explanition": {
+        "title": "Subject pronouns",
+        "des": "ضمایر فاعلی نشان می‌دهند چه کسی کار را انجام داده است: \n",
+        "types": "I, You, We, They, He, She, It \n من، شما، ما، آنها، او مرد،زن، حیوان"
+      },
+      "type": "nameTypes",
+      "direction": "ltr",
+      "title": "Name types",
+      "id": 4
+    },
+    {
+      "sentence": "I like to read.",
+      "answer": [
+        "من خواندن دوست دارم"
+      ],
+      "wordBank": [
+        "من",
+        "خواندن",
+        "دوست",
+        "دارم",
+        "نوشتن",
+        "گوش کردن"
+      ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
+      "id": 5
+    },
+    {
+      "sentence": "They are coming.",
+      "answer": [
+        "آنها می‌آیند"
+      ],
+      "wordBank": [
+        "آنها",
+        "می‌آیند",
+        "میروند",
+        "اینجا",
+        "آنجا"
+      ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
+      "id": 6
+    },
+    {
+      "sentence": "Is this your bag?",
+      "answer": [
+        "آیا این کیف تو است؟",
+        "این کیف تو است؟"
+      ],
+      "wordBank": [
+        "آیا",
+        "این",
+        "کیف",
+        "تو",
+        "است؟",
+        "من",
+        "او"
+      ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
+      "id": 7
+    },
+    {
+      "sentence": "I _ tired because I worked hard.",
+      "answer": "am",
+      "hardness": "Hard",
+      "translate": "من خسته هستم چون سخت کار کردم.",
+      "wordBank": [
+        "am",
+        "is",
+        "are",
+        "feeling"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 8
     },
     {
       "sentence": "She _ the answer to the question.",
@@ -3263,7 +3283,7 @@
       "type": "fillBlank",
       "direction": "ltr",
       "title": "Fill the blank",
-      "id": 8
+      "id": 9
     },
     {
       "sentence": "They _ arrive on time.",
@@ -3279,7 +3299,149 @@
       "type": "fillBlank",
       "direction": "ltr",
       "title": "Fill the blank",
-      "id": 9
+      "id": 10
+    },
+    {
+      "answer": "friday",
+      "sentence": "which day is the weekend?",
+      "options": [
+        "monday",
+        "tuesday",
+        "friday",
+        "wednesday"
+      ],
+      "type": "selectCorrect",
+      "direction": "ltr",
+      "title": "Select correct",
+      "id": 11
+    },
+    {
+      "answer": "cat",
+      "sentence": "which animal says meeoowww?",
+      "options": [
+        "dog",
+        "cat",
+        "cow",
+        "duck"
+      ],
+      "type": "selectCorrect",
+      "direction": "ltr",
+      "title": "Select correct",
+      "id": 12
+    }
+  ],
+  "L18": [
+    {
+      "sentence": "زمان حال ساده عادات روزمره را بیان میکند",
+      "answer": true,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 1
+    },
+    {
+      "sentence": "Winter is hot.",
+      "answer": false,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 2
+    },
+    {
+      "sentence": "A cat is a dog.",
+      "answer": false,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 3
+    },
+    {
+      "answer": [
+        "me",
+        "you",
+        "him",
+        "her",
+        "it",
+        "us",
+        "them"
+      ],
+      "sentence": "ضمایر مفعولی در زبان انگلیسی را بنویسید. (حداقل ۵ ضمیر)",
+      "explanition": {
+        "title": "Object pronouns",
+        "des": "ضمایر مفعولی گیرنده عمل هستند، مثلا: \n I teach him\n در این جمله him مفعول است",
+        "types": "Me, you, Us, Them, Her, Him, It"
+      },
+      "type": "nameTypes",
+      "direction": "ltr",
+      "title": "Name types",
+      "id": 4
+    },
+    {
+      "sentence": "The flower is beautiful.",
+      "answer": [
+        "گل زیبا است",
+        "گل زیباست"
+      ],
+      "wordBank": [
+        "گل",
+        "زیبا",
+        "است",
+        "زشت",
+        "سرخ",
+        "زیباست"
+      ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
+      "id": 5
+    },
+    {
+      "sentence": "I need help.",
+      "answer": [
+        "من کمک نیاز دارم"
+      ],
+      "wordBank": [
+        "من",
+        "کمک",
+        "نیاز",
+        "دارم",
+        "نیازداشتن",
+        "دوست"
+      ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
+      "id": 6
+    },
+    {
+      "sentence": "He is not here.",
+      "answer": [
+        "او اینجا نیست"
+      ],
+      "wordBank": [
+        "او",
+        "اینجا",
+        "نیست",
+        "هست",
+        "آنجا",
+        "منزل"
+      ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
+      "id": 7
     },
     {
       "sentence": "I _ a letter to my friend last night.",
@@ -3295,16 +3457,49 @@
       "type": "fillBlank",
       "direction": "ltr",
       "title": "Fill the blank",
+      "id": 8
+    },
+    {
+      "sentence": "The coffee is _ hot to drink.",
+      "answer": "too",
+      "hardness": "Medium",
+      "translate": "قهوه برای خوردن خیلی داغ است.",
+      "wordBank": [
+        "too",
+        "very cold",
+        "something",
+        "not good",
+        "better"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 9
+    },
+    {
+      "sentence": "She is _ than her brother.",
+      "answer": "taller",
+      "hardness": "Hell",
+      "translate": "او از برادرش بلندتر است.",
+      "wordBank": [
+        "tall",
+        "taller",
+        "tallest",
+        "more tall"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
       "id": 10
     },
     {
-      "answer": "verb",
-      "sentence": "which word shows an action?",
+      "answer": "dog",
+      "sentence": "which animal says woof?",
       "options": [
-        "noun",
-        "verb",
-        "adjective",
-        "adverb"
+        "cat",
+        "dog",
+        "lion",
+        "bird"
       ],
       "type": "selectCorrect",
       "direction": "ltr",
@@ -3312,13 +3507,13 @@
       "id": 11
     },
     {
-      "answer": "adjective",
-      "sentence": "which word describes a noun?",
+      "answer": "iran",
+      "sentence": "which country is between Afghanistan and Turkey?",
       "options": [
-        "verb",
-        "adverb",
-        "adjective",
-        "preposition"
+        "pakistan",
+        "china",
+        "iran",
+        "india"
       ],
       "type": "selectCorrect",
       "direction": "ltr",
@@ -3326,9 +3521,9 @@
       "id": 12
     }
   ],
-  "L18": [
+  "L19": [
     {
-      "sentence": "Sugar is sweet.",
+      "sentence": "Water is wet.",
       "answer": true,
       "type": "trueFalse",
       "direction": "ltr",
@@ -3340,7 +3535,7 @@
       "id": 1
     },
     {
-      "sentence": "Salt is sweet.",
+      "sentence": "A car can fly.",
       "answer": false,
       "type": "trueFalse",
       "direction": "ltr",
@@ -3352,7 +3547,7 @@
       "id": 2
     },
     {
-      "sentence": "A baby is young.",
+      "sentence": "We live on Earth.",
       "answer": true,
       "type": "trueFalse",
       "direction": "ltr",
@@ -3365,23 +3560,19 @@
     },
     {
       "answer": [
-        "simple",
-        "cont",
-        "perfect",
-        "perfect cont"
+        "am",
+        "is",
+        "are"
       ],
       "synonyms": {
-        "continouos": "cont",
-        "continuous": "cont",
-        "progressive": "cont",
-        "perfect continouos": "perfect cont",
-        "perfect progressive": "perfect cont"
+        "im": "am",
+        "ar": "are"
       },
-      "sentence": "۴ زمان گذشته را بنویسید.",
+      "sentence": "افعال To be را بنویسید",
       "explanition": {
-        "title": "زمان گذشته",
-        "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
-        "types": "simple\n continuous\n perfect\n perfect continuous"
+        "title": "To be verbs",
+        "des": "I am a student - من شاگرد هستم\n You are a student - تو شاگرد هستی\n We are students - ما شاگرد هستیم\n",
+        "types": "سه نوع اند: \n am, is, are"
       },
       "type": "nameTypes",
       "direction": "ltr",
@@ -3445,246 +3636,49 @@
       "id": 7
     },
     {
-      "sentence": "She _ breakfast at 7 am.",
-      "answer": "eats",
-      "hardness": "Easy",
-      "translate": "او ساعت ۷ صبح صبحانه می‌خورد.",
-      "wordBank": [
-        "eat",
-        "eats",
-        "eating",
-        "swim"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 8
-    },
-    {
-      "sentence": "The cat is _ the table.",
-      "answer": "on",
-      "hardness": "Easy",
-      "translate": "گربه روی میز است.",
-      "wordBank": [
-        "on",
-        "hunting",
-        "a dog",
-        "future"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 9
-    },
-    {
-      "sentence": "I _ two sisters.",
-      "answer": "have",
-      "hardness": "Easy",
-      "translate": "من دو خواهر دارم.",
-      "wordBank": [
-        "have",
-        "has",
-        "think",
-        "am"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 10
-    },
-    {
-      "answer": "december",
-      "sentence": "which month is the last?",
-      "options": [
-        "november",
-        "december",
-        "january",
-        "october"
-      ],
-      "type": "selectCorrect",
-      "direction": "ltr",
-      "title": "Select correct",
-      "id": 11
-    },
-    {
-      "answer": "friday",
-      "sentence": "which day is the weekend?",
-      "options": [
-        "monday",
-        "tuesday",
-        "friday",
-        "wednesday"
-      ],
-      "type": "selectCorrect",
-      "direction": "ltr",
-      "title": "Select correct",
-      "id": 12
-    }
-  ],
-  "L19": [
-    {
-      "sentence": "کلمه adjective یک اسم را توصیف میکند",
-      "answer": true,
-      "type": "trueFalse",
-      "direction": "ltr",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 1
-    },
-    {
-      "sentence": "Trees have leaves.",
-      "answer": true,
-      "type": "trueFalse",
-      "direction": "ltr",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 2
-    },
-    {
-      "sentence": "Rocks are soft.",
-      "answer": false,
-      "type": "trueFalse",
-      "direction": "ltr",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 3
-    },
-    {
-      "answer": [
-        "simple",
-        "cont",
-        "perfect",
-        "perfect cont"
-      ],
-      "synonyms": {
-        "continouos": "cont",
-        "continuous": "cont",
-        "progressive": "cont",
-        "perfect continouos": "perfect cont",
-        "perfect progressive": "perfect cont"
-      },
-      "sentence": "۴ زمان گذشته را بنویسید.",
-      "explanition": {
-        "title": "زمان گذشته",
-        "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
-        "types": "simple\n continuous\n perfect\n perfect continuous"
-      },
-      "type": "nameTypes",
-      "direction": "ltr",
-      "title": "Name types",
-      "id": 4
-    },
-    {
-      "sentence": "We are friends.",
-      "answer": [
-        "ما دوست هستیم"
-      ],
-      "wordBank": [
-        "ما",
-        "دوست",
-        "هستیم",
-        "دشمن",
-        "خواهر"
-      ],
-      "type": "translate",
-      "direction": "ltr",
-      "title": "Translate this sentence",
-      "id": 5
-    },
-    {
-      "sentence": "This is a book.",
-      "answer": [
-        "این یک کتاب است",
-        "این کتاب است"
-      ],
-      "wordBank": [
-        "این",
-        "یک",
-        "کتاب",
-        "است",
-        "کتابچه",
-        "قلم"
-      ],
-      "type": "translate",
-      "direction": "ltr",
-      "title": "Translate this sentence",
-      "id": 6
-    },
-    {
-      "sentence": "I have a cat.",
-      "answer": [
-        "من یک گربه دارم",
-        "من گربه دارم"
-      ],
-      "wordBank": [
-        "من",
-        "یک",
-        "گربه",
-        "دارم",
-        "سگ",
-        "پرنده"
-      ],
-      "type": "translate",
-      "direction": "ltr",
-      "title": "Translate this sentence",
-      "id": 7
-    },
-    {
-      "sentence": "we _ going to school(past)",
-      "answer": "were",
-      "hardness": "Hard",
-      "translate": "ما در حال رفتن به مکتب بودیم",
-      "wordBank": [
-        "I",
-        "was",
-        "learn",
-        "is",
-        "went",
-        "were"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 8
-    },
-    {
-      "sentence": "Learning English is not _.",
-      "answer": "hard",
-      "hardness": "Medium",
-      "translate": "یادگیری انگلیسی سخت نیست",
-      "wordBank": [
-        "hard",
-        "allready",
-        "how to",
-        "tough",
-        "make",
-        "language"
-      ],
-      "type": "fillBlank",
-      "direction": "ltr",
-      "title": "Fill the blank",
-      "id": 9
-    },
-    {
-      "sentence": "You can`t _ a pilot.",
-      "answer": "be",
+      "sentence": "I _ to the cinema if I have time.",
+      "answer": "will go",
       "hardness": "Hell",
-      "translate": "تو نمیتوانی خلبان باشی",
+      "translate": "اگر وقت داشته باشم به سینما خواهم رفت.",
       "wordBank": [
-        "how",
-        "learn",
-        "be",
-        "make",
-        "airplane"
+        "go",
+        "will go",
+        "went",
+        "won`t go"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 8
+    },
+    {
+      "sentence": "He _ me with my homework yesterday.",
+      "answer": "helped",
+      "hardness": "Medium",
+      "translate": "دیروز به من در تکالیفم کمک کرد.",
+      "wordBank": [
+        "help",
+        "helped",
+        "helps",
+        "helping",
+        "teacher",
+        "let"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 9
+    },
+    {
+      "sentence": "We _ each other.",
+      "answer": "know",
+      "hardness": "Medium",
+      "translate": "ما یکدیگر را میشناسیم",
+      "wordBank": [
+        "know",
+        "did",
+        "have fun",
+        "are knowing"
       ],
       "type": "fillBlank",
       "direction": "ltr",
@@ -3692,13 +3686,13 @@
       "id": 10
     },
     {
-      "answer": "a doctor",
-      "sentence": "who do you visit when you are sick?",
+      "answer": "kabul",
+      "sentence": "what is the capital of afghanistan?",
       "options": [
-        "a doctor",
-        "a teacher",
-        "a driver",
-        "a cook"
+        "herat",
+        "kandahar",
+        "mazar",
+        "kabul"
       ],
       "type": "selectCorrect",
       "direction": "ltr",
@@ -3706,13 +3700,13 @@
       "id": 11
     },
     {
-      "answer": "past simple",
-      "sentence": "which tense is this sentence? \"I ate an apple\"",
+      "answer": "pencil",
+      "sentence": "what do you use to write and erase with an eraser?",
       "options": [
-        "present simple",
-        "past simple",
-        "future simple",
-        "present continuous"
+        "pen",
+        "pencil",
+        "marker",
+        "chalk"
       ],
       "type": "selectCorrect",
       "direction": "ltr",
@@ -3722,7 +3716,7 @@
   ],
   "L20": [
     {
-      "sentence": "A kitchen is for sleeping.",
+      "sentence": "اسم خاص قابل ترجمه است",
       "answer": false,
       "type": "trueFalse",
       "direction": "ltr",
@@ -3734,7 +3728,7 @@
       "id": 1
     },
     {
-      "sentence": "Red is a color.",
+      "sentence": "The sky is blue.",
       "answer": true,
       "type": "trueFalse",
       "direction": "ltr",
@@ -3746,7 +3740,7 @@
       "id": 2
     },
     {
-      "sentence": "A triangle has 4 sides.",
+      "sentence": "Birds have hands.",
       "answer": false,
       "type": "trueFalse",
       "direction": "ltr",
@@ -3759,23 +3753,13 @@
     },
     {
       "answer": [
-        "simple",
-        "cont",
-        "perfect",
-        "perfect cont"
+        "was",
+        "were"
       ],
-      "synonyms": {
-        "continouos": "cont",
-        "continuous": "cont",
-        "progressive": "cont",
-        "perfect continouos": "perfect cont",
-        "perfect progressive": "perfect cont"
-      },
-      "sentence": "۴ زمان گذشته را بنویسید.",
+      "sentence": "شکل‌های زمان گذشته فعل \"To be\" را بنویسید.",
       "explanition": {
-        "title": "زمان گذشته",
-        "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
-        "types": "simple\n continuous\n perfect\n perfect continuous"
+        "title": "Was/Were",
+        "des": "I was young - من جوان بودم\n You were young - تو جوان بودی\n He was young - او جوان بود\n"
       },
       "type": "nameTypes",
       "direction": "ltr",
@@ -3783,18 +3767,17 @@
       "id": 4
     },
     {
-      "sentence": "I am a boy.",
+      "sentence": "The cup is small.",
       "answer": [
-        "من یک پسر هستم",
-        "من پسر هستم"
+        "پیاله کوچک است"
       ],
       "wordBank": [
-        "من",
-        "یک",
-        "پسر",
-        "هستم",
-        "دختر",
-        "مرد"
+        "پیاله",
+        "کوچک",
+        "است",
+        "بزرگ",
+        "نوزاد",
+        "پسر"
       ],
       "type": "translate",
       "direction": "ltr",
@@ -3802,18 +3785,17 @@
       "id": 5
     },
     {
-      "sentence": "She is a girl.",
+      "sentence": "We are ready.",
       "answer": [
-        "او یک دختر است",
-        "او دختر است"
+        "ما آماده هستیم"
       ],
       "wordBank": [
-        "او",
-        "یک",
-        "دختر",
-        "است",
-        "پسر",
-        "زن"
+        "ما",
+        "آماده",
+        "هستیم",
+        "خسته",
+        "بیمار",
+        "دیر"
       ],
       "type": "translate",
       "direction": "ltr",
@@ -3821,17 +3803,18 @@
       "id": 6
     },
     {
-      "sentence": "The pen is blue.",
+      "sentence": "He opens the window.",
       "answer": [
-        "قلم آبی است"
+        "او پنجره را باز میکند"
       ],
       "wordBank": [
-        "قلم",
-        "آبی",
-        "است",
-        "سرخ",
-        "سبز",
-        "کتابچه"
+        "او",
+        "پنجره",
+        "را",
+        "باز",
+        "میکند",
+        "در",
+        "میز"
       ],
       "type": "translate",
       "direction": "ltr",
@@ -3839,15 +3822,15 @@
       "id": 7
     },
     {
-      "sentence": "He _ breakfast at 8 am.",
-      "answer": "has",
-      "hardness": "Easy",
-      "translate": "او ساعت ۸ صبح صبحانه می‌خورد.",
+      "sentence": "She _ a shower when the phone rang.",
+      "answer": "was taking",
+      "hardness": "Hell",
+      "translate": "وقتی تلفن زنگ زد او داشت دوش می‌گرفت.",
       "wordBank": [
-        "have",
-        "has",
-        "drink",
-        "week"
+        "took",
+        "was taking",
+        "is taking",
+        "take"
       ],
       "type": "fillBlank",
       "direction": "ltr",
@@ -3855,16 +3838,14 @@
       "id": 8
     },
     {
-      "sentence": "This is _ book.",
-      "answer": "my",
-      "hardness": "Easy",
-      "translate": "این کتاب من است.",
+      "sentence": "I wish I _ more time to travel.",
+      "answer": "had",
+      "hardness": "Hard",
+      "translate": "کاش زمان بیشتری برای سفر داشتم.",
       "wordBank": [
-        "my",
-        "I",
-        "me",
-        "mine",
-        "car"
+        "have",
+        "had",
+        "can have"
       ],
       "type": "fillBlank",
       "direction": "ltr",
@@ -3872,15 +3853,15 @@
       "id": 9
     },
     {
-      "sentence": "She _ to become a doctor.",
-      "answer": "wants",
-      "hardness": "Easy",
-      "translate": "او می‌خواهد داکتر شود.",
+      "sentence": "If it rains tomorrow, we _ at home.",
+      "answer": "will stay",
+      "hardness": "Hell",
+      "translate": "اگر فردا باران ببارد، خانه می‌مانیم.",
       "wordBank": [
-        "wanted",
-        "wants",
-        "can",
-        "very much"
+        "went",
+        "will stay",
+        "stayed",
+        "never"
       ],
       "type": "fillBlank",
       "direction": "ltr",
@@ -3888,18 +3869,13 @@
       "id": 10
     },
     {
-      "answer": "future simple",
-      "explanition": {
-        "title": "زمان آینده ساده",
-        "des": "با اضافه کردن will قبل از فعل زمان را به آینده تغییر دهید",
-        "types": "I will play a game"
-      },
-      "sentence": "which tense do we use for actions that will happen later?",
+      "answer": "door",
+      "sentence": "what do you open to enter a room?",
       "options": [
-        "present simple",
-        "past simple",
-        "future simple",
-        "past continuous"
+        "window",
+        "door",
+        "wall",
+        "ceiling"
       ],
       "type": "selectCorrect",
       "direction": "ltr",
@@ -3907,13 +3883,13 @@
       "id": 11
     },
     {
-      "answer": "present continuous",
-      "sentence": "which tense do we use for actions happening right now?",
+      "answer": "window",
+      "sentence": "what do you open to let fresh air into a room?",
       "options": [
-        "present simple",
-        "past simple",
-        "future simple",
-        "present continuous"
+        "door",
+        "window",
+        "drawer",
+        "cabinet"
       ],
       "type": "selectCorrect",
       "direction": "ltr",

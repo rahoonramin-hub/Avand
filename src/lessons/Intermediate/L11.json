@@ -1,0 +1,179 @@
+[
+  {
+    "sentence": "Sugar is sweet.",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "The word \"about\" is an verb",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "title": "Question",
+    "answer": [
+      "pronoun"
+    ],
+    "synonyms": {
+      "pronuon": "pronoun",
+      "prenuon": "pronoun"
+    },
+    "sentence": "چه چیزی جایگزین اسم میشود و از تکرار آن جلوگیری میکند؟",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "id": 3
+  },
+  {
+    "title": "Question",
+    "answer": [
+      "Adverb"
+    ],
+    "synonyms": {
+      "averb": "Adverb",
+      "قید": "Adverb",
+      "an adverb": "Adverb"
+    },
+    "sentence": "چه چیزی یک فعل را توصیف میکند؟",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "id": 4
+  },
+  {
+    "sentence": "دیروز به دانشگاه رفتم.",
+    "answer": [
+      "I went to university yesterday"
+    ],
+    "direction": "rtl",
+    "wordBank": [
+      "university",
+      "yesterday",
+      "hospital",
+      "to",
+      "went",
+      "I"
+    ],
+    "type": "translate",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "Who is the best doctor in the city?",
+    "answer": [
+      "چه کسی بهترین داکتر شهر است"
+    ],
+    "wordBank": [
+      "است",
+      "شهر",
+      "داکتر",
+      "بهترین",
+      "کسی",
+      "چه"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "میوه مورد علاقه من سیب است.",
+    "answer": [
+      "my favorite fruit is apple"
+    ],
+    "direction": "rtl",
+    "wordBank": [
+      "you",
+      "apple",
+      "is",
+      "fruit",
+      "favorite",
+      "my"
+    ],
+    "type": "translate",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "She is good _ playing piano.",
+    "answer": "at",
+    "hardness": "Hell",
+    "translate": "او در نواختن پیانو خوب است",
+    "wordBank": [
+      "in",
+      "at"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "They _ going to school yesterday.",
+    "answer": "were",
+    "hardness": "Medium",
+    "translate": "آنها دیروز به مکتب میرفتند",
+    "wordBank": [
+      "were",
+      "was",
+      "are"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "He _ his homework every evening.",
+    "answer": "does",
+    "hardness": "Medium",
+    "translate": "او هر شب کارخانگی اش را انجام میدهد.",
+    "wordBank": [
+      "does",
+      "do",
+      "can"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "answer": "Notebook",
+    "sentence": "Where do you write?",
+    "options": [
+      "Notebook",
+      "Wall",
+      "Cup"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "answer": "مورد علاقه",
+    "sentence": "What does the word \"favorite\" mean?",
+    "options": [
+      "مورد علاقه",
+      "گل",
+      "رفیق"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 12
+  }
+]

@@ -1,6 +1,6 @@
 [
   {
-    "sentence": "کلمه Verb یک عمل را نشان میدهد",
+    "sentence": "There are 7 days in a week.",
     "answer": true,
     "type": "trueFalse",
     "direction": "ltr",
@@ -12,8 +12,8 @@
     "id": 1
   },
   {
-    "sentence": "We wear shoes on our feet.",
-    "answer": true,
+    "sentence": "A square has 5 sides.",
+    "answer": false,
     "type": "trueFalse",
     "direction": "ltr",
     "title": "True or False",
@@ -24,8 +24,8 @@
     "id": 2
   },
   {
-    "sentence": "کلمه I یک اول شخص مفرد است",
-    "answer": true,
+    "sentence": "A circle has corners.",
+    "answer": false,
     "type": "trueFalse",
     "direction": "ltr",
     "title": "True or False",
@@ -37,23 +37,19 @@
   },
   {
     "answer": [
-      "simple",
-      "cont",
-      "perfect",
-      "perfect cont"
+      "i",
+      "you",
+      "he",
+      "she",
+      "it",
+      "we",
+      "they"
     ],
-    "synonyms": {
-      "continouos": "cont",
-      "continuous": "cont",
-      "progressive": "cont",
-      "perfect continouos": "perfect cont",
-      "perfect progressive": "perfect cont"
-    },
-    "sentence": "۴ زمان گذشته را بنویسید.",
+    "sentence": "ضمایر فاعلی در زبان انگلیسی را بنویسید. (حداقل ۵ ضمیر)",
     "explanition": {
-      "title": "زمان گذشته",
-      "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
-      "types": "simple\n continuous\n perfect\n perfect continuous"
+      "title": "Subject pronouns",
+      "des": "ضمایر فاعلی نشان می‌دهند چه کسی کار را انجام داده است: \n",
+      "types": "I, You, We, They, He, She, It \n من، شما، ما، آنها، او مرد،زن، حیوان"
     },
     "type": "nameTypes",
     "direction": "ltr",
@@ -61,17 +57,18 @@
     "id": 4
   },
   {
-    "sentence": "I want water.",
+    "sentence": "Do you like tea?",
     "answer": [
-      "من آب می‌خواهم",
-      "آب می‌خواهم"
+      "آیا چای دوست داری؟",
+      "چای دوست داری؟"
     ],
     "wordBank": [
-      "من",
-      "آب",
-      "می‌خواهم",
-      "شیر",
-      "غذا"
+      "آیا",
+      "چای",
+      "دوست",
+      "داری؟",
+      "قهوه",
+      "نوشیدن"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -79,17 +76,16 @@
     "id": 5
   },
   {
-    "sentence": "The cat is on the table.",
+    "sentence": "I can swim.",
     "answer": [
-      "گربه روی میز است"
+      "من می‌توانم شنا کنم"
     ],
     "wordBank": [
-      "گربه",
-      "روی",
-      "میز",
-      "است",
-      "زیر",
-      "چوکی"
+      "من",
+      "می‌توانم",
+      "شنا",
+      "کنم",
+      "فوتبال"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -97,18 +93,17 @@
     "id": 6
   },
   {
-    "sentence": "I am a boy.",
+    "sentence": "She has two brothers.",
     "answer": [
-      "من یک پسر هستم",
-      "من پسر هستم"
+      "او دو برادر دارد"
     ],
     "wordBank": [
-      "من",
-      "یک",
-      "پسر",
-      "هستم",
-      "دختر",
-      "مرد"
+      "او",
+      "دو",
+      "برادر",
+      "دارد",
+      "خواهر",
+      "سه"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -116,15 +111,15 @@
     "id": 7
   },
   {
-    "sentence": "She _ to become a doctor.",
-    "answer": "wants",
-    "hardness": "Easy",
-    "translate": "او می‌خواهد داکتر شود.",
+    "sentence": "I _ a red pen, because reds are beautiful.",
+    "answer": "bought",
+    "hardness": "Hard",
+    "translate": "من یک قلم سرخ خریدم، چون آنها زیبا هستند.",
     "wordBank": [
-      "wanted",
+      "bought",
       "wants",
-      "can",
-      "very much"
+      "pretty",
+      "infront"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -132,15 +127,16 @@
     "id": 8
   },
   {
-    "sentence": "The children _ playing outside.",
-    "answer": "are",
-    "hardness": "Easy",
-    "translate": "بچه‌ها بیرون مشغول بازی هستند.",
+    "sentence": "They _ to music.",
+    "answer": "listen",
+    "hardness": "Medium",
+    "translate": "آن‌ها به موسیقی گوش می‌دهند.",
     "wordBank": [
-      "wish",
-      "is",
-      "are",
-      "was"
+      "listen",
+      "listens",
+      "wash",
+      "list",
+      "eat"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -148,17 +144,15 @@
     "id": 9
   },
   {
-    "sentence": "I _ you yesterday but you were not home.",
-    "answer": "called",
-    "hardness": "Hell",
-    "translate": "دیروز با شما تماس گرفتم اما خانه نبودید.",
+    "sentence": "We _ happy today, because we won the game",
+    "answer": "are",
+    "hardness": "Medium",
+    "translate": "ما امروز خوشحالیم.",
     "wordBank": [
-      "call",
-      "called",
-      "was",
-      "phone",
-      "have to",
-      "very"
+      "am",
+      "is",
+      "are",
+      "be"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -166,8 +160,13 @@
     "id": 10
   },
   {
-    "answer": "present simple",
-    "sentence": "which tense do we use for habits and routines?",
+    "answer": "past simple",
+    "sentence": "which tense is this sentence? \"I ate an apple\"",
+    "explanition": {
+      "title": "زمان گذشته ساده",
+      "des": "زمانیست که در گذشته اتفاق افتاده باشد و ختم شده باشد.\nتبدیل فعل به گذشته:بیشتر افعال با اضافه کردن ed در آخر فعل به حالت گذشته تبدیل میشوند.\nولی بعضی از افعال شکل خاص خود را دارند.",
+      "types": "watch - watch ed\nlearn - learn ed\nbuy - bought"
+    },
     "options": [
       "present simple",
       "past simple",
@@ -180,8 +179,13 @@
     "id": 11
   },
   {
-    "answer": "past simple",
-    "sentence": "which tense do we use for actions finished in the past?",
+    "answer": "future simple",
+    "explanition": {
+      "title": "زمان آینده ساده",
+      "des": "با اضافه کردن will قبل از فعل زمان را به آینده تغییر دهید",
+      "types": "I will play a game"
+    },
+    "sentence": "which tense is this sentence? \"They will come tomorrow\"",
     "options": [
       "present simple",
       "past simple",

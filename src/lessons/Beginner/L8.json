@@ -1,7 +1,7 @@
 [
   {
-    "sentence": "We live on Earth.",
-    "answer": true,
+    "sentence": "Salt is sweet.",
+    "answer": false,
     "type": "trueFalse",
     "direction": "ltr",
     "title": "True or False",
@@ -12,8 +12,8 @@
     "id": 1
   },
   {
-    "sentence": "اسم خاص قابل ترجمه است",
-    "answer": false,
+    "sentence": "A baby is young.",
+    "answer": true,
     "type": "trueFalse",
     "direction": "ltr",
     "title": "True or False",
@@ -24,8 +24,8 @@
     "id": 2
   },
   {
-    "sentence": "The sky is blue.",
-    "answer": true,
+    "sentence": "کلمه adjective به معنی قید است",
+    "answer": false,
     "type": "trueFalse",
     "direction": "ltr",
     "title": "True or False",
@@ -37,23 +37,19 @@
   },
   {
     "answer": [
-      "simple",
-      "cont",
-      "perfect",
-      "perfect cont"
+      "am",
+      "is",
+      "are"
     ],
     "synonyms": {
-      "continouos": "cont",
-      "continuous": "cont",
-      "progressive": "cont",
-      "perfect continouos": "perfect cont",
-      "perfect progressive": "perfect cont"
+      "im": "am",
+      "ar": "are"
     },
-    "sentence": "۴ زمان گذشته را بنویسید.",
+    "sentence": "افعال To be را بنویسید",
     "explanition": {
-      "title": "زمان گذشته",
-      "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
-      "types": "simple\n continuous\n perfect\n perfect continuous"
+      "title": "To be verbs",
+      "des": "I am a student - من شاگرد هستم\n You are a student - تو شاگرد هستی\n We are students - ما شاگرد هستیم\n",
+      "types": "سه نوع اند: \n am, is, are"
     },
     "type": "nameTypes",
     "direction": "ltr",
@@ -61,17 +57,18 @@
     "id": 4
   },
   {
-    "sentence": "This is my brother.",
+    "sentence": "She is a girl.",
     "answer": [
-      "این برادر من است"
+      "او یک دختر است",
+      "او دختر است"
     ],
     "wordBank": [
-      "این",
-      "برادر",
-      "من",
+      "او",
+      "یک",
+      "دختر",
       "است",
-      "خواهر",
-      "پدر"
+      "پسر",
+      "زن"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -79,17 +76,17 @@
     "id": 5
   },
   {
-    "sentence": "I am not sleepy.",
+    "sentence": "The pen is blue.",
     "answer": [
-      "من خواب‌آلود نیستم"
+      "قلم آبی است"
     ],
     "wordBank": [
-      "من",
-      "خواب‌آلود",
-      "نیستم",
-      "هستم",
-      "خسته",
-      "بیدار"
+      "قلم",
+      "آبی",
+      "است",
+      "سرخ",
+      "سبز",
+      "کتابچه"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -97,17 +94,17 @@
     "id": 6
   },
   {
-    "sentence": "She has long hair.",
+    "sentence": "I am tired.",
     "answer": [
-      "او موی بلند دارد"
+      "من خسته هستم"
     ],
     "wordBank": [
-      "او",
-      "موی",
-      "بلند",
-      "دارد",
-      "کوتاه",
-      "سیاه"
+      "من",
+      "خسته",
+      "هستم",
+      "خوشحال",
+      "ناراحت",
+      "بیمار"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -115,16 +112,17 @@
     "id": 7
   },
   {
-    "sentence": "They _ to music.",
-    "answer": "listen",
-    "hardness": "Medium",
-    "translate": "آن‌ها به موسیقی گوش می‌دهند.",
+    "sentence": "If _ learn English very fast, you are smart",
+    "answer": "you",
+    "hardness": "Hard",
+    "translate": "اگر انگلیسی را سریع بیاموزی، باهوش هستی.",
     "wordBank": [
-      "listen",
-      "listens",
-      "wash",
-      "list",
-      "eat"
+      "teach",
+      "how",
+      "learn",
+      "you",
+      "is",
+      "language"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -132,15 +130,16 @@
     "id": 8
   },
   {
-    "sentence": "We _ happy today, because we won the game",
-    "answer": "are",
-    "hardness": "Medium",
-    "translate": "ما امروز خوشحالیم.",
+    "sentence": "Never _",
+    "answer": "mind",
+    "hardness": "Hard",
+    "translate": "هیچی (منصرف شدن از گفتن چیزی)",
     "wordBank": [
-      "am",
-      "is",
-      "are",
-      "be"
+      "I",
+      "can",
+      "mine",
+      "went",
+      "mind"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -148,16 +147,17 @@
     "id": 9
   },
   {
-    "sentence": "He _ his own book, and sold it.",
-    "answer": "wrote",
+    "sentence": "we _ going to school(past)",
+    "answer": "were",
     "hardness": "Hard",
-    "translate": "او کتاب خودش را نوشت و آنرا فروخت",
+    "translate": "ما در حال رفتن به مکتب بودیم",
     "wordBank": [
-      "sells",
-      "wrote",
-      "builds",
-      "made",
-      "write"
+      "I",
+      "was",
+      "learn",
+      "is",
+      "went",
+      "were"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -165,13 +165,18 @@
     "id": 10
   },
   {
-    "answer": "blue",
-    "sentence": "what color is the sky on a clear day?",
+    "answer": "verb",
+    "sentence": "which word shows an action?",
+    "explanition": {
+      "title": "فعل",
+      "des": "فعل کلمه ایست که عمل را نشان میدهد و در زبان انگلیسی به آن Verb میگویند.",
+      "types": "مثال:\nrun-دویدن\nwalk-قدم زدن"
+    },
     "options": [
-      "green",
-      "blue",
-      "gray",
-      "white"
+      "noun",
+      "verb",
+      "adjective",
+      "adverb"
     ],
     "type": "selectCorrect",
     "direction": "ltr",
@@ -179,13 +184,18 @@
     "id": 11
   },
   {
-    "answer": "five",
-    "sentence": "how many fingers does a human have on one hand?",
+    "answer": "adjective",
+    "explanition": {
+      "des": "صفت یا adjective چگونگی یک اسم را توصیف میکند، مثال:",
+      "title": "Adjective",
+      "types": "black book\n در اینجا black صفت و book اسم است"
+    },
+    "sentence": "which word describes a noun?",
     "options": [
-      "four",
-      "five",
-      "six",
-      "three"
+      "verb",
+      "adverb",
+      "adjective",
+      "preposition"
     ],
     "type": "selectCorrect",
     "direction": "ltr",

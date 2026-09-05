@@ -1,0 +1,200 @@
+[
+  {
+    "sentence": "\"in\" is a prepostion",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "\"go\" is a preposition",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "answer": [
+      "Her",
+      "Him",
+      "Them",
+      "Us",
+      "Me",
+      "It",
+      "You"
+    ],
+    "synonyms": {
+      "hir": "her",
+      "his": "her",
+      "we": "us"
+    },
+    "sentence": "Name object pronouns (atleast 5 of them).",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 3
+  },
+  {
+    "answer": [
+      "I",
+      "You",
+      "We",
+      "They",
+      "He",
+      "She",
+      "It"
+    ],
+    "sentence": "Name subject pronouns (atleas 5 of them).",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 4
+  },
+  {
+    "sentence": "Why are you so bored?",
+    "answer": [
+      "چرا اینقدر خسته هستی"
+    ],
+    "wordBank": [
+      "؟",
+      "هستی",
+      "خسته",
+      "اینقدر",
+      "چرا"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "فیلم مورد علاقه تو چیست؟",
+    "answer": [
+      "what is your favorite movie"
+    ],
+    "direction": "rtl",
+    "wordBank": [
+      "movie",
+      "favorite",
+      "your",
+      "is",
+      "what"
+    ],
+    "type": "translate",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "How long does it take, to cook pizza?",
+    "answer": [
+      "چقدر طول میکشد تا پیتزا بپزی"
+    ],
+    "wordBank": [
+      "؟",
+      "بسازی",
+      "بپزی",
+      "پیتزا",
+      "تا",
+      "طول میکشد",
+      "چقدر"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "Call me later, I'm _ now",
+    "answer": "busy",
+    "hardness": "Medium",
+    "translate": "بعدا زنگ بزن، فعلا مصروفم",
+    "wordBank": [
+      "not",
+      "learning",
+      "busy"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "An elephant is a big _",
+    "answer": "animal",
+    "hardness": "Easy",
+    "translate": "فیل یک حیوان بزرگ است",
+    "wordBank": [
+      "monster",
+      "human",
+      "thing",
+      "animal"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "My phone is _",
+    "answer": "ringing",
+    "hardness": "Easy",
+    "translate": "موبایلم زنگ میخورد",
+    "wordBank": [
+      "is",
+      "ringing",
+      "ring",
+      "ringed"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "answer": "in",
+    "explanition": {
+      "title": "حروف ربط",
+      "des": "حروف ربط، کلمات کوتاهی استند که روابطی مانند زمان، مکان و بحث را نشان میدهند\nو یا کلماتی که رابطه بین دو کلمه را نشان میدهند\n",
+      "types": "on, in, about, at, front, to, ...."
+    },
+    "sentence": "Which word is a preposition?",
+    "options": [
+      "far",
+      "well",
+      "in",
+      "go"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "answer": "describes a verb",
+    "sentence": "What does an adverb do?",
+    "explanition": {
+      "title": "قید",
+      "des": "قید کلمه ای است که نشان میدهد یک عمل چگونه و چه وقت انجام شده \nو یا چگونگی انجام عمل را قید گویند. مانند: \n",
+      "types": "قید حالت: fast\nقید زمان: yesterday\nقید تکرار: every day"
+    },
+    "options": [
+      "describes a verb",
+      "kick balls",
+      "describes nouns"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 12
+  }
+]

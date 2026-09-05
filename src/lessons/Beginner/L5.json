@@ -1,7 +1,7 @@
 [
   {
-    "sentence": "Red is a color.",
-    "answer": true,
+    "sentence": "Snow is black.",
+    "answer": false,
     "type": "trueFalse",
     "direction": "ltr",
     "title": "True or False",
@@ -12,7 +12,7 @@
     "id": 1
   },
   {
-    "sentence": "A triangle has 4 sides.",
+    "sentence": "Cars have legs.",
     "answer": false,
     "type": "trueFalse",
     "direction": "ltr",
@@ -24,8 +24,8 @@
     "id": 2
   },
   {
-    "sentence": "A book has pages.",
-    "answer": true,
+    "sentence": "Cats can read books.",
+    "answer": false,
     "type": "trueFalse",
     "direction": "ltr",
     "title": "True or False",
@@ -36,42 +36,40 @@
     "id": 3
   },
   {
+    "title": "Question",
     "answer": [
-      "simple",
-      "cont",
-      "perfect",
-      "perfect cont"
+      "adjective"
     ],
+    "sentence": "چه چیزی یک اسم را توصیف میکند؟",
     "synonyms": {
-      "continouos": "cont",
-      "continuous": "cont",
-      "progressive": "cont",
-      "perfect continouos": "perfect cont",
-      "perfect progressive": "perfect cont"
+      "صفت": "adjective",
+      "ajective": "adjective",
+      "سفت": "adjective",
+      "adjektiv": "adjective",
+      "ajektive": "adjective",
+      "adj": "adjective"
     },
-    "sentence": "۴ زمان گذشته را بنویسید.",
     "explanition": {
-      "title": "زمان گذشته",
-      "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
-      "types": "simple\n continuous\n perfect\n perfect continuous"
+      "des": "صفت یا adjective چگونگی یک اسم را توصیف میکند، مثال:",
+      "title": "Adjective",
+      "types": "black book\n در اینجا black صفت و book اسم است"
     },
     "type": "nameTypes",
     "direction": "ltr",
-    "title": "Name types",
     "id": 4
   },
   {
-    "sentence": "I like apples.",
+    "sentence": "She is my sister.",
     "answer": [
-      "من سیب دوست دارم",
-      "من سیب را دوست دارم"
+      "او خواهر من است"
     ],
     "wordBank": [
+      "او",
+      "خواهر",
       "من",
-      "سیب",
-      "دوست",
-      "دارم",
-      "دوست نداشتن"
+      "است",
+      "برادر",
+      "مادر"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -79,16 +77,17 @@
     "id": 5
   },
   {
-    "sentence": "He is happy.",
+    "sentence": "Where are you from?",
     "answer": [
-      "او خوشحال است"
+      "از کجا هستی؟",
+      "شما از کجا هستی؟"
     ],
     "wordBank": [
-      "او",
-      "خوشحال",
-      "است",
-      "ناراحت",
-      "پسر"
+      "از",
+      "کجا",
+      "هستی؟",
+      "شما",
+      "چیست"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -96,16 +95,17 @@
     "id": 6
   },
   {
-    "sentence": "We are friends.",
+    "sentence": "I am from Afghanistan.",
     "answer": [
-      "ما دوست هستیم"
+      "من از افغانستان هستم"
     ],
     "wordBank": [
-      "ما",
-      "دوست",
-      "هستیم",
-      "دشمن",
-      "خواهر"
+      "من",
+      "از",
+      "افغانستان",
+      "هستم",
+      "آمریکا",
+      "نیستم"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -113,16 +113,17 @@
     "id": 7
   },
   {
-    "sentence": "You can`t _ a pilot.",
-    "answer": "be",
-    "hardness": "Hell",
-    "translate": "تو نمیتوانی خلبان باشی",
+    "sentence": "I _ from Afghanistan.",
+    "answer": "am",
+    "hardness": "Easy",
+    "translate": "من از افغانستان هستم.",
     "wordBank": [
-      "how",
-      "learn",
+      "am",
+      "is",
+      "are",
       "be",
-      "make",
-      "airplane"
+      "iran",
+      "make"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -130,15 +131,15 @@
     "id": 8
   },
   {
-    "sentence": "How to _ fast in soccer?",
-    "answer": "run",
-    "hardness": "Easy",
-    "translate": "چطور در فوتبال تیز بدویم",
+    "sentence": "She _ the job, but it is tough.",
+    "answer": "got",
+    "hardness": "Hard",
+    "translate": "او کار را گرفت ولی کار سختی است.",
     "wordBank": [
-      "why",
-      "football",
-      "learn",
-      "run"
+      "likes",
+      "give",
+      "got",
+      "build"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -146,35 +147,20 @@
     "id": 9
   },
   {
-    "sentence": "Be your _",
-    "answer": "self",
-    "hardness": "Veteran",
-    "translate": "خودت باش",
+    "sentence": "The book is _ .",
+    "answer": "mine",
+    "hardness": "Medium",
+    "translate": "کتاب از من است",
     "wordBank": [
-      "kind",
-      "dog",
-      "father",
-      "self",
-      "goal"
+      "on",
+      "mine",
+      "under",
+      "basket ball"
     ],
     "type": "fillBlank",
     "direction": "ltr",
     "title": "Fill the blank",
     "id": 10
-  },
-  {
-    "answer": "summer",
-    "sentence": "which season is the hottest?",
-    "options": [
-      "summer",
-      "winter",
-      "fall",
-      "spring"
-    ],
-    "type": "selectCorrect",
-    "direction": "ltr",
-    "title": "Select correct",
-    "id": 11
   },
   {
     "answer": "slowly",
@@ -189,6 +175,20 @@
       "slowly",
       "eye",
       "slow"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "answer": "a doctor",
+    "sentence": "who do you visit when you are sick?",
+    "options": [
+      "a doctor",
+      "a teacher",
+      "a driver",
+      "a cook"
     ],
     "type": "selectCorrect",
     "direction": "ltr",

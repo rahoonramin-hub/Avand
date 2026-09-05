@@ -1,0 +1,186 @@
+[
+  {
+    "sentence": "در یک جمله Subject کننده کار است",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "\"کلمه go یک فعل است\"",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "answer": [
+      "an",
+      "a",
+      "the"
+    ],
+    "explanition": {
+      "title": "حروف تعریف",
+      "des": "حروف تعریف حروفی اند که قبل از اسم آمده، معین و نا معین بودن اسم را نشان می دهند\nحرف The به چیزی خاص و معین اشاره میکند.\nحروف A و An به چیزی عام و نامعین اشاره میکنند.",
+      "types": "The: The cat\nA: A cat\nAn: An apple"
+    },
+    "sentence": "انواع حرف تعریف را نام ببرید",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 3
+  },
+  {
+    "title": "Question",
+    "answer": [
+      "pronoun"
+    ],
+    "synonyms": {
+      "pronuon": "pronoun",
+      "prenuon": "pronoun"
+    },
+    "sentence": "چه چیزی جایگزین اسم میشود و از تکرار آن جلوگیری میکند؟",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "id": 4
+  },
+  {
+    "sentence": "معلم انگلیسی ما از کابل است",
+    "answer": [
+      "Our English teacher is from Kabul"
+    ],
+    "direction": "rtl",
+    "wordBank": [
+      "Our",
+      "English",
+      "teacher",
+      "is",
+      "from",
+      "Kabul",
+      "french"
+    ],
+    "type": "translate",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "Have you ever been in Kabul",
+    "answer": [
+      "تا حالا در کابل بودی"
+    ],
+    "wordBank": [
+      "نمیدانم",
+      "شاید",
+      "؟",
+      "بودی",
+      "کابل",
+      "در",
+      "تا حالا"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "تا حالا در هرات زندگی کردی؟",
+    "answer": [
+      "Have you ever lived in Herat?"
+    ],
+    "direction": "rtl",
+    "wordBank": [
+      "have you",
+      "ever",
+      "lived",
+      "in",
+      "herat",
+      "?",
+      "never"
+    ],
+    "type": "translate",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "Although it was raining, they decided _ continue the journey.",
+    "answer": "to",
+    "hardness": "Hard",
+    "translate": "اگرچه باران میبارید؛ آنها تصمیم گرفتند که سفر را ادامه دهند.",
+    "wordBank": [
+      "that",
+      "to",
+      "which"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "The computer stopped working because it _ overheated.",
+    "answer": "had",
+    "hardness": "Veteran",
+    "translate": "کامپیوتر متوقف شد چون خیلی داغ شده بود.",
+    "wordBank": [
+      "had",
+      "have",
+      "to",
+      "is"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "She explained the lesson so _ that everyone understood it.",
+    "answer": "clearly",
+    "hardness": "Hard",
+    "translate": "او درس را طوری شفاف توضیح داد که همه یادگرفتند.",
+    "wordBank": [
+      "clear",
+      "slow",
+      "clearly"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "answer": "C.Ronaldo",
+    "sentence": "Who is the most popular?",
+    "options": [
+      "Wakil ahmad",
+      "C.Ronaldo",
+      "Ghafor"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "answer": "3 million",
+    "sentence": "Which option is the highest price?",
+    "options": [
+      "3 million",
+      "1 thousand",
+      "fourteen thousand"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 12
+  }
+]

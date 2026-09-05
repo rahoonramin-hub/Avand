@@ -351,7 +351,7 @@ const translatePool = [
     answer: ["او پدر من است"],
     wordBank: ["او", "پدر", "من", "است", "مادر", "برادر"]
   },
-  {
+  { 
     sentence: "Where is the key?",
     answer: ["کلید کجاست؟", "کلید کجاست"],
     wordBank: ["کلید", "کجاست", "کتاب", "قلم", "کتابچه",'؟']
@@ -907,8 +907,9 @@ const fillBlankPool = [
 const selectCorrectPool = [
   {
       answer: 'past simple',
-      sentence: 'which tense is this sentence? "we went to the mall"',
-      options:['future simple', 'past continuous', 'past simple', 'past progressive']
+      explanition: {title: 'زمان گذشته ساده',des: 'زمانیست که در گذشته اتفاق افتاده باشد و ختم شده باشد.\nتبدیل فعل به گذشته:\بیشتر افعال با اضافه کردن ed در آخر فعل به حالت گذشته تبدیل میشوند.\nولی بعضی از افعال شکل خاص خود را دارند.',types:'watch - watch ed\nlearn - learn ed\nbuy - bought'},
+      sentence: 'which tense is this sentence? "I learned English"',
+      options:['future simple', 'past continuous', 'past simple']
   },
   {
       answer: 'on friday',
@@ -918,9 +919,11 @@ const selectCorrectPool = [
   {
       answer: 'describes a noun',
       sentence: 'what does an adjective do ?',
+
       options:['avoid repetition', 'describes a noun', 'describes a verb', 'the question is wrong']
   },{
       answer: 'Black',
+      explanition: {des:'صفت یا adjective چگونگی یک اسم را توصیف میکند، مثال:',title: "Adjective", types: "black book\n در اینجا black صفت و book اسم است"},
       direction: "rtl",
       sentence: 'کدام کلمه یک صفت است؟',
       options:['You', 'Make', 'Black', 'make more formal']
@@ -960,40 +963,42 @@ const selectCorrectPool = [
   {
     answer: 'past simple',
     sentence: 'which tense is this sentence? "I ate an apple"',
+    explanition: {title: 'زمان گذشته ساده',des: 'زمانیست که در گذشته اتفاق افتاده باشد و ختم شده باشد.\nتبدیل فعل به گذشته:\بیشتر افعال با اضافه کردن ed در آخر فعل به حالت گذشته تبدیل میشوند.\nولی بعضی از افعال شکل خاص خود را دارند.',types:'watch - watch ed\nlearn - learn ed\nbuy - bought'},
     options: ['present simple', 'past simple', 'future simple', 'present continuous']
   },
   {
-    answer: 'present simple',
-    sentence: 'which tense is this sentence? "She drinks coffee every morning"',
-    options: ['present simple', 'past simple', 'future simple', 'past continuous']
-  },
-  {
     answer: 'future simple',
+    explanition: {title: "زمان آینده ساده", des:"با اضافه کردن will قبل از فعل زمان را به آینده تغییر دهید", types: "I will play a game"},
     sentence: 'which tense is this sentence? "They will come tomorrow"',
     options: ['present simple', 'past simple', 'future simple', 'present continuous']
   },
   {
     answer: 'present continuous',
     sentence: 'which tense is this sentence? "I am reading a book now"',
+    explanition: {title: 'حال جاری',des:'زمان حال جاری زمانیست که عمل در لحظه اکنون در حال جریان باشد.\nساختار:\nSub + Tobe + V-ing\nتمام زمان های جاری در آخر فعل حروف Ing را دارند',types: 'مثال:\nI am reading\nمن در حال خواندن هستم. \nعمل در لحظه درحال جریان است.'},
     options: ['present simple', 'past simple', 'future simple', 'present continuous']
   },
   {
     answer: 'past continuous',
     sentence: 'which tense is this sentence? "She was sleeping at 10 pm"',
-    options: ['present simple', 'past simple', 'present continuous', 'past continuous']
+    options: ['present simple', 'past simple', 'present continuous', 'past continuous'],
+    explanition: {title: "گذشته جاری", des: "subject + was/were + verb + ing\nShe was cooking\nاو در حال آشپزی بود"},
   },
   {
     answer: 'verb',
     sentence: 'which word shows an action?',
+    explanition: {title:'فعل',des:'فعل کلمه ایست که عمل را نشان میدهد و در زبان انگلیسی به آن Verb میگویند.', types:'مثال:\nrun-دویدن\nwalk-قدم زدن'},
     options: ['noun', 'verb', 'adjective', 'adverb']
   },
   {
     answer: 'adjective',
+    explanition: {des:'صفت یا adjective چگونگی یک اسم را توصیف میکند، مثال:',title: "Adjective", types: "black book\n در اینجا black صفت و book اسم است"},
     sentence: 'which word describes a noun?',
     options: ['verb', 'adverb', 'adjective', 'preposition']
   },
   {
     answer: 'adverb',
+    explanition: {title: "قید" , des: "قید ها چگونگی انجام عمل را بیان میکنند: \n I run slowly \nکلمه slowly یعنی به آهستگی\n", types: "نکته جالب: اکثر قید ها با حروف ly خطم میشوند \nslow = صفت\nslowly = قید"},
     sentence: 'which word describes a verb?',
     options: ['noun', 'adjective', 'adverb', 'conjunction']
   },
@@ -1039,16 +1044,6 @@ const selectCorrectPool = [
     options: ['doctor', 'engineer', 'teacher', 'police']
   },
   {
-    answer: 'present simple',
-    sentence: 'which tense do we use for habits and routines?',
-    options: ['present simple', 'past simple', 'future simple', 'present continuous']
-  },
-  {
-    answer: 'past simple',
-    sentence: 'which tense do we use for actions finished in the past?',
-    options: ['present simple', 'past simple', 'future simple', 'present continuous']
-  },
-  {
     answer: 'future simple',
     explanition: {title: "زمان آینده ساده", des:"با اضافه کردن will قبل از فعل زمان را به آینده تغییر دهید", types: "I will play a game"},
     sentence: 'which tense do we use for actions that will happen later?',
@@ -1061,6 +1056,7 @@ const selectCorrectPool = [
   },
   {
     answer: 'subject',
+    explanition: {title: 'کننده کار یا فاعل',des: 'فاعل کننده کار را گویند. و گاهی اوقات فاعل چیزیست که در مورد آن بحث میشود، مثلا:\nThe cat is black\nدر این جمله گربه کاری را انجام نمیدهد ولی باز هم فاعل جمله است.'},
     sentence: 'in the sentence "Ali eats an apple", what is "Ali"?',
     options: ['verb', 'object', 'subject', 'adjective']
   },
@@ -1072,6 +1068,7 @@ const selectCorrectPool = [
   {
     answer: 'object',
     sentence: 'in the sentence "I love pizza", what is "pizza"?',
+    explanition: {title: 'گیرنده عمل یا مفعول',des:'چیزی که یک عمل بر روی آن انجام میشود را مفعول میگویند که در زبان انگلیسی Object مفعول است.'},
     options: ['subject', 'verb', 'object', 'adjective']
   },
   {
@@ -1145,23 +1142,29 @@ function getFromPool(number, pool, startIndex) {
 
 // =================== تولید داده‌ها ===================
 const beginnerData = {};
-export const myX = getFromPool(nameTypesPool, (20 * 11) % nameTypesPool.length);
+
+// شمارنده‌های سراسری: به‌جای پرش بر اساس id، پشت‌سرهم جلو می‌روند
+// تا وقتی همه‌ی آیتم‌های pool مصرف نشده، هیچ آیتمی تکرار نمی‌شود
+let tfCursor = 0;
+let ntCursor = 0;
+let trCursor = 0;
+let fbCursor = 0;
+let scCursor = 0;
 
 for (let id = 1; id <= 20; id++) {
   const lessons = [];
-
-  // هر مخزن را با یک افست متفاوت برای تنوع شروع می‌کنیم
-  const tfStart = (id * 7) % trueFalsePool.length;       // اعداد اول برای پخش بهتر
-  const ntStart = (id * 11) % nameTypesPool.length;
-  const trStart = (id * 13) % translatePool.length;
-  const fbStart = (id * 17) % fillBlankPool.length;
-  const scStart = (id * 19) % selectCorrectPool.length;
-
-  const tfItems = getFromPool(3,trueFalsePool, tfStart);
-  const ntItems = getFromPool(1,nameTypesPool, ntStart);
-  const trItems = getFromPool(3,translatePool, trStart);
-  const fbItems = getFromPool(3,fillBlankPool, fbStart);
-  const scItems = getFromPool(2,selectCorrectPool, scStart);
+//تعداد درس ها
+//12
+  const tfItems = getFromPool(3, trueFalsePool, tfCursor);
+  tfCursor += 3;
+  const ntItems = getFromPool(1, nameTypesPool, ntCursor);
+  ntCursor += 1;
+  const trItems = getFromPool(3, translatePool, trCursor);
+  trCursor += 3;
+  const fbItems = getFromPool(3, fillBlankPool, fbCursor);
+  fbCursor += 3;
+  const scItems = getFromPool(2, selectCorrectPool, scCursor);
+  scCursor += 2;
 
   let lessonId = 1;
 

@@ -1,0 +1,193 @@
+[
+  {
+    "sentence": "The word \"slowly\" is an adverb",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "کلمات preposition کلماتی اند که رابطه بین دو کلمه را نشان میدهند",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "title": "Question",
+    "answer": [
+      "Adverb"
+    ],
+    "synonyms": {
+      "averb": "Adverb",
+      "قید": "Adverb",
+      "an adverb": "Adverb"
+    },
+    "sentence": "چه چیزی یک فعل را توصیف میکند؟",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "id": 3
+  },
+  {
+    "answer": [
+      "present",
+      "future",
+      "past"
+    ],
+    "synonyms": {
+      "precent": "present",
+      "futare": "future",
+      "fuchure": "future",
+      "futur": "future",
+      "presend": "present"
+    },
+    "sentence": "3 زمان اصلی در زبان انگلیسی را بنویسید",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 4
+  },
+  {
+    "sentence": "Have you finished your home work?",
+    "answer": [
+      "آیا کارخانگی خود را تمام کرده ای",
+      "کارخانگی خود را تمام کرده ای"
+    ],
+    "wordBank": [
+      "آیا",
+      "کارخانگی",
+      "خود",
+      "را",
+      "تمام",
+      "کرده ای",
+      "؟"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "چه مدت طول میکشد تا به تهران برسیم",
+    "direction": "rtl",
+    "answer": [
+      "how long does it take to reach tehran"
+    ],
+    "wordBank": [
+      "Tehran",
+      "reach",
+      "to",
+      "take",
+      "it",
+      "does",
+      "how long"
+    ],
+    "type": "translate",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "We were watching TV as my uncle came.",
+    "answer": [
+      "ما در حال تماشای تلوزیون بودیم که کاکایم آمد"
+    ],
+    "wordBank": [
+      "آمد",
+      "کاکایم",
+      "بودیم که",
+      "تلوزیون",
+      "تماشای",
+      "در حال",
+      "ما"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "An _ describes a verb.",
+    "answer": "adverb",
+    "hardness": "Medium",
+    "translate": "یک قید فعل را توصیف میکند",
+    "wordBank": [
+      "adverb",
+      "adjective"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "There is a _ cat",
+    "answer": "black",
+    "hardness": "Medium",
+    "translate": "آنجا یک گربه سیاه است",
+    "wordBank": [
+      "slowly",
+      "animal",
+      "black"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "An _ describes a noun.",
+    "answer": "adjective",
+    "hardness": "Medium",
+    "translate": "یک صفت اسم را توصیف میکند",
+    "wordBank": [
+      "adverb",
+      "adjective"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "answer": "under",
+    "sentence": "Which word is a preposition?",
+    "explanition": {
+      "title": "حروف اضافه",
+      "des": "حروف اضافه مکان یا زمان را نشان می‌دهند.",
+      "types": "under, over, beside, in"
+    },
+    "options": [
+      "happy",
+      "under",
+      "walk",
+      "green"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "answer": "Book",
+    "sentence": "What do you borrow from a library?",
+    "options": [
+      "Book",
+      "Television",
+      "Car"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 12
+  }
+]

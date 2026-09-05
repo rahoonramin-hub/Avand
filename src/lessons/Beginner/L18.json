@@ -1,6 +1,6 @@
 [
   {
-    "sentence": "Sugar is sweet.",
+    "sentence": "زمان حال ساده عادات روزمره را بیان میکند",
     "answer": true,
     "type": "trueFalse",
     "direction": "ltr",
@@ -12,7 +12,7 @@
     "id": 1
   },
   {
-    "sentence": "Salt is sweet.",
+    "sentence": "Winter is hot.",
     "answer": false,
     "type": "trueFalse",
     "direction": "ltr",
@@ -24,8 +24,8 @@
     "id": 2
   },
   {
-    "sentence": "A baby is young.",
-    "answer": true,
+    "sentence": "A cat is a dog.",
+    "answer": false,
     "type": "trueFalse",
     "direction": "ltr",
     "title": "True or False",
@@ -37,23 +37,19 @@
   },
   {
     "answer": [
-      "simple",
-      "cont",
-      "perfect",
-      "perfect cont"
+      "me",
+      "you",
+      "him",
+      "her",
+      "it",
+      "us",
+      "them"
     ],
-    "synonyms": {
-      "continouos": "cont",
-      "continuous": "cont",
-      "progressive": "cont",
-      "perfect continouos": "perfect cont",
-      "perfect progressive": "perfect cont"
-    },
-    "sentence": "۴ زمان گذشته را بنویسید.",
+    "sentence": "ضمایر مفعولی در زبان انگلیسی را بنویسید. (حداقل ۵ ضمیر)",
     "explanition": {
-      "title": "زمان گذشته",
-      "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
-      "types": "simple\n continuous\n perfect\n perfect continuous"
+      "title": "Object pronouns",
+      "des": "ضمایر مفعولی گیرنده عمل هستند، مثلا: \n I teach him\n در این جمله him مفعول است",
+      "types": "Me, you, Us, Them, Her, Him, It"
     },
     "type": "nameTypes",
     "direction": "ltr",
@@ -61,18 +57,18 @@
     "id": 4
   },
   {
-    "sentence": "We eat rice every day.",
+    "sentence": "The flower is beautiful.",
     "answer": [
-      "ما هر روز برنج می‌خوریم"
+      "گل زیبا است",
+      "گل زیباست"
     ],
     "wordBank": [
-      "ما",
-      "هر",
-      "روز",
-      "برنج",
-      "می‌خوریم",
-      "نان",
-      "سبزی"
+      "گل",
+      "زیبا",
+      "است",
+      "زشت",
+      "سرخ",
+      "زیباست"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -80,17 +76,17 @@
     "id": 5
   },
   {
-    "sentence": "She closes the door.",
+    "sentence": "I need help.",
     "answer": [
-      "او در را می‌بندد"
+      "من کمک نیاز دارم"
     ],
     "wordBank": [
-      "او",
-      "در",
-      "را",
-      "می‌بندد",
-      "باز",
-      "پنجره"
+      "من",
+      "کمک",
+      "نیاز",
+      "دارم",
+      "نیازداشتن",
+      "دوست"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -98,18 +94,17 @@
     "id": 6
   },
   {
-    "sentence": "I write a letter.",
+    "sentence": "He is not here.",
     "answer": [
-      "من یک نامه می‌نویسم",
-      "من نامه می‌نویسم"
+      "او اینجا نیست"
     ],
     "wordBank": [
-      "من",
-      "یک",
-      "نامه",
-      "می‌نویسم",
-      "کتاب",
-      "قلم"
+      "او",
+      "اینجا",
+      "نیست",
+      "هست",
+      "آنجا",
+      "منزل"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -117,15 +112,15 @@
     "id": 7
   },
   {
-    "sentence": "She _ breakfast at 7 am.",
-    "answer": "eats",
-    "hardness": "Easy",
-    "translate": "او ساعت ۷ صبح صبحانه می‌خورد.",
+    "sentence": "I _ a letter to my friend last night.",
+    "answer": "wrote",
+    "hardness": "Medium",
+    "translate": "دیشب به دوستم نامه نوشتم.",
     "wordBank": [
-      "eat",
-      "eats",
-      "eating",
-      "swim"
+      "write",
+      "wrote",
+      "written",
+      "sending"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -133,15 +128,16 @@
     "id": 8
   },
   {
-    "sentence": "The cat is _ the table.",
-    "answer": "on",
-    "hardness": "Easy",
-    "translate": "گربه روی میز است.",
+    "sentence": "The coffee is _ hot to drink.",
+    "answer": "too",
+    "hardness": "Medium",
+    "translate": "قهوه برای خوردن خیلی داغ است.",
     "wordBank": [
-      "on",
-      "hunting",
-      "a dog",
-      "future"
+      "too",
+      "very cold",
+      "something",
+      "not good",
+      "better"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -149,15 +145,15 @@
     "id": 9
   },
   {
-    "sentence": "I _ two sisters.",
-    "answer": "have",
-    "hardness": "Easy",
-    "translate": "من دو خواهر دارم.",
+    "sentence": "She is _ than her brother.",
+    "answer": "taller",
+    "hardness": "Hell",
+    "translate": "او از برادرش بلندتر است.",
     "wordBank": [
-      "have",
-      "has",
-      "think",
-      "am"
+      "tall",
+      "taller",
+      "tallest",
+      "more tall"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -165,13 +161,13 @@
     "id": 10
   },
   {
-    "answer": "december",
-    "sentence": "which month is the last?",
+    "answer": "dog",
+    "sentence": "which animal says woof?",
     "options": [
-      "november",
-      "december",
-      "january",
-      "october"
+      "cat",
+      "dog",
+      "lion",
+      "bird"
     ],
     "type": "selectCorrect",
     "direction": "ltr",
@@ -179,13 +175,13 @@
     "id": 11
   },
   {
-    "answer": "friday",
-    "sentence": "which day is the weekend?",
+    "answer": "iran",
+    "sentence": "which country is between Afghanistan and Turkey?",
     "options": [
-      "monday",
-      "tuesday",
-      "friday",
-      "wednesday"
+      "pakistan",
+      "china",
+      "iran",
+      "india"
     ],
     "type": "selectCorrect",
     "direction": "ltr",

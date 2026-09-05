@@ -1,0 +1,199 @@
+[
+  {
+    "sentence": "There are 10 months in a year.",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "کلمه adjective یک اسم را توصیف میکند",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "answer": [
+      "I",
+      "You",
+      "We",
+      "They",
+      "He",
+      "She",
+      "It"
+    ],
+    "sentence": "Name subject pronouns (atleas 5 of them).",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 3
+  },
+  {
+    "explanition": {
+      "title": "انواع قید",
+      "des": "قید در زبان انگلیسی به 5 نوع است:\n",
+      "types": "manner: حالت را بیان میکند\nplace: مکان\ntime: زمان\ndegree: شدت\nfrequency: دوره"
+    },
+    "answer": [
+      "manner",
+      "time",
+      "place",
+      "degree",
+      "frequency"
+    ],
+    "synonyms": {
+      "maner": "manner",
+      "حالت": "manner",
+      "تکرار": "frequency",
+      "frequncy": "frequency",
+      "ferequncy": "frequency",
+      "frequnsy": "frequency",
+      "مقدار": "degree",
+      "degri": "degree",
+      "digree": "degree",
+      "deegre": "degree"
+    },
+    "sentence": "انواع اصلی قید را نام ببرید",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 4
+  },
+  {
+    "sentence": "Did you pass the exam?",
+    "answer": [
+      "آیا امتحان را رد کردی"
+    ],
+    "wordBank": [
+      "آیا",
+      "امتحان",
+      "را",
+      "رد",
+      "کردی"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "چرا امروز به مکتب نرفتی؟",
+    "answer": [
+      "why didn't you go to school today"
+    ],
+    "direction": "rtl",
+    "wordBank": [
+      "school",
+      "to",
+      "go",
+      "today",
+      "didn't",
+      "you",
+      "why"
+    ],
+    "type": "translate",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "We met each other in Paris",
+    "answer": [
+      "ما یک دیگر را در پاریس ملاقات کردیم"
+    ],
+    "wordBank": [
+      "بلی",
+      "کردیم",
+      "ملاقات",
+      "در پاریس",
+      "را",
+      "یکدیگر",
+      "ما"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "The teacher asked us _ we had finished the assignment.",
+    "answer": "whether",
+    "hardness": "Hard",
+    "translate": "معلم از ما پرسید که آیا کارخانگی را انجام داده ایم؟",
+    "wordBank": [
+      "whether",
+      "have"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "He solved the problem _ than I expected.",
+    "answer": "faster",
+    "hardness": "Medium",
+    "translate": "او مشکل را سریعتر از انتظارم حل کرد.",
+    "wordBank": [
+      "fast",
+      "faster",
+      "I think"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "I have never _ such an interesting book before.",
+    "answer": "read",
+    "hardness": "Hell",
+    "translate": "من تاحالا چنین کتاب دلچسبی نخوانده ام.",
+    "wordBank": [
+      "read",
+      "write",
+      "study"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "answer": "Afghanistan",
+    "sentence": "Which country speaks Dari?",
+    "options": [
+      "America",
+      "Pakistan",
+      "Afghanistan",
+      "India"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "answer": "United states",
+    "sentence": "Which country speaks English?",
+    "options": [
+      "Ukraine",
+      "United states",
+      "United arab"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 12
+  }
+]

@@ -26,8 +26,8 @@ export default function MessageModal({
         ) : (
           <Text style={styles.emoji}>🚀</Text>
         )}
-        <Text style={styles.title}>{title}</Text>
-        <Text style={styles.des}>{des}</Text>
+        <Text style={styles.title}>{title||"Message"}</Text>
+        <Text style={styles.des}>{des||"-----"}</Text>
 
         <View style={{ width: '100%', marginTop: 6 }}>
           <ModalButton label={btnText} color={color} onPress={onPress} />

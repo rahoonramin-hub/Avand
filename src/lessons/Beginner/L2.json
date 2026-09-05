@@ -1,7 +1,7 @@
 [
   {
-    "sentence": "Cats can read books.",
-    "answer": false,
+    "sentence": "We live on Earth.",
+    "answer": true,
     "type": "trueFalse",
     "direction": "ltr",
     "title": "True or False",
@@ -12,8 +12,8 @@
     "id": 1
   },
   {
-    "sentence": "There are 7 days in a week.",
-    "answer": true,
+    "sentence": "اسم خاص قابل ترجمه است",
+    "answer": false,
     "type": "trueFalse",
     "direction": "ltr",
     "title": "True or False",
@@ -24,8 +24,8 @@
     "id": 2
   },
   {
-    "sentence": "A square has 5 sides.",
-    "answer": false,
+    "sentence": "The sky is blue.",
+    "answer": true,
     "type": "trueFalse",
     "direction": "ltr",
     "title": "True or False",
@@ -37,41 +37,34 @@
   },
   {
     "answer": [
-      "simple",
-      "cont",
-      "perfect",
-      "perfect cont"
+      "spring",
+      "summer",
+      "fall",
+      "winter"
     ],
     "synonyms": {
-      "continouos": "cont",
-      "continuous": "cont",
-      "progressive": "cont",
-      "perfect continouos": "perfect cont",
-      "perfect progressive": "perfect cont"
+      "autumn": "fall",
+      "autum": "fall",
+      "sumer": "summer"
     },
-    "sentence": "۴ زمان گذشته را بنویسید.",
-    "explanition": {
-      "title": "زمان گذشته",
-      "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
-      "types": "simple\n continuous\n perfect\n perfect continuous"
-    },
+    "sentence": "۴ فصل سال را بنویسید.",
     "type": "nameTypes",
     "direction": "ltr",
     "title": "Name types",
     "id": 4
   },
   {
-    "sentence": "This is my house.",
+    "sentence": "What is your name?",
     "answer": [
-      "این خانه من است"
+      "اسم شما چیست؟",
+      "نام شما چیست؟"
     ],
     "wordBank": [
-      "این",
-      "خانه",
-      "من",
-      "است",
-      "تو",
-      "او"
+      "اسم",
+      "چیست؟",
+      "شما",
+      "نام",
+      "کجا"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -79,20 +72,17 @@
     "id": 5
   },
   {
-    "sentence": "I love my mother.",
+    "sentence": "My name is Ali.",
     "answer": [
-      "من مادرم را دوست دارم",
-      "من مادر خود را دوست دارم"
+      "اسم من علی است"
     ],
     "wordBank": [
+      "اسم",
       "من",
-      "مادرم",
-      "دوست",
-      "دارم",
-      "پدر",
-      "را",
-      "خود",
-      "فردا"
+      "علی",
+      "است",
+      "تو",
+      "شاگرد"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -100,18 +90,17 @@
     "id": 6
   },
   {
-    "sentence": "The sun is hot.",
+    "sentence": "I like apples.",
     "answer": [
-      "خورشید گرم است"
+      "من سیب دوست دارم",
+      "من سیب را دوست دارم"
     ],
     "wordBank": [
-      "خورشید",
-      "گرم",
-      "است",
-      "سرد",
-      "ماه",
-      "آسمان",
-      "پسر"
+      "من",
+      "سیب",
+      "دوست",
+      "دارم",
+      "دوست نداشتن"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -119,15 +108,15 @@
     "id": 7
   },
   {
-    "sentence": "They _ playing football in the yard.",
-    "answer": "are",
+    "sentence": "I _ apples.",
+    "answer": "like",
     "hardness": "Easy",
-    "translate": "آنها در حیاط فوتبال بازی می‌کنند.",
+    "translate": "من سیب دوست دارم.",
     "wordBank": [
-      "can",
-      "is",
-      "are",
-      "was"
+      "like",
+      "come",
+      "kill",
+      "run"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -135,15 +124,15 @@
     "id": 8
   },
   {
-    "sentence": "I _ a new bag yesterday.",
-    "answer": "bought",
-    "hardness": "Medium",
-    "translate": "من دیروز یک کیف جدید خریدم.",
+    "sentence": "He _ a dog.",
+    "answer": "has",
+    "hardness": "Easy",
+    "translate": "او یک سگ دارد.",
     "wordBank": [
-      "buy",
-      "bought",
-      "buying",
-      "take"
+      "have",
+      "has",
+      "try",
+      "is"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -151,15 +140,15 @@
     "id": 9
   },
   {
-    "sentence": "She _ her grandmother every week.",
-    "answer": "visits",
+    "sentence": "We _ to school every day.",
+    "answer": "go",
     "hardness": "Easy",
-    "translate": "او هر هفته مادربزرگ خود را ملاقات می‌کند.",
+    "translate": "ما هر روز به مکتب می‌رویم.",
     "wordBank": [
-      "visit",
-      "visits",
+      "go",
       "goes",
-      "watch"
+      "going",
+      "went"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -167,13 +156,13 @@
     "id": 10
   },
   {
-    "answer": "iran",
-    "sentence": "which country is between Afghanistan and Turkey?",
+    "answer": "describes a noun",
+    "sentence": "what does an adjective do ?",
     "options": [
-      "pakistan",
-      "china",
-      "iran",
-      "india"
+      "avoid repetition",
+      "describes a noun",
+      "describes a verb",
+      "the question is wrong"
     ],
     "type": "selectCorrect",
     "direction": "ltr",
@@ -181,16 +170,21 @@
     "id": 11
   },
   {
-    "answer": "kabul",
-    "sentence": "what is the capital of afghanistan?",
+    "answer": "Black",
+    "explanition": {
+      "des": "صفت یا adjective چگونگی یک اسم را توصیف میکند، مثال:",
+      "title": "Adjective",
+      "types": "black book\n در اینجا black صفت و book اسم است"
+    },
+    "direction": "rtl",
+    "sentence": "کدام کلمه یک صفت است؟",
     "options": [
-      "herat",
-      "kandahar",
-      "mazar",
-      "kabul"
+      "You",
+      "Make",
+      "Black",
+      "make more formal"
     ],
     "type": "selectCorrect",
-    "direction": "ltr",
     "title": "Select correct",
     "id": 12
   }

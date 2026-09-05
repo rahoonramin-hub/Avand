@@ -1,6 +1,6 @@
 [
   {
-    "sentence": "A doctor helps sick people.",
+    "sentence": "برای سوم شخص مفرد در زمان حال ساده S اضافه میکنیم",
     "answer": true,
     "type": "trueFalse",
     "direction": "ltr",
@@ -12,7 +12,7 @@
     "id": 1
   },
   {
-    "sentence": "A teacher sells food.",
+    "sentence": "A kitchen is for sleeping.",
     "answer": false,
     "type": "trueFalse",
     "direction": "ltr",
@@ -24,7 +24,7 @@
     "id": 2
   },
   {
-    "sentence": "برای سوم شخص مفرد در زمان حال ساده S اضافه میکنیم",
+    "sentence": "Red is a color.",
     "answer": true,
     "type": "trueFalse",
     "direction": "ltr",
@@ -61,18 +61,18 @@
     "id": 4
   },
   {
-    "sentence": "Where is the key?",
+    "sentence": "This is a chair.",
     "answer": [
-      "کلید کجاست؟",
-      "کلید کجاست"
+      "این یک چوکی است",
+      "این چوکی است"
     ],
     "wordBank": [
-      "کلید",
-      "کجاست",
-      "کتاب",
-      "قلم",
-      "کتابچه",
-      "؟"
+      "این",
+      "یک",
+      "چوکی",
+      "است",
+      "میز",
+      "قفسه"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -80,17 +80,18 @@
     "id": 5
   },
   {
-    "sentence": "The book is new.",
+    "sentence": "I see a bird.",
     "answer": [
-      "کتاب جدید است"
+      "من یک پرنده میبینم",
+      "من پرنده میبینم"
     ],
     "wordBank": [
-      "کتاب",
-      "جدید",
-      "است",
-      "کهنه",
-      "زیبا",
-      "بزرگ"
+      "من",
+      "یک",
+      "پرنده",
+      "میبینم",
+      "گربه",
+      "سگ"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -98,18 +99,17 @@
     "id": 6
   },
   {
-    "sentence": "I am a doctor.",
+    "sentence": "He is my father.",
     "answer": [
-      "من یک داکتر هستم",
-      "من داکتر هستم"
+      "او پدر من است"
     ],
     "wordBank": [
+      "او",
+      "پدر",
       "من",
-      "یک",
-      "داکتر",
-      "هستم",
-      "پرستار",
-      "مهندس"
+      "است",
+      "مادر",
+      "برادر"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -117,17 +117,15 @@
     "id": 7
   },
   {
-    "sentence": "Learning English is not _.",
-    "answer": "hard",
-    "hardness": "Medium",
-    "translate": "یادگیری انگلیسی سخت نیست",
+    "sentence": "He _ to bed at 10 PM.",
+    "answer": "goes",
+    "hardness": "Easy",
+    "translate": "او ساعت ۱۰ شب به رختخواب می‌رود.",
     "wordBank": [
-      "hard",
-      "allready",
-      "how to",
-      "tough",
-      "make",
-      "language"
+      "go",
+      "goes",
+      "going",
+      "sleep"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -135,16 +133,15 @@
     "id": 8
   },
   {
-    "sentence": "You can`t _ a pilot.",
-    "answer": "be",
-    "hardness": "Hell",
-    "translate": "تو نمیتوانی خلبان باشی",
+    "sentence": "They _ playing football in the yard.",
+    "answer": "are",
+    "hardness": "Easy",
+    "translate": "آنها در حیاط فوتبال بازی می‌کنند.",
     "wordBank": [
-      "how",
-      "learn",
-      "be",
-      "make",
-      "airplane"
+      "can",
+      "is",
+      "are",
+      "was"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -152,15 +149,15 @@
     "id": 9
   },
   {
-    "sentence": "How to _ fast in soccer?",
-    "answer": "run",
-    "hardness": "Easy",
-    "translate": "چطور در فوتبال تیز بدویم",
+    "sentence": "I _ a new bag yesterday.",
+    "answer": "bought",
+    "hardness": "Medium",
+    "translate": "من دیروز یک کیف جدید خریدم.",
     "wordBank": [
-      "why",
-      "football",
-      "learn",
-      "run"
+      "buy",
+      "bought",
+      "buying",
+      "take"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -168,18 +165,13 @@
     "id": 10
   },
   {
-    "answer": "slowly",
-    "sentence": "کدام کلمه یک قید است؟",
-    "explanition": {
-      "title": "قید",
-      "des": "قید ها چگونگی انجام عمل را بیان میکنند: \n I run slowly \nکلمه slowly یعنی به آهستگی\n",
-      "types": "نکته جالب: اکثر قید ها با حروف ly خطم میشوند \nslow = صفت\nslowly = قید"
-    },
+    "answer": "car",
+    "sentence": "which vehicle has four wheels?",
     "options": [
-      "nose",
-      "slowly",
-      "eye",
-      "slow"
+      "bicycle",
+      "car",
+      "motorcycle",
+      "boat"
     ],
     "type": "selectCorrect",
     "direction": "ltr",
@@ -187,13 +179,13 @@
     "id": 11
   },
   {
-    "answer": "a doctor",
-    "sentence": "who do you visit when you are sick?",
+    "answer": "book",
+    "sentence": "what do you read to learn new things?",
     "options": [
-      "a doctor",
-      "a teacher",
-      "a driver",
-      "a cook"
+      "pen",
+      "book",
+      "table",
+      "chair"
     ],
     "type": "selectCorrect",
     "direction": "ltr",

@@ -1,0 +1,145 @@
+[
+  {
+    "sentence": "The sun is hot.",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "A cat is a human.",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "sentence": "Water means آب.",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 3
+  },
+  {
+    "sentence": "I am a student.",
+    "answer": [
+      "من یک شاگرد هستم",
+      "من شاگرد هستم"
+    ],
+    "wordBank": [
+      "من",
+      "یک",
+      "شاگرد",
+      "هستم",
+      "معلم"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 4
+  },
+  {
+    "sentence": "This is a car.",
+    "answer": [
+      "این یک موتر است",
+      "این موتر است"
+    ],
+    "wordBank": [
+      "این",
+      "یک",
+      "موتر",
+      "است",
+      "کتاب"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "I _ a student.",
+    "answer": "am",
+    "hardness": "Easy",
+    "translate": "من یک شاگرد هستم.",
+    "wordBank": [
+      "am",
+      "is",
+      "are"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 6
+  },
+  {
+    "sentence": "She _ a teacher.",
+    "answer": "is",
+    "hardness": "Easy",
+    "translate": "او یک معلم است.",
+    "wordBank": [
+      "am",
+      "is",
+      "are"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 7
+  },
+  {
+    "sentence": "They _ happy.",
+    "answer": "are",
+    "hardness": "Easy",
+    "translate": "آن‌ها خوشحال هستند.",
+    "wordBank": [
+      "am",
+      "is",
+      "are"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "answer": "blue",
+    "sentence": "What color is the sky?",
+    "options": [
+      "red",
+      "blue",
+      "green"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 9
+  },
+  {
+    "answer": "school",
+    "sentence": "Where do we go to study?",
+    "options": [
+      "hospital",
+      "school",
+      "home"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 10
+  }
+]

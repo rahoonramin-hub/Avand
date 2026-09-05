@@ -49,8 +49,16 @@ const trueFalsePool = [
 ];
 
 
+
 // --- selectCorrect ---
 const selectCorrectPool = [
+    {
+      direction: 'rtl',
+      sentence: 'کدام گزینه یک اسم خاص و یا معین است؟',
+      options: ['An orange','A car', 'The car'],
+      answer: 'The car',
+      explanition: {title: 'حروف تعریف', des: 'حروف تعریف حروفی اند که قبل از اسم آمده، معین و نا معین بودن اسم را نشان می دهند\nحرف The به چیزی خاص و معین اشاره میکند.\nحروف A و An به چیزی عام و نامعین اشاره میکنند.',types: 'The: The cat\nA: A cat\nAn: An apple'},
+    },
     {
         answer: 'Bee',
         sentence: 'Which animal makes honey?',
@@ -153,7 +161,7 @@ const selectCorrectPool = [
     },
     {
         answer: 'I will run',
-        sentence: 'Which sentece is a future form?',
+        sentence: 'Which sentence is a future form?',
         options:['I will run', 'you are crazy', 'jump in the well'],
         explanition: {title: "زمان آینده ساده", des:"با اضافه کردن will قبل از فعل زمان را به آینده تغییر دهید", types: "I will play a game"},
     },
@@ -165,7 +173,7 @@ const selectCorrectPool = [
     },
     {
         answer: 'describes a verb',
-        sentence: 'What does an adverb?',
+        sentence: 'What does an adverb do?',
         explanition: {title: 'قید', des: 'قید کلمه ای است که نشان میدهد یک عمل چگونه و چه وقت انجام شده \nو یا چگونگی انجام عمل را قید گویند. مانند: \n', types: 'قید حالت: fast\nقید زمان: yesterday\nقید تکرار: every day'},
         options:['describes a verb', 'kick balls', 'describes nouns']
     },
@@ -188,15 +196,17 @@ const selectCorrectPool = [
     },
     {
         answer: 'مورد علاقه',
-        sentence: 'What does the word "favorite" means?',
+        sentence: 'What does the word "favorite" mean?',
         options:['مورد علاقه', 'گل', 'رفیق']
     },
     {
+        direction: 'rtl',
         answer: 'is this yours',
         sentence: 'کدام جمله سوالیه است؟',
         options:['im coming home', 'is this yours', 'pen is lost']
     },
     {
+        direction: "rtl",
         answer: 'Adverb',
         sentence: 'کدام کلمه به معنی قید است؟',
         options:['Adverb', 'Adjective', 'Pronoun', 'Verb']
@@ -229,11 +239,11 @@ const selectCorrectPool = [
     {
         answer: '3 million',
         sentence: 'Which option is the highest price?',
-        options:['3 million', '1 thounsand', 'fourtheen thousand']
+        options:['3 million', '1 thousand', 'fourteen thousand']
     },
     {
         answer: 'all',
-        sentence: 'Which word is a preposision?',
+        sentence: 'Which word is a preposition?',
         explanition: {title: 'حروف ربط', des: 'حروف ربط، کلمات کوتاهی استند که روابطی مانند زمان، مکان و بحث را نشان میدهند\nو یا کلماتی که رابطه بین دو کلمه را نشان میدهند\n', types: 'on, in, about, at, front, to, ....'},
         options:['about', 'to', 'on', 'all']
     },
@@ -263,7 +273,6 @@ const selectCorrectPool = [
 
 
 
-
 // --- nameTypes ---
 const nameTypesPool = [
   {
@@ -284,6 +293,11 @@ const nameTypesPool = [
     sentence: 'انواع اصلی قید را نام ببرید',
   },
   {
+    answer: ['an','a','the'],
+    explanition: {title: 'حروف تعریف', des: 'حروف تعریف حروفی اند که قبل از اسم آمده، معین و نا معین بودن اسم را نشان می دهند\nحرف The به چیزی خاص و معین اشاره میکند.\nحروف A و An به چیزی عام و نامعین اشاره میکنند.',types: 'The: The cat\nA: A cat\nAn: An apple'},
+    sentence: 'انواع حرف تعریف را نام ببرید'
+  },
+  {
     title: "Question",
     answer: ['pronoun'],
     synonyms: {
@@ -291,13 +305,6 @@ const nameTypesPool = [
       'prenuon': 'pronoun',
     },
     sentence: 'چه چیزی جایگزین اسم میشود و از تکرار آن جلوگیری میکند؟',
-  },
-  {
-    answer: ['', '', '', ''],
-    synonyms: {
-      '': '',//point
-    },
-    sentence: '5 نوع اصلی صفت را بنویسید',
   },
   {
     title: 'Question',
@@ -309,14 +316,19 @@ const nameTypesPool = [
     },
     sentence: 'چه چیزی یک فعل را توصیف میکند؟',
   },
-  {//point
+  {
     answer: ['present', 'future', 'past'],
     synonyms: {
-      '': '',
+      'precent': 'present',
+      'futare': 'future',
+      'fuchure': 'future',
+      'futur': 'future',
+      'presend': 'present',
     },
     sentence: '3 زمان اصلی در زبان انگلیسی را بنویسید',
   },
   {
+    title: 'Question',
     answer: ['Adjective'],
     synonyms: {
       'adj': 'Adjective',
@@ -325,13 +337,6 @@ const nameTypesPool = [
       'adjectie': 'Adjective',
     },
     sentence: 'What does describe a noun?',
-  },
-  {
-    answer: ['', '', '', ''],
-    synonyms: {
-      '': '',//point
-    },
-    sentence: 'Name the main types of Adjectives.',
   },
   {
     explanition: {title: 'انواع قید', des: "قید در زبان انگلیسی به 5 نوع است:\n", types: "manner: حالت را بیان میکند\nplace: مکان\ntime: زمان\ndegree: شدت\nfrequency: دوره"},
@@ -371,508 +376,535 @@ const nameTypesPool = [
 const translatePool = [
   {
     sentence: 'We won the football game.',
-    answer: [''],
+    answer: ['ما بازی فوتبال را بردیم'],
     wordBank: ['ما', 'بازی', 'فوتبال', 'را', 'بردیم'],
   },
   {
     sentence: 'من 5 گل زدم',
-    answer: [''],
+    answer: ['I scored 5 goals'],
     direction: "rtl",
-    wordBank: ['I', 'made', '5', 'goals'],
+    wordBank: ['I', 'scored', '5', 'goals'],
   },
   {
     sentence: 'این سطح انگلیسی برایم سخت است.',
-    answer: [''],
+    answer: ['this level of english is tough for me'],
+    direction: 'rtl',
     wordBank: ['for','me' ,'tough', 'is', 'english', 'of', 'level','this'],
   },
   {
-    sentence: 'We went to the park, yersterday',
-    answer: [''],
+    sentence: 'We went to the park, yesterday',
+    answer: ['ما دیروز به پارک رفتیم'],
     wordBank: ['چرا', 'شما', 'رفتیم', 'پارک', 'به', 'دیروز','ما'],
   },
   {
     sentence: 'Did you pass the exam?',
-    answer: [''],
-    wordBank: ['آیا', 'امتحان', 'را', 'رد', 'کردی', 'کامیاب','شدی','در'],
+    answer: ['آیا امتحان را رد کردی'],
+    wordBank: ['آیا', 'امتحان', 'را', 'رد', 'کردی'],
   },
   {
     sentence: 'چرا امروز به مکتب نرفتی؟',
-    answer: [''],
-    wordBank: ['school', 'to', 'go', 'not', 'did', 'you','why'],
+    answer: ['why didn\'t you go to school today'],
+    direction: 'rtl',
+    wordBank: ['school', 'to', 'go','today', 'didn\'t', 'you','why'],
   },
   {
     sentence: 'We met each other in Paris',
-    answer: [''],
+    answer: ['ما یک دیگر را در پاریس ملاقات کردیم'],
     wordBank: ['بلی', 'کردیم', 'ملاقات', 'در پاریس', 'را', 'یکدیگر','ما'],
   },
   {
     sentence: 'معلم انگلیسی ما از کابل است',
-    answer: [''],
-    wordBank: ['our', 'english', 'teacher', 'is', 'from', 'kabul','french'],
+    answer: ['Our English teacher is from Kabul'],
+    direction: 'rtl',
+    wordBank: ['Our', 'English', 'teacher', 'is', 'from', 'Kabul','french'],
   },
   {
     sentence: 'Have you ever been in Kabul',
-    answer: [''],
+    answer: ['تا حالا در کابل بودی'],
     wordBank: ['نمیدانم', 'شاید', '؟', 'بودی', 'کابل', 'در','تا حالا'],
   },
   {
     sentence: 'تا حالا در هرات زندگی کردی؟',
-    answer: [''],
+    answer: ['Have you ever lived in Herat?'],
+    direction: 'rtl',
     wordBank: ['have you', 'ever', 'lived', 'in', 'herat', '?','never'],
   },
   {
     sentence: 'The airplane will land soon.',
-    answer: [''],
+    answer: ['هواپیما به زودی فرود خواهد آمد'],
     wordBank: ['آمد', 'خواهد', 'نمیاید', 'فرود', 'بزودی','هواپیما'],
   },
   {
     sentence: 'لطفا بنشینید، هواپیما به زودی فرود خواهد آمد.',
-    answer: [''],
-    wordBank: ['please', 'take', 'a', 'sit', 'the airplane', 'will','land','soon'],
+    answer: ['please take a seat the airplane will land soon'],
+    wordBank: ['please', 'take', 'a', 'seat', 'the airplane', 'will','land','soon'],
+    direction: 'rtl',
   },
   {
-    sentence: 'I have made the dinner, before you came',
-    answer: [''],
+    sentence: 'I had made dinner before you came',
+    answer: ['قبل ازینکه تو بیایی من غذا را آماده کردم','من غذا را قبل ازینکه تو بیایی آماده کردم','من غذا را آماده کردم قبل ازینکه تو بیایی'],
     wordBank: ['بیایی','تو', 'ازینکه', 'قبل', 'کردم', 'آماده', 'غذا را','من'],
   },
   {
-    sentence: 'در 5 روز اخیر 3 قتل رخ داده است.',
-    answer: [''],//point
-    wordBank: ['', '', '', '', '5 days', 'last','in the'],
-  },
-  {
-    sentence: 'evetryone was happy, exept me.',
-    answer: [''],
+    sentence: 'everyone was happy, except me.',
+    answer: ['همه خوشحال بودند غیر از من'],
     wordBank: ['چرا', 'از من', 'غیر', 'بودند', 'خوشحال','همه'],
   },
   {
     sentence: 'تمام افرادی که این سفر را شروع کردند، مرده اند.',
-    answer: [''],
+    answer: ['all the people who started this journey are dead'],
+    direction: 'rtl',
     wordBank: ['dead','are', 'this journey', 'started', 'who', 'people', 'the','all'],
   },
   {
-    sentence: 'you can\'nt tell him the secret.',
-    answer: [''],
+    sentence: 'you can\'t tell him the secret.',
+    answer: ['تو نمیتوانی راز را به او بگویی'],
     wordBank: ['وابسته', 'بگویی', 'او', 'به', 'راز را', 'نمیتوانی','تو'],
   },
   {
     sentence: 'پسر آن زن مرده است',
-    answer: [''],//point
-    wordBank: ['', '', '', '', '', '',''],
-  },
-  {
-    sentence: 'They are people who don\'n like to talk very musch',
-    answer: [''],
-    wordBank: ['', '', '', '', '', '',''],
+    answer: ['her son is dead'],
+    direction: 'rtl',
+    wordBank: ['her', 'son', 'is','dead'],
   },
   {
     sentence: 'من او را به جشن تولد بردارم دعوت کردم',
-    answer: [''],
-    wordBank: ['I', 'invited', 'him', 'to', 'my', 'brother`s','birthday party'],
+    answer: ['I invited him to my brother\'s birthday party'],
+    direction: 'rtl',
+    wordBank: ['I', 'invited', 'him', 'to', 'my', 'brother\'s','birthday party'],
   },
   {
     sentence: 'Have you finished your home work?',
-    answer: [''],
+    answer: ['آیا کارخانگی خود را تمام کرده ای','کارخانگی خود را تمام کرده ای'],
     wordBank: ['آیا', 'کارخانگی', 'خود', 'را', 'تمام', 'کرده ای','؟'],
   },
   {
     sentence: 'چه مدت طول میکشد تا به تهران برسیم',
-    answer: [''],
+    direction: 'rtl',
+    answer: ['how long does it take to reach tehran'],
     wordBank: ['Tehran', 'reach', 'to', 'take', 'it', 'does','how long'],
   },
   {
-    sentence: 'We are watching TV as my uncle came.',
-    answer: [''],
+    sentence: 'We were watching TV as my uncle came.',
+    answer: ['ما در حال تماشای تلوزیون بودیم که کاکایم آمد'],
     wordBank: ['آمد', 'کاکایم', 'بودیم که', 'تلوزیون', 'تماشای', 'در حال','ما'],
   },
   {
     sentence: 'کوه اورست بلندترین کوه در روی زمین است.',
-    answer: [''],
-    wordBank: ['in the earth', 'mountain', 'the tallest', 'is', 'Everest', 'of','the mountain'],
+    answer: ['Mount Everest is the tallest mountain on the earth'],
+    direction: 'rtl',
+    wordBank: ['on the earth', 'mountain', 'the tallest', 'is', 'Everest', 'Mount'],
   },
   {
-    sentence: 'How much English you know?',
-    answer: [''],
+    sentence: 'How much English doh you know?',
+    answer: ['چقدر انگلیسی بلد هستی'],
     wordBank: ['هستی؟', 'بلد', 'انگلیسی','چقدر'],
   },
   {
-    sentence: 'هزینه ساخت برج خلیفه 2 میلیارد دالر بود',
-    answer: [''],//point
-    wordBank: ['', '', '', '', '', 'of','the cost'],
-  },
-  {
-    sentence: 'The closest start to earth is Sun',
-    answer: [''],
-    wordBank: ['آفتاب ','است', 'به زمین', 'ستاره','نزدیکترین'],
+    sentence: 'The closest star to earth is Sun',
+    answer: ['نزدیکترین ستاره به زمین آفتاب است'],
+    wordBank: ['آفتاب','است', 'به زمین', 'ستاره','نزدیکترین'],
   },
   {
     sentence: 'Why are you so bored?',
-    answer: [''],
+    answer: ['چرا اینقدر خسته هستی'],
     wordBank: ['؟', 'هستی', 'خسته', 'اینقدر','چرا'],
   },
   {
     sentence: 'فیلم مورد علاقه تو چیست؟',
-    answer: [''],
+    answer: ['what is your favorite movie'],
+    direction: 'rtl',
     wordBank: ['movie', 'favorite', 'your', 'is','what'],
   },
   {
     sentence: 'How long does it take, to cook pizza?',
-    answer: [''],
+    answer: ['چقدر طول میکشد تا پیتزا بپزی'],
     wordBank: ['؟', 'بسازی', 'بپزی', 'پیتزا', 'تا', 'طول میکشد','چقدر'],
   },
   {
     sentence: 'فروختن قالین درامد خوبی داشت',
-    answer: [''],
+    direction: 'rtl',
+    answer: ['selling carpets had a good income'],
     wordBank: ['carpets', 'had', 'a', 'good', 'income', 'car','selling'],
   },
   {
     sentence: 'She is the best teacher in the city.',
-    answer: [''],
+    answer: ['او بهترین معلم این شهر است'],
     wordBank: [ 'چرا', 'است', 'این شهر', 'معلم', 'بهترین','او'],
   },
   {
-    sentence: 'How good can you teach?',
-    answer: [''],
+    sentence: 'How well can you teach?',
+    answer: ['چقدر میتوانی خوب درس بدهی'],
     wordBank: ['بگو', '؟', 'بدهی', 'خوب درس', 'میتوانی','چقدر'],
   },
   {
     sentence: 'دیروز به دانشگاه رفتم.',
-    answer: [''],
-    wordBank: [ 'univercity', 'yesterday', 'hospital', 'to', 'went','I'],
+    answer: ['I went to university yesterday'],
+    direction: 'rtl',
+    wordBank: [ 'university', 'yesterday', 'hospital', 'to', 'went','I'],
   },
   {
     sentence: 'Who is the best doctor in the city?',
-    answer: [''],
+    answer: ['چه کسی بهترین داکتر شهر است'],
     wordBank: [ 'است', 'شهر', 'داکتر', 'بهترین', 'کسی','چه'],
   },
   {
     sentence: 'میوه مورد علاقه من سیب است.',
-    answer: [''],
+    answer: ['my favorite fruit is apple'],
+    direction: 'rtl',
     wordBank: ['you', 'apple', 'is', 'fruit', 'favorite','my'],
   },
   {
     sentence: 'where is the closest shop?',
-    answer: [''],
+    answer: ['نزدیکترین فروشگاه کجاست'],
     wordBank: ['؟', 'دورترین', 'کجاست', 'فروشگاه','نزدیکترین'],
   },
   {
     sentence: 'اسم آن مرد عبدالله است.',
-    answer: [''],
-    wordBank: ['man', 'Abdullah', 'is', 'man`s name','that'],
+    direction: 'rtl',
+    answer: ['that man\'s name is Abdullah'],
+    wordBank: ['man', 'Abdullah', 'is', 'man\'s name','that'],
   }
 ];
-
 
 
 // --- fillBlank ---
 const fillBlankPool = [
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'I was _ Herat when you called me.',
+    answer: 'in',
+    hardness: 'Medium',
+    translate: 'وقتی به من زنگ زدی من در هرات بودم.',
+    wordBank: ['in', 'on', 'to'],
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'If I _ enough time, I would learn another language.',
+    answer: 'had',
+    hardness: 'Hard',
+    translate: 'اگر زمان کافی میداشتم، زبان جدیدی را یاد میگرفتم',
+    wordBank: ['would','could','had']
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'By the time we arrived, the movie _ already started.',
+    answer: 'had',
+    hardness: 'Hell',
+    translate: 'تا زمانی که رسیدیم، فیلم شروع شده بود.',
+    wordBank: ['were','had','been','have']
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'I am busy _ Monday',
+    answer: 'on',
+    hardness: 'Medium',
+    translate: 'دوشنبه مشغول هستم.',
+    wordBank: ['in', 'on', 'under'],
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'Your pen dropped _ the table',
+    answer: 'under',
+    hardness: 'Easy',
+    translate: 'قلم شما زیر میز افتاد.',
+    wordBank: ['under', 'be', 'is'],
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'She gave me _ apple',
+    answer: 'an',
+    hardness: 'Easy',
+    translate: 'او به من یک سیب داد.',
+    wordBank: ['a', 'five', 'an', 'will'],
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'We were walk_ ',
+    answer: 'ing',
+    hardness: 'Easy',
+    translate: 'ما داشتیم راه میرفتیم.',
+    wordBank: ['ed', 'fast', 'slowly', 'ing'],
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: '_ you like Indian movies?',
+    answer: 'do',
+    hardness: 'Easy',
+    translate: 'آیا فیلم هندی دوست داری؟',
+    wordBank: ['does', 'why', 'are', 'do'],
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'How long _ it take to cook eggs?',
+    answer: 'does',
+    hardness: 'Medium',
+    translate: 'چقدر طول میکشد تا تخمرغ بپزی؟',
+    wordBank: ['is', 'like', 'does', 'do'],
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'By the time we arrived, the movie _ already started.',
+    answer: 'had',
+    hardness: 'Hell',
+    translate: 'تا زمانی که رسیدیم، فیلم شروع شده بود.',
+    wordBank: ['were','had','been','have']
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'Where is _ brother',
+    answer: 'her',
+    hardness: 'Medium',
+    translate: 'برادر او کجاست؟',
+    wordBank: ['she', 'her'],
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'I helped _ to learn English',
+    answer: 'him',
+    hardness: 'Medium',
+    translate: 'من او را کمک کردم تا انگلیسی یاد بگیرد.',
+    wordBank: ['He', 'him'],
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'You can\'t break _ pen',
+    answer: 'my',
+    hardness: 'Easy',
+    translate: 'تو نمیتوانی قلم من را بشکنی',
+    wordBank: ['I', 'my', 'me', 'I\'m'],
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'Why are _ so nervous?',
+    answer: 'you',
+    hardness: 'Hard',
+    translate: 'چرا اینقدر نگران هستی؟',
+    wordBank: ['yours', 'her', 'you', 'us'],
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'By the time we arrived, the movie _ already started.',
+    answer: 'had',
+    hardness: 'Hell',
+    translate: 'تا زمانی که رسیدیم، فیلم شروع شده بود.',
+    wordBank: ['were','had','been','have']
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'She was running _',
+    answer: 'slowly',
+    hardness: 'Medium',
+    translate: 'او داشت آهسته میدوید',
+    wordBank: ['slowly', 'can\'t', 'ed', 'ing'],
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'I can\'t talk _',
+    answer: 'fluently',
+    hardness: 'Medium',
+    translate: 'من نمیتوانم روان صحبت کنم',
+    wordBank: ['fluent', 'learn', 'fluently'],
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: '_ your son home',
+    answer: 'is',
+    hardness: 'Medium',
+    translate: 'آیا پسر شما خانه است؟',
+    wordBank: ['can', 'are', 'is'],
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'An _ describes a verb.',
+    answer: 'adverb',
+    hardness: 'Medium',
+    translate: 'یک قید فعل را توصیف میکند',
+    wordBank: [ 'adverb', 'adjective'],
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'There is a _ cat',
+    answer: 'black',
+    hardness: 'Medium',
+    translate: 'آنجا یک گربه سیاه است',
+    wordBank: ['slowly', 'animal', 'black'],
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'An _ describes a noun.',
+    answer: 'adjective',
+    hardness: 'Medium',
+    translate: 'یک صفت اسم را توصیف میکند',
+    wordBank: [ 'adverb', 'adjective'],
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'I go _ school everyday, but you don\'t.',
+    answer: 'to',
+    hardness: 'Easy',
+    translate: 'من هروز به مکتب میروم ولی تو نه',
+    wordBank: ['at', 'in', 'to'],
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'She explained the lesson so _ that everyone understood it.',
+    answer: 'clearly',
+    hardness: 'Hard',
+    translate: 'او درس را طوری شفاف توضیح داد که همه یادگرفتند.',
+    wordBank: ['clear','slow','clearly']
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'The students were asked _ their phones during the exam.',
+    answer: 'to turn off',
+    hardness: 'Veteran',
+    translate: 'از شاگردان خواسته شده بود که تلفن هایشان را خاموش کنند.',
+    wordBank: ['to turn off','hide','shut']
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'Call me later, I\'m _ now',
+    answer: 'busy',
+    hardness: 'Medium',
+    translate: 'بعدا زنگ بزن، فعلا مصروفم',
+    wordBank: ['not', 'learning', 'busy'],
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'An elephant is a big _',
+    answer: 'animal',
+    hardness: 'Easy',
+    translate: 'فیل یک حیوان بزرگ است',
+    wordBank: ['monster', 'human', 'thing', 'animal'],
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'My phone is _',
+    answer: 'ringing',
+    hardness: 'Easy',
+    translate: 'موبایلم زنگ میخورد',
+    wordBank: ['is', 'ringing', 'ring', 'ringed'],
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'If you had _ more carefully, you would have noticed the mistake.',
+    answer: 'looked',
+    hardness: 'Hard',
+    translate: 'اگر با نگاه میکردی، متوجه مشکل میشدی.',
+    wordBank: ['have','looked','see','call']
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'why is she talking _?',
+    answer: 'slowly',
+    hardness: 'Hard',
+    translate: 'چرا او آهسته صحبت میکند؟',
+    wordBank: ['slow', 'slowly'],
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'I have _ this movie before.',
+    answer: 'seen',
+    hardness: 'Medium',
+    translate: 'من این فیلم را قبلا دیده ام.',
+    wordBank: ['been','seen','like']
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'She is good _ playing piano.',
+    answer: 'at',
+    hardness: 'Hell',
+    translate: 'او در نواختن پیانو خوب است',
+    wordBank: ['in','at']
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'They _ going to school yesterday.',
+    answer: 'were',
+    hardness: 'Medium',
+    translate: 'آنها دیروز به مکتب میرفتند',
+    wordBank: ['were','was','are']
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'He _ his homework every evening.',
+    answer: 'does',
+    hardness: 'Medium',
+    translate: 'او هر شب کارخانگی اش را انجام میدهد.',
+    wordBank: ['does','do','can']
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'If you _ more carefully, you would have noticed the mistake.',
+    answer: 'looked',
+    hardness: 'Hard',
+    translate: 'اگر با نگاه میکردی، متوجه مشکل میشدی.',
+    wordBank: ['have','looked','see','call']
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'She has been working _ the project since Monday.',
+    answer: 'on',
+    hardness: 'Medium',
+    translate: 'او از دوشنبه روی پروژه کار میکند.',
+    wordBank: ['in','on']
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'I didn\'t realize that he _ already left.',
+    answer: 'had',
+    hardness: 'Hell',
+    translate: 'من متوجه نشدم که او رفته است.',
+    wordBank: ['learn','have','has','had']
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'They _ watching a documentary when the electricity went out.',
+    answer: 'were',
+    hardness: 'Hard',
+    translate: 'آنها در حال تماشای مستند بودند که برق رفت.',
+    wordBank: ['were','could','are']
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'You should speak _ if you want everyone to understand you.',
+    answer: 'clearly',
+    hardness: 'Hell',
+    translate: 'تو باید شفاف صحبت کنی، اگر میخواهی که همه تو را بفهمند.',
+    wordBank: ['clear','aloud','clearly']
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'She is interested _ learning how to sing.',
+    answer: 'in',
+    hardness: 'Medium',
+    translate: 'او به یادگیری خوانندگی علاقه دارد.',
+    wordBank: ['on','in']
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'The teacher asked us _ we had finished the assignment.',
+    answer: 'whether',
+    hardness: 'Hard',
+    translate: 'معلم از ما پرسید که آیا کارخانگی را انجام داده ایم؟',
+    wordBank: ['whether','have']
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'He solved the problem _ than I expected.',
+    answer: 'faster',
+    hardness: 'Medium',
+    translate: 'او مشکل را سریعتر از انتظارم حل کرد.',
+    wordBank: ['fast','faster','I think']
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'I have never _ such an interesting book before.',
+    answer: 'read',
+    hardness: 'Hell',
+    translate: 'من تاحالا چنین کتاب دلچسبی نخوانده ام.',
+    wordBank: ['read','write','study']
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'Although it was raining, they decided _ continue the journey.',
+    answer: 'to',
+    hardness: 'Hard',
+    translate: 'اگرچه باران میبارید؛ آنها تصمیم گرفتند که سفر را ادامه دهند.',
+    wordBank: ['that','to','which']
   },
   {
-    sentence: '',
-    answer: '',
-    hardness: '',
-    translate: '',
-    wordBank: ['', '', '', ''],
+    sentence: 'The computer stopped working because it _ overheated.',
+    answer: 'had',
+    hardness: 'Veteran',
+    translate: 'کامپیوتر متوقف شد چون خیلی داغ شده بود.',
+    wordBank: ['had','have','to','is']
+  },
+  {
+    sentence: 'She explained the lesson so _ that everyone understood it.',
+    answer: 'clearly',
+    hardness: 'Hard',
+    translate: 'او درس را طوری شفاف توضیح داد که همه یادگرفتند.',
+    wordBank: ['clear','slow','clearly']
+  },
+  {
+    sentence: 'If I _ enough time, I would learn another language.',
+    answer: 'had',
+    hardness: 'Hard',
+    translate: 'اگر زمان کافی میداشتم، زبان جدیدی را یاد میگرفتم',
+    wordBank: ['would','could','had']
+  },
+  {
+    sentence: 'The students were asked _ their phones during the exam.',
+    answer: 'to turn off',
+    hardness: 'Veteran',
+    translate: 'از شاگردان خواسته شده بود که تلفن هایشان را خاموش کنند.',
+    wordBank: ['to turn off','hide','shut']
+  },
+  {
+    sentence: 'By the time we arrived, the movie _ already started.',
+    answer: 'had',
+    hardness: 'Hell',
+    translate: 'تا زمانی که رسیدیم، فیلم شروع شده بود.',
+    wordBank: ['were','had','been','have']
   },
 ];
 
@@ -894,23 +926,29 @@ function getFromPool(number, pool, startIndex) {
 
 // =================== تولید داده‌ها ===================
 const beginnerData = {};
-export const myX = getFromPool(nameTypesPool, (20 * 11) % nameTypesPool.length);
+
+// شمارنده‌های سراسری: به‌جای پرش بر اساس id، پشت‌سرهم جلو می‌روند
+// تا وقتی همه‌ی آیتم‌های pool مصرف نشده، هیچ آیتمی تکرار نمی‌شود
+let tfCursor = 0;
+let ntCursor = 0;
+let trCursor = 0;
+let fbCursor = 0;
+let scCursor = 0;
 
 for (let id = 1; id <= 20; id++) {
   const lessons = [];
-
-  // هر مخزن را با یک افست متفاوت برای تنوع شروع می‌کنیم
-  const tfStart = (id * 7) % trueFalsePool.length;       // اعداد اول برای پخش بهتر
-  const ntStart = (id * 11) % nameTypesPool.length;
-  const trStart = (id * 13) % translatePool.length;
-  const fbStart = (id * 17) % fillBlankPool.length;
-  const scStart = (id * 19) % selectCorrectPool.length;
-
-  const tfItems = getFromPool(2,trueFalsePool, tfStart);
-  const ntItems = getFromPool(1,nameTypesPool, ntStart);
-  const trItems = getFromPool(3,translatePool, trStart);
-  const fbItems = getFromPool(3,fillBlankPool, fbStart);
-  const scItems = getFromPool(2,selectCorrectPool, scStart);
+//تعداد درس ها
+//12
+  const tfItems = getFromPool(2, trueFalsePool, tfCursor);
+  tfCursor += 2;
+  const ntItems = getFromPool(2, nameTypesPool, ntCursor);
+  ntCursor += 2;
+  const trItems = getFromPool(3, translatePool, trCursor);
+  trCursor += 3;
+  const fbItems = getFromPool(3, fillBlankPool, fbCursor);
+  fbCursor += 3;
+  const scItems = getFromPool(2, selectCorrectPool, scCursor);
+  scCursor += 2;
 
   let lessonId = 1;
 
@@ -974,7 +1012,7 @@ scItems.forEach(item => {
 }
 
 // =================== ذخیره‌سازی ===================
-fs.writeFileSync('beginner.json', JSON.stringify(beginnerData, null, 2), 'utf-8');
+fs.writeFileSync('Intermediate.json', JSON.stringify(beginnerData, null, 2), 'utf-8');
 console.log('✅ فایل beginner.json با موفقیت ساخته شد.');
 
 

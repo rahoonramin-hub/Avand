@@ -1,7 +1,7 @@
 [
   {
-    "sentence": "Dogs can speak English.",
-    "answer": false,
+    "sentence": "کلمه adjective یک اسم را توصیف میکند",
+    "answer": true,
     "type": "trueFalse",
     "direction": "ltr",
     "title": "True or False",
@@ -12,7 +12,7 @@
     "id": 1
   },
   {
-    "sentence": "با اضافه کردن حرف s اسم جمع میشود",
+    "sentence": "Monday is a day of the week.",
     "answer": true,
     "type": "trueFalse",
     "direction": "ltr",
@@ -24,7 +24,7 @@
     "id": 2
   },
   {
-    "sentence": "Snow is black.",
+    "sentence": "There are 10 months in a year.",
     "answer": false,
     "type": "trueFalse",
     "direction": "ltr",
@@ -37,23 +37,13 @@
   },
   {
     "answer": [
-      "simple",
-      "cont",
-      "perfect",
-      "perfect cont"
+      "was",
+      "were"
     ],
-    "synonyms": {
-      "continouos": "cont",
-      "continuous": "cont",
-      "progressive": "cont",
-      "perfect continouos": "perfect cont",
-      "perfect progressive": "perfect cont"
-    },
-    "sentence": "۴ زمان گذشته را بنویسید.",
+    "sentence": "شکل‌های زمان گذشته فعل \"To be\" را بنویسید.",
     "explanition": {
-      "title": "زمان گذشته",
-      "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
-      "types": "simple\n continuous\n perfect\n perfect continuous"
+      "title": "Was/Were",
+      "des": "I was young - من جوان بودم\n You were young - تو جوان بودی\n He was young - او جوان بود\n"
     },
     "type": "nameTypes",
     "direction": "ltr",
@@ -61,17 +51,18 @@
     "id": 4
   },
   {
-    "sentence": "The cup is small.",
+    "sentence": "We have a car.",
     "answer": [
-      "پیاله کوچک است"
+      "ما یک موتر داریم",
+      "ما موتر داریم"
     ],
     "wordBank": [
-      "پیاله",
-      "کوچک",
-      "است",
-      "بزرگ",
-      "نوزاد",
-      "پسر"
+      "ما",
+      "یک",
+      "موتر",
+      "داریم",
+      "موتور",
+      "دوچرخه"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -79,17 +70,18 @@
     "id": 5
   },
   {
-    "sentence": "We are ready.",
+    "sentence": "They are students.",
     "answer": [
-      "ما آماده هستیم"
+      "آنها شاگرد هستند",
+      "آنها شاگردند"
     ],
     "wordBank": [
-      "ما",
-      "آماده",
-      "هستیم",
-      "خسته",
-      "بیمار",
-      "دیر"
+      "آنها",
+      "شاگرد",
+      "هستند",
+      "شاگردند",
+      "معلم",
+      "مهندس"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -97,18 +89,17 @@
     "id": 6
   },
   {
-    "sentence": "He opens the window.",
+    "sentence": "This is my house.",
     "answer": [
-      "او پنجره را باز میکند"
+      "این خانه من است"
     ],
     "wordBank": [
-      "او",
-      "پنجره",
-      "را",
-      "باز",
-      "میکند",
-      "در",
-      "میز"
+      "این",
+      "خانه",
+      "من",
+      "است",
+      "تو",
+      "او"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -116,15 +107,17 @@
     "id": 7
   },
   {
-    "sentence": "He _ to bed at 10 PM.",
-    "answer": "goes",
-    "hardness": "Easy",
-    "translate": "او ساعت ۱۰ شب به رختخواب می‌رود.",
+    "sentence": "Learning English is not _.",
+    "answer": "hard",
+    "hardness": "Medium",
+    "translate": "یادگیری انگلیسی سخت نیست",
     "wordBank": [
-      "go",
-      "goes",
-      "going",
-      "sleep"
+      "hard",
+      "allready",
+      "how to",
+      "tough",
+      "make",
+      "language"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -132,15 +125,16 @@
     "id": 8
   },
   {
-    "sentence": "They _ playing football in the yard.",
-    "answer": "are",
-    "hardness": "Easy",
-    "translate": "آنها در حیاط فوتبال بازی می‌کنند.",
+    "sentence": "You can`t _ a pilot.",
+    "answer": "be",
+    "hardness": "Hell",
+    "translate": "تو نمیتوانی خلبان باشی",
     "wordBank": [
-      "can",
-      "is",
-      "are",
-      "was"
+      "how",
+      "learn",
+      "be",
+      "make",
+      "airplane"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -148,15 +142,15 @@
     "id": 9
   },
   {
-    "sentence": "I _ a new bag yesterday.",
-    "answer": "bought",
-    "hardness": "Medium",
-    "translate": "من دیروز یک کیف جدید خریدم.",
+    "sentence": "How to _ fast in soccer?",
+    "answer": "run",
+    "hardness": "Easy",
+    "translate": "چطور در فوتبال تیز بدویم",
     "wordBank": [
-      "buy",
-      "bought",
-      "buying",
-      "take"
+      "why",
+      "football",
+      "learn",
+      "run"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -164,13 +158,18 @@
     "id": 10
   },
   {
-    "answer": "kabul",
-    "sentence": "what is the capital of afghanistan?",
+    "answer": "adverb",
+    "explanition": {
+      "title": "قید",
+      "des": "قید ها چگونگی انجام عمل را بیان میکنند: \n I run slowly \nکلمه slowly یعنی به آهستگی\n",
+      "types": "نکته جالب: اکثر قید ها با حروف ly خطم میشوند \nslow = صفت\nslowly = قید"
+    },
+    "sentence": "which word describes a verb?",
     "options": [
-      "herat",
-      "kandahar",
-      "mazar",
-      "kabul"
+      "noun",
+      "adjective",
+      "adverb",
+      "conjunction"
     ],
     "type": "selectCorrect",
     "direction": "ltr",
@@ -178,13 +177,17 @@
     "id": 11
   },
   {
-    "answer": "pencil",
-    "sentence": "what do you use to write and erase with an eraser?",
+    "answer": "pronoun",
+    "explanition": {
+      "title": "ضمیر",
+      "des": "ضمیر ها جایگزین اسم میشوند\nThe bird was black\nIt was black"
+    },
+    "sentence": "which word replaces a noun (like he, she, it)?",
     "options": [
-      "pen",
-      "pencil",
-      "marker",
-      "chalk"
+      "verb",
+      "adjective",
+      "pronoun",
+      "preposition"
     ],
     "type": "selectCorrect",
     "direction": "ltr",

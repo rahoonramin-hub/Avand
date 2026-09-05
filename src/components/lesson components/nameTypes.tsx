@@ -1,24 +1,11 @@
 // components/nameTypesLesson.tsx
-//
-// کامپوننت درس نوع "Name Types" (نام بردن انواع/موارد یک مفهوم به‌صورت آزاد با تایپ کردن)
-//
-// پراپ‌ها:
-//  - data    : اطلاعات درس با تایپ NameTypesLesson (از constants/interface)
-//  - onExit  : فانکشن دکمه‌ی خروج
-//  - onNext  : فانکشن دکمه‌ی درس بعدی
-//
-// نکات مهم منطق چک کردن:
-//  1) ترتیب واردکردن جواب‌ها اهمیتی نداره.
-//  2) کلمات ورودی با علامت‌های  , . ; ' - _ *  و خط جدید (\n \r) از هم جدا میشن
-//     (نه با space، چون بعضی جواب‌ها خودشون چند کلمه‌ای هستن مثل "first person").
-//  3) هر ورودی از روی synonyms به فرم اصلی (canonical) توی answer نگاشت میشه.
-//  4) اگر تعداد answer >= 5 بود، پیدا کردن حداقل 4 مورد درست هم قبول میشه
-//     (مثلا برای 7تا subject pronoun، وارد کردن 4 یا 5 مورد درست هم کافیه).
 
 import CheckContinueBar, { CheckStatus } from '@/components/CheckContinueBar';
 import MessageModal from '@/components/messageModal';
 import { colors } from '@/constants/colors';
+import { images } from '@/constants/images';
 import { LessonDataTypesNameTypes } from '@/constants/interface';
+import { Feedback } from '@/constants/sounds';
 import { useMemo, useState } from 'react';
 import { Modal, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 
@@ -61,6 +48,16 @@ export default function NameTypesLesson({ data, onExit, onNext, index }: LessonD
 
   const requiredCount = data.answer.length >= 5 ? 4 : data.answer.length;
 
+  const handleContinue = () => {
+    onNext(index,isCorrect);
+    setChecked(false)
+    setIsCorrect(false)
+    setMatchedCount(0)
+    setShowExplanation(false)
+    setInputText('')
+  };
+
+
   const { canonicalSet, lookup } = useMemo(
     () => buildAnswerKey(data.answer, data.synonyms || {}),
     [data.answer, data.synonyms]
@@ -78,13 +75,11 @@ export default function NameTypesLesson({ data, onExit, onNext, index }: LessonD
 
     setMatchedCount(matched.size);
     setIsCorrect(matched.size >= requiredCount);
+    if (matched.size >= requiredCount) {Feedback.success();}else {Feedback.failure()}
     setChecked(true);
   };
 
-  const handleContinue = () => {
-    onNext(index,isCorrect);
-  };
-
+  
   const status: CheckStatus = !checked ? 'idle' : isCorrect ? 'correct' : 'wrong';
 
   const inputBorderColor = !checked
@@ -187,9 +182,10 @@ export default function NameTypesLesson({ data, onExit, onNext, index }: LessonD
           onRequestClose={() => setShowExplanation(false)}
         >
           <MessageModal
+            image={images.C_teach}
             title={data.explanition.title||"Message"}
             direction={data.direction}
-            des={`${data.explanition.des}\n\n${data.explanition.types}`}
+            des={`${data.explanition.des}\n\n${data.explanition.types||""}`}
             btnText="متوجه شدم"
             onPress={() => setShowExplanation(false)}
           />

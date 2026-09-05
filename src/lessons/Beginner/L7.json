@@ -1,6 +1,6 @@
 [
   {
-    "sentence": "A cow gives milk.",
+    "sentence": "قید نشان میدهد که یک عمل چگونه انجام میشود",
     "answer": true,
     "type": "trueFalse",
     "direction": "ltr",
@@ -12,7 +12,7 @@
     "id": 1
   },
   {
-    "sentence": "A chair is for sitting.",
+    "sentence": "کلمه adverb به معنی قید است",
     "answer": true,
     "type": "trueFalse",
     "direction": "ltr",
@@ -24,7 +24,7 @@
     "id": 2
   },
   {
-    "sentence": "زمان حال ساده عادات روزمره را بیان میکند",
+    "sentence": "Sugar is sweet.",
     "answer": true,
     "type": "trueFalse",
     "direction": "ltr",
@@ -37,23 +37,19 @@
   },
   {
     "answer": [
-      "simple",
-      "cont",
-      "perfect",
-      "perfect cont"
+      "me",
+      "you",
+      "him",
+      "her",
+      "it",
+      "us",
+      "them"
     ],
-    "synonyms": {
-      "continouos": "cont",
-      "continuous": "cont",
-      "progressive": "cont",
-      "perfect continouos": "perfect cont",
-      "perfect progressive": "perfect cont"
-    },
-    "sentence": "۴ زمان گذشته را بنویسید.",
+    "sentence": "ضمایر مفعولی در زبان انگلیسی را بنویسید. (حداقل ۵ ضمیر)",
     "explanition": {
-      "title": "زمان گذشته",
-      "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
-      "types": "simple\n continuous\n perfect\n perfect continuous"
+      "title": "Object pronouns",
+      "des": "ضمایر مفعولی گیرنده عمل هستند، مثلا: \n I teach him\n در این جمله him مفعول است",
+      "types": "Me, you, Us, Them, Her, Him, It"
     },
     "type": "nameTypes",
     "direction": "ltr",
@@ -61,17 +57,17 @@
     "id": 4
   },
   {
-    "sentence": "The dog runs fast.",
+    "sentence": "I want water.",
     "answer": [
-      "سگ سریع میدود"
+      "من آب می‌خواهم",
+      "آب می‌خواهم"
     ],
     "wordBank": [
-      "سگ",
-      "سریع",
-      "میدود",
-      "آهسته",
-      "گربه",
-      "پرنده"
+      "من",
+      "آب",
+      "می‌خواهم",
+      "شیر",
+      "غذا"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -79,17 +75,17 @@
     "id": 5
   },
   {
-    "sentence": "We are happy.",
+    "sentence": "The cat is on the table.",
     "answer": [
-      "ما خوشحال هستیم"
+      "گربه روی میز است"
     ],
     "wordBank": [
-      "ما",
-      "خوشحال",
-      "هستیم",
-      "غمگین",
-      "بیمار",
-      "خسته"
+      "گربه",
+      "روی",
+      "میز",
+      "است",
+      "زیر",
+      "چوکی"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -97,18 +93,18 @@
     "id": 6
   },
   {
-    "sentence": "This is a chair.",
+    "sentence": "I am a boy.",
     "answer": [
-      "این یک چوکی است",
-      "این چوکی است"
+      "من یک پسر هستم",
+      "من پسر هستم"
     ],
     "wordBank": [
-      "این",
+      "من",
       "یک",
-      "چوکی",
-      "است",
-      "میز",
-      "قفسه"
+      "پسر",
+      "هستم",
+      "دختر",
+      "مرد"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -116,15 +112,16 @@
     "id": 7
   },
   {
-    "sentence": "If it rains tomorrow, we _ at home.",
-    "answer": "will stay",
-    "hardness": "Hell",
-    "translate": "اگر فردا باران ببارد، خانه می‌مانیم.",
+    "sentence": "He _ his own book, and sold it.",
+    "answer": "wrote",
+    "hardness": "Hard",
+    "translate": "او کتاب خودش را نوشت و آنرا فروخت",
     "wordBank": [
-      "went",
-      "will stay",
-      "stayed",
-      "never"
+      "sells",
+      "wrote",
+      "builds",
+      "made",
+      "write"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -132,15 +129,15 @@
     "id": 8
   },
   {
-    "sentence": "I _ a student.",
-    "answer": "am",
-    "hardness": "Easy",
-    "translate": "من یک شاگرد هستم.",
+    "sentence": "may _ ask something.",
+    "answer": "I",
+    "hardness": "Medium",
+    "translate": "میتوانم چیزی بپرسم؟",
     "wordBank": [
-      "am",
+      "I",
+      "can",
       "is",
-      "are",
-      "be"
+      "they"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -148,15 +145,17 @@
     "id": 9
   },
   {
-    "sentence": "She _ a teacher.",
-    "answer": "is",
-    "hardness": "Easy",
-    "translate": "او یک معلم است.",
+    "sentence": "How to _ English very fast",
+    "answer": "learn",
+    "hardness": "Hard",
+    "translate": "چطور سریع انگلیسی بیاموزیم؟",
     "wordBank": [
-      "am",
-      "is",
-      "are",
-      "be"
+      "I",
+      "can",
+      "learn",
+      "teach",
+      "make",
+      "language"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -164,13 +163,18 @@
     "id": 10
   },
   {
-    "answer": "on friday",
-    "sentence": "when are you off ?",
+    "answer": "present continuous",
+    "sentence": "which tense is this sentence? \"I am reading a book now\"",
+    "explanition": {
+      "title": "حال جاری",
+      "des": "زمان حال جاری زمانیست که عمل در لحظه اکنون در حال جریان باشد.\nساختار:\nSub + Tobe + V-ing\nتمام زمان های جاری در آخر فعل حروف Ing را دارند",
+      "types": "مثال:\nI am reading\nمن در حال خواندن هستم. \nعمل در لحظه درحال جریان است."
+    },
     "options": [
-      "on friday",
-      "im not",
-      "at 5pm",
-      "last year"
+      "present simple",
+      "past simple",
+      "future simple",
+      "present continuous"
     ],
     "type": "selectCorrect",
     "direction": "ltr",
@@ -178,14 +182,18 @@
     "id": 11
   },
   {
-    "answer": "describes a noun",
-    "sentence": "what does an adjective do ?",
+    "answer": "past continuous",
+    "sentence": "which tense is this sentence? \"She was sleeping at 10 pm\"",
     "options": [
-      "avoid repetition",
-      "describes a noun",
-      "describes a verb",
-      "the question is wrong"
+      "present simple",
+      "past simple",
+      "present continuous",
+      "past continuous"
     ],
+    "explanition": {
+      "title": "گذشته جاری",
+      "des": "subject + was/were + verb + ing\nShe was cooking\nاو در حال آشپزی بود"
+    },
     "type": "selectCorrect",
     "direction": "ltr",
     "title": "Select correct",

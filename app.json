@@ -8,38 +8,42 @@
     "scheme": "avand",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "googleServicesFile": "./GoogleService-info.plist",
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "bundleIdentifier":"com.avand",
       "icon": "@/assets/expo.icon"
     },
     "android": {
       "softwareKeyboardLayoutMode": "resize",
       "googleServicesFile": "./google-services.json",
-      "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./src/assets/images/android-icon-foreground.png",
-        "backgroundImage": "./src/assets/images/android-icon-background.png",
-        "monochromeImage": "./src/assets/images/android-icon-monochrome.png"
-      },
+      "package": "com.avand",
       "predictiveBackGestureEnabled": false,
-      "package": "com.avand"
+      "adaptiveIcon": {
+        "backgroundColor": "#D90368",
+        "foregroundImage": "./src/assets/images/icon.png",
+        "backgroundImage": "./src/assets/images/icon.png",
+        "monochromeImage": "./src/assets/images/icon.png"
+      }
     },
     "web": {
       "output": "static",
-      "favicon": "./src/assets/images/favicon.png"
+      "favicon": "./src/assets/images/icon.png"
     },
     "plugins": [
       "@react-native-firebase/app",
       "@react-native-firebase/auth",
+      "@lottiefiles/dotlottie-react-native/plugin",
+      "expo-audio",
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#208AEF",
-          "image": "./src/assets/images/favicon.png",
+          "backgroundColor": "#D90368",
+          "image": "./src/assets/images/icon.png",
           "imageWidth": 76
         }
       ],
-      "@react-native-google-signin/google-signin"
+      "expo-image",
+      "expo-asset"
     ],
     "experiments": {
       "typedRoutes": true,

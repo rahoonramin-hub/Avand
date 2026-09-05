@@ -3,6 +3,7 @@
 import CheckContinueBar, { CheckStatus } from '@/components/CheckContinueBar';
 import { colors } from '@/constants/colors';
 import { LessonDataTypesTrueFlase } from '@/constants/interface';
+import { Feedback } from '@/constants/sounds';
 import { useState } from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
@@ -27,11 +28,15 @@ export default function TrueOrFalse({ data, onExit, onNext, index }: LessonDataT
   const handleCheck = () => {
     const correct = picked === data.answer;
     setIsCorrect(correct);
+    if (correct) {Feedback.success();}else {Feedback.failure()}
     setChecked(true);
   };
 
   const handleContinue = () => {
     onNext(index,isCorrect);
+    setIsCorrect(false)
+    setChecked(false)
+    setPicked(undefined)
   };
 
   const status: CheckStatus = !checked ? 'idle' : isCorrect ? 'correct' : 'wrong';
@@ -143,8 +148,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
   charImage: {
-    width: 84,
-    height: 84,
+    width: 95,
+    height: 95,
   },
   bubble: {
     flex: 1,
@@ -169,7 +174,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    maxHeight: 350,
+    maxHeight: 400,
   },
   chipsOptions: {
     maxWidth: "80%",

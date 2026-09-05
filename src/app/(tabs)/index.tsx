@@ -5,50 +5,40 @@ import LessonPage from "@/components/lesson components/lessonPage";
 import { colors } from "@/constants/colors";
 import { images } from "@/constants/images";
 //import { Feedback } from "@/constants/sounds";
+import MessageModal from "@/components/messageModal";
 import { useAuthStore } from "@/stores/useAuthStore";
 import { useAddSetStore } from "@/stores/useUserStore";
-import { Ionicons } from '@expo/vector-icons';
 import { Image } from "expo-image";
 import { useRouter } from "expo-router";
 import {
   ActivityIndicator,
   Alert,
   Animated,
-  KeyboardAvoidingView,
   Modal,
-  Platform,
   Pressable,
-  ScrollView,
   StyleSheet,
   Text,
-  TextInput,
   TouchableOpacity,
   View,
-  useWindowDimensions,
+  useWindowDimensions
 } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { useLessonManager } from "@/hooks/useLessonManager";
 import { useOnboarding } from "@/hooks/useOnboarding";
 import { useUserStore } from "@/stores/useUserStore";
 import { useEffect, useRef, useState } from "react";
 
+
+
+import { LEVEL_LOTTIE, LEVEL_PROGRESS_COLOR } from "@/constants/levelAssets";
+import { DotLottie, type Dotlottie } from "@lottiefiles/dotlottie-react-native";
+
 const TELEGRAM_BOT_TOKEN = "8134032767:AAGFH0z9uOJVgiMvVlXTrA8BEVumS-k4FVc";
 const TELEGRAM_CHAT_ID = 5224314197;
 
 // ── متن مودال برنامه‌های آینده ───────────────────────────────────────────────
 const FUTURE_PLANS_TEXT = "در ورژن جدید قادر خواهید بود: \n دوستان خود را دنبال کرده و با یکدیگر مسابقه دهید. \n با استاده از هوش مصنوعی و قابلیت های دیگر لغات را سریع تر یادبگیرید. \n مکالمه تمرینی با افراد و یا هوش مصنوعی.";
-
-function getLevelPosition(index: number, windowWidth: number) {
-  const centerX = windowWidth / 2;
-  const amplitude = 90;
-  const verticalGap = 125;
-
-  return {
-    x: centerX - 35 + Math.sin(index * 1) * amplitude,
-    y: 35 + index * verticalGap,
-  };
-}
 
 // ── نشان شناور «+عدد» موقع افزایش xp/gem ─────────────────────────────────────
 // عمداً فقط از translateY/opacity (دو‌بعدی) استفاده شده، نه perspective/rotateX/Y،
@@ -95,13 +85,20 @@ function FloatingGain({
 }
 
 export default function Index() {
-  const { width } = useWindowDimensions();
-  const scrollRef = useRef<ScrollView>(null);
   const router = useRouter();
+
+  const { width: screenWidth } = useWindowDimensions();
+  const bookSize = Math.min(screenWidth * 0.92, 520);
+
+  
+  const insets = useSafeAreaInsets()
+  const tabBarHeight = insets.bottom + 82 // 60 = ارتفاع تقریبی تب‌بار خودت، بر اساس استایل واقعی‌اش تنظیم کن
+
 
   // ── احراز هویت ────────────────────────────────────────────────────────────
   const firebaseUser = useAuthStore((state) => state.firebaseUser);
   const authInitializing = useAuthStore((state) => state.initializing);
+  const accessStatus = useAuthStore((state) => state.accessStatus);
   const userId = firebaseUser?.uid;
 
   // ── هوک‌ها ────────────────────────────────────────────────────────────────
@@ -120,7 +117,7 @@ export default function Index() {
   }, [userId]);
 
   const setShowAddSet = useAddSetStore((state) => state.setShowAddSet);
-  const { isLessonStart, currentLesson, currentId, setCurrentId, closeLesson } =
+  const { isLessonStart, currentLesson,setIsBookOpen, isBookOpen, currentId, setCurrentId, closeLesson } =
     useLessonManager();
   const {
     checkingOnboarding,
@@ -178,21 +175,91 @@ export default function Index() {
     prevGemRef.current = user.gem;
   }, [user?.xp, user?.gem]);
 
-  let mapHeight = levels.length * 120 + 200;
+  // ── تعداد کل لغات (جمع لغات همه‌ی ست‌ها) ─────────────────────────────────
+  const wordCount = user
+    ? user.sets.reduce((acc, s) => acc + Object.keys(s.words ?? {}).length, 0)
+    : 0;
+
+  // ── انیمیشن تغییر عنوان سطح (Starter → Beginner → ...) ─────────────────
+  // فقط وقتی سطح واقعاً عوض می‌شود انیمیشن اجرا می‌شود، نه موقع لود اولیه‌ی
+  // اپ. برای این کار، اولین مقداری که از user.levelInfo.level می‌آید فقط
+  // ذخیره می‌شود (بدون انیمیشن) و از دفعه‌ی بعد به بعد، هر تغییر با
+  // fade + translateY کوتاه انیمیت می‌شود.
+  const titleOpacity = useRef(new Animated.Value(1)).current;
+  const titleTranslateY = useRef(new Animated.Value(0)).current;
+  const prevLevelRef = useRef<typeof user extends undefined ? any : any>(null);
+  const [displayLevel, setDisplayLevel] = useState(user?.levelInfo.level);
 
   useEffect(() => {
-    if (user) {
-      scrollRef.current?.scrollTo({
-        y: getLevelPosition(user.levelInfo.CLonM - 1, width).y - 150,
-        animated: true,
+    const newLevel = user?.levelInfo.level;
+    if (!newLevel) return;
+
+    if (prevLevelRef.current === null) {
+      // بار اول (لود اپ) — فقط ست کن، بدون انیمیشن
+      prevLevelRef.current = newLevel;
+      setDisplayLevel(newLevel);
+      return;
+    }
+
+    if (prevLevelRef.current !== newLevel) {
+      prevLevelRef.current = newLevel;
+      Animated.parallel([
+        Animated.timing(titleOpacity, { toValue: 0, duration: 200, useNativeDriver: true }),
+        Animated.timing(titleTranslateY, { toValue: -14, duration: 200, useNativeDriver: true }),
+      ]).start(() => {
+        setDisplayLevel(newLevel);
+        titleTranslateY.setValue(14);
+        Animated.parallel([
+          Animated.timing(titleOpacity, { toValue: 1, duration: 250, useNativeDriver: true }),
+          Animated.timing(titleTranslateY, { toValue: 0, duration: 250, useNativeDriver: true }),
+        ]).start();
       });
     }
-  }, [user]);
+  }, [user?.levelInfo.level]);
+
+  // ── انیمیشن کتاب (dotLottie) ──────────────────────────────────────────────
+  // ساده شده: بدون مارکر. روی لود، فریم اول (بسته) نشون داده می‌شه (autoplay
+  // خاموش). با لمس، کل انیمیشن یک‌بار از اول تا آخر پلی می‌شه و بعد از تمام
+  // شدنش مرحله‌ی درسِ فعال ران می‌شود.
+  const bookRef = useRef<Dotlottie>(null);
+ 
+
+  const handleBookPress = () => {
+    if (!user || isBookOpen) return;
+    const activeLevel = user.levelInfo.CLonM;
+    const activeLevelData = levels.find((l) => l.id === activeLevel);
+    if (activeLevelData?.state === "locked") return;
+
+    setIsBookOpen(true);
+    bookRef.current?.play();
+  };
+
+  const handleBookLottieComplete = () => {
+    if (user) setCurrentId(user.levelInfo.CLonM);
+  };
+
+  // ── نوار پیشرفت انیمیتی مرحله‌ی فعلی از کل مراحل ─────────────────────────
+  const progressAnim = useRef(new Animated.Value(0)).current;
+
+  useEffect(() => {
+    if (!user || levels.length === 0) return;
+    Animated.timing(progressAnim, {
+      toValue: user.levelInfo.CLonM / levels.length,
+      duration: 700,
+      useNativeDriver: false,
+    }).start();
+  }, [user?.levelInfo.CLonM, levels.length]);
+
+  const progressWidth = progressAnim.interpolate({
+    inputRange: [0, 1],
+    outputRange: ["0%", "100%"],
+  });
+
+  // رنگ نوار پیشرفت بر اساس سطح فعلی کاربر (constants/levelAssets.ts)
+  const progressColor = LEVEL_PROGRESS_COLOR[user?.levelInfo.level ?? "Starter"];
 
   const handleUnlock = async (result: { ispassed: boolean; xp: number }) => {
     if (!userId || !user) return;
-    // فقط تکمیل موفقِ مرحله‌ای که همین الان فعال (active) کاربر است باعث پیشرفت شود؛
-    // نه تکمیل مرحله‌ای قدیمی/تمرینی، و نه یک تلاش ناموفق.
     const activeLevel = user.levelInfo.CLonM;
     if (!result.ispassed || currentId !== activeLevel) return;
 
@@ -244,9 +311,24 @@ export default function Index() {
   if (!firebaseUser) {
     return(
       <Modal visible={!firebaseUser} animationType="fade">
-        <AuthScreen />
+        <SafeAreaView edges={['bottom','top']} style={{flex: 1,backgroundColor: colors.dark.bg }}>
+          <AuthScreen
+            accessMessage={
+              accessStatus === "blocked"
+                ? "حساب شما مسدود شده است. برای اطلاعات بیشتر با پشتیبانی تماس بگیرید."
+                : accessStatus === "expired"
+                ? "اشتراک شما منقضی شده است. برای تمدید به‌صورت حضوری مراجعه کنید."
+                : undefined
+            }
+          />
+        </SafeAreaView>
       </Modal>
     )
+  }
+
+  // ── چک بلاک/انقضای اشتراک (بعد از لاگین، قبل از نمایش هر محتوایی) ─────────
+  if (accessStatus === "checking") {
+    return <View style={styles.loadingContainer} />;
   }
 
   // ── چک آنبوردینگ (بار اول ورود به اپ) ────────────────────────────────────────
@@ -257,7 +339,7 @@ export default function Index() {
   if (showOnboarding) {
     return (
       <Modal visible={true} animationType="fade" statusBarTranslucent>
-        <Onboarding onComplete={completeOnboarding} />
+          <Onboarding onComplete={completeOnboarding} />
       </Modal>
     );
   }
@@ -274,12 +356,14 @@ export default function Index() {
   // ── Lesson Screen ─────────────────────────────────────────────────────────
   if (isLessonStart) {
     return (
-      <Modal visible={isLessonStart} animationType="fade">
-        <LessonPage
-          temp={currentLesson}
-          onComplete={closeLesson}
-          handleUnlock={handleUnlock}
-        />
+      <Modal visible={isLessonStart} animationType="fade" onRequestClose={closeLesson}>
+        <SafeAreaView edges={['bottom','top']} style={{flex: 1,backgroundColor: colors.dark.bg }}>
+          <LessonPage
+            temp={currentLesson}
+            onComplete={closeLesson}
+            handleUnlock={handleUnlock}
+          />
+        </SafeAreaView>
       </Modal>
     );
   }
@@ -287,15 +371,13 @@ export default function Index() {
   // ── Main Screen ───────────────────────────────────────────────────────────
   return (
     <View style={styles.container}>
-      <SafeAreaView
-        edges={["top", "left", "right"]}
-        style={{ backgroundColor: colors.dark.surface }}
-      >
-        <View style={styles.header}>
-          <View style={styles.headerItem}>
-            <Animated.View style={[styles.headerItemInner, { transform: [{ scale: xpScale }] }]}>
-              <Image source={images.xp} style={styles.headerIcon} />
-              <Text style={styles.txt}>{user ? user.xp : "0"}</Text>
+      <SafeAreaView edges={["top", "left", "right"]} style={{ backgroundColor: colors.dark.bg }}>
+        {/* ── سه کارت آمار بالای صفحه: XP / Gem / تعداد لغات ── */}
+        <View style={styles.statsRow}>
+          <View style={styles.statCard}>
+            <Animated.View style={[styles.statCardInner, { transform: [{ scale: xpScale }] }]}>
+                <Image source={images.xp} style={styles.statIconImg} />
+              <Text style={styles.statValue}>{user ? user.xp : "0"}</Text>
             </Animated.View>
             {xpBursts.map(b => (
               <FloatingGain
@@ -307,10 +389,10 @@ export default function Index() {
             ))}
           </View>
 
-          <View style={styles.headerItem}>
-            <Animated.View style={[styles.headerItemInner, { transform: [{ scale: gemScale }] }]}>
-              <Image source={images.xp} style={styles.headerIcon} />
-              <Text style={styles.txt}>{user ? user.gem : "0"}</Text>
+          <View style={styles.statCard}>
+            <Animated.View style={[styles.statCardInner, { transform: [{ scale: gemScale }] }]}>
+                <Image source={images.gem} style={styles.statIconImg} />
+              <Text style={styles.statValue}>{user ? user.gem : "0"}</Text>
             </Animated.View>
             {gemBursts.map(b => (
               <FloatingGain
@@ -321,176 +403,99 @@ export default function Index() {
               />
             ))}
           </View>
+
+          <View style={styles.statCard}>
+            <View style={styles.statCardInner}>
+                <Image source={images.words_icon} style={styles.statIconImg}/>
+              <Text style={styles.statValue}>{wordCount}</Text>
+            </View>
+          </View>
         </View>
       </SafeAreaView>
 
-      <ScrollView
-        style={styles.hero}
-        contentContainerStyle={{ justifyContent: "space-around", alignItems: "center" }}
-        horizontal
-        showsHorizontalScrollIndicator={false}
-      >
-      
-      </ScrollView>
-
-      <ScrollView
-        ref={scrollRef}
-        style={styles.scroll}
-        showsVerticalScrollIndicator={false}
-      >
-        <View style={[styles.levelMap, { height: mapHeight }]}>
-          {levels.map((level, index) => {
-            const pos = getLevelPosition(index, width);
-            const isLocked = level.state === "locked";
-            const isActive = level.id === user?.levelInfo.CLonM;
-
-            return (
-              <Pressable
-                key={level.id}
-                style={[styles.levelButton, { left: pos.x, top: pos.y }]}
-                onPress={() => setCurrentId(level.id)}
-                disabled={isLocked}
-              >
-                <View
-                  style={[
-                    styles.levelIcon,
-                    isActive && styles.activeLevel,
-                    isLocked && styles.lockedLevel,
-                  ]}
-                >
-                  <Text
-                    style={{ color: colors.dark.bg, fontSize: 20, fontWeight: "bold" }}
-                  >
-                    {level.id}
-                  </Text>
-                </View>
-              </Pressable>
-            );
-          })}
-        </View>
-
-        <View
-          style={{
-            backgroundColor: colors.green,
-            width: "100%",
-            paddingVertical: 20,
-            alignItems: "center",
-          }}
+      {/* ── سطح فعلی + عنوان مرحله + نوار پیشرفت ── */}
+      <View style={styles.stageSection}>
+        <Animated.Text
+          style={[
+            styles.stageTitle,
+            { opacity: titleOpacity, transform: [{ translateY: titleTranslateY }] },
+          ]}
         >
-          <Pressable onPress={() => alert("هنوز نرسیدی!")}>
-            <Text
-              style={{ color: colors.dark.bg, fontWeight: "800", fontSize: 22 }}
-            >
-              {user?.levelInfo.level === "Beginner"
-                ? "Intermediate"
-                : user?.levelInfo.level === "Intermediate"
-                ? "Higher Intermediate"
-                : user?.levelInfo.level === "Higher Intermediate"
-                ? "Advanced"
-                : ""}
-            </Text>
-          </Pressable>
-        </View>
-      </ScrollView>
+          {displayLevel ?? 1}
+        </Animated.Text>
 
-      {/* ── مودال ارسال بازخورد ── */}
-      <Modal
-        visible={showFeedback}
-        transparent
-        animationType="slide"
-        onRequestClose={() => setShowFeedback(false)}
-      >
-        <Pressable style={styles.overlay} onPress={() => setShowFeedback(false)}>
-          <KeyboardAvoidingView style={{flex:1}} behavior={Platform.OS === "ios" ? "padding" : "height"}>
-            <Pressable style={styles.sheet} onPress={() => {}}>
-              <View style={styles.sheetHandle} />
-              <View style={styles.sheetIconRow}>
-                <View style={styles.sheetIconBox}>
-                  <Ionicons name="send" size={20} color="#fff" />
-                </View>
-              </View>
-              <Text style={styles.sheetTitle}>ارسال بازخورد</Text>
-              <Text style={styles.sheetSub}>
-                نظرات، پیشنهادها یا مشکلات خود را با ما در میان بگذارید
-              </Text>
-              <TextInput
-                style={styles.feedbackInput}
-                placeholder="متن بازخورد خود را اینجا بنویسید..."
-                placeholderTextColor="#4a4a5a"
-                value={feedbackText}
-                onChangeText={setFeedbackText}
-                multiline
-                numberOfLines={5}
-                textAlign="right"
-                textAlignVertical="top"
-                autoFocus
-              />
-              <TouchableOpacity
-                style={[styles.sheetBtn, !feedbackText.trim() && styles.btnDisabled]}
-                onPress={handleSendFeedback}
-                disabled={!feedbackText.trim() || sendingFeedback}
-                activeOpacity={0.85}
-              >
-                {sendingFeedback ? (
-                  <ActivityIndicator color="#111" />
-                ) : (
-                  <Text style={styles.sheetBtnTxt}>ارسال</Text>
-                )}
-              </TouchableOpacity>
-              <TouchableOpacity
-                style={styles.sheetCancel}
-                onPress={() => setShowFeedback(false)}
-              >
-                <Text style={styles.sheetCancelTxt}>انصراف</Text>
-              </TouchableOpacity>
-            </Pressable>
-          </KeyboardAvoidingView>
+        <View style={styles.progressRow}>
+          <View style={styles.progressTrack}>
+            <Animated.View
+              style={[
+                styles.progressFill,
+                { width: progressWidth, backgroundColor: progressColor },
+              ]}
+            />
+          </View>
+          <Text style={styles.progressTxt}>
+            {user?.levelInfo.CLonM ?? 1} / {levels.length}
+          </Text>
+        </View>
+      </View>
+
+      {/* ── انیمیشن کتاب: با لمس، یک‌بار کامل پلی می‌شود ── */}
+      <View style={styles.bookWrap}>
+        <Pressable
+          onPress={handleBookPress}
+          disabled={isBookOpen}
+          hitSlop={20}
+        >
+          <DotLottie
+            key={user?.levelInfo.level}
+            ref={bookRef}
+            source={LEVEL_LOTTIE[user?.levelInfo.level ?? "Starter"]}
+            style={{ ...styles.bookLottie, width: bookSize, height: bookSize }}
+            autoplay={false}
+            loop={false}
+            onLoad={() => console.log("[book lottie] loaded ✅")}
+            onLoadError={() => console.log("[book lottie] FAILED to load ❌")}
+            onComplete={handleBookLottieComplete}
+          />
         </Pressable>
-      </Modal>
+      </View>
+
+      {/* ── دو کارت پایین صفحه ── */}
+      <View style={[styles.bottomCardsRow,{marginBottom: tabBarHeight}]}>
+        <TouchableOpacity
+          style={styles.bottomCard}
+          onPress={() => router.push("/voca")}
+          activeOpacity={0.82}
+        >
+          <Image source={images.words_icon} style={{width: 65, height: 65}}/>
+          <Text style={styles.bottomCardTitle}>یادگیری لغات</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          style={styles.bottomCard}
+          onPress={() => setShowFuturePlans(true)}
+          activeOpacity={0.82}
+        >
+          <Image source={images.goal} style={{width: 65, height: 65}}/>
+          <Text style={styles.bottomCardTitle}>برنامه‌های آینده</Text>
+        </TouchableOpacity>
+      </View>
+
+     
 
       {/* ── مودال برنامه‌های آینده ── */}
-      <Modal
-        visible={showFuturePlans}
-        transparent
-        animationType="fade"
-        onRequestClose={() => setShowFuturePlans(false)}
-      >
-        <Pressable style={styles.overlay} onPress={() => setShowFuturePlans(false)}>
-          <Pressable style={styles.plansCard} onPress={() => {}}>
-            <Text style={styles.plansEmoji}>🚀</Text>
-            <Text style={styles.plansTitle}>برنامه‌های آینده</Text>
-            <Text style={styles.plansBody}>{FUTURE_PLANS_TEXT}</Text>
-            <TouchableOpacity
-              style={styles.plansBtn}
-              onPress={() => setShowFuturePlans(false)}
-              activeOpacity={0.85}
-            >
-              <Text style={styles.plansBtnTxt}>متوجه شدم</Text>
-            </TouchableOpacity>
-          </Pressable>
-        </Pressable>
-      </Modal>
-      {/* ── مودال خوش‌آمدگویی دوباره (کاربرانی که قبلاً حساب داشتند) ── */}
-      <Modal
-        visible={showWelcomeBack}
-        transparent
-        animationType="fade"
-        onRequestClose={dismissWelcomeBack}
-      >
-        <Pressable style={styles.overlay} onPress={dismissWelcomeBack}>
-          <Pressable style={styles.plansCard} onPress={() => {}}>
-            <Text style={styles.plansEmoji}>👋</Text>
-            <Text style={styles.plansTitle}>دوباره خوش آمدی!</Text>
-            <TouchableOpacity
-              style={styles.plansBtn}
-              onPress={dismissWelcomeBack}
-              activeOpacity={0.85}
-            >
-              <Text style={styles.plansBtnTxt}>ادامه</Text>
-            </TouchableOpacity>
-          </Pressable>
-        </Pressable>
-      </Modal>
+      {showFuturePlans&&
+        <MessageModal
+          title="برنامه های آینده"
+          des={FUTURE_PLANS_TEXT}
+          btnText="متوجه شدم"
+          onClose={()=>setShowFuturePlans(false)}
+          color={colors.purple}
+          onPress={()=>setShowFuturePlans(false)}
+
+        />
+      }
+
     </View>
   );
 }
@@ -508,28 +513,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
 
-  header: {
-    height: 60,
-    width: "100%",
-    backgroundColor: colors.dark.surface,
-    flexDirection: "row",
-    justifyContent: "space-around",
-    alignItems: "center",
-  },
-
-  headerItem: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 10,
-    position: "relative",
-  },
-
-  headerItemInner: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 10,
-  },
-
   floatingGain: {
     position: "absolute",
     top: -14,
@@ -538,73 +521,128 @@ const styles = StyleSheet.create({
     fontWeight: "800",
   },
 
-  headerIcon: {
-    width: 40,
-    height: 40,
-  },
-
-  hero: {
-    display: "flex",
+  // ─── سه کارت آمار بالای صفحه (هم‌راستا با استایل کارت‌های تب Voca) ─────────
+  statsRow: {
     flexDirection: "row",
-    width: "100%",
-    height: 100,
-    minHeight: 100,
-    maxHeight: 100,
-    backgroundColor: colors.dark.surface,
-    overflow: "hidden",
-    borderColor: colors.pink,
-    borderBottomWidth: 3,
-    marginLeft: 8,
+    paddingHorizontal: 16,
+    paddingTop: 10,
+    paddingBottom: 14,
+    gap: 10,
   },
-
-  card: {
-    width: 80,
-    height: 85,
-    marginRight: 30,
-  },
-
-  scroll: {
+  statCard: {
     flex: 1,
-  },
-
-  levelMap: {
-    width: "100%",
+    backgroundColor: colors.dark.surface,
+    borderRadius: 16,
+    borderWidth: 1,
+    borderColor: colors.dark.border,
+    paddingVertical: 12,
+    alignItems: "center",
     position: "relative",
   },
-
-  levelButton: {
-    position: "absolute",
-  },
-
-  levelIcon: {
-    justifyContent: "center",
+  statCardInner: {
+    flexDirection: "row",
     alignItems: "center",
-    borderRadius: 50,
-    width: 90,
-    height: 90,
-    backgroundColor: colors.dark.txt2,
-    borderColor: colors.sky,
-    borderBottomWidth: 5,
-    borderLeftWidth: 1,
-    borderRightWidth: 1,
-    boxShadow: "0 5px 10px #000",
+    gap: 8,
   },
-
-  activeLevel: {
-    filter: `drop-shadow(0 0 5px ${colors.sky})`,
-    transform: `scale(1.15)`,
-    backgroundColor: colors.yellow,
-    borderColor: colors.orange,
+  statIconBox: {
+    width: 32,
+    height: 32,
+    borderRadius: 10,
+    alignItems: "center",
+    justifyContent: "center",
   },
-
-  lockedLevel: {
-    opacity: 0.5,
+  statIconImg: {
+    width: 45,
+    height: 45,
   },
-
-  txt: {
+  statValue: {
     color: colors.dark.txt,
-    fontSize: 18,
-    fontWeight: "600",
+    fontSize: 17,
+    fontWeight: "900",
+  },
+
+  // ─── سطح فعلی + عنوان مرحله + نوار پیشرفت ───────────────────────────────────
+  stageSection: {
+    alignItems: "center",
+    paddingTop: 8,
+    paddingBottom: 4,
+    gap: 4,
+  },
+  levelLabel: {
+    fontSize: 12,
+    fontWeight: "700",
+    color: colors.dark.txt2,
+    letterSpacing: 1.5,
+    textTransform: "uppercase",
+  },
+  stageTitle: {
+    fontSize: 26,
+    fontWeight: "800",
+    color: colors.dark.txt,
+    marginTop: 2,
+  },
+  progressRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 10,
+    marginTop: 12,
+    paddingHorizontal: 88,
+    width: "100%",
+  },
+  progressTrack: {
+    flex: 1,
+    height: 8,
+    borderRadius: 4,
+    backgroundColor: colors.dark.surface2,
+    overflow: "hidden",
+  },
+  progressFill: {
+    height: 8,
+    borderRadius: 4,
+    // رنگ پیش‌فرض؛ در JSX با LEVEL_PROGRESS_COLOR[سطح فعلی] بازنویسی می‌شود.
+    backgroundColor: colors.purple,
+  },
+  progressTxt: {
+    fontSize: 12,
+    fontWeight: "700",
+    color: colors.dark.txt2,
+  },
+
+  // ─── انیمیشن کتاب (dotLottie) ────────────────────────────────────────────
+  bookWrap: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    paddingVertical: 12,
+  },
+  bookLottie: {
+    // اندازه‌ی width/height به‌صورت داینامیک و در خود کامپوننت (بر اساس عرض
+    // صفحه) ست می‌شود، نه اینجا — به bookSize در JSX نگاه کن.
+  },
+
+  // ─── دو کارت پایین صفحه ──────────────────────────────────────────────────
+  bottomCardsRow: {
+    flexDirection: "row",
+    justifyContent: "center",
+    paddingHorizontal: 20,
+    paddingBottom: 20,
+    gap: 14,
+  },
+  bottomCard: {
+    flex: 1,
+    maxWidth: 220,
+    borderRadius: 18,
+    borderWidth: 2,
+    borderColor: colors.sky,
+    paddingVertical: 18,
+    alignItems: "center",
+    gap: 0,
+  },
+  bottomCardTitle: {
+    fontSize: 13,
+    color: colors.dark.txt,
+    fontWeight: "800",
+    textAlign: "center",
   },
 
   // ─── مودال‌ها (استایل مشترک شیت) ────────────────────────────────────────────

@@ -1,6 +1,6 @@
 [
   {
-    "sentence": "A bicycle has 8 wheels.",
+    "sentence": "A triangle has 4 sides.",
     "answer": false,
     "type": "trueFalse",
     "direction": "ltr",
@@ -12,7 +12,7 @@
     "id": 1
   },
   {
-    "sentence": "Eyes are for seeing.",
+    "sentence": "A book has pages.",
     "answer": true,
     "type": "trueFalse",
     "direction": "ltr",
@@ -24,7 +24,7 @@
     "id": 2
   },
   {
-    "sentence": "A bed is for cooking.",
+    "sentence": "A bicycle has 8 wheels.",
     "answer": false,
     "type": "trueFalse",
     "direction": "ltr",
@@ -37,40 +37,35 @@
   },
   {
     "answer": [
-      "simple",
-      "cont",
-      "perfect",
-      "perfect cont"
+      "spring",
+      "summer",
+      "fall",
+      "winter"
     ],
     "synonyms": {
-      "continouos": "cont",
-      "continuous": "cont",
-      "progressive": "cont",
-      "perfect continouos": "perfect cont",
-      "perfect progressive": "perfect cont"
+      "autumn": "fall",
+      "autum": "fall",
+      "sumer": "summer"
     },
-    "sentence": "۴ زمان گذشته را بنویسید.",
-    "explanition": {
-      "title": "زمان گذشته",
-      "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
-      "types": "simple\n continuous\n perfect\n perfect continuous"
-    },
+    "sentence": "۴ فصل سال را بنویسید.",
     "type": "nameTypes",
     "direction": "ltr",
     "title": "Name types",
     "id": 4
   },
   {
-    "sentence": "They are coming.",
+    "sentence": "Where is the key?",
     "answer": [
-      "آنها می‌آیند"
+      "کلید کجاست؟",
+      "کلید کجاست"
     ],
     "wordBank": [
-      "آنها",
-      "می‌آیند",
-      "میروند",
-      "اینجا",
-      "آنجا"
+      "کلید",
+      "کجاست",
+      "کتاب",
+      "قلم",
+      "کتابچه",
+      "؟"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -78,19 +73,17 @@
     "id": 5
   },
   {
-    "sentence": "Is this your bag?",
+    "sentence": "The book is new.",
     "answer": [
-      "آیا این کیف تو است؟",
-      "این کیف تو است؟"
+      "کتاب جدید است"
     ],
     "wordBank": [
-      "آیا",
-      "این",
-      "کیف",
-      "تو",
-      "است؟",
-      "من",
-      "او"
+      "کتاب",
+      "جدید",
+      "است",
+      "کهنه",
+      "زیبا",
+      "بزرگ"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -98,18 +91,18 @@
     "id": 6
   },
   {
-    "sentence": "The flower is beautiful.",
+    "sentence": "I am a doctor.",
     "answer": [
-      "گل زیبا است",
-      "گل زیباست"
+      "من یک داکتر هستم",
+      "من داکتر هستم"
     ],
     "wordBank": [
-      "گل",
-      "زیبا",
-      "است",
-      "زشت",
-      "سرخ",
-      "زیباست"
+      "من",
+      "یک",
+      "داکتر",
+      "هستم",
+      "پرستار",
+      "مهندس"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -117,16 +110,15 @@
     "id": 7
   },
   {
-    "sentence": "This is _ book.",
-    "answer": "my",
+    "sentence": "She _ her grandmother every week.",
+    "answer": "visits",
     "hardness": "Easy",
-    "translate": "این کتاب من است.",
+    "translate": "او هر هفته مادربزرگ خود را ملاقات می‌کند.",
     "wordBank": [
-      "my",
-      "I",
-      "me",
-      "mine",
-      "car"
+      "visit",
+      "visits",
+      "goes",
+      "watch"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -134,15 +126,15 @@
     "id": 8
   },
   {
-    "sentence": "She _ to become a doctor.",
-    "answer": "wants",
+    "sentence": "The cat is _ the chair.",
+    "answer": "under",
     "hardness": "Easy",
-    "translate": "او می‌خواهد داکتر شود.",
+    "translate": "گربه زیر صندلی است.",
     "wordBank": [
-      "wanted",
-      "wants",
-      "can",
-      "very much"
+      "a bear",
+      "under",
+      "was",
+      "can"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -150,15 +142,14 @@
     "id": 9
   },
   {
-    "sentence": "The children _ playing outside.",
-    "answer": "are",
+    "sentence": "I _ speak three languages.",
+    "answer": "can",
     "hardness": "Easy",
-    "translate": "بچه‌ها بیرون مشغول بازی هستند.",
+    "translate": "من می‌توانم سه زبان صحبت کنم.",
     "wordBank": [
-      "wish",
-      "is",
-      "are",
-      "was"
+      "can",
+      "was",
+      "does"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -166,13 +157,13 @@
     "id": 10
   },
   {
-    "answer": "past simple",
-    "sentence": "which tense do we use for actions finished in the past?",
+    "answer": "teacher",
+    "sentence": "who helps students learn at school?",
     "options": [
-      "present simple",
-      "past simple",
-      "future simple",
-      "present continuous"
+      "doctor",
+      "engineer",
+      "teacher",
+      "police"
     ],
     "type": "selectCorrect",
     "direction": "ltr",

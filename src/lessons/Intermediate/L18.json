@@ -1,0 +1,201 @@
+[
+  {
+    "sentence": "An orange is a fruit.",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "کلمه Verb یک عمل را نشان میدهد",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "answer": [
+      "Her",
+      "Him",
+      "Them",
+      "Us",
+      "Me",
+      "It",
+      "You"
+    ],
+    "synonyms": {
+      "hir": "her",
+      "his": "her",
+      "we": "us"
+    },
+    "sentence": "Name object pronouns (atleast 5 of them).",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 3
+  },
+  {
+    "answer": [
+      "I",
+      "You",
+      "We",
+      "They",
+      "He",
+      "She",
+      "It"
+    ],
+    "sentence": "Name subject pronouns (atleas 5 of them).",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 4
+  },
+  {
+    "sentence": "پسر آن زن مرده است",
+    "answer": [
+      "her son is dead"
+    ],
+    "direction": "rtl",
+    "wordBank": [
+      "her",
+      "son",
+      "is",
+      "dead"
+    ],
+    "type": "translate",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "من او را به جشن تولد بردارم دعوت کردم",
+    "answer": [
+      "I invited him to my brother's birthday party"
+    ],
+    "direction": "rtl",
+    "wordBank": [
+      "I",
+      "invited",
+      "him",
+      "to",
+      "my",
+      "brother's",
+      "birthday party"
+    ],
+    "type": "translate",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "Have you finished your home work?",
+    "answer": [
+      "آیا کارخانگی خود را تمام کرده ای",
+      "کارخانگی خود را تمام کرده ای"
+    ],
+    "wordBank": [
+      "آیا",
+      "کارخانگی",
+      "خود",
+      "را",
+      "تمام",
+      "کرده ای",
+      "؟"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "I am busy _ Monday",
+    "answer": "on",
+    "hardness": "Medium",
+    "translate": "دوشنبه مشغول هستم.",
+    "wordBank": [
+      "in",
+      "on",
+      "under"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "Your pen dropped _ the table",
+    "answer": "under",
+    "hardness": "Easy",
+    "translate": "قلم شما زیر میز افتاد.",
+    "wordBank": [
+      "under",
+      "be",
+      "is"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "She gave me _ apple",
+    "answer": "an",
+    "hardness": "Easy",
+    "translate": "او به من یک سیب داد.",
+    "wordBank": [
+      "a",
+      "five",
+      "an",
+      "will"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "answer": "about",
+    "explanition": {
+      "title": "حروف ربط",
+      "des": "حروف ربط، کلمات کوتاهی استند که روابطی مانند زمان، مکان و بحث را نشان میدهند\nو یا کلماتی که رابطه بین دو کلمه را نشان میدهند\n",
+      "types": "on, in, about, at, front, to, ...."
+    },
+    "sentence": "Which word is a preposition?",
+    "options": [
+      "learn",
+      "but",
+      "about",
+      "how"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "direction": "rtl",
+    "sentence": "کدام گزینه یک اسم خاص و یا معین است؟",
+    "options": [
+      "An orange",
+      "A car",
+      "The car"
+    ],
+    "answer": "The car",
+    "explanition": {
+      "title": "حروف تعریف",
+      "des": "حروف تعریف حروفی اند که قبل از اسم آمده، معین و نا معین بودن اسم را نشان می دهند\nحرف The به چیزی خاص و معین اشاره میکند.\nحروف A و An به چیزی عام و نامعین اشاره میکنند.",
+      "types": "The: The cat\nA: A cat\nAn: An apple"
+    },
+    "type": "selectCorrect",
+    "title": "Select correct",
+    "id": 12
+  }
+]

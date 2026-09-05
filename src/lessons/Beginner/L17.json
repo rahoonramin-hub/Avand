@@ -1,6 +1,6 @@
 [
   {
-    "sentence": "Cars have legs.",
+    "sentence": "An egg comes from a cow.",
     "answer": false,
     "type": "trueFalse",
     "direction": "ltr",
@@ -12,8 +12,8 @@
     "id": 1
   },
   {
-    "sentence": "Cats can read books.",
-    "answer": false,
+    "sentence": "A cow gives milk.",
+    "answer": true,
     "type": "trueFalse",
     "direction": "ltr",
     "title": "True or False",
@@ -24,7 +24,7 @@
     "id": 2
   },
   {
-    "sentence": "There are 7 days in a week.",
+    "sentence": "A chair is for sitting.",
     "answer": true,
     "type": "trueFalse",
     "direction": "ltr",
@@ -37,23 +37,19 @@
   },
   {
     "answer": [
-      "simple",
-      "cont",
-      "perfect",
-      "perfect cont"
+      "i",
+      "you",
+      "he",
+      "she",
+      "it",
+      "we",
+      "they"
     ],
-    "synonyms": {
-      "continouos": "cont",
-      "continuous": "cont",
-      "progressive": "cont",
-      "perfect continouos": "perfect cont",
-      "perfect progressive": "perfect cont"
-    },
-    "sentence": "۴ زمان گذشته را بنویسید.",
+    "sentence": "ضمایر فاعلی در زبان انگلیسی را بنویسید. (حداقل ۵ ضمیر)",
     "explanition": {
-      "title": "زمان گذشته",
-      "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
-      "types": "simple\n continuous\n perfect\n perfect continuous"
+      "title": "Subject pronouns",
+      "des": "ضمایر فاعلی نشان می‌دهند چه کسی کار را انجام داده است: \n",
+      "types": "I, You, We, They, He, She, It \n من، شما، ما، آنها، او مرد،زن، حیوان"
     },
     "type": "nameTypes",
     "direction": "ltr",
@@ -61,18 +57,17 @@
     "id": 4
   },
   {
-    "sentence": "I have a red pen.",
+    "sentence": "I like to read.",
     "answer": [
-      "من یک قلم سرخ دارم",
-      "من قلم سرخ دارم"
+      "من خواندن دوست دارم"
     ],
     "wordBank": [
       "من",
-      "یک",
-      "قلم",
-      "سرخ",
+      "خواندن",
+      "دوست",
       "دارم",
-      "داشتم"
+      "نوشتن",
+      "گوش کردن"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -80,17 +75,16 @@
     "id": 5
   },
   {
-    "sentence": "The water is cold.",
+    "sentence": "They are coming.",
     "answer": [
-      "آب سرد است"
+      "آنها می‌آیند"
     ],
     "wordBank": [
-      "آب",
-      "سرد",
-      "است",
-      "گرم",
-      "شیر",
-      "جالب"
+      "آنها",
+      "می‌آیند",
+      "میروند",
+      "اینجا",
+      "آنجا"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -98,22 +92,40 @@
     "id": 6
   },
   {
-    "sentence": "He works hard.",
+    "sentence": "Is this your bag?",
     "answer": [
-      "او سخت کار میکند"
+      "آیا این کیف تو است؟",
+      "این کیف تو است؟"
     ],
     "wordBank": [
-      "او",
-      "سخت",
-      "کار",
-      "میکند",
-      "آسان",
-      "کم"
+      "آیا",
+      "این",
+      "کیف",
+      "تو",
+      "است؟",
+      "من",
+      "او"
     ],
     "type": "translate",
     "direction": "ltr",
     "title": "Translate this sentence",
     "id": 7
+  },
+  {
+    "sentence": "I _ tired because I worked hard.",
+    "answer": "am",
+    "hardness": "Hard",
+    "translate": "من خسته هستم چون سخت کار کردم.",
+    "wordBank": [
+      "am",
+      "is",
+      "are",
+      "feeling"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
   },
   {
     "sentence": "She _ the answer to the question.",
@@ -129,7 +141,7 @@
     "type": "fillBlank",
     "direction": "ltr",
     "title": "Fill the blank",
-    "id": 8
+    "id": 9
   },
   {
     "sentence": "They _ arrive on time.",
@@ -145,32 +157,16 @@
     "type": "fillBlank",
     "direction": "ltr",
     "title": "Fill the blank",
-    "id": 9
-  },
-  {
-    "sentence": "I _ a letter to my friend last night.",
-    "answer": "wrote",
-    "hardness": "Medium",
-    "translate": "دیشب به دوستم نامه نوشتم.",
-    "wordBank": [
-      "write",
-      "wrote",
-      "written",
-      "sending"
-    ],
-    "type": "fillBlank",
-    "direction": "ltr",
-    "title": "Fill the blank",
     "id": 10
   },
   {
-    "answer": "verb",
-    "sentence": "which word shows an action?",
+    "answer": "friday",
+    "sentence": "which day is the weekend?",
     "options": [
-      "noun",
-      "verb",
-      "adjective",
-      "adverb"
+      "monday",
+      "tuesday",
+      "friday",
+      "wednesday"
     ],
     "type": "selectCorrect",
     "direction": "ltr",
@@ -178,13 +174,13 @@
     "id": 11
   },
   {
-    "answer": "adjective",
-    "sentence": "which word describes a noun?",
+    "answer": "cat",
+    "sentence": "which animal says meeoowww?",
     "options": [
-      "verb",
-      "adverb",
-      "adjective",
-      "preposition"
+      "dog",
+      "cat",
+      "cow",
+      "duck"
     ],
     "type": "selectCorrect",
     "direction": "ltr",

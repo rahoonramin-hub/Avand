@@ -1,0 +1,175 @@
+[
+  {
+    "sentence": "A phone can make calls.",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "An egg comes from a cow.",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "title": "Question",
+    "answer": [
+      "pronoun"
+    ],
+    "synonyms": {
+      "pronuon": "pronoun",
+      "prenuon": "pronoun"
+    },
+    "sentence": "چه چیزی جایگزین اسم میشود و از تکرار آن جلوگیری میکند؟",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "id": 3
+  },
+  {
+    "title": "Question",
+    "answer": [
+      "Adverb"
+    ],
+    "synonyms": {
+      "averb": "Adverb",
+      "قید": "Adverb",
+      "an adverb": "Adverb"
+    },
+    "sentence": "چه چیزی یک فعل را توصیف میکند؟",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "id": 4
+  },
+  {
+    "sentence": "How much English doh you know?",
+    "answer": [
+      "چقدر انگلیسی بلد هستی"
+    ],
+    "wordBank": [
+      "هستی؟",
+      "بلد",
+      "انگلیسی",
+      "چقدر"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "The closest star to earth is Sun",
+    "answer": [
+      "نزدیکترین ستاره به زمین آفتاب است"
+    ],
+    "wordBank": [
+      "آفتاب",
+      "است",
+      "به زمین",
+      "ستاره",
+      "نزدیکترین"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "Why are you so bored?",
+    "answer": [
+      "چرا اینقدر خسته هستی"
+    ],
+    "wordBank": [
+      "؟",
+      "هستی",
+      "خسته",
+      "اینقدر",
+      "چرا"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "By the time we arrived, the movie _ already started.",
+    "answer": "had",
+    "hardness": "Hell",
+    "translate": "تا زمانی که رسیدیم، فیلم شروع شده بود.",
+    "wordBank": [
+      "were",
+      "had",
+      "been",
+      "have"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "Where is _ brother",
+    "answer": "her",
+    "hardness": "Medium",
+    "translate": "برادر او کجاست؟",
+    "wordBank": [
+      "she",
+      "her"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "I helped _ to learn English",
+    "answer": "him",
+    "hardness": "Medium",
+    "translate": "من او را کمک کردم تا انگلیسی یاد بگیرد.",
+    "wordBank": [
+      "He",
+      "him"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "answer": "Moon",
+    "sentence": "What can you usually see at night?",
+    "options": [
+      "Moon",
+      "Sun",
+      "Rainbow"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "answer": "Ice cream",
+    "sentence": "Which food is cold?",
+    "options": [
+      "Soup",
+      "Ice cream",
+      "Rice"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 12
+  }
+]

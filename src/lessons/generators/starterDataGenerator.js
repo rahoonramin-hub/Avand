@@ -108,7 +108,7 @@ const fillBlankPool = [
     sentence: 'I _ a Super Arian.',
     answer: 'have',
     hardness: 'Easy',
-    translate: 'من یک موتر سرخ دارم.',
+    translate: 'من یک سوپر آرین دارم.',
     wordBank: ['have', 'has', 'am'],
   },
   {
@@ -123,7 +123,7 @@ const fillBlankPool = [
     answer: 'on',
     hardness: 'Easy',
     translate: 'کتاب روی میز است.',
-    wordBank: ['on', 'in', 'under'],
+    wordBank: ['on', 'inside', 'flying'],
   },
   {
     sentence: 'I _ milk every day.',
@@ -215,76 +215,73 @@ function getFromPool(number, pool, startIndex) {
 // =================== تولید داده‌ها ===================
 const starterData = {};
 
-// تنظیم چرخه برای ۵ درس
+// شمارنده‌های سراسری: به‌جای پرش بر اساس id، پشت‌سرهم جلو می‌روند
+// تا وقتی همه‌ی آیتم‌های pool مصرف نشده، هیچ آیتمی تکرار نمی‌شود
+let tfCursor = 0;
+let trCursor = 0;
+let fbCursor = 0;
+let scCursor = 0;
+
 for (let id = 1; id <= 5; id++) {
   const lessons = [];
-
-  const tfStart = (id * 3) % trueFalsePool.length;
-  const trStart = (id * 5) % translatePool.length;
-  const fbStart = (id * 7) % fillBlankPool.length;
-  const scStart = (id * 11) % selectCorrectPool.length;
-
-  const tfItems = getFromPool(3, trueFalsePool, tfStart); // ۳ مرحله
-  const trItems = getFromPool(2, translatePool, trStart); // ۲ مرحله
-  const fbItems = getFromPool(3, fillBlankPool, fbStart); // ۳ مرحله
-  const scItems = getFromPool(2, selectCorrectPool, scStart); // ۲ مرحله
+//نعداد درس ها
+//10
+  const tfItems = getFromPool(3, trueFalsePool, tfCursor); // ۳ مرحله
+  tfCursor += 3;
+  const trItems = getFromPool(2, translatePool, trCursor); // ۲ مرحله
+  trCursor += 2;
+  const fbItems = getFromPool(3, fillBlankPool, fbCursor); // ۳ مرحله
+  fbCursor += 3;
+  const scItems = getFromPool(2, selectCorrectPool, scCursor); // ۲ مرحله
+  scCursor += 2;
 
   let lessonId = 1;
 
   // ۱. trueFalse
   tfItems.forEach(item => {
     lessons.push({
+      ...item, 
       type: 'trueFalse',
-      answer: item.answer,
-      direction: 'ltr',
-      sentence: item.sentence,
-      title: 'True or False',
+      direction: item.direction || 'ltr', 
+      title: item.title || 'True or False',
       options: ['true', 'false'],
       id: lessonId++,
     });
   });
-
-  // ۲. translate
+  
+  // ۳. translate
   trItems.forEach(item => {
     lessons.push({
+      ...item,
       type: 'translate',
-      answer: item.answer,
-      direction: 'rtl',
-      sentence: item.sentence,
-      title: 'Translate this sentence',
-      wordBank: item.wordBank,
+      direction: item.direction || 'ltr', 
+      title: item.title || 'Translate this sentence',
       id: lessonId++,
     });
   });
-
-  // ۳. fillBlank
+  
+  // ۴. fillBlank
   fbItems.forEach(item => {
     lessons.push({
+      ...item,
       type: 'fillBlank',
-      hardness: item.hardness,
-      answer: item.answer,
-      direction: 'ltr',
-      sentence: item.sentence,
-      translate: item.translate,
-      title: 'Fill the blank',
-      wordBank: item.wordBank,
+      direction: item.direction || 'ltr',
+      title: item.title || 'Fill the blank',
       id: lessonId++,
     });
   });
-
-  // ۴. selectCorrect
+  
+  // ۵. selectCorrect
   scItems.forEach(item => {
     lessons.push({
+      ...item,
       type: 'selectCorrect',
-      answer: item.answer,
-      direction: 'ltr',
-      sentence: item.sentence,
-      title: 'Select correct',
-      options: item.options,
+      direction: item.direction || 'ltr',
+      title: item.title || 'Select correct',
       id: lessonId++,
     });
   });
-
+  
   starterData[`L${id}`] = lessons;
 }
 

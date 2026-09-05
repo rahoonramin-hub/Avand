@@ -1,6 +1,6 @@
 [
   {
-    "sentence": "A car is a vehicle.",
+    "sentence": "Eyes are for seeing.",
     "answer": true,
     "type": "trueFalse",
     "direction": "ltr",
@@ -12,8 +12,8 @@
     "id": 1
   },
   {
-    "sentence": "کلمه He سوم شخص مفرد است",
-    "answer": true,
+    "sentence": "A bed is for cooking.",
+    "answer": false,
     "type": "trueFalse",
     "direction": "ltr",
     "title": "True or False",
@@ -24,7 +24,7 @@
     "id": 2
   },
   {
-    "sentence": "A phone can make calls.",
+    "sentence": "An orange is a fruit.",
     "answer": true,
     "type": "trueFalse",
     "direction": "ltr",
@@ -37,42 +37,41 @@
   },
   {
     "answer": [
-      "simple",
-      "cont",
-      "perfect",
-      "perfect cont"
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday",
+      "saturday",
+      "sunday"
     ],
     "synonyms": {
-      "continouos": "cont",
-      "continuous": "cont",
-      "progressive": "cont",
-      "perfect continouos": "perfect cont",
-      "perfect progressive": "perfect cont"
+      "mon": "monday",
+      "tue": "tuesday",
+      "wed": "wednesday",
+      "thu": "thursday",
+      "fri": "friday",
+      "sat": "saturday",
+      "sun": "sunday"
     },
-    "sentence": "۴ زمان گذشته را بنویسید.",
-    "explanition": {
-      "title": "زمان گذشته",
-      "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
-      "types": "simple\n continuous\n perfect\n perfect continuous"
-    },
+    "sentence": "روزهای هفته را بنویسید. (حداقل ۵ روز)",
     "type": "nameTypes",
     "direction": "ltr",
     "title": "Name types",
     "id": 4
   },
   {
-    "sentence": "She is a teacher.",
+    "sentence": "She sings well.",
     "answer": [
-      "او یک معلم است",
-      "او معلم است"
+      "او خوب میخواند"
     ],
     "wordBank": [
       "او",
-      "یک",
-      "معلم",
-      "است",
-      "شاگرد",
-      "مرد"
+      "خوب",
+      "میخواند",
+      "بد",
+      "بلند",
+      "آرام"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -80,17 +79,18 @@
     "id": 5
   },
   {
-    "sentence": "What is your name?",
+    "sentence": "We live in Kabul.",
     "answer": [
-      "اسم شما چیست؟",
-      "نام شما چیست؟"
+      "ما در کابل زندگی میکنیم"
     ],
     "wordBank": [
-      "اسم",
-      "چیست؟",
-      "شما",
-      "نام",
-      "کجا"
+      "ما",
+      "در",
+      "کابل",
+      "زندگی",
+      "میکنیم",
+      "سفر میکنیم",
+      "زیبا است"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -98,17 +98,18 @@
     "id": 6
   },
   {
-    "sentence": "My name is Ali.",
+    "sentence": "I have a red pen.",
     "answer": [
-      "اسم من علی است"
+      "من یک قلم سرخ دارم",
+      "من قلم سرخ دارم"
     ],
     "wordBank": [
-      "اسم",
       "من",
-      "علی",
-      "است",
-      "تو",
-      "شاگرد"
+      "یک",
+      "قلم",
+      "سرخ",
+      "دارم",
+      "داشتم"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -116,14 +117,15 @@
     "id": 7
   },
   {
-    "sentence": "I wish I _ more time to travel.",
-    "answer": "had",
+    "sentence": "We _ to the museum last week.",
+    "answer": "went",
     "hardness": "Hard",
-    "translate": "کاش زمان بیشتری برای سفر داشتم.",
+    "translate": "ما هفته پیش به موزه رفتیم.",
     "wordBank": [
-      "have",
-      "had",
-      "can have"
+      "go",
+      "went",
+      "gone",
+      "travel"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -131,15 +133,15 @@
     "id": 8
   },
   {
-    "sentence": "If it rains tomorrow, we _ at home.",
-    "answer": "will stay",
-    "hardness": "Hell",
-    "translate": "اگر فردا باران ببارد، خانه می‌مانیم.",
+    "sentence": "He _ breakfast at 8 am.",
+    "answer": "has",
+    "hardness": "Easy",
+    "translate": "او ساعت ۸ صبح صبحانه می‌خورد.",
     "wordBank": [
-      "went",
-      "will stay",
-      "stayed",
-      "never"
+      "have",
+      "has",
+      "drink",
+      "week"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -147,15 +149,16 @@
     "id": 9
   },
   {
-    "sentence": "I _ a student.",
-    "answer": "am",
+    "sentence": "This is _ book.",
+    "answer": "my",
     "hardness": "Easy",
-    "translate": "من یک شاگرد هستم.",
+    "translate": "این کتاب من است.",
     "wordBank": [
-      "am",
-      "is",
-      "are",
-      "be"
+      "my",
+      "I",
+      "me",
+      "mine",
+      "car"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -163,13 +166,13 @@
     "id": 10
   },
   {
-    "answer": "describes a noun",
-    "sentence": "what does an adjective do ?",
+    "answer": "present continuous",
+    "sentence": "which tense do we use for actions happening right now?",
     "options": [
-      "avoid repetition",
-      "describes a noun",
-      "describes a verb",
-      "the question is wrong"
+      "present simple",
+      "past simple",
+      "future simple",
+      "present continuous"
     ],
     "type": "selectCorrect",
     "direction": "ltr",
@@ -177,16 +180,20 @@
     "id": 11
   },
   {
-    "answer": "Black",
-    "direction": "rtl",
-    "sentence": "کدام کلمه یک صفت است؟",
+    "answer": "subject",
+    "explanition": {
+      "title": "کننده کار یا فاعل",
+      "des": "فاعل کننده کار را گویند. و گاهی اوقات فاعل چیزیست که در مورد آن بحث میشود، مثلا:\nThe cat is black\nدر این جمله گربه کاری را انجام نمیدهد ولی باز هم فاعل جمله است."
+    },
+    "sentence": "in the sentence \"Ali eats an apple\", what is \"Ali\"?",
     "options": [
-      "You",
-      "Make",
-      "Black",
-      "make more formal"
+      "verb",
+      "object",
+      "subject",
+      "adjective"
     ],
     "type": "selectCorrect",
+    "direction": "ltr",
     "title": "Select correct",
     "id": 12
   }

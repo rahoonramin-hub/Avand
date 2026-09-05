@@ -1,0 +1,142 @@
+[
+  {
+    "sentence": "Fire is cold.",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "An apple is a fruit.",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "sentence": "A car can fly.",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 3
+  },
+  {
+    "sentence": "I am not your mother.",
+    "answer": [
+      "من مادر تو نیستم"
+    ],
+    "wordBank": [
+      "من",
+      "مادر",
+      "تو",
+      "نیستم",
+      "خانه"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 4
+  },
+  {
+    "sentence": "today is sunny.",
+    "answer": [
+      "امروز آفتابی است"
+    ],
+    "wordBank": [
+      "امروز",
+      "آفتابی",
+      "است",
+      "دیروز"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "We _ to school.",
+    "answer": "go",
+    "hardness": "Easy",
+    "translate": "ما به مکتب می‌رویم.",
+    "wordBank": [
+      "go",
+      "goes",
+      "going"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 6
+  },
+  {
+    "sentence": "I _ a Super Arian.",
+    "answer": "have",
+    "hardness": "Easy",
+    "translate": "من یک سوپر آرین دارم.",
+    "wordBank": [
+      "have",
+      "has",
+      "am"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 7
+  },
+  {
+    "sentence": "He _ a big dog.",
+    "answer": "has",
+    "hardness": "Easy",
+    "translate": "او یک سگ بزرگ دارد.",
+    "wordBank": [
+      "have",
+      "has",
+      "is"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "answer": "cat",
+    "sentence": "Which animal says meooww?",
+    "options": [
+      "dog",
+      "cat",
+      "cow"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 9
+  },
+  {
+    "answer": "water",
+    "sentence": "What do we drink when we are thirsty?",
+    "options": [
+      "water",
+      "bread",
+      "stone"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 10
+  }
+]

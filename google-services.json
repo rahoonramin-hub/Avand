@@ -14,14 +14,6 @@
       },
       "oauth_client": [
         {
-          "client_id": "141199828442-1r9rsj55eh2am72apcf6bsh3244e08pt.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.avand",
-            "certificate_hash": "891a4bac079e0f0e1bea8a7ca76aff6678036c37"
-          }
-        },
-        {
           "client_id": "141199828442-lc7q14te61llkugour5013ehs0hg2n84.apps.googleusercontent.com",
           "client_type": 3
         }

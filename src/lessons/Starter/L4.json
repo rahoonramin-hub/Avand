@@ -1,0 +1,142 @@
+[
+  {
+    "sentence": "Bananas are yellow.",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "We see with our eyes.",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "sentence": "Sugar is sweet.",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 3
+  },
+  {
+    "sentence": "My name is Ali.",
+    "answer": [
+      "نام من علی است"
+    ],
+    "wordBank": [
+      "نام",
+      "من",
+      "علی",
+      "است",
+      "تو"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 4
+  },
+  {
+    "sentence": "We are friends.",
+    "answer": [
+      "ما دوست هستیم"
+    ],
+    "wordBank": [
+      "ما",
+      "دوست",
+      "هستیم",
+      "برادر"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "We _ happy.",
+    "answer": "are",
+    "hardness": "Easy",
+    "translate": "ما حالا خوشحال هستیم.",
+    "wordBank": [
+      "am",
+      "is",
+      "are"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 6
+  },
+  {
+    "sentence": "I _ a student.",
+    "answer": "am",
+    "hardness": "Easy",
+    "translate": "من یک شاگرد هستم.",
+    "wordBank": [
+      "am",
+      "is",
+      "are"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 7
+  },
+  {
+    "sentence": "She _ a teacher.",
+    "answer": "is",
+    "hardness": "Easy",
+    "translate": "او یک معلم است.",
+    "wordBank": [
+      "am",
+      "is",
+      "are"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "answer": "a fruit",
+    "sentence": "what do you want to eat?",
+    "options": [
+      "teacher",
+      "a fruit",
+      "pen"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 9
+  },
+  {
+    "answer": "Friday",
+    "sentence": "Which day is off?",
+    "options": [
+      "Monday",
+      "Friday",
+      "Sunday"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 10
+  }
+]

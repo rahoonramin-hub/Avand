@@ -1,0 +1,202 @@
+[
+  {
+    "sentence": "A teacher fixes cars.",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "A kitchen is for sleeping.",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "title": "Question",
+    "answer": [
+      "Adjective"
+    ],
+    "synonyms": {
+      "adj": "Adjective",
+      "adjec": "Adjective",
+      "صفت": "Adjective",
+      "adjectie": "Adjective"
+    },
+    "sentence": "What does describe a noun?",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "id": 3
+  },
+  {
+    "explanition": {
+      "title": "انواع قید",
+      "des": "قید در زبان انگلیسی به 5 نوع است:\n",
+      "types": "manner: حالت را بیان میکند\nplace: مکان\ntime: زمان\ndegree: شدت\nfrequency: دوره"
+    },
+    "answer": [
+      "manner",
+      "time",
+      "place",
+      "degree",
+      "frequency"
+    ],
+    "synonyms": {
+      "maner": "manner",
+      "حالت": "manner",
+      "تکرار": "frequency",
+      "frequncy": "frequency",
+      "ferequncy": "frequency",
+      "frequnsy": "frequency",
+      "مقدار": "degree",
+      "degri": "degree",
+      "digree": "degree",
+      "deegre": "degree"
+    },
+    "sentence": "Name the main types of adverbs.",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 4
+  },
+  {
+    "sentence": "everyone was happy, except me.",
+    "answer": [
+      "همه خوشحال بودند غیر از من"
+    ],
+    "wordBank": [
+      "چرا",
+      "از من",
+      "غیر",
+      "بودند",
+      "خوشحال",
+      "همه"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "تمام افرادی که این سفر را شروع کردند، مرده اند.",
+    "answer": [
+      "all the people who started this journey are dead"
+    ],
+    "direction": "rtl",
+    "wordBank": [
+      "dead",
+      "are",
+      "this journey",
+      "started",
+      "who",
+      "people",
+      "the",
+      "all"
+    ],
+    "type": "translate",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "you can't tell him the secret.",
+    "answer": [
+      "تو نمیتوانی راز را به او بگویی"
+    ],
+    "wordBank": [
+      "وابسته",
+      "بگویی",
+      "او",
+      "به",
+      "راز را",
+      "نمیتوانی",
+      "تو"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "I was _ Herat when you called me.",
+    "answer": "in",
+    "hardness": "Medium",
+    "translate": "وقتی به من زنگ زدی من در هرات بودم.",
+    "wordBank": [
+      "in",
+      "on",
+      "to"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "If I _ enough time, I would learn another language.",
+    "answer": "had",
+    "hardness": "Hard",
+    "translate": "اگر زمان کافی میداشتم، زبان جدیدی را یاد میگرفتم",
+    "wordBank": [
+      "would",
+      "could",
+      "had"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "By the time we arrived, the movie _ already started.",
+    "answer": "had",
+    "hardness": "Hell",
+    "translate": "تا زمانی که رسیدیم، فیلم شروع شده بود.",
+    "wordBank": [
+      "were",
+      "had",
+      "been",
+      "have"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "answer": "I am coming",
+    "sentence": "Select the correct sentence.",
+    "options": [
+      "do you coming?",
+      "he are looking",
+      "I am coming"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "answer": "12",
+    "sentence": "How many months do a year have?",
+    "options": [
+      "14",
+      "10",
+      "12"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 12
+  }
+]

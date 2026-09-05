@@ -1,10 +1,10 @@
 {
   "L1": [
     {
+      "sentence": "The sun is hot.",
+      "answer": true,
       "type": "trueFalse",
-      "answer": false,
       "direction": "ltr",
-      "sentence": "Fire is cold.",
       "title": "True or False",
       "options": [
         "true",
@@ -13,10 +13,10 @@
       "id": 1
     },
     {
+      "sentence": "A cat is a human.",
+      "answer": false,
       "type": "trueFalse",
-      "answer": true,
       "direction": "ltr",
-      "sentence": "An apple is a fruit.",
       "title": "True or False",
       "options": [
         "true",
@@ -25,10 +25,10 @@
       "id": 2
     },
     {
+      "sentence": "Water means آب.",
+      "answer": true,
       "type": "trueFalse",
-      "answer": false,
       "direction": "ltr",
-      "sentence": "A car can fly.",
       "title": "True or False",
       "options": [
         "true",
@@ -37,262 +37,119 @@
       "id": 3
     },
     {
-      "type": "translate",
+      "sentence": "I am a student.",
       "answer": [
-        "اسمت چیه؟ بچیم",
-        "بچیم اسمت چیه؟"
+        "من یک شاگرد هستم",
+        "من شاگرد هستم"
       ],
-      "direction": "rtl",
-      "sentence": "What is your name? buddy.",
-      "title": "Translate this sentence",
       "wordBank": [
-        "اسمت",
-        "چیه؟",
-        "کجا",
-        "بچیم"
+        "من",
+        "یک",
+        "شاگرد",
+        "هستم",
+        "معلم"
       ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
       "id": 4
     },
     {
-      "type": "translate",
+      "sentence": "This is a car.",
       "answer": [
-        "نام من علی است"
+        "این یک موتر است",
+        "این موتر است"
       ],
-      "direction": "rtl",
-      "sentence": "My name is Ali.",
-      "title": "Translate this sentence",
       "wordBank": [
-        "نام",
-        "من",
-        "علی",
+        "این",
+        "یک",
+        "موتر",
         "است",
-        "تو"
+        "کتاب"
       ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
       "id": 5
     },
     {
-      "type": "fillBlank",
+      "sentence": "I _ a student.",
+      "answer": "am",
       "hardness": "Easy",
-      "answer": "drink",
-      "direction": "ltr",
-      "sentence": "I _ milk every day.",
-      "translate": "من هر روز شیر می‌نوشم.",
-      "title": "Fill the blank",
-      "wordBank": [
-        "drink",
-        "drinks",
-        "eat"
-      ],
-      "id": 6
-    },
-    {
-      "type": "fillBlank",
-      "hardness": "Easy",
-      "answer": "reads",
-      "direction": "ltr",
-      "sentence": "She _ a new book.",
-      "translate": "او یک کتاب جدید می‌خواند.",
-      "title": "Fill the blank",
-      "wordBank": [
-        "read",
-        "reads",
-        "reading"
-      ],
-      "id": 7
-    },
-    {
-      "type": "fillBlank",
-      "hardness": "Easy",
-      "answer": "are",
-      "direction": "ltr",
-      "sentence": "We _ happy.",
-      "translate": "ما حالا خوشحال هستیم.",
-      "title": "Fill the blank",
+      "translate": "من یک شاگرد هستم.",
       "wordBank": [
         "am",
         "is",
         "are"
       ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 6
+    },
+    {
+      "sentence": "She _ a teacher.",
+      "answer": "is",
+      "hardness": "Easy",
+      "translate": "او یک معلم است.",
+      "wordBank": [
+        "am",
+        "is",
+        "are"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 7
+    },
+    {
+      "sentence": "They _ happy.",
+      "answer": "are",
+      "hardness": "Easy",
+      "translate": "آن‌ها خوشحال هستند.",
+      "wordBank": [
+        "am",
+        "is",
+        "are"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
       "id": 8
     },
     {
+      "answer": "blue",
+      "sentence": "What color is the sky?",
+      "options": [
+        "red",
+        "blue",
+        "green"
+      ],
       "type": "selectCorrect",
-      "answer": "school",
       "direction": "ltr",
-      "sentence": "Where do we go to study?",
       "title": "Select correct",
+      "id": 9
+    },
+    {
+      "answer": "school",
+      "sentence": "Where do we go to study?",
       "options": [
         "hospital",
         "school",
         "home"
       ],
-      "id": 9
-    },
-    {
       "type": "selectCorrect",
-      "answer": "cat",
       "direction": "ltr",
-      "sentence": "Which animal says meooww?",
       "title": "Select correct",
-      "options": [
-        "dog",
-        "cat",
-        "cow"
-      ],
       "id": 10
     }
   ],
   "L2": [
     {
-      "type": "trueFalse",
-      "answer": true,
-      "direction": "ltr",
-      "sentence": "The sky is blue.",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 1
-    },
-    {
-      "type": "trueFalse",
-      "answer": true,
-      "direction": "ltr",
-      "sentence": "Ice is cold.",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 2
-    },
-    {
-      "type": "trueFalse",
+      "sentence": "Fire is cold.",
       "answer": false,
-      "direction": "ltr",
-      "sentence": "Snow is black.",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 3
-    },
-    {
-      "type": "translate",
-      "answer": [
-        "من یک شاگرد هستم",
-        "من شاگرد هستم"
-      ],
-      "direction": "rtl",
-      "sentence": "I am a student.",
-      "title": "Translate this sentence",
-      "wordBank": [
-        "من",
-        "یک",
-        "شاگرد",
-        "هستم",
-        "معلم"
-      ],
-      "id": 4
-    },
-    {
-      "type": "translate",
-      "answer": [
-        "این یک موتر است",
-        "این موتر است"
-      ],
-      "direction": "rtl",
-      "sentence": "This is a car.",
-      "title": "Translate this sentence",
-      "wordBank": [
-        "این",
-        "یک",
-        "موتر",
-        "است",
-        "کتاب"
-      ],
-      "id": 5
-    },
-    {
-      "type": "fillBlank",
-      "hardness": "Easy",
-      "answer": "have",
-      "direction": "ltr",
-      "sentence": "I _ a Super Arian.",
-      "translate": "من یک موتر سرخ دارم.",
-      "title": "Fill the blank",
-      "wordBank": [
-        "have",
-        "has",
-        "am"
-      ],
-      "id": 6
-    },
-    {
-      "type": "fillBlank",
-      "hardness": "Easy",
-      "answer": "has",
-      "direction": "ltr",
-      "sentence": "He _ a big dog.",
-      "translate": "او یک سگ بزرگ دارد.",
-      "title": "Fill the blank",
-      "wordBank": [
-        "have",
-        "has",
-        "is"
-      ],
-      "id": 7
-    },
-    {
-      "type": "fillBlank",
-      "hardness": "Easy",
-      "answer": "on",
-      "direction": "ltr",
-      "sentence": "The book is _ the table.",
-      "translate": "کتاب روی میز است.",
-      "title": "Fill the blank",
-      "wordBank": [
-        "on",
-        "in",
-        "under"
-      ],
-      "id": 8
-    },
-    {
-      "type": "selectCorrect",
-      "answer": "cat",
-      "direction": "ltr",
-      "sentence": "Which animal says meooww?",
-      "title": "Select correct",
-      "options": [
-        "dog",
-        "cat",
-        "cow"
-      ],
-      "id": 9
-    },
-    {
-      "type": "selectCorrect",
-      "answer": "water",
-      "direction": "ltr",
-      "sentence": "What do we drink when we are thirsty?",
-      "title": "Select correct",
-      "options": [
-        "water",
-        "bread",
-        "stone"
-      ],
-      "id": 10
-    }
-  ],
-  "L3": [
-    {
       "type": "trueFalse",
-      "answer": true,
       "direction": "ltr",
-      "sentence": "Bananas are yellow.",
       "title": "True or False",
       "options": [
         "true",
@@ -301,10 +158,10 @@
       "id": 1
     },
     {
-      "type": "trueFalse",
+      "sentence": "An apple is a fruit.",
       "answer": true,
+      "type": "trueFalse",
       "direction": "ltr",
-      "sentence": "We see with our eyes.",
       "title": "True or False",
       "options": [
         "true",
@@ -313,10 +170,10 @@
       "id": 2
     },
     {
+      "sentence": "A car can fly.",
+      "answer": false,
       "type": "trueFalse",
-      "answer": true,
       "direction": "ltr",
-      "sentence": "Sugar is sweet.",
       "title": "True or False",
       "options": [
         "true",
@@ -325,117 +182,116 @@
       "id": 3
     },
     {
-      "type": "translate",
+      "sentence": "I am not your mother.",
       "answer": [
-        "اسمت چیه؟ بچیم",
-        "بچیم اسمت چیه؟"
+        "من مادر تو نیستم"
       ],
-      "direction": "rtl",
-      "sentence": "What is your name? buddy.",
-      "title": "Translate this sentence",
       "wordBank": [
-        "اسمت",
-        "چیه؟",
-        "کجا",
-        "بچیم"
+        "من",
+        "مادر",
+        "تو",
+        "نیستم",
+        "خانه"
       ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
       "id": 4
     },
     {
-      "type": "translate",
+      "sentence": "today is sunny.",
       "answer": [
-        "نام من علی است"
+        "امروز آفتابی است"
       ],
-      "direction": "rtl",
-      "sentence": "My name is Ali.",
-      "title": "Translate this sentence",
       "wordBank": [
-        "نام",
-        "من",
-        "علی",
+        "امروز",
+        "آفتابی",
         "است",
-        "تو"
+        "دیروز"
       ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
       "id": 5
     },
     {
-      "type": "fillBlank",
-      "hardness": "Easy",
-      "answer": "is",
-      "direction": "ltr",
-      "sentence": "She _ a teacher.",
-      "translate": "او یک معلم است.",
-      "title": "Fill the blank",
-      "wordBank": [
-        "am",
-        "is",
-        "are"
-      ],
-      "id": 6
-    },
-    {
-      "type": "fillBlank",
-      "hardness": "Easy",
-      "answer": "are",
-      "direction": "ltr",
-      "sentence": "They _ happy.",
-      "translate": "آن‌ها خوشحال هستند.",
-      "title": "Fill the blank",
-      "wordBank": [
-        "am",
-        "is",
-        "are"
-      ],
-      "id": 7
-    },
-    {
-      "type": "fillBlank",
-      "hardness": "Easy",
-      "answer": "go",
-      "direction": "ltr",
       "sentence": "We _ to school.",
+      "answer": "go",
+      "hardness": "Easy",
       "translate": "ما به مکتب می‌رویم.",
-      "title": "Fill the blank",
       "wordBank": [
         "go",
         "goes",
         "going"
       ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 6
+    },
+    {
+      "sentence": "I _ a Super Arian.",
+      "answer": "have",
+      "hardness": "Easy",
+      "translate": "من یک سوپر آرین دارم.",
+      "wordBank": [
+        "have",
+        "has",
+        "am"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 7
+    },
+    {
+      "sentence": "He _ a big dog.",
+      "answer": "has",
+      "hardness": "Easy",
+      "translate": "او یک سگ بزرگ دارد.",
+      "wordBank": [
+        "have",
+        "has",
+        "is"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
       "id": 8
     },
     {
+      "answer": "cat",
+      "sentence": "Which animal says meooww?",
+      "options": [
+        "dog",
+        "cat",
+        "cow"
+      ],
       "type": "selectCorrect",
-      "answer": "water",
       "direction": "ltr",
-      "sentence": "What do we drink when we are thirsty?",
       "title": "Select correct",
+      "id": 9
+    },
+    {
+      "answer": "water",
+      "sentence": "What do we drink when we are thirsty?",
       "options": [
         "water",
         "bread",
         "stone"
       ],
-      "id": 9
-    },
-    {
       "type": "selectCorrect",
-      "answer": "Football",
       "direction": "ltr",
-      "sentence": "Which sport has one ball?",
       "title": "Select correct",
-      "options": [
-        "Kung fu",
-        "Karate",
-        "Football"
-      ],
       "id": 10
     }
   ],
-  "L4": [
+  "L3": [
     {
+      "sentence": "The sky is blue.",
+      "answer": true,
       "type": "trueFalse",
-      "answer": false,
       "direction": "ltr",
-      "sentence": "Milk is green.",
       "title": "True or False",
       "options": [
         "true",
@@ -444,10 +300,10 @@
       "id": 1
     },
     {
-      "type": "trueFalse",
+      "sentence": "Ice is cold.",
       "answer": true,
+      "type": "trueFalse",
       "direction": "ltr",
-      "sentence": "You are handsome.",
       "title": "True or False",
       "options": [
         "true",
@@ -456,10 +312,10 @@
       "id": 2
     },
     {
+      "sentence": "Snow is black.",
+      "answer": false,
       "type": "trueFalse",
-      "answer": true,
       "direction": "ltr",
-      "sentence": "The sun is hot.",
       "title": "True or False",
       "options": [
         "true",
@@ -468,175 +324,154 @@
       "id": 3
     },
     {
-      "type": "translate",
+      "sentence": "My sis is a teacher.",
       "answer": [
-        "من یک شاگرد هستم",
-        "من شاگرد هستم"
+        "خواهرم یک معلم است",
+        "خواهرم معلم است"
       ],
-      "direction": "rtl",
-      "sentence": "I am a student.",
-      "title": "Translate this sentence",
       "wordBank": [
-        "من",
+        "خواهرم",
         "یک",
-        "شاگرد",
-        "هستم",
-        "معلم"
+        "معلم",
+        "است",
+        "شاگرد"
       ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
       "id": 4
     },
     {
-      "type": "translate",
-      "answer": [
-        "این یک موتر است",
-        "این موتر است"
-      ],
-      "direction": "rtl",
-      "sentence": "This is a car.",
-      "title": "Translate this sentence",
-      "wordBank": [
-        "این",
-        "یک",
-        "موتر",
-        "است",
-        "کتاب"
-      ],
-      "id": 5
-    },
-    {
-      "type": "fillBlank",
-      "hardness": "Easy",
-      "answer": "reads",
-      "direction": "ltr",
-      "sentence": "She _ a new book.",
-      "translate": "او یک کتاب جدید می‌خواند.",
-      "title": "Fill the blank",
-      "wordBank": [
-        "read",
-        "reads",
-        "reading"
-      ],
-      "id": 6
-    },
-    {
-      "type": "fillBlank",
-      "hardness": "Easy",
-      "answer": "are",
-      "direction": "ltr",
-      "sentence": "We _ happy.",
-      "translate": "ما حالا خوشحال هستیم.",
-      "title": "Fill the blank",
-      "wordBank": [
-        "am",
-        "is",
-        "are"
-      ],
-      "id": 7
-    },
-    {
-      "type": "fillBlank",
-      "hardness": "Easy",
-      "answer": "am",
-      "direction": "ltr",
-      "sentence": "I _ a student.",
-      "translate": "من یک شاگرد هستم.",
-      "title": "Fill the blank",
-      "wordBank": [
-        "am",
-        "is",
-        "are"
-      ],
-      "id": 8
-    },
-    {
-      "type": "selectCorrect",
-      "answer": "Football",
-      "direction": "ltr",
-      "sentence": "Which sport has one ball?",
-      "title": "Select correct",
-      "options": [
-        "Kung fu",
-        "Karate",
-        "Football"
-      ],
-      "id": 9
-    },
-    {
-      "type": "selectCorrect",
-      "answer": "apple",
-      "direction": "ltr",
-      "sentence": "Which one is a fruit?",
-      "title": "Select correct",
-      "options": [
-        "apple",
-        "book",
-        "pen"
-      ],
-      "id": 10
-    }
-  ],
-  "L5": [
-    {
-      "type": "trueFalse",
-      "answer": false,
-      "direction": "ltr",
-      "sentence": "A cat is a human.",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 1
-    },
-    {
-      "type": "trueFalse",
-      "answer": true,
-      "direction": "ltr",
-      "sentence": "Water means آب.",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 2
-    },
-    {
-      "type": "trueFalse",
-      "answer": false,
-      "direction": "ltr",
-      "sentence": "Fire is cold.",
-      "title": "True or False",
-      "options": [
-        "true",
-        "false"
-      ],
-      "id": 3
-    },
-    {
-      "type": "translate",
+      "sentence": "What is your name? buddy.",
       "answer": [
         "اسمت چیه؟ بچیم",
         "بچیم اسمت چیه؟"
       ],
-      "direction": "rtl",
-      "sentence": "What is your name? buddy.",
-      "title": "Translate this sentence",
       "wordBank": [
         "اسمت",
         "چیه؟",
         "کجا",
         "بچیم"
       ],
-      "id": 4
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
+      "id": 5
     },
     {
-      "type": "translate",
+      "sentence": "The book is _ the table.",
+      "answer": "on",
+      "hardness": "Easy",
+      "translate": "کتاب روی میز است.",
+      "wordBank": [
+        "on",
+        "inside",
+        "flying"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 6
+    },
+    {
+      "sentence": "I _ milk every day.",
+      "answer": "drink",
+      "hardness": "Easy",
+      "translate": "من هر روز شیر می‌نوشم.",
+      "wordBank": [
+        "drink",
+        "drinks",
+        "eat"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 7
+    },
+    {
+      "sentence": "She _ a new book.",
+      "answer": "reads",
+      "hardness": "Easy",
+      "translate": "او یک کتاب جدید می‌خواند.",
+      "wordBank": [
+        "read",
+        "reads",
+        "reading"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 8
+    },
+    {
+      "answer": "Football",
+      "sentence": "Which sport has one ball?",
+      "options": [
+        "Kung fu",
+        "Karate",
+        "Football"
+      ],
+      "type": "selectCorrect",
+      "direction": "ltr",
+      "title": "Select correct",
+      "id": 9
+    },
+    {
+      "answer": "apple",
+      "sentence": "Which one is a fruit?",
+      "options": [
+        "apple",
+        "book",
+        "pen"
+      ],
+      "type": "selectCorrect",
+      "direction": "ltr",
+      "title": "Select correct",
+      "id": 10
+    }
+  ],
+  "L4": [
+    {
+      "sentence": "Bananas are yellow.",
+      "answer": true,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 1
+    },
+    {
+      "sentence": "We see with our eyes.",
+      "answer": true,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 2
+    },
+    {
+      "sentence": "Sugar is sweet.",
+      "answer": true,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 3
+    },
+    {
+      "sentence": "My name is Ali.",
       "answer": [
         "نام من علی است"
       ],
-      "direction": "rtl",
-      "sentence": "My name is Ali.",
-      "title": "Translate this sentence",
       "wordBank": [
         "نام",
         "من",
@@ -644,77 +479,239 @@
         "است",
         "تو"
       ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
+      "id": 4
+    },
+    {
+      "sentence": "We are friends.",
+      "answer": [
+        "ما دوست هستیم"
+      ],
+      "wordBank": [
+        "ما",
+        "دوست",
+        "هستیم",
+        "برادر"
+      ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
       "id": 5
     },
     {
-      "type": "fillBlank",
+      "sentence": "We _ happy.",
+      "answer": "are",
       "hardness": "Easy",
-      "answer": "has",
-      "direction": "ltr",
-      "sentence": "He _ a big dog.",
-      "translate": "او یک سگ بزرگ دارد.",
-      "title": "Fill the blank",
+      "translate": "ما حالا خوشحال هستیم.",
       "wordBank": [
-        "have",
-        "has",
-        "is"
+        "am",
+        "is",
+        "are"
       ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
       "id": 6
     },
     {
-      "type": "fillBlank",
+      "sentence": "I _ a student.",
+      "answer": "am",
       "hardness": "Easy",
-      "answer": "on",
-      "direction": "ltr",
-      "sentence": "The book is _ the table.",
-      "translate": "کتاب روی میز است.",
-      "title": "Fill the blank",
+      "translate": "من یک شاگرد هستم.",
       "wordBank": [
-        "on",
-        "in",
-        "under"
+        "am",
+        "is",
+        "are"
       ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
       "id": 7
     },
     {
-      "type": "fillBlank",
+      "sentence": "She _ a teacher.",
+      "answer": "is",
       "hardness": "Easy",
-      "answer": "drink",
-      "direction": "ltr",
-      "sentence": "I _ milk every day.",
-      "translate": "من هر روز شیر می‌نوشم.",
-      "title": "Fill the blank",
+      "translate": "او یک معلم است.",
       "wordBank": [
-        "drink",
-        "drinks",
-        "eat"
+        "am",
+        "is",
+        "are"
       ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
       "id": 8
     },
     {
-      "type": "selectCorrect",
-      "answer": "apple",
-      "direction": "ltr",
-      "sentence": "Which one is a fruit?",
-      "title": "Select correct",
-      "options": [
-        "apple",
-        "book",
-        "pen"
-      ],
-      "id": 9
-    },
-    {
-      "type": "selectCorrect",
       "answer": "a fruit",
-      "direction": "ltr",
       "sentence": "what do you want to eat?",
-      "title": "Select correct",
       "options": [
         "teacher",
         "a fruit",
         "pen"
       ],
+      "type": "selectCorrect",
+      "direction": "ltr",
+      "title": "Select correct",
+      "id": 9
+    },
+    {
+      "answer": "Friday",
+      "sentence": "Which day is off?",
+      "options": [
+        "Monday",
+        "Friday",
+        "Sunday"
+      ],
+      "type": "selectCorrect",
+      "direction": "ltr",
+      "title": "Select correct",
+      "id": 10
+    }
+  ],
+  "L5": [
+    {
+      "sentence": "Milk is green.",
+      "answer": false,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 1
+    },
+    {
+      "sentence": "You are handsome.",
+      "answer": true,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 2
+    },
+    {
+      "sentence": "The sun is hot.",
+      "answer": true,
+      "type": "trueFalse",
+      "direction": "ltr",
+      "title": "True or False",
+      "options": [
+        "true",
+        "false"
+      ],
+      "id": 3
+    },
+    {
+      "sentence": "whats up?",
+      "answer": [
+        "چه خبر؟"
+      ],
+      "wordBank": [
+        "چه",
+        "خبر؟",
+        "چطور",
+        "سلام"
+      ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
+      "id": 4
+    },
+    {
+      "sentence": "This is a house.",
+      "answer": [
+        "این یک خانه است",
+        "این خانه است"
+      ],
+      "wordBank": [
+        "این",
+        "یک",
+        "خانه",
+        "است",
+        "اتاق"
+      ],
+      "type": "translate",
+      "direction": "ltr",
+      "title": "Translate this sentence",
+      "id": 5
+    },
+    {
+      "sentence": "They _ happy.",
+      "answer": "are",
+      "hardness": "Easy",
+      "translate": "آن‌ها خوشحال هستند.",
+      "wordBank": [
+        "am",
+        "is",
+        "are"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 6
+    },
+    {
+      "sentence": "We _ to school.",
+      "answer": "go",
+      "hardness": "Easy",
+      "translate": "ما به مکتب می‌رویم.",
+      "wordBank": [
+        "go",
+        "goes",
+        "going"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 7
+    },
+    {
+      "sentence": "I _ a Super Arian.",
+      "answer": "have",
+      "hardness": "Easy",
+      "translate": "من یک سوپر آرین دارم.",
+      "wordBank": [
+        "have",
+        "has",
+        "am"
+      ],
+      "type": "fillBlank",
+      "direction": "ltr",
+      "title": "Fill the blank",
+      "id": 8
+    },
+    {
+      "answer": "book",
+      "sentence": "What do you read to learn new things?",
+      "options": [
+        "pen",
+        "book",
+        "chair"
+      ],
+      "type": "selectCorrect",
+      "direction": "ltr",
+      "title": "Select correct",
+      "id": 9
+    },
+    {
+      "answer": "yellow",
+      "sentence": "What color is a banana?",
+      "options": [
+        "blue",
+        "red",
+        "yellow"
+      ],
+      "type": "selectCorrect",
+      "direction": "ltr",
+      "title": "Select correct",
       "id": 10
     }
   ]

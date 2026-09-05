@@ -1,0 +1,143 @@
+[
+  {
+    "sentence": "Milk is green.",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "You are handsome.",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "sentence": "The sun is hot.",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 3
+  },
+  {
+    "sentence": "whats up?",
+    "answer": [
+      "چه خبر؟"
+    ],
+    "wordBank": [
+      "چه",
+      "خبر؟",
+      "چطور",
+      "سلام"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 4
+  },
+  {
+    "sentence": "This is a house.",
+    "answer": [
+      "این یک خانه است",
+      "این خانه است"
+    ],
+    "wordBank": [
+      "این",
+      "یک",
+      "خانه",
+      "است",
+      "اتاق"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "They _ happy.",
+    "answer": "are",
+    "hardness": "Easy",
+    "translate": "آن‌ها خوشحال هستند.",
+    "wordBank": [
+      "am",
+      "is",
+      "are"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 6
+  },
+  {
+    "sentence": "We _ to school.",
+    "answer": "go",
+    "hardness": "Easy",
+    "translate": "ما به مکتب می‌رویم.",
+    "wordBank": [
+      "go",
+      "goes",
+      "going"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 7
+  },
+  {
+    "sentence": "I _ a Super Arian.",
+    "answer": "have",
+    "hardness": "Easy",
+    "translate": "من یک سوپر آرین دارم.",
+    "wordBank": [
+      "have",
+      "has",
+      "am"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "answer": "book",
+    "sentence": "What do you read to learn new things?",
+    "options": [
+      "pen",
+      "book",
+      "chair"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 9
+  },
+  {
+    "answer": "yellow",
+    "sentence": "What color is a banana?",
+    "options": [
+      "blue",
+      "red",
+      "yellow"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 10
+  }
+]

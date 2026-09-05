@@ -1,0 +1,200 @@
+[
+  {
+    "sentence": "Cats can write books.",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "کلمات preposition شامل:\nto\nabout\nin\non\n و غیره هستند",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "title": "Question",
+    "answer": [
+      "Adjective"
+    ],
+    "synonyms": {
+      "adj": "Adjective",
+      "adjec": "Adjective",
+      "صفت": "Adjective",
+      "adjectie": "Adjective"
+    },
+    "sentence": "What does describe a noun?",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "id": 3
+  },
+  {
+    "explanition": {
+      "title": "انواع قید",
+      "des": "قید در زبان انگلیسی به 5 نوع است:\n",
+      "types": "manner: حالت را بیان میکند\nplace: مکان\ntime: زمان\ndegree: شدت\nfrequency: دوره"
+    },
+    "answer": [
+      "manner",
+      "time",
+      "place",
+      "degree",
+      "frequency"
+    ],
+    "synonyms": {
+      "maner": "manner",
+      "حالت": "manner",
+      "تکرار": "frequency",
+      "frequncy": "frequency",
+      "ferequncy": "frequency",
+      "frequnsy": "frequency",
+      "مقدار": "degree",
+      "degri": "degree",
+      "digree": "degree",
+      "deegre": "degree"
+    },
+    "sentence": "Name the main types of adverbs.",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 4
+  },
+  {
+    "sentence": "کوه اورست بلندترین کوه در روی زمین است.",
+    "answer": [
+      "Mount Everest is the tallest mountain on the earth"
+    ],
+    "direction": "rtl",
+    "wordBank": [
+      "on the earth",
+      "mountain",
+      "the tallest",
+      "is",
+      "Everest",
+      "Mount"
+    ],
+    "type": "translate",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "How much English doh you know?",
+    "answer": [
+      "چقدر انگلیسی بلد هستی"
+    ],
+    "wordBank": [
+      "هستی؟",
+      "بلد",
+      "انگلیسی",
+      "چقدر"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "The closest star to earth is Sun",
+    "answer": [
+      "نزدیکترین ستاره به زمین آفتاب است"
+    ],
+    "wordBank": [
+      "آفتاب",
+      "است",
+      "به زمین",
+      "ستاره",
+      "نزدیکترین"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "I go _ school everyday, but you don't.",
+    "answer": "to",
+    "hardness": "Easy",
+    "translate": "من هروز به مکتب میروم ولی تو نه",
+    "wordBank": [
+      "at",
+      "in",
+      "to"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "She explained the lesson so _ that everyone understood it.",
+    "answer": "clearly",
+    "hardness": "Hard",
+    "translate": "او درس را طوری شفاف توضیح داد که همه یادگرفتند.",
+    "wordBank": [
+      "clear",
+      "slow",
+      "clearly"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "The students were asked _ their phones during the exam.",
+    "answer": "to turn off",
+    "hardness": "Veteran",
+    "translate": "از شاگردان خواسته شده بود که تلفن هایشان را خاموش کنند.",
+    "wordBank": [
+      "to turn off",
+      "hide",
+      "shut"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "answer": "Question mark (?)",
+    "sentence": "Which mark is used at the end of a question?",
+    "options": [
+      "Comma (,)",
+      "Period (.)",
+      "Question mark (?)"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "answer": "I will run",
+    "sentence": "Which sentence is a future form?",
+    "options": [
+      "I will run",
+      "you are crazy",
+      "jump in the well"
+    ],
+    "explanition": {
+      "title": "زمان آینده ساده",
+      "des": "با اضافه کردن will قبل از فعل زمان را به آینده تغییر دهید",
+      "types": "I will play a game"
+    },
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 12
+  }
+]

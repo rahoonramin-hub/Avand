@@ -2,16 +2,20 @@ import { LessonInterface, levelInterface, levelNames } from "./interface";
 
 // تعداد درس‌های موجود در هر سطح
 const LEVEL_COUNTS: Record<levelNames, number> = {
-  Starter: 1,
+  Starter: 5,
   Beginner: 20,
-  Intermediate: 1,
+  Intermediate: 20,
   "Higher Intermediate": 1,
   Advance: 1,
 };
 
 const lessonModules: Record<levelNames, Record<number, () => Promise<any>>> = {
   Starter: {
-    1: () => import('@/lessons/Beginner/L1.json'),
+    1: () => import('@/lessons/Starter/L1.json'),
+    2: () => import('@/lessons/Starter/L2.json'),
+    3: () => import('@/lessons/Starter/L3.json'),
+    4: () => import('@/lessons/Starter/L4.json'),
+    5: () => import('@/lessons/Starter/L5.json'),
   },
   Beginner: {
     1: () => import('@/lessons/Beginner/L1.json'),
@@ -36,8 +40,7 @@ const lessonModules: Record<levelNames, Record<number, () => Promise<any>>> = {
     20: () => import('@/lessons/Beginner/L20.json'),
   },
   Intermediate: {
-    1: () => import('@/lessons/Beginner/L1.json'),
-   /* 1: () => import('@/lessons/Intermediate/L1.json'),
+    1: () => import('@/lessons/Intermediate/L1.json'),
     2: () => import('@/lessons/Intermediate/L2.json'),
     3: () => import('@/lessons/Intermediate/L3.json'),
     4: () => import('@/lessons/Intermediate/L4.json'),
@@ -56,7 +59,7 @@ const lessonModules: Record<levelNames, Record<number, () => Promise<any>>> = {
     17: () => import('@/lessons/Intermediate/L17.json'),
     18: () => import('@/lessons/Intermediate/L18.json'),
     19: () => import('@/lessons/Intermediate/L19.json'),
-    20: () => import('@/lessons/Intermediate/L20.json'),*/
+    20: () => import('@/lessons/Intermediate/L20.json'),
   },
   "Higher Intermediate": {
     1: () => import('@/lessons/Beginner/L1.json'),

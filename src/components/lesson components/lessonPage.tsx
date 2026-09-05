@@ -32,7 +32,7 @@ const LessonPage = ({ onComplete, temp, handleUnlock }: LessonPageProps) => {
   const shuffledTemp = useMemo(() => shuffle(temp), [temp]);
 
   // ۲. تعیین تعداد سوالات (اگر کمتر از ۱۵ تا بود، همان تعداد موجود را قرار می‌دهد)
-  const maxLesson = 5;
+  const maxLesson = Math.min(12, shuffledTemp.length);
 
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [lessonResults, setLessonResults] = useState<{ lessonId: number; isCorrect: boolean }[]>([]);

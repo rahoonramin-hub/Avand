@@ -1,6 +1,6 @@
 [
   {
-    "sentence": "کلمه adjective یک اسم را توصیف میکند",
+    "sentence": "Water is wet.",
     "answer": true,
     "type": "trueFalse",
     "direction": "ltr",
@@ -12,8 +12,8 @@
     "id": 1
   },
   {
-    "sentence": "Trees have leaves.",
-    "answer": true,
+    "sentence": "A car can fly.",
+    "answer": false,
     "type": "trueFalse",
     "direction": "ltr",
     "title": "True or False",
@@ -24,8 +24,8 @@
     "id": 2
   },
   {
-    "sentence": "Rocks are soft.",
-    "answer": false,
+    "sentence": "We live on Earth.",
+    "answer": true,
     "type": "trueFalse",
     "direction": "ltr",
     "title": "True or False",
@@ -37,23 +37,19 @@
   },
   {
     "answer": [
-      "simple",
-      "cont",
-      "perfect",
-      "perfect cont"
+      "am",
+      "is",
+      "are"
     ],
     "synonyms": {
-      "continouos": "cont",
-      "continuous": "cont",
-      "progressive": "cont",
-      "perfect continouos": "perfect cont",
-      "perfect progressive": "perfect cont"
+      "im": "am",
+      "ar": "are"
     },
-    "sentence": "۴ زمان گذشته را بنویسید.",
+    "sentence": "افعال To be را بنویسید",
     "explanition": {
-      "title": "زمان گذشته",
-      "des": "تمام زمان های حال، آینده و گذشته دارای 4 نوع اند: \n",
-      "types": "simple\n continuous\n perfect\n perfect continuous"
+      "title": "To be verbs",
+      "des": "I am a student - من شاگرد هستم\n You are a student - تو شاگرد هستی\n We are students - ما شاگرد هستیم\n",
+      "types": "سه نوع اند: \n am, is, are"
     },
     "type": "nameTypes",
     "direction": "ltr",
@@ -61,16 +57,18 @@
     "id": 4
   },
   {
-    "sentence": "We are friends.",
+    "sentence": "We eat rice every day.",
     "answer": [
-      "ما دوست هستیم"
+      "ما هر روز برنج می‌خوریم"
     ],
     "wordBank": [
       "ما",
-      "دوست",
-      "هستیم",
-      "دشمن",
-      "خواهر"
+      "هر",
+      "روز",
+      "برنج",
+      "می‌خوریم",
+      "نان",
+      "سبزی"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -78,18 +76,17 @@
     "id": 5
   },
   {
-    "sentence": "This is a book.",
+    "sentence": "She closes the door.",
     "answer": [
-      "این یک کتاب است",
-      "این کتاب است"
+      "او در را می‌بندد"
     ],
     "wordBank": [
-      "این",
-      "یک",
-      "کتاب",
-      "است",
-      "کتابچه",
-      "قلم"
+      "او",
+      "در",
+      "را",
+      "می‌بندد",
+      "باز",
+      "پنجره"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -97,18 +94,18 @@
     "id": 6
   },
   {
-    "sentence": "I have a cat.",
+    "sentence": "I write a letter.",
     "answer": [
-      "من یک گربه دارم",
-      "من گربه دارم"
+      "من یک نامه می‌نویسم",
+      "من نامه می‌نویسم"
     ],
     "wordBank": [
       "من",
       "یک",
-      "گربه",
-      "دارم",
-      "سگ",
-      "پرنده"
+      "نامه",
+      "می‌نویسم",
+      "کتاب",
+      "قلم"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -116,17 +113,15 @@
     "id": 7
   },
   {
-    "sentence": "we _ going to school(past)",
-    "answer": "were",
-    "hardness": "Hard",
-    "translate": "ما در حال رفتن به مکتب بودیم",
+    "sentence": "I _ to the cinema if I have time.",
+    "answer": "will go",
+    "hardness": "Hell",
+    "translate": "اگر وقت داشته باشم به سینما خواهم رفت.",
     "wordBank": [
-      "I",
-      "was",
-      "learn",
-      "is",
+      "go",
+      "will go",
       "went",
-      "were"
+      "won`t go"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -134,17 +129,17 @@
     "id": 8
   },
   {
-    "sentence": "Learning English is not _.",
-    "answer": "hard",
+    "sentence": "He _ me with my homework yesterday.",
+    "answer": "helped",
     "hardness": "Medium",
-    "translate": "یادگیری انگلیسی سخت نیست",
+    "translate": "دیروز به من در تکالیفم کمک کرد.",
     "wordBank": [
-      "hard",
-      "allready",
-      "how to",
-      "tough",
-      "make",
-      "language"
+      "help",
+      "helped",
+      "helps",
+      "helping",
+      "teacher",
+      "let"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -152,16 +147,15 @@
     "id": 9
   },
   {
-    "sentence": "You can`t _ a pilot.",
-    "answer": "be",
-    "hardness": "Hell",
-    "translate": "تو نمیتوانی خلبان باشی",
+    "sentence": "We _ each other.",
+    "answer": "know",
+    "hardness": "Medium",
+    "translate": "ما یکدیگر را میشناسیم",
     "wordBank": [
-      "how",
-      "learn",
-      "be",
-      "make",
-      "airplane"
+      "know",
+      "did",
+      "have fun",
+      "are knowing"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -169,13 +163,13 @@
     "id": 10
   },
   {
-    "answer": "a doctor",
-    "sentence": "who do you visit when you are sick?",
+    "answer": "kabul",
+    "sentence": "what is the capital of afghanistan?",
     "options": [
-      "a doctor",
-      "a teacher",
-      "a driver",
-      "a cook"
+      "herat",
+      "kandahar",
+      "mazar",
+      "kabul"
     ],
     "type": "selectCorrect",
     "direction": "ltr",
@@ -183,13 +177,13 @@
     "id": 11
   },
   {
-    "answer": "past simple",
-    "sentence": "which tense is this sentence? \"I ate an apple\"",
+    "answer": "pencil",
+    "sentence": "what do you use to write and erase with an eraser?",
     "options": [
-      "present simple",
-      "past simple",
-      "future simple",
-      "present continuous"
+      "pen",
+      "pencil",
+      "marker",
+      "chalk"
     ],
     "type": "selectCorrect",
     "direction": "ltr",

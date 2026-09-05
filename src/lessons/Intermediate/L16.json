@@ -1,0 +1,199 @@
+[
+  {
+    "sentence": "English uses the persian alphabet.",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "A doctor helps people to die.",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "title": "Question",
+    "answer": [
+      "Adverb"
+    ],
+    "synonyms": {
+      "averb": "Adverb",
+      "قید": "Adverb",
+      "an adverb": "Adverb"
+    },
+    "sentence": "چه چیزی یک فعل را توصیف میکند؟",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "id": 3
+  },
+  {
+    "answer": [
+      "present",
+      "future",
+      "past"
+    ],
+    "synonyms": {
+      "precent": "present",
+      "futare": "future",
+      "fuchure": "future",
+      "futur": "future",
+      "presend": "present"
+    },
+    "sentence": "3 زمان اصلی در زبان انگلیسی را بنویسید",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 4
+  },
+  {
+    "sentence": "The airplane will land soon.",
+    "answer": [
+      "هواپیما به زودی فرود خواهد آمد"
+    ],
+    "wordBank": [
+      "آمد",
+      "خواهد",
+      "نمیاید",
+      "فرود",
+      "بزودی",
+      "هواپیما"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "لطفا بنشینید، هواپیما به زودی فرود خواهد آمد.",
+    "answer": [
+      "please take a seat the airplane will land soon"
+    ],
+    "wordBank": [
+      "please",
+      "take",
+      "a",
+      "seat",
+      "the airplane",
+      "will",
+      "land",
+      "soon"
+    ],
+    "direction": "rtl",
+    "type": "translate",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "I had made dinner before you came",
+    "answer": [
+      "قبل ازینکه تو بیایی من غذا را آماده کردم",
+      "من غذا را قبل ازینکه تو بیایی آماده کردم",
+      "من غذا را آماده کردم قبل ازینکه تو بیایی"
+    ],
+    "wordBank": [
+      "بیایی",
+      "تو",
+      "ازینکه",
+      "قبل",
+      "کردم",
+      "آماده",
+      "غذا را",
+      "من"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "If I _ enough time, I would learn another language.",
+    "answer": "had",
+    "hardness": "Hard",
+    "translate": "اگر زمان کافی میداشتم، زبان جدیدی را یاد میگرفتم",
+    "wordBank": [
+      "would",
+      "could",
+      "had"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "The students were asked _ their phones during the exam.",
+    "answer": "to turn off",
+    "hardness": "Veteran",
+    "translate": "از شاگردان خواسته شده بود که تلفن هایشان را خاموش کنند.",
+    "wordBank": [
+      "to turn off",
+      "hide",
+      "shut"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "By the time we arrived, the movie _ already started.",
+    "answer": "had",
+    "hardness": "Hell",
+    "translate": "تا زمانی که رسیدیم، فیلم شروع شده بود.",
+    "wordBank": [
+      "were",
+      "had",
+      "been",
+      "have"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "answer": "all",
+    "sentence": "Which word is a preposition?",
+    "explanition": {
+      "title": "حروف ربط",
+      "des": "حروف ربط، کلمات کوتاهی استند که روابطی مانند زمان، مکان و بحث را نشان میدهند\nو یا کلماتی که رابطه بین دو کلمه را نشان میدهند\n",
+      "types": "on, in, about, at, front, to, ...."
+    },
+    "options": [
+      "about",
+      "to",
+      "on",
+      "all"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "answer": "friday",
+    "sentence": "Which day is a vacation?",
+    "options": [
+      "every day",
+      "friday",
+      "monday",
+      "wednesday"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 12
+  }
+]

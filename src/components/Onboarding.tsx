@@ -92,7 +92,6 @@ const STEPS: StepConfig[] = [
       { key: "fun", emoji: "🎉", label: "فقط برای سرگرمی" },
       { key: "career", emoji: "💼", label: "پیشرفت شغلی" },
       { key: "connect", emoji: "🤝", label: "ارتباط با مردم" },
-      { key: "productive", emoji: "🧠", label: "استفاده مفید از وقت" },
       { key: "education", emoji: "📚", label: "کمک به تحصیل" },
       { key: "travel", emoji: "✈️", label: "آماده شدن برای سفر" },
       { key: "other", emoji: "✨", label: "دلیل دیگر..." },
@@ -190,9 +189,9 @@ const STEPS: StepConfig[] = [
 // ─── نگاشت گزینه‌ی سطح انتخابی به سطح‌های واقعی اپ ────────────────────────────
 const LEVEL_KEY_TO_USER_LEVEL: Record<string, levelNames> = {
   new: "Starter",
-  words: "Intermediate",
-  simple: "Higher Intermediate",
-  advanced: "Advance",
+  words: "Starter",
+  simple: "Beginner",
+  advanced: "Intermediate",
 };
 
 // ─── کامپوننت ─────────────────────────────────────────────────────────────────

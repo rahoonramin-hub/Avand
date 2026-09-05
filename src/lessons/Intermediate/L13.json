@@ -1,0 +1,204 @@
+[
+  {
+    "sentence": "کلمه adjective یک اسم را توصیف میکند",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "A subject is the doer of an action",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "explanition": {
+      "title": "انواع قید",
+      "des": "قید در زبان انگلیسی به 5 نوع است:\n",
+      "types": "manner: حالت را بیان میکند\nplace: مکان\ntime: زمان\ndegree: شدت\nfrequency: دوره"
+    },
+    "answer": [
+      "manner",
+      "time",
+      "place",
+      "degree",
+      "frequency"
+    ],
+    "synonyms": {
+      "maner": "manner",
+      "حالت": "manner",
+      "تکرار": "frequency",
+      "frequncy": "frequency",
+      "ferequncy": "frequency",
+      "frequnsy": "frequency",
+      "مقدار": "degree",
+      "degri": "degree",
+      "digree": "degree",
+      "deegre": "degree"
+    },
+    "sentence": "Name the main types of adverbs.",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 3
+  },
+  {
+    "answer": [
+      "Her",
+      "Him",
+      "Them",
+      "Us",
+      "Me",
+      "It",
+      "You"
+    ],
+    "synonyms": {
+      "hir": "her",
+      "his": "her",
+      "we": "us"
+    },
+    "sentence": "Name object pronouns (atleast 5 of them).",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 4
+  },
+  {
+    "sentence": "من 5 گل زدم",
+    "answer": [
+      "I made 5 goals"
+    ],
+    "direction": "rtl",
+    "wordBank": [
+      "I",
+      "made",
+      "5",
+      "goals"
+    ],
+    "type": "translate",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "این سطح انگلیسی برایم سخت است.",
+    "answer": [
+      "this level of english is tough for me"
+    ],
+    "direction": "rtl",
+    "wordBank": [
+      "for",
+      "me",
+      "tough",
+      "is",
+      "english",
+      "of",
+      "level",
+      "this"
+    ],
+    "type": "translate",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "We went to the park, yesterday",
+    "answer": [
+      "ما دیروز به پارک رفتیم"
+    ],
+    "wordBank": [
+      "چرا",
+      "شما",
+      "رفتیم",
+      "پارک",
+      "به",
+      "دیروز",
+      "ما"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "They _ watching a documentary when the electricity went out.",
+    "answer": "were",
+    "hardness": "Hard",
+    "translate": "آنها در حال تماشای مستند بودند که برق رفت.",
+    "wordBank": [
+      "were",
+      "could",
+      "are"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "You should speak _ if you want everyone to understand you.",
+    "answer": "clearly",
+    "hardness": "Hell",
+    "translate": "تو باید شفاف صحبت کنی، اگر میخواهی که همه تو را بفهمند.",
+    "wordBank": [
+      "clear",
+      "aloud",
+      "clearly"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "She is interested _ learning how to sing.",
+    "answer": "in",
+    "hardness": "Medium",
+    "translate": "او به یادگیری خوانندگی علاقه دارد.",
+    "wordBank": [
+      "on",
+      "in"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "answer": "To avoid repetition",
+    "sentence": "Why do we use a pronoun?",
+    "options": [
+      "To avoid repetition",
+      "I don't know",
+      "To write faster"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "answer": "Bear",
+    "sentence": "Which animal is the biggest?",
+    "options": [
+      "Bird",
+      "Mouse",
+      "Bear",
+      "Cat"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 12
+  }
+]

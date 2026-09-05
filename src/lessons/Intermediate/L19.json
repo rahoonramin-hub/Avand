@@ -1,0 +1,204 @@
+[
+  {
+    "sentence": "We wear shoes on our feet.",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "کلمه He سوم شخص مفرد است",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "explanition": {
+      "title": "انواع قید",
+      "des": "قید در زبان انگلیسی به 5 نوع است:\n",
+      "types": "manner: حالت را بیان میکند\nplace: مکان\ntime: زمان\ndegree: شدت\nfrequency: دوره"
+    },
+    "answer": [
+      "manner",
+      "time",
+      "place",
+      "degree",
+      "frequency"
+    ],
+    "synonyms": {
+      "maner": "manner",
+      "حالت": "manner",
+      "تکرار": "frequency",
+      "frequncy": "frequency",
+      "ferequncy": "frequency",
+      "frequnsy": "frequency",
+      "مقدار": "degree",
+      "degri": "degree",
+      "digree": "degree",
+      "deegre": "degree"
+    },
+    "sentence": "انواع اصلی قید را نام ببرید",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 3
+  },
+  {
+    "answer": [
+      "an",
+      "a",
+      "the"
+    ],
+    "explanition": {
+      "title": "حروف تعریف",
+      "des": "حروف تعریف حروفی اند که قبل از اسم آمده، معین و نا معین بودن اسم را نشان می دهند\nحرف The به چیزی خاص و معین اشاره میکند.\nحروف A و An به چیزی عام و نامعین اشاره میکنند.",
+      "types": "The: The cat\nA: A cat\nAn: An apple"
+    },
+    "sentence": "انواع حرف تعریف را نام ببرید",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 4
+  },
+  {
+    "sentence": "چه مدت طول میکشد تا به تهران برسیم",
+    "direction": "rtl",
+    "answer": [
+      "how long does it take to reach tehran"
+    ],
+    "wordBank": [
+      "Tehran",
+      "reach",
+      "to",
+      "take",
+      "it",
+      "does",
+      "how long"
+    ],
+    "type": "translate",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "We were watching TV as my uncle came.",
+    "answer": [
+      "ما در حال تماشای تلوزیون بودیم که کاکایم آمد"
+    ],
+    "wordBank": [
+      "آمد",
+      "کاکایم",
+      "بودیم که",
+      "تلوزیون",
+      "تماشای",
+      "در حال",
+      "ما"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "کوه اورست بلندترین کوه در روی زمین است.",
+    "answer": [
+      "Mount Everest is the tallest mountain on the earth"
+    ],
+    "direction": "rtl",
+    "wordBank": [
+      "on the earth",
+      "mountain",
+      "the tallest",
+      "is",
+      "Everest",
+      "Mount"
+    ],
+    "type": "translate",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "We were walk_ ",
+    "answer": "ing",
+    "hardness": "Easy",
+    "translate": "ما داشتیم راه میرفتیم.",
+    "wordBank": [
+      "ed",
+      "fast",
+      "slowly",
+      "ing"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "_ you like Indian movies?",
+    "answer": "do",
+    "hardness": "Easy",
+    "translate": "آیا فیلم هندی دوست داری؟",
+    "wordBank": [
+      "does",
+      "why",
+      "are",
+      "do"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "How long _ it take to cook eggs?",
+    "answer": "does",
+    "hardness": "Medium",
+    "translate": "چقدر طول میکشد تا تخمرغ بپزی؟",
+    "wordBank": [
+      "is",
+      "like",
+      "does",
+      "do"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "answer": "Bee",
+    "sentence": "Which animal makes honey?",
+    "options": [
+      "Bee",
+      "Butterfly",
+      "Rabbit"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "answer": "Fish",
+    "sentence": "Which animal lives in water?",
+    "options": [
+      "Fish",
+      "Cat",
+      "Chicken"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 12
+  }
+]

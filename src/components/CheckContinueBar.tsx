@@ -11,6 +11,7 @@
 //  - onCheck     : فانکشن دکمه Check
 //  - onContinue  : فانکشن دکمه Continue (رفتن به درس بعدی)
 
+import { ReactNode } from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { colors } from '../constants/colors';
 
@@ -20,6 +21,12 @@ export interface CheckContinueBarProps {
   status: CheckStatus;
   title?: string;
   answerText?: string;
+  /**
+   * نسخه‌ی غنی (rich) متن پاسخ — مثلاً برای هایلایت‌کردن کلمات جا‌افتاده/جابجا‌شده
+   * با <Text> تودرتو. اگر پر شود، به‌جای answerText رندر می‌شود. کاملاً اختیاری و
+   * برای حفظ سازگاری با کامپوننت‌های قبلی که فقط answerText می‌فرستند اضافه شده.
+   */
+  answerNode?: ReactNode;
   disabled?: boolean;
   onCheck: () => void;
   onContinue: () => void;
@@ -42,6 +49,7 @@ export default function CheckContinueBar({
   status,
   title,
   answerText,
+  answerNode,
   disabled,
   onCheck,
   onContinue,
@@ -66,7 +74,9 @@ export default function CheckContinueBar({
   return (
     <View style={[styles.resultPanel, { backgroundColor: theme.bg, borderColor: theme.border }]}>
       {!!title && <Text style={[styles.resultTitle, { color: colors.dark.txt}]}>{title}</Text>}
-      {!!answerText && <Text style={styles.resultAnswer}>{answerText}</Text>}
+      {answerNode
+        ? <Text style={styles.resultAnswer}>{answerNode}</Text>
+        : !!answerText && <Text style={styles.resultAnswer}>{answerText}</Text>}
       <TouchableOpacity
         style={[styles.checkBtn, { borderColor: theme.border, backgroundColor: theme.btnBg }]}
         onPress={onContinue}

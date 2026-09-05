@@ -1,0 +1,211 @@
+[
+  {
+    "sentence": "Ant is a big animal",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "اولین حرف اسم خاص با حروف بزرگ نوشته میشود",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "explanition": {
+      "title": "انواع قید",
+      "des": "قید در زبان انگلیسی به 5 نوع است:\n",
+      "types": "manner: حالت را بیان میکند\nplace: مکان\ntime: زمان\ndegree: شدت\nfrequency: دوره"
+    },
+    "answer": [
+      "manner",
+      "time",
+      "place",
+      "degree",
+      "frequency"
+    ],
+    "synonyms": {
+      "maner": "manner",
+      "حالت": "manner",
+      "تکرار": "frequency",
+      "frequncy": "frequency",
+      "ferequncy": "frequency",
+      "frequnsy": "frequency",
+      "مقدار": "degree",
+      "degri": "degree",
+      "digree": "degree",
+      "deegre": "degree"
+    },
+    "sentence": "Name the main types of adverbs.",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 3
+  },
+  {
+    "answer": [
+      "Her",
+      "Him",
+      "Them",
+      "Us",
+      "Me",
+      "It",
+      "You"
+    ],
+    "synonyms": {
+      "hir": "her",
+      "his": "her",
+      "we": "us"
+    },
+    "sentence": "Name object pronouns (atleast 5 of them).",
+    "type": "nameTypes",
+    "direction": "ltr",
+    "title": "Name types",
+    "id": 4
+  },
+  {
+    "sentence": "تا حالا در هرات زندگی کردی؟",
+    "answer": [
+      "Have you ever lived in Herat?"
+    ],
+    "direction": "rtl",
+    "wordBank": [
+      "have you",
+      "ever",
+      "lived",
+      "in",
+      "herat",
+      "?",
+      "never"
+    ],
+    "type": "translate",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "The airplane will land soon.",
+    "answer": [
+      "هواپیما به زودی فرود خواهد آمد"
+    ],
+    "wordBank": [
+      "آمد",
+      "خواهد",
+      "نمیاید",
+      "فرود",
+      "بزودی",
+      "هواپیما"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 6
+  },
+  {
+    "sentence": "لطفا بنشینید، هواپیما به زودی فرود خواهد آمد.",
+    "answer": [
+      "please take a seat the airplane will land soon"
+    ],
+    "wordBank": [
+      "please",
+      "take",
+      "a",
+      "seat",
+      "the airplane",
+      "will",
+      "land",
+      "soon"
+    ],
+    "direction": "rtl",
+    "type": "translate",
+    "title": "Translate this sentence",
+    "id": 7
+  },
+  {
+    "sentence": "By the time we arrived, the movie _ already started.",
+    "answer": "had",
+    "hardness": "Hell",
+    "translate": "تا زمانی که رسیدیم، فیلم شروع شده بود.",
+    "wordBank": [
+      "were",
+      "had",
+      "been",
+      "have"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "sentence": "Where is _ brother",
+    "answer": "her",
+    "hardness": "Medium",
+    "translate": "برادر او کجاست؟",
+    "wordBank": [
+      "she",
+      "her"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 9
+  },
+  {
+    "sentence": "I helped _ to learn English",
+    "answer": "him",
+    "hardness": "Medium",
+    "translate": "من او را کمک کردم تا انگلیسی یاد بگیرد.",
+    "wordBank": [
+      "He",
+      "him"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 10
+  },
+  {
+    "answer": "Yesterday",
+    "sentence": "Which word shows past time?",
+    "options": [
+      "Tomorrow",
+      "Now",
+      "Yesterday"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 11
+  },
+  {
+    "answer": "at",
+    "sentence": "Which word is a preposition?",
+    "explanition": {
+      "title": "حروف اضافه",
+      "des": "حروف اضافه رابطه بین کلمات را از نظر زمان، مکان یا جهت نشان می‌دهند.",
+      "types": "at, in, on, under, behind"
+    },
+    "options": [
+      "quickly",
+      "at",
+      "blue",
+      "jump"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 12
+  }
+]

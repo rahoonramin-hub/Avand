@@ -9,15 +9,15 @@ import { colors } from '@/constants/colors'
 import { Ionicons } from '@expo/vector-icons'
 import { ReactNode, useEffect, useRef } from 'react'
 import {
-    Animated,
-    DimensionValue,
-    KeyboardAvoidingView,
-    Modal,
-    Platform,
-    Pressable,
-    StyleSheet,
-    TouchableWithoutFeedback,
-    View,
+  Animated,
+  DimensionValue,
+  KeyboardAvoidingView,
+  Modal,
+  Platform,
+  Pressable,
+  StyleSheet,
+  TouchableWithoutFeedback,
+  View,
 } from 'react-native'
 
 interface BaseModalProps {
@@ -109,7 +109,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.dark.surface,
     borderRadius: 22,
     borderWidth: 2,
-    borderBottomWidth: 6,
+    borderBottomWidth: 2,
     padding: 22,
   },
   closeBtn: {

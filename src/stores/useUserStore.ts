@@ -150,6 +150,7 @@ export const useUserStore = create<UserStoreState>((set, get) => ({
   createUserProfile: async (userId: string, data: NewProfileData) => {
     const newUser: userDataInterface = {
       xp: 0,
+      id: userId,
       gem: 0,
       sets: [importVoca(data.level)],
       hasDefaultSet: true,
@@ -184,7 +185,8 @@ export const useUserStore = create<UserStoreState>((set, get) => ({
 
     let newLevel = user?.levelInfo.level;
     if (level === newLevel || level !== undefined) {
-      if (newLevel === "Beginner") { newLevel = "Intermediate" }
+      if (newLevel === "Starter") { newLevel = "Beginner" }
+      else if (newLevel === "Beginner") { newLevel = "Intermediate" }
       else if (newLevel === "Intermediate") { newLevel = "Higher Intermediate" }
       else if (newLevel === "Higher Intermediate") { newLevel = "Advance" }
       else { newLevel = user?.levelInfo.level }

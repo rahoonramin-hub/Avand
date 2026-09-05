@@ -1,7 +1,7 @@
 [
   {
-    "sentence": "اولین حرف اسم خاص با حروف بزرگ نوشته میشود",
-    "answer": true,
+    "sentence": "A cat is a dog.",
+    "answer": false,
     "type": "trueFalse",
     "direction": "ltr",
     "title": "True or False",
@@ -12,8 +12,8 @@
     "id": 1
   },
   {
-    "sentence": "The moon is bigger than the sun.",
-    "answer": false,
+    "sentence": "Water is wet.",
+    "answer": true,
     "type": "trueFalse",
     "direction": "ltr",
     "title": "True or False",
@@ -24,8 +24,8 @@
     "id": 2
   },
   {
-    "sentence": "کلمه adjective یعنی صفت",
-    "answer": true,
+    "sentence": "A car can fly.",
+    "answer": false,
     "type": "trueFalse",
     "direction": "ltr",
     "title": "True or False",
@@ -61,17 +61,18 @@
     "id": 4
   },
   {
-    "sentence": "Where are you from?",
+    "sentence": "Hello, how are you?",
     "answer": [
-      "از کجا هستی؟",
-      "شما از کجا هستی؟"
+      "سلام خوبی؟",
+      "سلام حال شما"
     ],
     "wordBank": [
-      "از",
-      "کجا",
-      "هستی؟",
+      "سلام",
+      "خوبی",
+      "حال",
       "شما",
-      "چیست"
+      "؟",
+      "هستم"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -79,17 +80,18 @@
     "id": 5
   },
   {
-    "sentence": "I am from Afghanistan.",
+    "sentence": "I am a student.",
     "answer": [
-      "من از افغانستان هستم"
+      "من یک شاگرد هستم",
+      "من شاگرد هستم"
     ],
     "wordBank": [
       "من",
-      "از",
-      "افغانستان",
+      "یک",
+      "شاگرد",
       "هستم",
-      "آمریکا",
-      "نیستم"
+      "معلم",
+      "داکتر"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -97,18 +99,18 @@
     "id": 6
   },
   {
-    "sentence": "Do you like tea?",
+    "sentence": "She is a teacher.",
     "answer": [
-      "آیا چای دوست داری؟",
-      "چای دوست داری؟"
+      "او یک معلم است",
+      "او معلم است"
     ],
     "wordBank": [
-      "آیا",
-      "چای",
-      "دوست",
-      "داری؟",
-      "قهوه",
-      "نوشیدن"
+      "او",
+      "یک",
+      "معلم",
+      "است",
+      "شاگرد",
+      "مرد"
     ],
     "type": "translate",
     "direction": "ltr",
@@ -116,10 +118,10 @@
     "id": 7
   },
   {
-    "sentence": "We _ happy today, because we won the game",
-    "answer": "are",
-    "hardness": "Medium",
-    "translate": "ما امروز خوشحالیم.",
+    "sentence": "I _ a student.",
+    "answer": "am",
+    "hardness": "Easy",
+    "translate": "من یک شاگرد هستم.",
     "wordBank": [
       "am",
       "is",
@@ -132,16 +134,15 @@
     "id": 8
   },
   {
-    "sentence": "He _ his own book, and sold it.",
-    "answer": "wrote",
-    "hardness": "Hard",
-    "translate": "او کتاب خودش را نوشت و آنرا فروخت",
+    "sentence": "She _ a teacher.",
+    "answer": "is",
+    "hardness": "Easy",
+    "translate": "او یک معلم است.",
     "wordBank": [
-      "sells",
-      "wrote",
-      "builds",
-      "made",
-      "write"
+      "am",
+      "is",
+      "are",
+      "be"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -149,15 +150,15 @@
     "id": 9
   },
   {
-    "sentence": "may _ ask something.",
-    "answer": "I",
-    "hardness": "Medium",
-    "translate": "میتوانم چیزی بپرسم؟",
+    "sentence": "They _ happy.",
+    "answer": "are",
+    "hardness": "Easy",
+    "translate": "آن‌ها خوشحال هستند.",
     "wordBank": [
-      "I",
-      "can",
+      "am",
       "is",
-      "they"
+      "are",
+      "be"
     ],
     "type": "fillBlank",
     "direction": "ltr",
@@ -165,12 +166,17 @@
     "id": 10
   },
   {
-    "answer": "yellow",
-    "sentence": "what color is the sun?",
+    "answer": "past simple",
+    "explanition": {
+      "title": "زمان گذشته ساده",
+      "des": "زمانیست که در گذشته اتفاق افتاده باشد و ختم شده باشد.\nتبدیل فعل به گذشته:بیشتر افعال با اضافه کردن ed در آخر فعل به حالت گذشته تبدیل میشوند.\nولی بعضی از افعال شکل خاص خود را دارند.",
+      "types": "watch - watch ed\nlearn - learn ed\nbuy - bought"
+    },
+    "sentence": "which tense is this sentence? \"I learned English\"",
     "options": [
-      "green",
-      "purple",
-      "yellow"
+      "future simple",
+      "past continuous",
+      "past simple"
     ],
     "type": "selectCorrect",
     "direction": "ltr",
@@ -178,13 +184,13 @@
     "id": 11
   },
   {
-    "answer": "blue",
-    "sentence": "what color is the sky on a clear day?",
+    "answer": "on friday",
+    "sentence": "when are you off ?",
     "options": [
-      "green",
-      "blue",
-      "gray",
-      "white"
+      "on friday",
+      "im not",
+      "at 5pm",
+      "last year"
     ],
     "type": "selectCorrect",
     "direction": "ltr",

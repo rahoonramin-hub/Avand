@@ -1,0 +1,144 @@
+[
+  {
+    "sentence": "The sky is blue.",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 1
+  },
+  {
+    "sentence": "Ice is cold.",
+    "answer": true,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 2
+  },
+  {
+    "sentence": "Snow is black.",
+    "answer": false,
+    "type": "trueFalse",
+    "direction": "ltr",
+    "title": "True or False",
+    "options": [
+      "true",
+      "false"
+    ],
+    "id": 3
+  },
+  {
+    "sentence": "My sis is a teacher.",
+    "answer": [
+      "خواهرم یک معلم است",
+      "خواهرم معلم است"
+    ],
+    "wordBank": [
+      "خواهرم",
+      "یک",
+      "معلم",
+      "است",
+      "شاگرد"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 4
+  },
+  {
+    "sentence": "What is your name? buddy.",
+    "answer": [
+      "اسمت چیه؟ بچیم",
+      "بچیم اسمت چیه؟"
+    ],
+    "wordBank": [
+      "اسمت",
+      "چیه؟",
+      "کجا",
+      "بچیم"
+    ],
+    "type": "translate",
+    "direction": "ltr",
+    "title": "Translate this sentence",
+    "id": 5
+  },
+  {
+    "sentence": "The book is _ the table.",
+    "answer": "on",
+    "hardness": "Easy",
+    "translate": "کتاب روی میز است.",
+    "wordBank": [
+      "on",
+      "inside",
+      "flying"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 6
+  },
+  {
+    "sentence": "I _ milk every day.",
+    "answer": "drink",
+    "hardness": "Easy",
+    "translate": "من هر روز شیر می‌نوشم.",
+    "wordBank": [
+      "drink",
+      "drinks",
+      "eat"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 7
+  },
+  {
+    "sentence": "She _ a new book.",
+    "answer": "reads",
+    "hardness": "Easy",
+    "translate": "او یک کتاب جدید می‌خواند.",
+    "wordBank": [
+      "read",
+      "reads",
+      "reading"
+    ],
+    "type": "fillBlank",
+    "direction": "ltr",
+    "title": "Fill the blank",
+    "id": 8
+  },
+  {
+    "answer": "Football",
+    "sentence": "Which sport has one ball?",
+    "options": [
+      "Kung fu",
+      "Karate",
+      "Football"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 9
+  },
+  {
+    "answer": "apple",
+    "sentence": "Which one is a fruit?",
+    "options": [
+      "apple",
+      "book",
+      "pen"
+    ],
+    "type": "selectCorrect",
+    "direction": "ltr",
+    "title": "Select correct",
+    "id": 10
+  }
+]

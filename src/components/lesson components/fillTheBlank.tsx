@@ -1,21 +1,9 @@
 // components/FillBlankLesson.tsx
-//
-// کامپوننت درس نوع "Fill the blank" (پر کردن جای خالی داخل جمله)
-//
-// پراپ‌ها:
-//  - data    : اطلاعات درس با تایپ FillBlankLesson (از constants/interface)
-//  - onExit  : فانکشن دکمه‌ی خروج
-//  - onNext  : فانکشن دکمه‌ی درس بعدی
-//
-// نکته: جای خالی داخل data.sentence با یک یا چند "_" مشخص میشه،
-// مثلا: "Never before _ such a comprehensive reform ..."
-// این کامپوننت جمله رو دور همون علامت میشکنه و کلمه‌ی انتخاب‌شده رو
-// دقیقا همونجا (به‌صورت inline و زیرخط‌دار) نشون میده تا جمله کامل و پیوسته دیده بشه.
-
-import CharImage from '@/assets/images/char.png';
 import CheckContinueBar, { CheckStatus } from '@/components/CheckContinueBar';
 import { colors } from "@/constants/colors";
+import { images } from '@/constants/images';
 import { LessonDataTypesFillBlank } from '@/constants/interface';
+import { Feedback } from '@/constants/sounds';
 import { useState } from 'react';
 import { Image, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
@@ -34,6 +22,7 @@ const shuffleIndices = (length: number): number[] => {
 };
 
 export default function FillTheBlank({ data, onExit, onNext, index }: LessonDataTypesFillBlank) {
+  let char = Math.random()>0.5? images.C_taking_note:images.C_idea;
   const [selectedIdx, setSelectedIdx] = useState<number | null>(null);
   const [checked, setChecked] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
@@ -56,12 +45,16 @@ export default function FillTheBlank({ data, onExit, onNext, index }: LessonData
 
   const handleContinue = () => {
     onNext(index,isCorrect);
+    setSelectedIdx(null)
+    setChecked(false)
+    setIsCorrect(false)
   };
 
   const handleCheck = () => {
     if (selectedIdx === null) return;
     const correct = normalize(data.wordBank[selectedIdx]) === normalize(data.answer);
     setIsCorrect(correct);
+    if (correct) {Feedback.success();}else {Feedback.failure()}
     setChecked(true);
   };
 
@@ -84,7 +77,7 @@ export default function FillTheBlank({ data, onExit, onNext, index }: LessonData
       <ScrollView contentContainerStyle={{ flex: 1 }} showsVerticalScrollIndicator={false}>
         {/* کاراکتر + بج سختی */}
         <View style={styles.topRow}>
-          <Image source={CharImage} style={styles.charImage} resizeMode="contain" />
+          <Image source={char} style={styles.char} resizeMode="contain" />
           <View
             style={[
               styles.hardnessBadge,
@@ -109,7 +102,7 @@ export default function FillTheBlank({ data, onExit, onNext, index }: LessonData
                 {selectedWord}
               </Text>
             ) : (
-              <Text style={styles.blankEmpty}>_________</Text>
+              <Text style={styles.blankEmpty}>_______</Text>
             )}{' '}
             {after?.trimStart()}
           </Text>
@@ -193,10 +186,10 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingHorizontal: 20,
   },
-  charImage: {
+  char: {
     marginLeft: 18,
-    width: 84,
-    height: 84,
+    width: 95,
+    height: 95,
   },
   hardnessBadge: {
     borderWidth: 1.5,
@@ -239,7 +232,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    maxHeight: 320,
+    maxHeight: 400,
     paddingBottom: 45,
   },
   chipsOptions: {

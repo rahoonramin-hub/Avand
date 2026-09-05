@@ -3,7 +3,9 @@
 import CheckContinueBar, { CheckStatus } from '@/components/CheckContinueBar';
 import MessageModal from '@/components/messageModal';
 import { colors } from '@/constants/colors';
+import { images } from '@/constants/images';
 import { LessonDataTypesSelectCorrect } from '@/constants/interface';
+import { Feedback } from '@/constants/sounds';
 import { useState } from 'react';
 import { Modal, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
@@ -36,11 +38,16 @@ export default function SellectCorrectLesson({ data, onExit, onNext, index }: Le
   const handleCheck = () => {
     const correct = picked === normalize(data.answer);
     setIsCorrect(correct);
+    if (correct) {Feedback.success();}else {Feedback.failure()}
     setChecked(true);
   };
 
   const handleContinue = () => {
     onNext(index,isCorrect);
+    setPicked(undefined)
+    setChecked(false)
+    setIsCorrect(false)
+    setShowExplanation(false)
   };
 
   const status: CheckStatus = !checked ? 'idle' : isCorrect ? 'correct' : 'wrong';
@@ -124,9 +131,10 @@ export default function SellectCorrectLesson({ data, onExit, onNext, index }: Le
           onRequestClose={() => setShowExplanation(false)}
         >
           <MessageModal
+            image={images.C_teach}
             title={data.explanition.title||"Message"}
             direction={data.direction}
-            des={`${data.explanition.des}\n\n${data.explanition.types}`}
+            des={`${data.explanition.des}\n\n${data.explanition.types||""}`}
             btnText="متوجه شدم"
             onPress={() => setShowExplanation(false)}
           />
@@ -198,8 +206,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
   charImage: {
-    width: 84,
-    height: 84,
+    width: 95,
+    height: 95,
   },
   bubble: {
     flex: 1,
@@ -224,7 +232,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    maxHeight: 350,
+    maxHeight: 400,
   },
   chipsOptions: {
     maxWidth: "80%",
